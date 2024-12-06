@@ -10,6 +10,8 @@ from urllib.parse import urlparse, parse_qs
 from score_filter import start_match_filtering
 import sys
 
+__version__ = "1.0.1"  # Added version number
+
 # Load configuration
 with open('config.json', 'r') as f:
     config = json.load(f)
@@ -484,6 +486,11 @@ async def start_match_scraping():
 def start_downloading(category: str = None, limit: int = None):
     """Start the demo downloading process"""
     global downloader_thread
+    
+    # Print version on startup
+    print(f"\nDemo Downloader v{__version__}")
+    print("=" * 30)
+    
     if downloader_thread and downloader_thread.is_alive():
         return "Downloader is already running."
     
