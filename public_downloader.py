@@ -50,7 +50,8 @@ download_stats = {
     'successful': 0,
     'failed': 0,
     'rejected': 0,
-    'last_match_id': None
+    'last_match_id': None,
+    'is_complete': False  # New flag to track completion
 }
 
 def update_progress_bar(match_id, progress):
@@ -435,6 +436,7 @@ def process_batch(queue):
 def downloader_loop():
     if not os.path.exists(DOWNLOAD_QUEUE_FILE):
         print("No download queue file found")
+        download_stats['is_complete'] = True
         return
 
     with open(DOWNLOAD_QUEUE_FILE, 'r', encoding='utf-8') as f:
@@ -442,6 +444,7 @@ def downloader_loop():
 
     if not queue:
         print("Download queue is empty")
+        download_stats['is_complete'] = True
         return
 
     # Reset download stats
@@ -450,6 +453,9 @@ def downloader_loop():
     download_stats['failed'] = 0
     download_stats['rejected'] = 0
     download_stats['last_match_id'] = None
+    download_stats['is_complete'] = False
+
+    print(f"\nStarting downloads for {len(queue)} matches...")
 
     while queue and not stop_event.is_set():
         queue, should_stop = process_batch(queue)
@@ -463,7 +469,11 @@ def downloader_loop():
             break
         
         if not queue:
-            print("Download queue is empty")
+            print("\nAll downloads completed!")
+            print(f"Successfully downloaded: {download_stats['successful']}")
+            print(f"Failed downloads: {download_stats['failed']}")
+            print(f"Rejected downloads: {download_stats['rejected']}")
+            download_stats['is_complete'] = True
             break
 
 async def start_match_scraping():
