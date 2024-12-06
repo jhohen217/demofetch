@@ -116,8 +116,8 @@ async def check_download_completion(interaction: discord.Interaction):
     """Check if downloads are complete and send stats"""
     try:
         while True:
-            if not downloader_thread or not downloader_thread.is_alive():
-                stats = get_download_stats()
+            stats = get_download_stats()
+            if stats['is_complete']:  # Check the is_complete flag
                 if stats['total'] > 0:  # Only send message if there were downloads
                     completion_msg = (
                         "📥 Download Complete!\n"
