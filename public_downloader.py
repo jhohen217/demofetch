@@ -69,8 +69,8 @@ def update_progress_bar(match_id, progress):
     # Calculate percentage
     percent = int(progress * 100)
     
-    # Create the display string
-    status = f'\rDownloading: [{bar}] {percent}%'
+    # Create the display string with carriage return and clear to end of line
+    status = f'\rDownloading: [{bar}] {percent}%\033[K'
     
     # Print the status
     sys.stdout.write(status)
@@ -290,7 +290,7 @@ def download_demo(match_id):
         response = requests.post(DOWNLOAD_API_URL, headers=headers, json=payload)
         
         if response.status_code == 429:
-            print("Rate limited by FACEIT API")
+            print("\nRate limited by FACEIT API")
             download_stats['failed'] += 1
             return "rate_limited"
             
@@ -312,7 +312,9 @@ def download_demo(match_id):
                                 progress = downloaded / total_size
                                 update_progress_bar(match_id, progress)
                     
-                    print()  # New line after progress bar
+                    # Clear the progress bar line
+                    sys.stdout.write('\r' + ' ' * (len(match_id) + 20) + '\r')
+                    sys.stdout.flush()
                     
                     # Check file size (50,000 KB = 50MB)
                     file_size = os.path.getsize(save_path) / 1024  # Size in KB
@@ -333,21 +335,21 @@ def download_demo(match_id):
                     download_stats['last_match_id'] = match_id
                     return "success"
                 else:
-                    print(f"Failed to download demo file: {demo_response.status_code}")
+                    print(f"\nFailed to download demo file: {demo_response.status_code}")
                     download_stats['failed'] += 1
                     return "failed"
             else:
-                print("No signed URL received")
+                print("\nNo signed URL received")
                 download_stats['failed'] += 1
                 return "no_url"
         else:
-            print(f"Failed to get signed URL: {response.status_code}")
+            print(f"\nFailed to get signed URL: {response.status_code}")
             with open(REJECTED_MATCHES_FILE, 'a', encoding='utf-8') as f:
                 f.write(match_id + '\n')
             download_stats['failed'] += 1
             return "failed"
     except Exception as e:
-        print(f"Error downloading demo: {str(e)}")
+        print(f"\nError downloading demo: {str(e)}")
         download_stats['failed'] += 1
         return "error"
 
