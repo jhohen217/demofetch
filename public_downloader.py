@@ -301,16 +301,17 @@ def download_demo(match_id):
                 if demo_response.status_code == 200:
                     save_path = os.path.join(SAVE_FOLDER, f'{match_id}.dem.gz')
                     total_size = int(demo_response.headers.get('content-length', 0))
-                    block_size = 1024  # 1 KB
+                    block_size = 8192  # Increased from 1024 to 8192
                     downloaded = 0
                     
                     with open(save_path, 'wb') as demo_file:
                         for chunk in demo_response.iter_content(chunk_size=block_size):
-                            demo_file.write(chunk)
-                            downloaded += len(chunk)
-                            if total_size:
-                                progress = downloaded / total_size
-                                update_progress_bar(match_id, progress)
+                            if chunk:  # filter out keep-alive chunks
+                                demo_file.write(chunk)
+                                downloaded += len(chunk)
+                                if total_size:
+                                    progress = downloaded / total_size
+                                    update_progress_bar(match_id, progress)
                     
                     # Clear the progress bar line
                     sys.stdout.write('\r' + ' ' * (len(match_id) + 20) + '\r')

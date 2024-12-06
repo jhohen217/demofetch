@@ -1,60 +1,49 @@
 #!/bin/bash
 
-# Directory where the bot should be installed
-INSTALL_DIR="/home/pi/demofetch"
+# Directory and repository URL
+INSTALL_DIR="/home/josh/demofetch"
 REPO_URL="https://github.com/jhohen217/demofetch.git"
 
-# Create install directory if it doesn't exist
-mkdir -p "$INSTALL_DIR"
-cd "$INSTALL_DIR"
-
-# Function to check if a command exists
+# Ensure required tools are installed
 command_exists() {
     command -v "$1" >/dev/null 2>&1
 }
 
-# Install git if not present
 if ! command_exists git; then
     echo "Installing git..."
-    sudo apt-get update
-    sudo apt-get install -y git
+    sudo apt-get update && sudo apt-get install -y git
 fi
 
-# Install python3 and pip if not present
 if ! command_exists python3; then
-    echo "Installing python3..."
+    echo "Installing Python 3..."
     sudo apt-get install -y python3 python3-pip
 fi
 
-# Clone or update repository
-if [ -d .git ]; then
+# Clone or update the repository
+cd "$INSTALL_DIR" || exit
+if [ -d ".git" ]; then
     echo "Updating from git..."
-    git fetch
-    git reset --hard origin/main
+    git fetch origin
+    git reset --hard origin/master  # Use 'main' if your branch is 'main'
 else
     echo "Cloning repository..."
-    git clone "$REPO_URL" .
+    git clone "$REPO_URL" "$INSTALL_DIR"
+    cd "$INSTALL_DIR" || exit
 fi
 
-# Create virtual environment if it doesn't exist
+# Set up Python environment
 if [ ! -d "venv" ]; then
     echo "Creating virtual environment..."
     python3 -m venv venv
 fi
 
-# Activate virtual environment and install/update requirements
-echo "Installing/updating dependencies..."
+echo "Activating virtual environment and installing requirements..."
 source venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
-
-# Check if config.json exists, if not create from example
-if [ ! -f "config.json" ] && [ -f "config.json.example" ]; then
-    echo "Please configure config.json before running the bot"
-    cp config.json.example config.json
-    exit 1
-fi
+deactivate
 
 # Start the bot
 echo "Starting bot..."
+source venv/bin/activate
 python3 bot.py
