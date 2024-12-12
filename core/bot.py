@@ -60,8 +60,10 @@ class DemoBot(nextcord.Client):
     def load_commands(self):
         """Load all command modules"""
         try:
-            # Get commands directory path
-            commands_dir = os.path.join(os.path.dirname(__file__), "..", "commands")
+            # Get commands directory path relative to bot.py
+            core_dir = os.path.dirname(os.path.abspath(__file__))
+            project_dir = os.path.dirname(core_dir)
+            commands_dir = os.path.join(project_dir, "commands")
             
             # Import and store command modules
             self.command_modules = []
@@ -70,8 +72,9 @@ class DemoBot(nextcord.Client):
                     try:
                         module_name = f"commands.{filename[:-3]}"
                         
-                        # Import the module
-                        module = __import__(module_name, fromlist=['setup', 'handle_message'])
+                        # Import the module using importlib to ensure proper package resolution
+                        import importlib
+                        module = importlib.import_module(module_name)
                         
                         # Call setup function
                         if hasattr(module, 'setup'):
