@@ -2,7 +2,9 @@ import asyncio
 import random
 import json
 import logging
-from core import start_match_scraping, start_match_filtering, stop_processes
+from core.match_scrape import start_match_scraping
+from core.score_filter import start_match_filtering
+from core.public_downloader import stop_processes
 from core.parser import DemoParser
 
 # Set up logging
