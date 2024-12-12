@@ -69,6 +69,9 @@ if [ ! -f "config.json" ] && [ -f "config.json.example" ]; then
     exit 1
 fi
 
+# Set PYTHONPATH to include the project directory
+export PYTHONPATH="$INSTALL_DIR:$PYTHONPATH"
+
 # Start the bot
 echo "Starting the bot..."
 python3 start.py
