@@ -12,20 +12,15 @@ logging.basicConfig(
     force=True  # Force reconfiguration of the logger
 )
 
-# Add the project root to Python path
+# Add only the project root to Python path
 current_dir = Path(__file__).parent.absolute()
 if str(current_dir) not in sys.path:
     sys.path.insert(0, str(current_dir))
     logging.debug(f"Added {current_dir} to Python path")
 
-# Also add the parent directory to ensure imports work
-parent_dir = current_dir.parent
-if str(parent_dir) not in sys.path:
-    sys.path.insert(0, str(parent_dir))
-    logging.debug(f"Added {parent_dir} to Python path")
-
 logging.debug(f"Python path: {sys.path}")
 
+# Import after path setup
 from core.bot import DemoBot
 
 def main():
