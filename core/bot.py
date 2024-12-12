@@ -1,9 +1,14 @@
-import nextcord
-import json
 import os
 import sys
+import json
 import logging
 from pathlib import Path
+
+try:
+    import nextcord
+except ImportError:
+    print("Error: nextcord package not found. Please install it using 'pip install nextcord'")
+    sys.exit(1)
 
 # Configure logging to suppress nextcord messages
 logging.getLogger('nextcord').setLevel(logging.ERROR)
@@ -65,6 +70,11 @@ class DemoBot(nextcord.Client):
             project_dir = os.path.dirname(core_dir)
             commands_dir = os.path.join(project_dir, "commands")
             
+            # Add project directory to Python path if not already there
+            if project_dir not in sys.path:
+                sys.path.insert(0, project_dir)
+                logger.debug(f"Added {project_dir} to Python path")
+            
             # Import and store command modules
             self.command_modules = []
             for filename in os.listdir(commands_dir):
@@ -83,6 +93,7 @@ class DemoBot(nextcord.Client):
                         # Store module if it has handle_message
                         if hasattr(module, 'handle_message'):
                             self.command_modules.append(module)
+                            logger.debug(f"Successfully loaded module {module_name}")
                     except Exception as e:
                         logger.error(f'Failed to load module {filename}: {e}')
         except Exception as e:
@@ -90,7 +101,7 @@ class DemoBot(nextcord.Client):
 
     async def on_ready(self):
         """Called when the bot is ready"""
-        pass
+        logger.info(f"Bot is ready as {self.user}")
 
     def is_owner(self, user_id):
         """Check if a user is the bot owner"""
