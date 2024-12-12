@@ -1,0 +1,10 @@
+/Protobufs
+/target
+.vscode/
+venv
+.venv
+flamegraph.svg
+perf.data
+perf.data.old
+junk.txt
+voxels.txt

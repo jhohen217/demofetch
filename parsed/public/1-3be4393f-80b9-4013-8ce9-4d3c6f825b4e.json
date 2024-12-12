@@ -1,0 +1,180 @@
+{
+    "demoInfo": {
+        "fileName": "1-3be4393f-80b9-4013-8ce9-4d3c6f825b4e.dem",
+        "mapName": "de_inferno",
+        "date": "2024-12-11 01:49:23",
+        "aceKills": 0,
+        "quadKills": 1,
+        "multiKills": 0
+    },
+    "aceKills": [],
+    "quadKills": [
+        {
+            "roundNumber": 2,
+            "player": "WDNMD1145146",
+            "killCount": 4,
+            "duration_in_ticks": 2017,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "WDNMD1145146",
+                        "steam64id": "76561199498217241",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 808.0173950195312,
+                            "y": 2109.25244140625,
+                            "z": 136.03131103515625
+                        },
+                        "viewAngles": {
+                            "pitch": -0.692138671875,
+                            "yaw": 107.33883666992188
+                        }
+                    },
+                    "victim": {
+                        "name": "PR0SPER1",
+                        "steam64id": "76561198963256925",
+                        "team": "CT",
+                        "position": {
+                            "x": 637.7389526367188,
+                            "y": 2687.51611328125,
+                            "z": 150.2395782470703
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 26748,
+                        "weapon": "mac10",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 15.314295768737793,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "WDNMD1145146",
+                        "steam64id": "76561199498217241",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 587.7323608398438,
+                            "y": 1957.6224365234375,
+                            "z": 136.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 2.548492431640625,
+                            "yaw": 63.107177734375
+                        }
+                    },
+                    "victim": {
+                        "name": "aNDu64",
+                        "steam64id": "76561197996448682",
+                        "team": "CT",
+                        "position": {
+                            "x": 844.3480224609375,
+                            "y": 2473.966064453125,
+                            "z": 140.0843048095703
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 27551,
+                        "weapon": "mac10",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 14.61181640625,
+                        "ticks_since_last_kill": 803,
+                        "distance_moved_since_last_kill": 267.4269146221292
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "WDNMD1145146",
+                        "steam64id": "76561199498217241",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 780.8995971679688,
+                            "y": 2295.026123046875,
+                            "z": 136.03146362304688
+                        },
+                        "viewAngles": {
+                            "pitch": 8.053665161132812,
+                            "yaw": 113.94744873046875
+                        }
+                    },
+                    "victim": {
+                        "name": "oero_",
+                        "steam64id": "76561197960784751",
+                        "team": "CT",
+                        "position": {
+                            "x": 424.3973083496094,
+                            "y": 3156.460693359375,
+                            "z": 164.45941162109375
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 27928,
+                        "weapon": "mac10",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 23.690601348876953,
+                        "ticks_since_last_kill": 377,
+                        "distance_moved_since_last_kill": 388.7863537603878
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "WDNMD1145146",
+                        "steam64id": "76561199498217241",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 307.9771423339844,
+                            "y": 3028.6884765625,
+                            "z": 162.19802856445312
+                        },
+                        "viewAngles": {
+                            "pitch": 10.66497802734375,
+                            "yaw": -127.63607025146484
+                        }
+                    },
+                    "victim": {
+                        "name": "1nz_",
+                        "steam64id": "76561197976583595",
+                        "team": "CT",
+                        "position": {
+                            "x": 3.6538684368133545,
+                            "y": 2623.708984375,
+                            "z": 161.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 28765,
+                        "weapon": "mac10",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 12.804511070251465,
+                        "ticks_since_last_kill": 837,
+                        "distance_moved_since_last_kill": 873.2701680311316
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "mac10"
+                ],
+                "headshots": 2,
+                "wallbangs": 0,
+                "radius_moved": 749.8556651292079,
+                "victims_in_radius": 486.919665458393,
+                "total_distance_moved": 1529.4834364136486
+            }
+        }
+    ],
+    "multiKills": []
+}

@@ -1,0 +1,359 @@
+{
+    "demoInfo": {
+        "fileName": "1-1ec5bec5-e59f-4f94-8249-0139220f42ee.dem",
+        "mapName": "de_dust2",
+        "date": "2024-12-11 01:48:40",
+        "aceKills": 0,
+        "quadKills": 2,
+        "multiKills": 0
+    },
+    "aceKills": [],
+    "quadKills": [
+        {
+            "roundNumber": 4,
+            "player": "chimiwnl",
+            "killCount": 4,
+            "duration_in_ticks": 3590,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "chimiwnl",
+                        "steam64id": "76561198320852667",
+                        "team": "CT",
+                        "position": {
+                            "x": 396.17279052734375,
+                            "y": 1533.7374267578125,
+                            "z": 2.1953697204589844
+                        },
+                        "viewAngles": {
+                            "pitch": 2.573883056640625,
+                            "yaw": -167.74783325195312
+                        }
+                    },
+                    "victim": {
+                        "name": "Splooti",
+                        "steam64id": "76561198129798020",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -275.03173828125,
+                            "y": 1391.2615966796875,
+                            "z": 1.515625
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 30017,
+                        "weapon": "m4a1",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 17.494810104370117,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "chimiwnl",
+                        "steam64id": "76561198320852667",
+                        "team": "CT",
+                        "position": {
+                            "x": -223.2568359375,
+                            "y": 720.1837158203125,
+                            "z": 1.1956984996795654
+                        },
+                        "viewAngles": {
+                            "pitch": 4.0391845703125,
+                            "yaw": -71.82071685791016
+                        }
+                    },
+                    "victim": {
+                        "name": "SUGAR_TITS69",
+                        "steam64id": "76561198364334824",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -95.148193359375,
+                            "y": 338.3451843261719,
+                            "z": -0.1346435546875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 32420,
+                        "weapon": "m4a1",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 10.223621368408203,
+                        "ticks_since_last_kill": 2403,
+                        "distance_moved_since_last_kill": 1022.528093533426
+                    },
+                    "assist": {
+                        "name": "DR4E",
+                        "steam64id": "76561199076202116",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "chimiwnl",
+                        "steam64id": "76561198320852667",
+                        "team": "CT",
+                        "position": {
+                            "x": -618.6944580078125,
+                            "y": 420.2431640625,
+                            "z": 8.20736026763916
+                        },
+                        "viewAngles": {
+                            "pitch": 1.9205474853515625,
+                            "yaw": 60.30464172363281
+                        }
+                    },
+                    "victim": {
+                        "name": "beaux_",
+                        "steam64id": "76561198407421497",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -72.38372802734375,
+                            "y": 1382.1015625,
+                            "z": -0.04876708984375
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 32845,
+                        "weapon": "m4a1",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": true,
+                        "distance_to_enemy": 28.098005294799805,
+                        "ticks_since_last_kill": 425,
+                        "distance_moved_since_last_kill": 496.3712430612319
+                    },
+                    "assist": {
+                        "name": "Fireskull273",
+                        "steam64id": "76561198122594492",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "chimiwnl",
+                        "steam64id": "76561198320852667",
+                        "team": "CT",
+                        "position": {
+                            "x": -497.94976806640625,
+                            "y": 433.0364990234375,
+                            "z": 4.357296943664551
+                        },
+                        "viewAngles": {
+                            "pitch": 10.45452880859375,
+                            "yaw": 87.74746704101562
+                        }
+                    },
+                    "victim": {
+                        "name": "El0c",
+                        "steam64id": "76561198120571884",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -464.04302978515625,
+                            "y": 1440.2640380859375,
+                            "z": -124.7144775390625
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 33607,
+                        "weapon": "m4a1",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": true,
+                        "distance_to_enemy": 25.79473114013672,
+                        "ticks_since_last_kill": 762,
+                        "distance_moved_since_last_kill": 121.48157290744837
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "m4a1"
+                ],
+                "headshots": 1,
+                "wallbangs": 0,
+                "radius_moved": 986.1611085326748,
+                "victims_in_radius": 810.9704725922478,
+                "total_distance_moved": 1640.3809095021065
+            }
+        },
+        {
+            "roundNumber": 13,
+            "player": "beaux_",
+            "killCount": 4,
+            "duration_in_ticks": 1855,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "beaux_",
+                        "steam64id": "76561198407421497",
+                        "team": "CT",
+                        "position": {
+                            "x": 258.46484375,
+                            "y": 290.26055908203125,
+                            "z": -0.95489501953125
+                        },
+                        "viewAngles": {
+                            "pitch": -0.5115509033203125,
+                            "yaw": 177.00726318359375
+                        }
+                    },
+                    "victim": {
+                        "name": "Dany4A4A",
+                        "steam64id": "76561198035326082",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -553.4605102539062,
+                            "y": 327.1808166503906,
+                            "z": 6.8469133377075195
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 86116,
+                        "weapon": "deagle",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 20.644874572753906,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "beaux_",
+                        "steam64id": "76561198407421497",
+                        "team": "CT",
+                        "position": {
+                            "x": -255.5950927734375,
+                            "y": 326.9450988769531,
+                            "z": -0.89935302734375
+                        },
+                        "viewAngles": {
+                            "pitch": 4.026153564453125,
+                            "yaw": 111.3701171875
+                        }
+                    },
+                    "victim": {
+                        "name": "DR4E",
+                        "steam64id": "76561199076202116",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -521.2471923828125,
+                            "y": 1000.1690063476562,
+                            "z": -48.27593994140625
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 86294,
+                        "weapon": "deagle",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 18.428882598876953,
+                        "ticks_since_last_kill": 178,
+                        "distance_moved_since_last_kill": 515.3672252708342
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "beaux_",
+                        "steam64id": "76561198407421497",
+                        "team": "CT",
+                        "position": {
+                            "x": -471.290771484375,
+                            "y": 349.2326965332031,
+                            "z": -0.6798095703125
+                        },
+                        "viewAngles": {
+                            "pitch": -0.032958984375,
+                            "yaw": 70.91229248046875
+                        }
+                    },
+                    "victim": {
+                        "name": "Fireskull273",
+                        "steam64id": "76561198122594492",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -33.88092041015625,
+                            "y": 1578.2725830078125,
+                            "z": 2.1248888969421387
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 86434,
+                        "weapon": "deagle",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 33.13656234741211,
+                        "ticks_since_last_kill": 140,
+                        "distance_moved_since_last_kill": 216.8442091068802
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "beaux_",
+                        "steam64id": "76561198407421497",
+                        "team": "CT",
+                        "position": {
+                            "x": -705.9617309570312,
+                            "y": 384.8505859375,
+                            "z": 16.400169372558594
+                        },
+                        "viewAngles": {
+                            "pitch": 0.7175445556640625,
+                            "yaw": -6.2587738037109375
+                        }
+                    },
+                    "victim": {
+                        "name": "gazzump",
+                        "steam64id": "76561198352366092",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 150.9998016357422,
+                            "y": 296.2067565917969,
+                            "z": 0.1688547134399414
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 87971,
+                        "weapon": "ssg08",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 22.156902313232422,
+                        "ticks_since_last_kill": 1537,
+                        "distance_moved_since_last_kill": 237.9723070992142
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "deagle",
+                    "ssg08"
+                ],
+                "headshots": 4,
+                "wallbangs": 0,
+                "radius_moved": 554.1231745520977,
+                "victims_in_radius": 804.5964142156087,
+                "total_distance_moved": 970.1837414769285
+            }
+        }
+    ],
+    "multiKills": []
+}

@@ -1,0 +1,14 @@
+/Protobufs
+/target
+*.dem
+.vscode/
+__pycache__/
+venv
+.venv
+flamegraph.svg
+perf.data
+perf.data.old
+junk.txt
+voxels.txt
+main.py
+data/

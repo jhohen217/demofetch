@@ -1,69 +1,71 @@
-import asyncio
 import os
-import threading
-from match_scrape import start_match_scraping
-from score_filter import start_match_filtering
-from bot import run_bot
+import sys
+import json
+import logging
+from pathlib import Path
 
-async def main():
-    """
-    Main entry point that runs all processes:
-    1. Discord Bot
-    2. Match Scraping
-    3. Score Filtering
-    """
+# Set up logging first, before any imports
+logging.basicConfig(
+    level=logging.DEBUG,  # Set to DEBUG level
+    format='%(asctime)s - %(levelname)s - %(module)s - %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S',
+    force=True  # Force reconfiguration of the logger
+)
+
+# Add the project root to Python path
+current_dir = Path(__file__).parent.absolute()
+if str(current_dir) not in sys.path:
+    sys.path.insert(0, str(current_dir))
+    logging.debug(f"Added {current_dir} to Python path")
+
+# Also add the parent directory to ensure imports work
+parent_dir = current_dir.parent
+if str(parent_dir) not in sys.path:
+    sys.path.insert(0, str(parent_dir))
+    logging.debug(f"Added {parent_dir} to Python path")
+
+logging.debug(f"Python path: {sys.path}")
+
+from core.bot import DemoBot
+
+def main():
+    logging.info("Starting DemoFetch application...")
+    
     try:
-        print("\n" + "="*50)
-        print("           FACEIT Demo Manager")
-        print("="*50 + "\n")
-
-        print("Starting all services...\n")
-
-        # Start Discord bot in a separate thread
-        print("=== Discord Bot ===")
-        print("Starting Discord bot...\n")
-        bot_thread = threading.Thread(target=run_bot)
-        bot_thread.daemon = True  # Make thread daemon so it exits when main thread exits
-        bot_thread.start()
-
-        # Give the bot a moment to initialize
-        await asyncio.sleep(2)
+        # Load configuration
+        logging.info("Loading configuration...")
+        config_path = os.path.join(current_dir, 'config.json')
+        with open(config_path, 'r') as f:
+            config = json.load(f)
+        logging.info("Configuration loaded successfully")
         
-        print("Bot is running. Use Discord commands to interact:")
-        print("- /start - Begin fetching NA East matches")
-        print("- /stop - Stop all processes")
-        print("- /download_queue - Start downloading demos")
-        print("- /usage - Check storage and statistics")
-        print("\nPress Ctrl+C to stop all processes\n")
-
-        # Keep the main thread alive
-        while True:
-            await asyncio.sleep(1)
-
-    except KeyboardInterrupt:
-        print("\nShutting down...")
-        return True
+        # Create essential directories
+        project_dir = config['project']['directory']
+        logging.info(f"Project directory set to: {project_dir}")
+        
+        os.makedirs(os.path.join(project_dir, "textfiles"), exist_ok=True)
+        os.makedirs(os.path.join(project_dir, "parsed"), exist_ok=True)
+        os.makedirs(os.path.join(project_dir, "usermatches"), exist_ok=True)
+        os.makedirs(os.path.join(project_dir, "userdemos"), exist_ok=True)
+        logging.info("Required directories created/verified")
+        
+        # Initialize and run the bot with config
+        logging.info("Initializing bot...")
+        bot = DemoBot(config)
+        
+        logging.info("Starting bot...")
+        bot.run(config['discord']['token'])
+    except FileNotFoundError:
+        logging.error("config.json not found. Please create it from config.json.example")
+        sys.exit(1)
+    except json.JSONDecodeError:
+        logging.error("config.json is not valid JSON")
+        sys.exit(1)
     except Exception as e:
-        print(f"\nError in main process: {str(e)}")
-        return False
+        logging.exception("Error in main:")  # This will log the full traceback
+        sys.exit(1)
+    finally:
+        logging.info("Bot shutdown complete")
 
 if __name__ == "__main__":
-    """
-    This is the main entry point for the entire application.
-    
-    To start everything:
-    1. Ensure you have config.json set up (copy from config.json.example)
-    2. Run this file with: python start.py
-    
-    This will start:
-    - Discord Bot (for commands and interaction)
-    - Match Scraping (when started via /start command)
-    - Score Filtering (runs automatically after match scraping)
-    """
-    try:
-        asyncio.run(main())
-    except KeyboardInterrupt:
-        print("\nShutdown complete")
-    except Exception as e:
-        print(f"\nFatal error: {str(e)}")
-        exit(1)
+    main()

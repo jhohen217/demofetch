@@ -1,0 +1,346 @@
+{
+    "demoInfo": {
+        "fileName": "1-b0e436da-c792-446d-a86f-d479fc8783d6.dem",
+        "mapName": "de_dust2",
+        "date": "2024-12-11 01:53:06",
+        "aceKills": 0,
+        "quadKills": 2,
+        "multiKills": 0
+    },
+    "aceKills": [],
+    "quadKills": [
+        {
+            "roundNumber": 3,
+            "player": "Heart3reakk",
+            "killCount": 4,
+            "duration_in_ticks": 623,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "Heart3reakk",
+                        "steam64id": "76561199806553140",
+                        "team": "CT",
+                        "position": {
+                            "x": -141.76214599609375,
+                            "y": 1506.989501953125,
+                            "z": 0.5606646537780762
+                        },
+                        "viewAngles": {
+                            "pitch": 0.307952880859375,
+                            "yaw": -90.55721282958984
+                        }
+                    },
+                    "victim": {
+                        "name": "Grewsomee",
+                        "steam64id": "76561198211073225",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -152.7884521484375,
+                            "y": 710.9055786132812,
+                            "z": 2.031251907348633
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 20391,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 20.24962615966797,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Heart3reakk",
+                        "steam64id": "76561199806553140",
+                        "team": "CT",
+                        "position": {
+                            "x": -102.876220703125,
+                            "y": 1490.6131591796875,
+                            "z": 0.18047189712524414
+                        },
+                        "viewAngles": {
+                            "pitch": 1.407958984375,
+                            "yaw": -101.20502471923828
+                        }
+                    },
+                    "victim": {
+                        "name": "philgood17",
+                        "steam64id": "76561197961360672",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -332.23486328125,
+                            "y": 357.35107421875,
+                            "z": -0.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 20518,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 29.3714542388916,
+                        "ticks_since_last_kill": 127,
+                        "distance_moved_since_last_kill": 42.195311766305
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Heart3reakk",
+                        "steam64id": "76561199806553140",
+                        "team": "CT",
+                        "position": {
+                            "x": -171.9552001953125,
+                            "y": 1471.8857421875,
+                            "z": 0.16450166702270508
+                        },
+                        "viewAngles": {
+                            "pitch": 0.351898193359375,
+                            "yaw": -87.9616928100586
+                        }
+                    },
+                    "victim": {
+                        "name": "BungeeGum",
+                        "steam64id": "76561199803654965",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -131.56646728515625,
+                            "y": 476.7585144042969,
+                            "z": -0.49969482421875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 20758,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 25.307899475097656,
+                        "ticks_since_last_kill": 240,
+                        "distance_moved_since_last_kill": 71.57249338907779
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Heart3reakk",
+                        "steam64id": "76561199806553140",
+                        "team": "CT",
+                        "position": {
+                            "x": -176.523681640625,
+                            "y": 1111.127197265625,
+                            "z": -0.127685546875
+                        },
+                        "viewAngles": {
+                            "pitch": 14.08001708984375,
+                            "yaw": 140.51959228515625
+                        }
+                    },
+                    "victim": {
+                        "name": "PrivatePeach",
+                        "steam64id": "76561198109239939",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -518.3880004882812,
+                            "y": 1393.792724609375,
+                            "z": -110.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 21014,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 11.664848327636719,
+                        "ticks_since_last_kill": 256,
+                        "distance_moved_since_last_kill": 360.7875886588016
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "m4a1_silencer"
+                ],
+                "headshots": 3,
+                "wallbangs": 0,
+                "radius_moved": 285.4277774746408,
+                "victims_in_radius": 704.562500716749,
+                "total_distance_moved": 474.5553938141844
+            }
+        },
+        {
+            "roundNumber": 17,
+            "player": "Heart3reakk",
+            "killCount": 4,
+            "duration_in_ticks": 1438,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "Heart3reakk",
+                        "steam64id": "76561199806553140",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 652.127685546875,
+                            "y": 749.1787719726562,
+                            "z": 0.7613065242767334
+                        },
+                        "viewAngles": {
+                            "pitch": 10.031890869140625,
+                            "yaw": 27.427703857421875
+                        }
+                    },
+                    "victim": {
+                        "name": "PrivatePeach",
+                        "steam64id": "76561198109239939",
+                        "team": "CT",
+                        "position": {
+                            "x": 1381.6483154296875,
+                            "y": 1127.8389892578125,
+                            "z": -8.92724609375
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 98751,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 20.877689361572266,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Heart3reakk",
+                        "steam64id": "76561199806553140",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 666.6881103515625,
+                            "y": 772.8348999023438,
+                            "z": 0.6698274612426758
+                        },
+                        "viewAngles": {
+                            "pitch": 13.2879638671875,
+                            "yaw": 9.871902465820312
+                        }
+                    },
+                    "victim": {
+                        "name": "BungeeGum",
+                        "steam64id": "76561199803654965",
+                        "team": "CT",
+                        "position": {
+                            "x": 1451.6043701171875,
+                            "y": 937.51416015625,
+                            "z": -8.16534423828125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 98827,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 20.38201141357422,
+                        "ticks_since_last_kill": 76,
+                        "distance_moved_since_last_kill": 27.778169981798182
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Heart3reakk",
+                        "steam64id": "76561199806553140",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1227.792724609375,
+                            "y": 2243.520751953125,
+                            "z": 9.464146614074707
+                        },
+                        "viewAngles": {
+                            "pitch": 5.0598907470703125,
+                            "yaw": -172.36691284179688
+                        }
+                    },
+                    "victim": {
+                        "name": "Trenbolon850",
+                        "steam64id": "76561199405034696",
+                        "team": "CT",
+                        "position": {
+                            "x": -339.947265625,
+                            "y": 2029.25927734375,
+                            "z": -127.2366943359375
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 99408,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 40.3221435546875,
+                        "ticks_since_last_kill": 581,
+                        "distance_moved_since_last_kill": 1574.1132753436466
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Heart3reakk",
+                        "steam64id": "76561199806553140",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -587.827392578125,
+                            "y": 2264.46826171875,
+                            "z": -119.38787841796875
+                        },
+                        "viewAngles": {
+                            "pitch": 2.9038238525390625,
+                            "yaw": -75.29926300048828
+                        }
+                    },
+                    "victim": {
+                        "name": "philgood17",
+                        "steam64id": "76561197961360672",
+                        "team": "CT",
+                        "position": {
+                            "x": -330.885986328125,
+                            "y": 1294.9437255859375,
+                            "z": -119.7037353515625
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 100189,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 25.479917526245117,
+                        "ticks_since_last_kill": 781,
+                        "distance_moved_since_last_kill": 1820.3071313534401
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "ak47"
+                ],
+                "headshots": 1,
+                "wallbangs": 0,
+                "radius_moved": 1320.0635693843994,
+                "victims_in_radius": 1115.3779575061587,
+                "total_distance_moved": 3422.198576678885
+            }
+        }
+    ],
+    "multiKills": []
+}

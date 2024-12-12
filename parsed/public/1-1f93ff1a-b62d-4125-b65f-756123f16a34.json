@@ -1,0 +1,347 @@
+{
+    "demoInfo": {
+        "fileName": "1-1f93ff1a-b62d-4125-b65f-756123f16a34.dem",
+        "mapName": "de_anubis",
+        "date": "2024-12-11 01:48:43",
+        "aceKills": 0,
+        "quadKills": 2,
+        "multiKills": 0
+    },
+    "aceKills": [],
+    "quadKills": [
+        {
+            "roundNumber": 3,
+            "player": "Exzotiikk",
+            "killCount": 4,
+            "duration_in_ticks": 721,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "Exzotiikk",
+                        "steam64id": "76561199020832539",
+                        "team": "CT",
+                        "position": {
+                            "x": 127.4643325805664,
+                            "y": 1591.8980712890625,
+                            "z": -31.96875
+                        },
+                        "viewAngles": {
+                            "pitch": -0.145904541015625,
+                            "yaw": -82.61959075927734
+                        }
+                    },
+                    "victim": {
+                        "name": "bigdaDDy661",
+                        "steam64id": "76561198970945001",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 266.93780517578125,
+                            "y": 431.1107482910156,
+                            "z": -28.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 18500,
+                        "weapon": "awp",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 29.695987701416016,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Exzotiikk",
+                        "steam64id": "76561199020832539",
+                        "team": "CT",
+                        "position": {
+                            "x": 390.7882385253906,
+                            "y": 1477.2486572265625,
+                            "z": -5.00091552734375
+                        },
+                        "viewAngles": {
+                            "pitch": 0.438079833984375,
+                            "yaw": -114.17369842529297
+                        }
+                    },
+                    "victim": {
+                        "name": "Yasuoking",
+                        "steam64id": "76561198816698121",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 83.52971649169922,
+                            "y": 786.099853515625,
+                            "z": 2.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 18898,
+                        "weapon": "awp",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 19.2135009765625,
+                        "ticks_since_last_kill": 398,
+                        "distance_moved_since_last_kill": 288.4635708075767
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Exzotiikk",
+                        "steam64id": "76561199020832539",
+                        "team": "CT",
+                        "position": {
+                            "x": 380.3015441894531,
+                            "y": 1482.798828125,
+                            "z": -5.00469970703125
+                        },
+                        "viewAngles": {
+                            "pitch": 0.37457275390625,
+                            "yaw": -117.61962890625
+                        }
+                    },
+                    "victim": {
+                        "name": "BOTAlex11",
+                        "steam64id": "76561198347415425",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -101.93157958984375,
+                            "y": 552.94189453125,
+                            "z": 0.255218505859375
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 19011,
+                        "weapon": "awp",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": true,
+                        "distance_to_enemy": 26.60724639892578,
+                        "ticks_since_last_kill": 113,
+                        "distance_moved_since_last_kill": 11.8648712347527
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Exzotiikk",
+                        "steam64id": "76561199020832539",
+                        "team": "CT",
+                        "position": {
+                            "x": 133.30604553222656,
+                            "y": 981.2208862304688,
+                            "z": 22.3125
+                        },
+                        "viewAngles": {
+                            "pitch": 2.360687255859375,
+                            "yaw": -122.13981628417969
+                        }
+                    },
+                    "victim": {
+                        "name": "Ju1y",
+                        "steam64id": "76561199031691198",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -151.760498046875,
+                            "y": 526.5579833984375,
+                            "z": 0.25765371322631836
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 19221,
+                        "weapon": "fiveseven",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 13.545788764953613,
+                        "ticks_since_last_kill": 210,
+                        "distance_moved_since_last_kill": 559.7619472167786
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "awp",
+                    "fiveseven"
+                ],
+                "headshots": 1,
+                "wallbangs": 0,
+                "radius_moved": 421.83183212312287,
+                "victims_in_radius": 282.65321112654664,
+                "total_distance_moved": 860.090389259108
+            }
+        },
+        {
+            "roundNumber": 12,
+            "player": "-Saix_",
+            "killCount": 4,
+            "duration_in_ticks": 543,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "-Saix_",
+                        "steam64id": "76561198285037900",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1583.3404541015625,
+                            "y": 668.0681762695312,
+                            "z": 38.031253814697266
+                        },
+                        "viewAngles": {
+                            "pitch": 0.93487548828125,
+                            "yaw": 28.912582397460938
+                        }
+                    },
+                    "victim": {
+                        "name": "BOTAlex11",
+                        "steam64id": "76561198347415425",
+                        "team": "CT",
+                        "position": {
+                            "x": -639.8858032226562,
+                            "y": 1165.077880859375,
+                            "z": 32.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 74895,
+                        "weapon": "glock",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 27.08139419555664,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "-Saix_",
+                        "steam64id": "76561198285037900",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1592.333740234375,
+                            "y": 691.0263671875,
+                            "z": 38.031253814697266
+                        },
+                        "viewAngles": {
+                            "pitch": 1.4573974609375,
+                            "yaw": 22.06500244140625
+                        }
+                    },
+                    "victim": {
+                        "name": "Ju1y",
+                        "steam64id": "76561199031691198",
+                        "team": "CT",
+                        "position": {
+                            "x": -891.8191528320312,
+                            "y": 963.20849609375,
+                            "z": 35.031246185302734
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 75123,
+                        "weapon": "glock",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 19.084659576416016,
+                        "ticks_since_last_kill": 228,
+                        "distance_moved_since_last_kill": 24.656798772195476
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "-Saix_",
+                        "steam64id": "76561198285037900",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1569.3416748046875,
+                            "y": 639.5084838867188,
+                            "z": 38.031253814697266
+                        },
+                        "viewAngles": {
+                            "pitch": 5.472564697265625,
+                            "yaw": 28.885116577148438
+                        }
+                    },
+                    "victim": {
+                        "name": "Yasuoking",
+                        "steam64id": "76561198816698121",
+                        "team": "CT",
+                        "position": {
+                            "x": -1165.6036376953125,
+                            "y": 867.2903442382812,
+                            "z": 0.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 75142,
+                        "weapon": "glock",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 11.823936462402344,
+                        "ticks_since_last_kill": 19,
+                        "distance_moved_since_last_kill": 56.41566602031697
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "-Saix_",
+                        "steam64id": "76561198285037900",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1350.9669189453125,
+                            "y": 441.5187683105469,
+                            "z": 0.031250953674316406
+                        },
+                        "viewAngles": {
+                            "pitch": 1.815155029296875,
+                            "yaw": 71.619873046875
+                        }
+                    },
+                    "victim": {
+                        "name": "bigdaDDy661",
+                        "steam64id": "76561198970945001",
+                        "team": "CT",
+                        "position": {
+                            "x": -1190.609375,
+                            "y": 913.4447021484375,
+                            "z": 0.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 75438,
+                        "weapon": "glock",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 12.662553787231445,
+                        "ticks_since_last_kill": 296,
+                        "distance_moved_since_last_kill": 297.20609295237006
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "glock"
+                ],
+                "headshots": 2,
+                "wallbangs": 0,
+                "radius_moved": 243.20237388746554,
+                "victims_in_radius": 381.83253094244355,
+                "total_distance_moved": 378.2785577448825
+            }
+        }
+    ],
+    "multiKills": []
+}

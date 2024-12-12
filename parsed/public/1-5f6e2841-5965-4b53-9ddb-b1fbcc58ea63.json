@@ -1,0 +1,186 @@
+{
+    "demoInfo": {
+        "fileName": "1-5f6e2841-5965-4b53-9ddb-b1fbcc58ea63.dem",
+        "mapName": "de_inferno",
+        "date": "2024-12-11 01:50:28",
+        "aceKills": 0,
+        "quadKills": 1,
+        "multiKills": 0
+    },
+    "aceKills": [],
+    "quadKills": [
+        {
+            "roundNumber": 16,
+            "player": "coopergarry",
+            "killCount": 4,
+            "duration_in_ticks": 173,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "coopergarry",
+                        "steam64id": "76561199465658484",
+                        "team": "CT",
+                        "position": {
+                            "x": 242.88375854492188,
+                            "y": 2993.832275390625,
+                            "z": 161.53126525878906
+                        },
+                        "viewAngles": {
+                            "pitch": 1.9483642578125,
+                            "yaw": -50.52716064453125
+                        }
+                    },
+                    "victim": {
+                        "name": "stEvvv",
+                        "steam64id": "76561197988645493",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 759.0568237304688,
+                            "y": 2383.154296875,
+                            "z": 136.03146362304688
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 114367,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 20.639856338500977,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "coopergarry",
+                        "steam64id": "76561199465658484",
+                        "team": "CT",
+                        "position": {
+                            "x": 270.8825988769531,
+                            "y": 3015.540283203125,
+                            "z": 161.12388610839844
+                        },
+                        "viewAngles": {
+                            "pitch": 2.376129150390625,
+                            "yaw": -52.42778778076172
+                        }
+                    },
+                    "victim": {
+                        "name": "TimeTravel3r",
+                        "steam64id": "76561199196089267",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 892.2726440429688,
+                            "y": 2175.16259765625,
+                            "z": 136.3662872314453
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 114432,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 26.5640926361084,
+                        "ticks_since_last_kill": 65,
+                        "distance_moved_since_last_kill": 35.43075811915847
+                    },
+                    "assist": {
+                        "name": "Souljiaboii",
+                        "steam64id": "76561198249815986",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "coopergarry",
+                        "steam64id": "76561199465658484",
+                        "team": "CT",
+                        "position": {
+                            "x": 271.0722961425781,
+                            "y": 3015.69140625,
+                            "z": 161.1274871826172
+                        },
+                        "viewAngles": {
+                            "pitch": 2.49493408203125,
+                            "yaw": -52.736778259277344
+                        }
+                    },
+                    "victim": {
+                        "name": "Neva_Heart",
+                        "steam64id": "76561199016759474",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 817.679931640625,
+                            "y": 2353.018798828125,
+                            "z": 136.03146362304688
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 114438,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 21.96652603149414,
+                        "ticks_since_last_kill": 6,
+                        "distance_moved_since_last_kill": 0.24256173568375164
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "coopergarry",
+                        "steam64id": "76561199465658484",
+                        "team": "CT",
+                        "position": {
+                            "x": 327.5338439941406,
+                            "y": 3053.310302734375,
+                            "z": 163.41006469726562
+                        },
+                        "viewAngles": {
+                            "pitch": 5.179718017578125,
+                            "yaw": -49.315216064453125
+                        }
+                    },
+                    "victim": {
+                        "name": "FruityPebble",
+                        "steam64id": "76561198043080049",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 840.5206298828125,
+                            "y": 2465.39599609375,
+                            "z": 140.0843048095703
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 114540,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 19.828575134277344,
+                        "ticks_since_last_kill": 102,
+                        "distance_moved_since_last_kill": 67.88444533622399
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "ak47"
+                ],
+                "headshots": 2,
+                "wallbangs": 0,
+                "radius_moved": 59.864857942561045,
+                "victims_in_radius": 181.05021621794486,
+                "total_distance_moved": 103.55776519106621
+            }
+        }
+    ],
+    "multiKills": []
+}

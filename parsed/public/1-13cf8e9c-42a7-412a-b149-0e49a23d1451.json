@@ -1,0 +1,536 @@
+{
+    "demoInfo": {
+        "fileName": "1-13cf8e9c-42a7-412a-b149-0e49a23d1451.dem",
+        "mapName": "de_anubis",
+        "date": "2024-12-11 01:48:15",
+        "aceKills": 0,
+        "quadKills": 3,
+        "multiKills": 0
+    },
+    "aceKills": [],
+    "quadKills": [
+        {
+            "roundNumber": 3,
+            "player": "xannybars-",
+            "killCount": 4,
+            "duration_in_ticks": 3654,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "xannybars-",
+                        "steam64id": "76561199273864321",
+                        "team": "CT",
+                        "position": {
+                            "x": -215.80499267578125,
+                            "y": 566.9992065429688,
+                            "z": 16.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 5.339691162109375,
+                            "yaw": -55.06553649902344
+                        }
+                    },
+                    "victim": {
+                        "name": "DopeX",
+                        "steam64id": "76561198263125628",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 4.620179653167725,
+                            "y": 253.96824645996094,
+                            "z": 8.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 21352,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": true,
+                        "distance_to_enemy": 9.726603507995605,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "xannybars-",
+                        "steam64id": "76561199273864321",
+                        "team": "CT",
+                        "position": {
+                            "x": -725.3885498046875,
+                            "y": 1053.23681640625,
+                            "z": 32.03125
+                        },
+                        "viewAngles": {
+                            "pitch": -3.012664794921875,
+                            "yaw": 128.671875
+                        }
+                    },
+                    "victim": {
+                        "name": "bored3m",
+                        "steam64id": "76561199401516559",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -749.0183715820312,
+                            "y": 1090.807861328125,
+                            "z": 32.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 23458,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 1.3232765197753906,
+                        "ticks_since_last_kill": 2106,
+                        "distance_moved_since_last_kill": 704.5270860241683
+                    },
+                    "assist": {
+                        "name": "NTS",
+                        "steam64id": "76561198848460284",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "xannybars-",
+                        "steam64id": "76561199273864321",
+                        "team": "CT",
+                        "position": {
+                            "x": -698.0859375,
+                            "y": 1166.3687744140625,
+                            "z": 32.03125
+                        },
+                        "viewAngles": {
+                            "pitch": -0.54107666015625,
+                            "yaw": -149.17340087890625
+                        }
+                    },
+                    "victim": {
+                        "name": "Drewski",
+                        "steam64id": "76561198876049826",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1573.52587890625,
+                            "y": 653.6204833984375,
+                            "z": 38.031253814697266
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 24525,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 25.76978874206543,
+                        "ticks_since_last_kill": 1067,
+                        "distance_moved_since_last_kill": 116.37986321241972
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "xannybars-",
+                        "steam64id": "76561199273864321",
+                        "team": "CT",
+                        "position": {
+                            "x": -947.8973388671875,
+                            "y": 841.1228637695312,
+                            "z": 29.086828231811523
+                        },
+                        "viewAngles": {
+                            "pitch": -2.38128662109375,
+                            "yaw": 11.5631103515625
+                        }
+                    },
+                    "victim": {
+                        "name": "EloImposter",
+                        "steam64id": "76561198214974297",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -578.9150390625,
+                            "y": 916.276611328125,
+                            "z": 38.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 25006,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 9.614458084106445,
+                        "ticks_since_last_kill": 481,
+                        "distance_moved_since_last_kill": 410.12108975713187
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "m4a1_silencer"
+                ],
+                "headshots": 4,
+                "wallbangs": 0,
+                "radius_moved": 549.0289816426929,
+                "victims_in_radius": 870.0426701457804,
+                "total_distance_moved": 1231.02803899372
+            }
+        },
+        {
+            "roundNumber": 15,
+            "player": "EloImposter",
+            "killCount": 4,
+            "duration_in_ticks": 4521,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "EloImposter",
+                        "steam64id": "76561198214974297",
+                        "team": "CT",
+                        "position": {
+                            "x": -607.6984252929688,
+                            "y": 651.9520874023438,
+                            "z": 38.03125
+                        },
+                        "viewAngles": {
+                            "pitch": -0.4785919189453125,
+                            "yaw": -163.87001037597656
+                        }
+                    },
+                    "victim": {
+                        "name": "NTS",
+                        "steam64id": "76561198848460284",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1893.9998779296875,
+                            "y": 259.549072265625,
+                            "z": 58.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 96593,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 34.17457580566406,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "EloImposter",
+                        "steam64id": "76561198214974297",
+                        "team": "CT",
+                        "position": {
+                            "x": -641.996826171875,
+                            "y": 781.625,
+                            "z": 38.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 6.677276611328125,
+                            "yaw": 169.46856689453125
+                        }
+                    },
+                    "victim": {
+                        "name": "m0gura",
+                        "steam64id": "76561199484515832",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1169.021728515625,
+                            "y": 863.6028442382812,
+                            "z": 0.031249046325683594
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 96754,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 13.5497465133667,
+                        "ticks_since_last_kill": 161,
+                        "distance_moved_since_last_kill": 134.1321906344989
+                    },
+                    "assist": {
+                        "name": "bored3m",
+                        "steam64id": "76561199401516559",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "EloImposter",
+                        "steam64id": "76561198214974297",
+                        "team": "CT",
+                        "position": {
+                            "x": -1533.0498046875,
+                            "y": 469.3413391113281,
+                            "z": 0.031248092651367188
+                        },
+                        "viewAngles": {
+                            "pitch": 6.4857177734375,
+                            "yaw": -7.9959869384765625
+                        }
+                    },
+                    "victim": {
+                        "name": "xannybars-",
+                        "steam64id": "76561199273864321",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -705.8600463867188,
+                            "y": 360.4871520996094,
+                            "z": -55.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 99120,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 21.240068435668945,
+                        "ticks_since_last_kill": 2366,
+                        "distance_moved_since_last_kill": 944.9552875795533
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "EloImposter",
+                        "steam64id": "76561198214974297",
+                        "team": "CT",
+                        "position": {
+                            "x": -792.3392944335938,
+                            "y": 1140.6767578125,
+                            "z": 36.031246185302734
+                        },
+                        "viewAngles": {
+                            "pitch": 5.98309326171875,
+                            "yaw": -135.22488403320312
+                        }
+                    },
+                    "victim": {
+                        "name": "rina_solt",
+                        "steam64id": "76561199067454740",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1153.560791015625,
+                            "y": 774.190673828125,
+                            "z": -3.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 101114,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 13.15858268737793,
+                        "ticks_since_last_kill": 1994,
+                        "distance_moved_since_last_kill": 1000.3196010605565
+                    },
+                    "assist": {
+                        "name": "DopeX",
+                        "steam64id": "76561198263125628",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "m4a1_silencer"
+                ],
+                "headshots": 1,
+                "wallbangs": 0,
+                "radius_moved": 703.183495826835,
+                "victims_in_radius": 732.4456837145029,
+                "total_distance_moved": 2079.407079274609
+            }
+        },
+        {
+            "roundNumber": 16,
+            "player": "DopeX",
+            "killCount": 4,
+            "duration_in_ticks": 1322,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "DopeX",
+                        "steam64id": "76561198263125628",
+                        "team": "CT",
+                        "position": {
+                            "x": -32.5068359375,
+                            "y": 847.3579711914062,
+                            "z": 0.2665443420410156
+                        },
+                        "viewAngles": {
+                            "pitch": 6.501495361328125,
+                            "yaw": -93.8397216796875
+                        }
+                    },
+                    "victim": {
+                        "name": "nawS",
+                        "steam64id": "76561198839639870",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -102.306396484375,
+                            "y": -153.95953369140625,
+                            "z": 0.11165380477905273
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 104855,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 25.499130249023438,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    },
+                    "assist": {
+                        "name": "rhetorikk",
+                        "steam64id": "76561198277660300",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "DopeX",
+                        "steam64id": "76561198263125628",
+                        "team": "CT",
+                        "position": {
+                            "x": 2.300825595855713,
+                            "y": 843.201904296875,
+                            "z": 0.2665443420410156
+                        },
+                        "viewAngles": {
+                            "pitch": 0.73333740234375,
+                            "yaw": -103.0301284790039
+                        }
+                    },
+                    "victim": {
+                        "name": "NTS",
+                        "steam64id": "76561198848460284",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -265.68310546875,
+                            "y": -320.397216796875,
+                            "z": 0.26526355743408203
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 104904,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 30.331552505493164,
+                        "ticks_since_last_kill": 49,
+                        "distance_moved_since_last_kill": 35.054902559449076
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "DopeX",
+                        "steam64id": "76561198263125628",
+                        "team": "CT",
+                        "position": {
+                            "x": 8.693857192993164,
+                            "y": 841.4461059570312,
+                            "z": 0.2665443420410156
+                        },
+                        "viewAngles": {
+                            "pitch": 3.3240509033203125,
+                            "yaw": -102.19894409179688
+                        }
+                    },
+                    "victim": {
+                        "name": "rina_solt",
+                        "steam64id": "76561199067454740",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -235.87103271484375,
+                            "y": -250.9090576171875,
+                            "z": 0.26633358001708984
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 104968,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 28.432437896728516,
+                        "ticks_since_last_kill": 64,
+                        "distance_moved_since_last_kill": 6.629757221210736
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "DopeX",
+                        "steam64id": "76561198263125628",
+                        "team": "CT",
+                        "position": {
+                            "x": -96.7086181640625,
+                            "y": 550.1893310546875,
+                            "z": 0.2558255195617676
+                        },
+                        "viewAngles": {
+                            "pitch": 0.58673095703125,
+                            "yaw": -87.24071502685547
+                        }
+                    },
+                    "victim": {
+                        "name": "xannybars-",
+                        "steam64id": "76561199273864321",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -61.51544189453125,
+                            "y": -258.83837890625,
+                            "z": 0.20659685134887695
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 106177,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 20.569869995117188,
+                        "ticks_since_last_kill": 1209,
+                        "distance_moved_since_last_kill": 309.7421360628909
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "m4a1_silencer"
+                ],
+                "headshots": 1,
+                "wallbangs": 0,
+                "radius_moved": 230.3646903239527,
+                "victims_in_radius": 124.09404804895745,
+                "total_distance_moved": 351.42679584355074
+            }
+        }
+    ],
+    "multiKills": []
+}

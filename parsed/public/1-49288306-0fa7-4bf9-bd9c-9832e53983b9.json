@@ -1,0 +1,192 @@
+{
+    "demoInfo": {
+        "fileName": "1-49288306-0fa7-4bf9-bd9c-9832e53983b9.dem",
+        "mapName": "de_dust2",
+        "date": "2024-12-11 01:49:40",
+        "aceKills": 0,
+        "quadKills": 1,
+        "multiKills": 0
+    },
+    "aceKills": [],
+    "quadKills": [
+        {
+            "roundNumber": 4,
+            "player": "lil-JUNIOR",
+            "killCount": 4,
+            "duration_in_ticks": 2048,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "lil-JUNIOR",
+                        "steam64id": "76561198812935200",
+                        "team": "CT",
+                        "position": {
+                            "x": 1275.6558837890625,
+                            "y": 1223.0321044921875,
+                            "z": 0.49600768089294434
+                        },
+                        "viewAngles": {
+                            "pitch": 1.3822174072265625,
+                            "yaw": -156.32308959960938
+                        }
+                    },
+                    "victim": {
+                        "name": "Cocodyy666",
+                        "steam64id": "76561199178532702",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 838.078857421875,
+                            "y": 1041.518798828125,
+                            "z": 0.6823124885559082
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 31359,
+                        "weapon": "awp",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 12.34407901763916,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    },
+                    "assist": {
+                        "name": "K4RTTER",
+                        "steam64id": "76561199136823789",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "lil-JUNIOR",
+                        "steam64id": "76561198812935200",
+                        "team": "CT",
+                        "position": {
+                            "x": 1283.9676513671875,
+                            "y": 1224.6043701171875,
+                            "z": 1.0312514305114746
+                        },
+                        "viewAngles": {
+                            "pitch": 1.74407958984375,
+                            "yaw": -150.72796630859375
+                        }
+                    },
+                    "victim": {
+                        "name": "ptjox369",
+                        "steam64id": "76561199158348971",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 721.5159301757812,
+                            "y": 914.9188842773438,
+                            "z": -0.28106689453125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 31482,
+                        "weapon": "awp",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": true,
+                        "distance_to_enemy": 16.315353393554688,
+                        "ticks_since_last_kill": 123,
+                        "distance_moved_since_last_kill": 8.476083136675351
+                    },
+                    "assist": {
+                        "name": "K4RTTER",
+                        "steam64id": "76561199136823789",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "lil-JUNIOR",
+                        "steam64id": "76561198812935200",
+                        "team": "CT",
+                        "position": {
+                            "x": 1304.4541015625,
+                            "y": 1878.5745849609375,
+                            "z": 1.03125
+                        },
+                        "viewAngles": {
+                            "pitch": -0.328216552734375,
+                            "yaw": -92.6971435546875
+                        }
+                    },
+                    "victim": {
+                        "name": "SweetJP300",
+                        "steam64id": "76561199733871108",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1284.8192138671875,
+                            "y": 1129.7501220703125,
+                            "z": 0.11696743965148926
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 31748,
+                        "weapon": "awp",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 19.022964477539062,
+                        "ticks_since_last_kill": 266,
+                        "distance_moved_since_last_kill": 654.2910182360641
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "lil-JUNIOR",
+                        "steam64id": "76561198812935200",
+                        "team": "CT",
+                        "position": {
+                            "x": 1263.6304931640625,
+                            "y": 2967.18212890625,
+                            "z": 128.13265991210938
+                        },
+                        "viewAngles": {
+                            "pitch": 10.554428100585938,
+                            "yaw": -84.03064727783203
+                        }
+                    },
+                    "victim": {
+                        "name": "7u_k",
+                        "steam64id": "76561198252555572",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1360.7098388671875,
+                            "y": 2201.07177734375,
+                            "z": -2.369873046875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 33407,
+                        "weapon": "awp",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 19.98586082458496,
+                        "ticks_since_last_kill": 1659,
+                        "distance_moved_since_last_kill": 1096.7623808915769
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "awp"
+                ],
+                "headshots": 0,
+                "wallbangs": 0,
+                "radius_moved": 1147.9560899373835,
+                "victims_in_radius": 932.1172305862648,
+                "total_distance_moved": 1759.5294822643164
+            }
+        }
+    ],
+    "multiKills": []
+}

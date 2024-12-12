@@ -1,0 +1,392 @@
+{
+    "demoInfo": {
+        "fileName": "1-81eecbc7-9c60-42c7-b5cd-4fcf77335d71.dem",
+        "mapName": "de_mirage",
+        "date": "2024-12-11 01:51:37",
+        "aceKills": 1,
+        "quadKills": 1,
+        "multiKills": 0
+    },
+    "aceKills": [
+        {
+            "roundNumber": 13,
+            "player": "ryboi",
+            "killCount": 5,
+            "duration_in_ticks": 1947,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "ryboi",
+                        "steam64id": "76561198242132096",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 89.75481414794922,
+                            "y": -1447.0772705078125,
+                            "z": -175.96875
+                        },
+                        "viewAngles": {
+                            "pitch": -12.59033203125,
+                            "yaw": -102.93365478515625
+                        }
+                    },
+                    "victim": {
+                        "name": "ussrvodka",
+                        "steam64id": "76561199526458555",
+                        "team": "CT",
+                        "position": {
+                            "x": -10.303466796875,
+                            "y": -1937.26416015625,
+                            "z": -39.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 110446,
+                        "weapon": "p250",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 13.195893287658691,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "ryboi",
+                        "steam64id": "76561198242132096",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 6.651254177093506,
+                            "y": -1432.2091064453125,
+                            "z": -170.23370361328125
+                        },
+                        "viewAngles": {
+                            "pitch": 2.487030029296875,
+                            "yaw": -108.02410125732422
+                        }
+                    },
+                    "victim": {
+                        "name": "Froggy157",
+                        "steam64id": "76561197965556401",
+                        "team": "CT",
+                        "position": {
+                            "x": -225.81622314453125,
+                            "y": -2141.888671875,
+                            "z": -170.791748046875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 110557,
+                        "weapon": "p250",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 18.968929290771484,
+                        "ticks_since_last_kill": 111,
+                        "distance_moved_since_last_kill": 84.61769755480732
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "ryboi",
+                        "steam64id": "76561198242132096",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -518.2810668945312,
+                            "y": -1588.5146484375,
+                            "z": -39.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 25.063934326171875,
+                            "yaw": 84.96035766601562
+                        }
+                    },
+                    "victim": {
+                        "name": "Bert356",
+                        "steam64id": "76561198119729732",
+                        "team": "CT",
+                        "position": {
+                            "x": -509.17364501953125,
+                            "y": -1406.9984130859375,
+                            "z": -103.1612548828125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 110914,
+                        "weapon": "p250",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 4.946355819702148,
+                        "ticks_since_last_kill": 357,
+                        "distance_moved_since_last_kill": 562.9869645941948
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "ryboi",
+                        "steam64id": "76561198242132096",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -372.38421630859375,
+                            "y": -1936.0718994140625,
+                            "z": -174.672607421875
+                        },
+                        "viewAngles": {
+                            "pitch": 0.932464599609375,
+                            "yaw": 139.51779174804688
+                        }
+                    },
+                    "victim": {
+                        "name": "--_m0NESY_--",
+                        "steam64id": "76561198098087761",
+                        "team": "CT",
+                        "position": {
+                            "x": -1221.4541015625,
+                            "y": -1223.9075927734375,
+                            "z": -167.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 112085,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 28.149044036865234,
+                        "ticks_since_last_kill": 1171,
+                        "distance_moved_since_last_kill": 400.28372802502656
+                    },
+                    "assist": {
+                        "name": "Relic00",
+                        "steam64id": "76561197966108521",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "ryboi",
+                        "steam64id": "76561198242132096",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -444.5701904296875,
+                            "y": -2058.052978515625,
+                            "z": -179.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 1.282318115234375,
+                            "yaw": -145.834228515625
+                        }
+                    },
+                    "victim": {
+                        "name": "-_-Khromov",
+                        "steam64id": "76561199555839341",
+                        "team": "CT",
+                        "position": {
+                            "x": -1076.5570068359375,
+                            "y": -2486.691650390625,
+                            "z": -167.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 112393,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 19.39531135559082,
+                        "ticks_since_last_kill": 308,
+                        "distance_moved_since_last_kill": 141.83880866956227
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "m4a1_silencer",
+                    "p250"
+                ],
+                "headshots": 1,
+                "wallbangs": 0,
+                "radius_moved": 418.1738601827382,
+                "victims_in_radius": 869.3266146543127,
+                "total_distance_moved": 1189.727198843591
+            }
+        }
+    ],
+    "quadKills": [
+        {
+            "roundNumber": 8,
+            "player": "Reac23",
+            "killCount": 4,
+            "duration_in_ticks": 1183,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "Reac23",
+                        "steam64id": "76561197989606284",
+                        "team": "CT",
+                        "position": {
+                            "x": -363.00970458984375,
+                            "y": -2212.05322265625,
+                            "z": -172.6309814453125
+                        },
+                        "viewAngles": {
+                            "pitch": -7.310028076171875,
+                            "yaw": 73.21734619140625
+                        }
+                    },
+                    "victim": {
+                        "name": "ussrvodka",
+                        "steam64id": "76561199526458555",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -138.48577880859375,
+                            "y": -1450.702880859375,
+                            "z": -69.17535400390625
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 58481,
+                        "weapon": "deagle",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 20.329116821289062,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Reac23",
+                        "steam64id": "76561197989606284",
+                        "team": "CT",
+                        "position": {
+                            "x": -278.47796630859375,
+                            "y": -2187.122314453125,
+                            "z": -171.090087890625
+                        },
+                        "viewAngles": {
+                            "pitch": -7.8723907470703125,
+                            "yaw": 45.16375732421875
+                        }
+                    },
+                    "victim": {
+                        "name": "--_m0NESY_--",
+                        "steam64id": "76561198098087761",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -163.259521484375,
+                            "y": -2070.22216796875,
+                            "z": -167.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 58805,
+                        "weapon": "deagle",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 4.475955963134766,
+                        "ticks_since_last_kill": 324,
+                        "distance_moved_since_last_kill": 88.14499029229778
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Reac23",
+                        "steam64id": "76561197989606284",
+                        "team": "CT",
+                        "position": {
+                            "x": -388.519287109375,
+                            "y": -2127.21630859375,
+                            "z": -179.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 2.37408447265625,
+                            "yaw": 83.5894775390625
+                        }
+                    },
+                    "victim": {
+                        "name": "-_-Khromov",
+                        "steam64id": "76561199555839341",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -330.27978515625,
+                            "y": -1518.334228515625,
+                            "z": -165.16314697265625
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 59566,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 15.513508796691895,
+                        "ticks_since_last_kill": 761,
+                        "distance_moved_since_last_kill": 125.60514504771042
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Reac23",
+                        "steam64id": "76561197989606284",
+                        "team": "CT",
+                        "position": {
+                            "x": -420.074951171875,
+                            "y": -2079.8759765625,
+                            "z": -179.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 2.81146240234375,
+                            "yaw": 47.91343688964844
+                        }
+                    },
+                    "victim": {
+                        "name": "Froggy157",
+                        "steam64id": "76561197965556401",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -252.6676025390625,
+                            "y": -1885.7679443359375,
+                            "z": -167.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 59664,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 6.517817497253418,
+                        "ticks_since_last_kill": 98,
+                        "distance_moved_since_last_kill": 56.89347037450211
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "deagle",
+                    "ak47"
+                ],
+                "headshots": 3,
+                "wallbangs": 0,
+                "radius_moved": 92.02472343212477,
+                "victims_in_radius": 344.81394288982193,
+                "total_distance_moved": 270.64360571451033
+            }
+        }
+    ],
+    "multiKills": []
+}

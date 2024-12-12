@@ -1,0 +1,66 @@
+name: Test
+
+on:
+  pull_request_target:
+    branches:
+      - main
+
+jobs:
+  build_and_test:
+    name: Test Parser Rust
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: src/parser
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Set up Rust toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+
+      - name: Build in src/parser directory
+        run: cargo test --release
+
+  test_python_bindings:
+    name: Test Python Bindings
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12"]
+    defaults:
+      run:
+        working-directory: src/python
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          
+      - name: Print commit hash
+        run: git rev-parse HEAD
+
+
+      - name: Set up Rust toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Run signature test
+        working-directory: ./src/python
+        run: |
+          python3 -m venv .venv
+          source .venv/bin/activate
+          pip install pytest maturin patchelf
+
+          maturin develop
+          python3 tests/signature_tests.py

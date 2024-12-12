@@ -1,0 +1,186 @@
+{
+    "demoInfo": {
+        "fileName": "1-884367fb-b068-491f-8729-b873370e9125.dem",
+        "mapName": "de_dust2",
+        "date": "2024-12-11 01:52:00",
+        "aceKills": 0,
+        "quadKills": 1,
+        "multiKills": 0
+    },
+    "aceKills": [],
+    "quadKills": [
+        {
+            "roundNumber": 8,
+            "player": "IRS",
+            "killCount": 4,
+            "duration_in_ticks": 2462,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "IRS",
+                        "steam64id": "76561198881776209",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -422.88037109375,
+                            "y": 2238.49169921875,
+                            "z": -119.42388916015625
+                        },
+                        "viewAngles": {
+                            "pitch": -2.898681640625,
+                            "yaw": -5.373687744140625
+                        }
+                    },
+                    "victim": {
+                        "name": "DownBadwick",
+                        "steam64id": "76561198116112085",
+                        "team": "CT",
+                        "position": {
+                            "x": 1154.160888671875,
+                            "y": 2072.66064453125,
+                            "z": 1.3518238067626953
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 53724,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": true,
+                        "distance_to_enemy": 40.363975524902344,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "IRS",
+                        "steam64id": "76561198881776209",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1331.27587890625,
+                            "y": 2671.610595703125,
+                            "z": 130.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 7.96612548828125,
+                            "yaw": -123.78776550292969
+                        }
+                    },
+                    "victim": {
+                        "name": "FOLKBLUE",
+                        "steam64id": "76561198367947301",
+                        "team": "CT",
+                        "position": {
+                            "x": -2002.787841796875,
+                            "y": 1654.9932861328125,
+                            "z": 31.884666442871094
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 54235,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 31.02965545654297,
+                        "ticks_since_last_kill": 511,
+                        "distance_moved_since_last_kill": 1036.8231496061348
+                    },
+                    "assist": {
+                        "name": "impuLsive",
+                        "steam64id": "76561198195899562",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "IRS",
+                        "steam64id": "76561198881776209",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1533.77685546875,
+                            "y": 2595.593505859375,
+                            "z": 3.678382158279419
+                        },
+                        "viewAngles": {
+                            "pitch": 4.693572998046875,
+                            "yaw": -103.41121673583984
+                        }
+                    },
+                    "victim": {
+                        "name": "1SECRETS",
+                        "steam64id": "76561197961507224",
+                        "team": "CT",
+                        "position": {
+                            "x": -1588.06201171875,
+                            "y": 2318.610595703125,
+                            "z": -1.82958984375
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 55286,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 7.171445846557617,
+                        "ticks_since_last_kill": 1051,
+                        "distance_moved_since_last_kill": 250.5000811754484
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "IRS",
+                        "steam64id": "76561198881776209",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1373.8199462890625,
+                            "y": 2122.8212890625,
+                            "z": 2.4736990928649902
+                        },
+                        "viewAngles": {
+                            "pitch": 2.393646240234375,
+                            "yaw": -118.17169189453125
+                        }
+                    },
+                    "victim": {
+                        "name": "_McDavid",
+                        "steam64id": "76561198018673400",
+                        "team": "CT",
+                        "position": {
+                            "x": -1631.8446044921875,
+                            "y": 1647.5540771484375,
+                            "z": 2.284512996673584
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 56186,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 13.737248420715332,
+                        "ticks_since_last_kill": 900,
+                        "distance_moved_since_last_kill": 499.1004237932866
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "ak47"
+                ],
+                "headshots": 2,
+                "wallbangs": 0,
+                "radius_moved": 771.4345163149084,
+                "victims_in_radius": 2176.426264023053,
+                "total_distance_moved": 1786.42365457487
+            }
+        }
+    ],
+    "multiKills": []
+}

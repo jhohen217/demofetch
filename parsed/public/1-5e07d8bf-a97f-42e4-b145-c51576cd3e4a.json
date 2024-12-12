@@ -1,0 +1,370 @@
+{
+    "demoInfo": {
+        "fileName": "1-5e07d8bf-a97f-42e4-b145-c51576cd3e4a.dem",
+        "mapName": "de_vertigo",
+        "date": "2024-12-11 01:50:25",
+        "aceKills": 0,
+        "quadKills": 2,
+        "multiKills": 0
+    },
+    "aceKills": [],
+    "quadKills": [
+        {
+            "roundNumber": 2,
+            "player": "MicaDee",
+            "killCount": 4,
+            "duration_in_ticks": 1910,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "MicaDee",
+                        "steam64id": "76561198152200463",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -2272.221435546875,
+                            "y": 416.81207275390625,
+                            "z": 11744.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 9.212371826171875,
+                            "yaw": 75.7469482421875
+                        }
+                    },
+                    "victim": {
+                        "name": "Femb0yz",
+                        "steam64id": "76561199054948139",
+                        "team": "CT",
+                        "position": {
+                            "x": -2117.754638671875,
+                            "y": 1044.62353515625,
+                            "z": 11748.6513671875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 18451,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 16.422147750854492,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "MicaDee",
+                        "steam64id": "76561198152200463",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -2451.933349609375,
+                            "y": 770.9511108398438,
+                            "z": 11744.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 1.162139892578125,
+                            "yaw": -10.09197998046875
+                        }
+                    },
+                    "victim": {
+                        "name": "Jonto_",
+                        "steam64id": "76561198156334130",
+                        "team": "CT",
+                        "position": {
+                            "x": -2044.123291015625,
+                            "y": 692.2494506835938,
+                            "z": 11776.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 19225,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 10.580665588378906,
+                        "ticks_since_last_kill": 774,
+                        "distance_moved_since_last_kill": 397.1282291054622
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "MicaDee",
+                        "steam64id": "76561198152200463",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -2255.831298828125,
+                            "y": 925.0180053710938,
+                            "z": 11744.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 5.096282958984375,
+                            "yaw": -79.77378845214844
+                        }
+                    },
+                    "victim": {
+                        "name": "mortelelk900",
+                        "steam64id": "76561199134262484",
+                        "team": "CT",
+                        "position": {
+                            "x": -2211.23388671875,
+                            "y": 538.03369140625,
+                            "z": 11757.517578125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 19679,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": true,
+                        "distance_to_enemy": 9.942869186401367,
+                        "ticks_since_last_kill": 454,
+                        "distance_moved_since_last_kill": 249.3844869095014
+                    },
+                    "assist": {
+                        "name": "3do1",
+                        "steam64id": "76561199435483045",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "MicaDee",
+                        "steam64id": "76561198152200463",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1713.031494140625,
+                            "y": 1096.96875,
+                            "z": 11755.9208984375
+                        },
+                        "viewAngles": {
+                            "pitch": -0.210113525390625,
+                            "yaw": -26.40289306640625
+                        }
+                    },
+                    "victim": {
+                        "name": "primaryfight",
+                        "steam64id": "76561198143265710",
+                        "team": "CT",
+                        "position": {
+                            "x": -1556.9490966796875,
+                            "y": 1014.340576171875,
+                            "z": 11776.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 20361,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 4.487406253814697,
+                        "ticks_since_last_kill": 682,
+                        "distance_moved_since_last_kill": 569.5086042257753
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "ak47"
+                ],
+                "headshots": 1,
+                "wallbangs": 0,
+                "radius_moved": 546.4735138711061,
+                "victims_in_radius": 467.02592728326886,
+                "total_distance_moved": 1216.021320240739
+            }
+        },
+        {
+            "roundNumber": 15,
+            "player": "escalati0n",
+            "killCount": 4,
+            "duration_in_ticks": 1619,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "escalati0n",
+                        "steam64id": "76561198121456210",
+                        "team": "CT",
+                        "position": {
+                            "x": -251.32696533203125,
+                            "y": -297.21734619140625,
+                            "z": 11776.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 2.001922607421875,
+                            "yaw": -78.84098052978516
+                        }
+                    },
+                    "victim": {
+                        "name": "mortelelk900",
+                        "steam64id": "76561199134262484",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -62.00152587890625,
+                            "y": -1134.5076904296875,
+                            "z": 11776.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 95629,
+                        "weapon": "negev",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 21.738168716430664,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    },
+                    "assist": {
+                        "name": "3do1",
+                        "steam64id": "76561199435483045",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "escalati0n",
+                        "steam64id": "76561198121456210",
+                        "team": "CT",
+                        "position": {
+                            "x": -210.235595703125,
+                            "y": -299.4478759765625,
+                            "z": 11776.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 3.889495849609375,
+                            "yaw": -102.1786880493164
+                        }
+                    },
+                    "victim": {
+                        "name": "primaryfight",
+                        "steam64id": "76561198143265710",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -363.17071533203125,
+                            "y": -813.789306640625,
+                            "z": 11787.21484375
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 95683,
+                        "weapon": "negev",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": true,
+                        "distance_to_enemy": 14.038002014160156,
+                        "ticks_since_last_kill": 54,
+                        "distance_moved_since_last_kill": 41.1518641266938
+                    },
+                    "assist": {
+                        "name": "MicaDee",
+                        "steam64id": "76561198152200463",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "escalati0n",
+                        "steam64id": "76561198121456210",
+                        "team": "CT",
+                        "position": {
+                            "x": -95.97479248046875,
+                            "y": -482.8656005859375,
+                            "z": 11904.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 41.355621337890625,
+                            "yaw": -87.53562927246094
+                        }
+                    },
+                    "victim": {
+                        "name": "Jonto_",
+                        "steam64id": "76561198156334130",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -72.5587158203125,
+                            "y": -697.9619750976562,
+                            "z": 11776.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 96100,
+                        "weapon": "negev",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 6.042137145996094,
+                        "ticks_since_last_kill": 417,
+                        "distance_moved_since_last_kill": 251.16049222353243
+                    },
+                    "assist": {
+                        "name": "3do1",
+                        "steam64id": "76561199435483045",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "escalati0n",
+                        "steam64id": "76561198121456210",
+                        "team": "CT",
+                        "position": {
+                            "x": 73.96661376953125,
+                            "y": -70.6890869140625,
+                            "z": 11787.9208984375
+                        },
+                        "viewAngles": {
+                            "pitch": 23.10870361328125,
+                            "yaw": 139.5888671875
+                        }
+                    },
+                    "victim": {
+                        "name": "yarmz",
+                        "steam64id": "76561199552509277",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 43.80274200439453,
+                            "y": -38.11297607421875,
+                            "z": 11783.3740234375
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 97248,
+                        "weapon": "negev",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 1.0595771074295044,
+                        "ticks_since_last_kill": 1148,
+                        "distance_moved_since_last_kill": 460.707253818405
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "negev"
+                ],
+                "headshots": 0,
+                "wallbangs": 0,
+                "radius_moved": 292.46157821938897,
+                "victims_in_radius": 652.2342767685199,
+                "total_distance_moved": 753.0196101686313
+            }
+        }
+    ],
+    "multiKills": []
+}

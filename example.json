@@ -1,0 +1,74 @@
+{
+    "demoInfo": {
+      "fileName": "example_demo.dem",
+      "mapName": "de_dust2",
+      "date": "2024-12-08"
+    },
+    "kills": [
+      {
+        "roundNumber": 1,
+        "attacker": {
+          "name": "Player1",
+          "steam64id": "76561198000000001",
+          "position": {
+            "x": 123.45,
+            "y": 678.90,
+            "z": -12.34
+          },
+          "viewAngles": {
+            "x": 90.0,
+            "y": 180.0,
+            "z": 0.0
+          },
+          "weapon": "AK-47"
+        },
+        "victim": {
+          "name": "Player2",
+          "steam64id": "76561198000000002",
+          "position": {
+            "x": 200.45,
+            "y": 400.90,
+            "z": -5.67
+          }
+        },
+        "killDetails": {
+          "tick": 123456,
+          "penetrationKill": true,
+          "headshot": true
+        }
+      },
+      {
+        "roundNumber": 1,
+        "attacker": {
+          "name": "Player1",
+          "steam64id": "76561198000000001",
+          "position": {
+            "x": 130.00,
+            "y": 700.00,
+            "z": -10.00
+          },
+          "viewAngles": {
+            "x": 88.0,
+            "y": 179.0,
+            "z": 1.0
+          },
+          "weapon": "AK-47"
+        },
+        "victim": {
+          "name": "Player3",
+          "steam64id": "76561198000000003",
+          "position": {
+            "x": 300.00,
+            "y": 450.00,
+            "z": -10.00
+          }
+        },
+        "killDetails": {
+          "tick": 123460,
+          "penetrationKill": false,
+          "headshot": false
+        }
+      }
+    ]
+  }
+  

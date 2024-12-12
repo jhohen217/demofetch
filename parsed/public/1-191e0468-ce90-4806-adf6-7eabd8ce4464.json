@@ -1,0 +1,986 @@
+{
+    "demoInfo": {
+        "fileName": "1-191e0468-ce90-4806-adf6-7eabd8ce4464.dem",
+        "mapName": "de_anubis",
+        "date": "2024-12-09 22:02:05",
+        "aceKills": 2,
+        "quadKills": 3,
+        "multiKills": 0
+    },
+    "aceKills": [
+        {
+            "roundNumber": 13,
+            "player": "fawking",
+            "killCount": 5,
+            "duration_in_ticks": 525,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "fawking",
+                        "steam64id": "76561198813524125",
+                        "team": "CT",
+                        "position": {
+                            "x": -1242.03662109375,
+                            "y": 429.467041015625,
+                            "z": 1.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 7.094085693359375,
+                            "yaw": -174.46392822265625
+                        }
+                    },
+                    "victim": {
+                        "name": "Jzeroz",
+                        "steam64id": "76561199557719879",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1321.1995849609375,
+                            "y": 419.702880859375,
+                            "z": 17.171875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 82871,
+                        "weapon": "mp9",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 2.539186477661133,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    },
+                    "assist": {
+                        "name": "Soulfulsalmo",
+                        "steam64id": "76561198302881720",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "fawking",
+                        "steam64id": "76561198813524125",
+                        "team": "CT",
+                        "position": {
+                            "x": -1230.3380126953125,
+                            "y": 373.59765625,
+                            "z": -6.96875
+                        },
+                        "viewAngles": {
+                            "pitch": -1.4220428466796875,
+                            "yaw": 154.27035522460938
+                        }
+                    },
+                    "victim": {
+                        "name": "-itachi-_",
+                        "steam64id": "76561198155131535",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1416.707763671875,
+                            "y": 449.8183288574219,
+                            "z": 55.390625
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 82920,
+                        "weapon": "mp9",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 5.398618698120117,
+                        "ticks_since_last_kill": 49,
+                        "distance_moved_since_last_kill": 57.6389242834167
+                    },
+                    "assist": {
+                        "name": "ironsight1",
+                        "steam64id": "76561199467634941",
+                        "team": "CT",
+                        "flashAssist": true
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "fawking",
+                        "steam64id": "76561198813524125",
+                        "team": "CT",
+                        "position": {
+                            "x": -1262.93505859375,
+                            "y": 348.5870361328125,
+                            "z": -6.96875
+                        },
+                        "viewAngles": {
+                            "pitch": -2.6428985595703125,
+                            "yaw": 167.77804565429688
+                        }
+                    },
+                    "victim": {
+                        "name": "Xcesv",
+                        "steam64id": "76561199011128273",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1395.5394287109375,
+                            "y": 369.74749755859375,
+                            "z": 0.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 83006,
+                        "weapon": "usp_silencer",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 3.6629793643951416,
+                        "ticks_since_last_kill": 86,
+                        "distance_moved_since_last_kill": 41.086476119899906
+                    },
+                    "assist": {
+                        "name": "ironsight1",
+                        "steam64id": "76561199467634941",
+                        "team": "CT",
+                        "flashAssist": true
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "fawking",
+                        "steam64id": "76561198813524125",
+                        "team": "CT",
+                        "position": {
+                            "x": -1192.4971923828125,
+                            "y": 315.8983459472656,
+                            "z": -6.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 0.64923095703125,
+                            "yaw": 141.040771484375
+                        }
+                    },
+                    "victim": {
+                        "name": "theDuenDONKK",
+                        "steam64id": "76561199575367082",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1556.25927734375,
+                            "y": 613.93017578125,
+                            "z": 38.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 83168,
+                        "weapon": "usp_silencer",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 11.57308292388916,
+                        "ticks_since_last_kill": 162,
+                        "distance_moved_since_last_kill": 77.65335448257595
+                    },
+                    "assist": {
+                        "name": "ironsight1",
+                        "steam64id": "76561199467634941",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "fawking",
+                        "steam64id": "76561198813524125",
+                        "team": "CT",
+                        "position": {
+                            "x": -1301.85302734375,
+                            "y": 467.5476379394531,
+                            "z": 0.031250953674316406
+                        },
+                        "viewAngles": {
+                            "pitch": -2.36480712890625,
+                            "yaw": -82.4575424194336
+                        }
+                    },
+                    "victim": {
+                        "name": "Steaks_",
+                        "steam64id": "76561198067811114",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1277.566162109375,
+                            "y": 263.47076416015625,
+                            "z": -7.375
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 83396,
+                        "weapon": "usp_silencer",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 5.285982131958008,
+                        "ticks_since_last_kill": 228,
+                        "distance_moved_since_last_kill": 187.09678355088573
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "usp_silencer",
+                    "mp9"
+                ],
+                "headshots": 3,
+                "wallbangs": 0,
+                "radius_moved": 98.12205293524862,
+                "victims_in_radius": 251.265697894353,
+                "total_distance_moved": 363.47553843677827
+            }
+        },
+        {
+            "roundNumber": 28,
+            "player": "ironsight1",
+            "killCount": 5,
+            "duration_in_ticks": 3541,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "ironsight1",
+                        "steam64id": "76561199467634941",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1774.2235107421875,
+                            "y": 182.74806213378906,
+                            "z": 1.6871371269226074
+                        },
+                        "viewAngles": {
+                            "pitch": 0.46966552734375,
+                            "yaw": 44.60723876953125
+                        }
+                    },
+                    "victim": {
+                        "name": "-itachi-_",
+                        "steam64id": "76561198155131535",
+                        "team": "CT",
+                        "position": {
+                            "x": -819.43603515625,
+                            "y": 1140.574462890625,
+                            "z": 36.031246185302734
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 182153,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": true,
+                        "distance_to_enemy": 34.356781005859375,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "ironsight1",
+                        "steam64id": "76561199467634941",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1642.8450927734375,
+                            "y": 300.5187683105469,
+                            "z": 0.031250953674316406
+                        },
+                        "viewAngles": {
+                            "pitch": 0.2561187744140625,
+                            "yaw": 20.479202270507812
+                        }
+                    },
+                    "victim": {
+                        "name": "theDuenDONKK",
+                        "steam64id": "76561199575367082",
+                        "team": "CT",
+                        "position": {
+                            "x": -971.2721557617188,
+                            "y": 563.5779418945312,
+                            "z": -3.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 183075,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 18.0596866607666,
+                        "ticks_since_last_kill": 922,
+                        "distance_moved_since_last_kill": 176.44537370065146
+                    },
+                    "assist": {
+                        "name": "Soulfulsalmo",
+                        "steam64id": "76561198302881720",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "ironsight1",
+                        "steam64id": "76561199467634941",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1404.8375244140625,
+                            "y": 799.1705932617188,
+                            "z": 38.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 8.54083251953125,
+                            "yaw": -37.042816162109375
+                        }
+                    },
+                    "victim": {
+                        "name": "Steaks_",
+                        "steam64id": "76561198067811114",
+                        "team": "CT",
+                        "position": {
+                            "x": -409.5736083984375,
+                            "y": 46.03304672241211,
+                            "z": -119.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 184096,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 32.01551055908203,
+                        "ticks_since_last_kill": 1021,
+                        "distance_moved_since_last_kill": 553.8458675940424
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "ironsight1",
+                        "steam64id": "76561199467634941",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1517.6741943359375,
+                            "y": 782.6289672851562,
+                            "z": 38.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 7.948272705078125,
+                            "yaw": -33.925445556640625
+                        }
+                    },
+                    "victim": {
+                        "name": "Jzeroz",
+                        "steam64id": "76561199557719879",
+                        "team": "CT",
+                        "position": {
+                            "x": -689.3637084960938,
+                            "y": 218.76193237304688,
+                            "z": -58.4375
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 184675,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 25.552734375,
+                        "ticks_since_last_kill": 579,
+                        "distance_moved_since_last_kill": 114.04270896908166
+                    },
+                    "assist": {
+                        "name": "fawking",
+                        "steam64id": "76561198813524125",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "ironsight1",
+                        "steam64id": "76561199467634941",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1584.823486328125,
+                            "y": 689.5164794921875,
+                            "z": 38.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 8.03375244140625,
+                            "yaw": 20.393707275390625
+                        }
+                    },
+                    "victim": {
+                        "name": "Xcesv",
+                        "steam64id": "76561199011128273",
+                        "team": "CT",
+                        "position": {
+                            "x": -1134.01513671875,
+                            "y": 877.1048583984375,
+                            "z": 0.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 185694,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 12.423510551452637,
+                        "ticks_since_last_kill": 1019,
+                        "distance_moved_since_last_kill": 114.7996637540712
+                    },
+                    "assist": {
+                        "name": "fawking",
+                        "steam64id": "76561198813524125",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "ak47"
+                ],
+                "headshots": 3,
+                "wallbangs": 0,
+                "radius_moved": 414.5599087108123,
+                "victims_in_radius": 661.8855442333582,
+                "total_distance_moved": 959.1336140178466
+            }
+        }
+    ],
+    "quadKills": [
+        {
+            "roundNumber": 15,
+            "player": "Jzeroz",
+            "killCount": 4,
+            "duration_in_ticks": 2444,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "Jzeroz",
+                        "steam64id": "76561199557719879",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -597.4838256835938,
+                            "y": 252.74374389648438,
+                            "z": -87.96875
+                        },
+                        "viewAngles": {
+                            "pitch": -3.2464599609375,
+                            "yaw": 158.979736328125
+                        }
+                    },
+                    "victim": {
+                        "name": "Soulfulsalmo",
+                        "steam64id": "76561198302881720",
+                        "team": "CT",
+                        "position": {
+                            "x": -1589.60400390625,
+                            "y": 632.9721069335938,
+                            "z": 38.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 91128,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 27.19521141052246,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Jzeroz",
+                        "steam64id": "76561199557719879",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -741.1480102539062,
+                            "y": 633.4627075195312,
+                            "z": 38.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 3.437347412109375,
+                            "yaw": -73.90983581542969
+                        }
+                    },
+                    "victim": {
+                        "name": "fawking",
+                        "steam64id": "76561198813524125",
+                        "team": "CT",
+                        "position": {
+                            "x": -704.9688720703125,
+                            "y": 496.87896728515625,
+                            "z": 39.468021392822266
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 91747,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 3.59182071685791,
+                        "ticks_since_last_kill": 619,
+                        "distance_moved_since_last_kill": 425.98395179919595
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Jzeroz",
+                        "steam64id": "76561199557719879",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1008.7538452148438,
+                            "y": 1155.198974609375,
+                            "z": 35.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 7.1747589111328125,
+                            "yaw": -9.47467041015625
+                        }
+                    },
+                    "victim": {
+                        "name": "MigueETV",
+                        "steam64id": "76561198088454549",
+                        "team": "CT",
+                        "position": {
+                            "x": -662.7661743164062,
+                            "y": 1103.1513671875,
+                            "z": 32.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 93405,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 8.921630859375,
+                        "ticks_since_last_kill": 1658,
+                        "distance_moved_since_last_kill": 586.3707149082271
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Jzeroz",
+                        "steam64id": "76561199557719879",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -870.770751953125,
+                            "y": 958.3717651367188,
+                            "z": 35.72248458862305
+                        },
+                        "viewAngles": {
+                            "pitch": 23.65185546875,
+                            "yaw": -157.27786254882812
+                        }
+                    },
+                    "victim": {
+                        "name": "ironsight1",
+                        "steam64id": "76561199467634941",
+                        "team": "CT",
+                        "position": {
+                            "x": -1079.806884765625,
+                            "y": 861.8934936523438,
+                            "z": 0.0312504768371582
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 93572,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": true,
+                        "distance_to_enemy": 5.908236980438232,
+                        "ticks_since_last_kill": 167,
+                        "distance_moved_since_last_kill": 240.37629296609427
+                    },
+                    "assist": {
+                        "name": "Steaks_",
+                        "steam64id": "76561198067811114",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "ak47"
+                ],
+                "headshots": 1,
+                "wallbangs": 0,
+                "radius_moved": 546.5907546906698,
+                "victims_in_radius": 597.2375924111502,
+                "total_distance_moved": 1252.7309596735174
+            }
+        },
+        {
+            "roundNumber": 18,
+            "player": "MigueETV",
+            "killCount": 4,
+            "duration_in_ticks": 3245,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "MigueETV",
+                        "steam64id": "76561198088454549",
+                        "team": "CT",
+                        "position": {
+                            "x": -744.5770263671875,
+                            "y": 128.4349365234375,
+                            "z": -95.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 8.861846923828125,
+                            "yaw": 6.21551513671875
+                        }
+                    },
+                    "victim": {
+                        "name": "Jzeroz",
+                        "steam64id": "76561199557719879",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 286.4689025878906,
+                            "y": 229.25889587402344,
+                            "z": -188.83367919921875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 115139,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 26.38094139099121,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "MigueETV",
+                        "steam64id": "76561198088454549",
+                        "team": "CT",
+                        "position": {
+                            "x": -1104.5284423828125,
+                            "y": 917.951416015625,
+                            "z": 0.031249046325683594
+                        },
+                        "viewAngles": {
+                            "pitch": 1.3245391845703125,
+                            "yaw": -127.86369323730469
+                        }
+                    },
+                    "victim": {
+                        "name": "Steaks_",
+                        "steam64id": "76561198067811114",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1662.229736328125,
+                            "y": 159.2833251953125,
+                            "z": 1.3746814727783203
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 117157,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 23.92152214050293,
+                        "ticks_since_last_kill": 2018,
+                        "distance_moved_since_last_kill": 872.9932949904517
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "MigueETV",
+                        "steam64id": "76561198088454549",
+                        "team": "CT",
+                        "position": {
+                            "x": -954.50390625,
+                            "y": 784.1515502929688,
+                            "z": 0.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 3.9104461669921875,
+                            "yaw": -97.90363311767578
+                        }
+                    },
+                    "victim": {
+                        "name": "-itachi-_",
+                        "steam64id": "76561198155131535",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -997.635986328125,
+                            "y": 445.5683898925781,
+                            "z": 1.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 117971,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 8.637310028076172,
+                        "ticks_since_last_kill": 814,
+                        "distance_moved_since_last_kill": 201.02180356684298
+                    },
+                    "assist": {
+                        "name": "Jiren17",
+                        "steam64id": "76561198159765351",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "MigueETV",
+                        "steam64id": "76561198088454549",
+                        "team": "CT",
+                        "position": {
+                            "x": -896.4835815429688,
+                            "y": 763.9623413085938,
+                            "z": 17.257240295410156
+                        },
+                        "viewAngles": {
+                            "pitch": 4.572723388671875,
+                            "yaw": -120.70438385009766
+                        }
+                    },
+                    "victim": {
+                        "name": "theDuenDONKK",
+                        "steam64id": "76561199575367082",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1118.187255859375,
+                            "y": 430.2347412109375,
+                            "z": -2.8284912109375
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 118384,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 10.298741340637207,
+                        "ticks_since_last_kill": 413,
+                        "distance_moved_since_last_kill": 63.80201391948121
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "m4a1_silencer"
+                ],
+                "headshots": 0,
+                "wallbangs": 0,
+                "radius_moved": 555.8608484842538,
+                "victims_in_radius": 1171.1933353523368,
+                "total_distance_moved": 1137.8171124767757
+            }
+        },
+        {
+            "roundNumber": 21,
+            "player": "Jzeroz",
+            "killCount": 4,
+            "duration_in_ticks": 2720,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "Jzeroz",
+                        "steam64id": "76561199557719879",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1234.796142578125,
+                            "y": 23.046239852905273,
+                            "z": 0.2574131488800049
+                        },
+                        "viewAngles": {
+                            "pitch": 2.618865966796875,
+                            "yaw": 168.00875854492188
+                        }
+                    },
+                    "victim": {
+                        "name": "MigueETV",
+                        "steam64id": "76561198088454549",
+                        "team": "CT",
+                        "position": {
+                            "x": -1693.3599853515625,
+                            "y": 131.9344482421875,
+                            "z": 0.7859258651733398
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 137213,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 11.982419967651367,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Jzeroz",
+                        "steam64id": "76561199557719879",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 182.7963104248047,
+                            "y": 1168.395751953125,
+                            "z": -28.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 10.720947265625,
+                            "yaw": 20.696868896484375
+                        }
+                    },
+                    "victim": {
+                        "name": "Soulfulsalmo",
+                        "steam64id": "76561198302881720",
+                        "team": "CT",
+                        "position": {
+                            "x": 603.27978515625,
+                            "y": 1319.2803955078125,
+                            "z": -87.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 139362,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 11.390275955200195,
+                        "ticks_since_last_kill": 2149,
+                        "distance_moved_since_last_kill": 1822.7034965378982
+                    },
+                    "assist": {
+                        "name": "theDuenDONKK",
+                        "steam64id": "76561199575367082",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Jzeroz",
+                        "steam64id": "76561199557719879",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1004.1265869140625,
+                            "y": 1285.7481689453125,
+                            "z": -87.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 1.7186737060546875,
+                            "yaw": 113.7490234375
+                        }
+                    },
+                    "victim": {
+                        "name": "fawking",
+                        "steam64id": "76561198813524125",
+                        "team": "CT",
+                        "position": {
+                            "x": 719.44775390625,
+                            "y": 1939.619384765625,
+                            "z": -39.05767822265625
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 139801,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 18.130077362060547,
+                        "ticks_since_last_kill": 439,
+                        "distance_moved_since_last_kill": 831.766801965448
+                    },
+                    "assist": {
+                        "name": "Xcesv",
+                        "steam64id": "76561199011128273",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Jzeroz",
+                        "steam64id": "76561199557719879",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1096.8214111328125,
+                            "y": 1403.065673828125,
+                            "z": -91.3658447265625
+                        },
+                        "viewAngles": {
+                            "pitch": 6.820098876953125,
+                            "yaw": 44.29412841796875
+                        }
+                    },
+                    "victim": {
+                        "name": "ironsight1",
+                        "steam64id": "76561199467634941",
+                        "team": "CT",
+                        "position": {
+                            "x": 1685.15185546875,
+                            "y": 1966.61376953125,
+                            "z": -83.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 139933,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 20.693342208862305,
+                        "ticks_since_last_kill": 132,
+                        "distance_moved_since_last_kill": 149.55690435902628
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "ak47"
+                ],
+                "headshots": 3,
+                "wallbangs": 0,
+                "radius_moved": 1772.1972100618289,
+                "victims_in_radius": 2355.6674559124776,
+                "total_distance_moved": 2804.0272028623726
+            }
+        }
+    ],
+    "multiKills": []
+}

@@ -1,0 +1,192 @@
+{
+    "demoInfo": {
+        "fileName": "1-5c438b24-5ff3-445c-8859-e20b2f5d5383.dem",
+        "mapName": "de_vertigo",
+        "date": "2024-12-11 01:50:22",
+        "aceKills": 0,
+        "quadKills": 1,
+        "multiKills": 0
+    },
+    "aceKills": [],
+    "quadKills": [
+        {
+            "roundNumber": 2,
+            "player": "DrAco3",
+            "killCount": 4,
+            "duration_in_ticks": 3946,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "DrAco3",
+                        "steam64id": "76561199280204836",
+                        "team": "CT",
+                        "position": {
+                            "x": -592.5263061523438,
+                            "y": -184.19012451171875,
+                            "z": 11776.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 2.85748291015625,
+                            "yaw": -49.155242919921875
+                        }
+                    },
+                    "victim": {
+                        "name": "ttvpanda-HH-",
+                        "steam64id": "76561199653368834",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -329.5345458984375,
+                            "y": -479.9647216796875,
+                            "z": 11776.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 27996,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 10.128192901611328,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    },
+                    "assist": {
+                        "name": "stupidinbred",
+                        "steam64id": "76561199556807089",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "DrAco3",
+                        "steam64id": "76561199280204836",
+                        "team": "CT",
+                        "position": {
+                            "x": -702.5093994140625,
+                            "y": -281.32281494140625,
+                            "z": 11776.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 4.1287994384765625,
+                            "yaw": 19.3194580078125
+                        }
+                    },
+                    "victim": {
+                        "name": "jayyceeee",
+                        "steam64id": "76561198874832362",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -103.02227783203125,
+                            "y": -56.99737548828125,
+                            "z": 11776.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 28644,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 16.264543533325195,
+                        "ticks_since_last_kill": 648,
+                        "distance_moved_since_last_kill": 146.73459153698363
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "DrAco3",
+                        "steam64id": "76561199280204836",
+                        "team": "CT",
+                        "position": {
+                            "x": -1058.713134765625,
+                            "y": -420.3564453125,
+                            "z": 11776.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 4.21875,
+                            "yaw": -20.536880493164062
+                        }
+                    },
+                    "victim": {
+                        "name": "Burrito-HH-",
+                        "steam64id": "76561198083484165",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -347.03125,
+                            "y": -682.8167114257812,
+                            "z": 11774.1337890625
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 29815,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 19.280338287353516,
+                        "ticks_since_last_kill": 1171,
+                        "distance_moved_since_last_kill": 382.37606025034034
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "DrAco3",
+                        "steam64id": "76561199280204836",
+                        "team": "CT",
+                        "position": {
+                            "x": 68.52986145019531,
+                            "y": -480.98486328125,
+                            "z": 11786.5234375
+                        },
+                        "viewAngles": {
+                            "pitch": 1.3314056396484375,
+                            "yaw": -103.1173324584961
+                        }
+                    },
+                    "victim": {
+                        "name": "sn0w-HH-",
+                        "steam64id": "76561198029217043",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -167.6705322265625,
+                            "y": -1446.8223876953125,
+                            "z": 11776.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 31942,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 25.208152770996094,
+                        "ticks_since_last_kill": 2127,
+                        "distance_moved_since_last_kill": 1128.9210174239597
+                    },
+                    "assist": {
+                        "name": "Evo2990",
+                        "steam64id": "76561198855206045",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "m4a1_silencer"
+                ],
+                "headshots": 0,
+                "wallbangs": 0,
+                "radius_moved": 654.8639110418598,
+                "victims_in_radius": 783.2302484693992,
+                "total_distance_moved": 1658.0316692112838
+            }
+        }
+    ],
+    "multiKills": []
+}

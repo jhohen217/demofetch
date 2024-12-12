@@ -1,0 +1,193 @@
+{
+    "demoInfo": {
+        "fileName": "1-2346cb3c-78ac-47ac-8347-58002100e8fe.dem",
+        "mapName": "de_mirage",
+        "date": "2024-12-11 01:48:47",
+        "aceKills": 0,
+        "quadKills": 1,
+        "multiKills": 0
+    },
+    "aceKills": [],
+    "quadKills": [
+        {
+            "roundNumber": 12,
+            "player": "Spreeeh",
+            "killCount": 4,
+            "duration_in_ticks": 2882,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "Spreeeh",
+                        "steam64id": "76561198432072257",
+                        "team": "CT",
+                        "position": {
+                            "x": -998.4385986328125,
+                            "y": -2353.472900390625,
+                            "z": -167.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 9.248077392578125,
+                            "yaw": -18.549728393554688
+                        }
+                    },
+                    "victim": {
+                        "name": "daddy114514",
+                        "steam64id": "76561199625452901",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -953.876708984375,
+                            "y": -2404.95703125,
+                            "z": -167.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 93182,
+                        "weapon": "taser",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 1.8649142980575562,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    },
+                    "assist": {
+                        "name": "underrdogg",
+                        "steam64id": "76561199260986401",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Spreeeh",
+                        "steam64id": "76561198432072257",
+                        "team": "CT",
+                        "position": {
+                            "x": -1057.3074951171875,
+                            "y": -2394.253173828125,
+                            "z": -167.96875
+                        },
+                        "viewAngles": {
+                            "pitch": -3.749420166015625,
+                            "yaw": 14.943817138671875
+                        }
+                    },
+                    "victim": {
+                        "name": "kawaiiniee",
+                        "steam64id": "76561199217478076",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -881.5556640625,
+                            "y": -2346.1337890625,
+                            "z": -167.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 93279,
+                        "weapon": "usp_silencer",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 4.6540913581848145,
+                        "ticks_since_last_kill": 97,
+                        "distance_moved_since_last_kill": 71.61408852261772
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Spreeeh",
+                        "steam64id": "76561198432072257",
+                        "team": "CT",
+                        "position": {
+                            "x": -1478.0931396484375,
+                            "y": -2198.221435546875,
+                            "z": -245.18988037109375
+                        },
+                        "viewAngles": {
+                            "pitch": -5.998870849609375,
+                            "yaw": -13.15716552734375
+                        }
+                    },
+                    "victim": {
+                        "name": "Sawvak",
+                        "steam64id": "76561199213160471",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -899.0314331054688,
+                            "y": -2324.0322265625,
+                            "z": -167.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 94408,
+                        "weapon": "usp_silencer",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 14.89583969116211,
+                        "ticks_since_last_kill": 1129,
+                        "distance_moved_since_last_kill": 470.58697818037575
+                    },
+                    "assist": {
+                        "name": "nzpxs",
+                        "steam64id": "76561199226650740",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Spreeeh",
+                        "steam64id": "76561198432072257",
+                        "team": "CT",
+                        "position": {
+                            "x": -809.2355346679688,
+                            "y": -1538.501953125,
+                            "z": -167.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 3.17779541015625,
+                            "yaw": -46.25724792480469
+                        }
+                    },
+                    "victim": {
+                        "name": "Livesupp",
+                        "steam64id": "76561199266158284",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -711.4609375,
+                            "y": -1604.1727294921875,
+                            "z": -167.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 96064,
+                        "weapon": "usp_silencer",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 3.3893373012542725,
+                        "ticks_since_last_kill": 1656,
+                        "distance_moved_since_last_kill": 942.636406151908
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "usp_silencer",
+                    "taser"
+                ],
+                "headshots": 2,
+                "wallbangs": 0,
+                "radius_moved": 645.1962290004506,
+                "victims_in_radius": 585.2071184733977,
+                "total_distance_moved": 1484.8374728549015
+            }
+        }
+    ],
+    "multiKills": []
+}

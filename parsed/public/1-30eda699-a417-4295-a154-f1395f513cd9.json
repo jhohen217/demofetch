@@ -1,0 +1,230 @@
+{
+    "demoInfo": {
+        "fileName": "1-30eda699-a417-4295-a154-f1395f513cd9.dem",
+        "mapName": "de_ancient",
+        "date": "2024-12-11 01:49:07",
+        "aceKills": 1,
+        "quadKills": 0,
+        "multiKills": 0
+    },
+    "aceKills": [
+        {
+            "roundNumber": 14,
+            "player": "mirac",
+            "killCount": 5,
+            "duration_in_ticks": 2881,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "mirac",
+                        "steam64id": "76561198245515120",
+                        "team": "CT",
+                        "position": {
+                            "x": 596.7093505859375,
+                            "y": 857.6182250976562,
+                            "z": 113.78483581542969
+                        },
+                        "viewAngles": {
+                            "pitch": 1.6939544677734375,
+                            "yaw": -81.48490905761719
+                        }
+                    },
+                    "victim": {
+                        "name": "polo_exe",
+                        "steam64id": "76561198983763910",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 707.501708984375,
+                            "y": 46.082008361816406,
+                            "z": 130.90110778808594
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 92954,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 20.72006607055664,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "mirac",
+                        "steam64id": "76561198245515120",
+                        "team": "CT",
+                        "position": {
+                            "x": 781.7972412109375,
+                            "y": 804.0068969726562,
+                            "z": 112.13750457763672
+                        },
+                        "viewAngles": {
+                            "pitch": -0.87994384765625,
+                            "yaw": -104.0130615234375
+                        }
+                    },
+                    "victim": {
+                        "name": "ARTEM_DZYUBA",
+                        "steam64id": "76561198880100341",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 628.0966186523438,
+                            "y": 146.3616485595703,
+                            "z": 131.55636596679688
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 93278,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 17.15743064880371,
+                        "ticks_since_last_kill": 324,
+                        "distance_moved_since_last_kill": 192.70292021540666
+                    },
+                    "assist": {
+                        "name": "TIHIPRLE9",
+                        "steam64id": "76561198260433386",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "mirac",
+                        "steam64id": "76561198245515120",
+                        "team": "CT",
+                        "position": {
+                            "x": 1259.4705810546875,
+                            "y": 694.44482421875,
+                            "z": 122.14002990722656
+                        },
+                        "viewAngles": {
+                            "pitch": 0.6378936767578125,
+                            "yaw": -99.2171859741211
+                        }
+                    },
+                    "victim": {
+                        "name": "Guttie",
+                        "steam64id": "76561198113247450",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1205.596435546875,
+                            "y": 380.4450988769531,
+                            "z": 121.69823455810547
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 94193,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 8.075454711914062,
+                        "ticks_since_last_kill": 915,
+                        "distance_moved_since_last_kill": 490.17927118206865
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "mirac",
+                        "steam64id": "76561198245515120",
+                        "team": "CT",
+                        "position": {
+                            "x": 1259.677978515625,
+                            "y": 683.03857421875,
+                            "z": 122.66716003417969
+                        },
+                        "viewAngles": {
+                            "pitch": 4.3341064453125,
+                            "yaw": -105.59715270996094
+                        }
+                    },
+                    "victim": {
+                        "name": "Sanzh1k33333",
+                        "steam64id": "76561199243647648",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1178.3643798828125,
+                            "y": 383.5549011230469,
+                            "z": 123.03601837158203
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 94253,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 7.894503116607666,
+                        "ticks_since_last_kill": 60,
+                        "distance_moved_since_last_kill": 11.420307304974106
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "mirac",
+                        "steam64id": "76561198245515120",
+                        "team": "CT",
+                        "position": {
+                            "x": 1109.436279296875,
+                            "y": 19.11049461364746,
+                            "z": 134.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 7.98602294921875,
+                            "yaw": -170.145263671875
+                        }
+                    },
+                    "victim": {
+                        "name": "H0NeST",
+                        "steam64id": "76561198404474914",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 387.5367126464844,
+                            "y": -117.1265869140625,
+                            "z": 154.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 95835,
+                        "weapon": "ak47",
+                        "penetrationKill": true,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 18.66214942932129,
+                        "ticks_since_last_kill": 1582,
+                        "distance_moved_since_last_kill": 680.809962921378
+                    },
+                    "assist": {
+                        "name": "MAKC_TECAK",
+                        "steam64id": "76561199508397543",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "m4a1_silencer",
+                    "ak47"
+                ],
+                "headshots": 2,
+                "wallbangs": 1,
+                "radius_moved": 602.440595512426,
+                "victims_in_radius": 519.5651515776008,
+                "total_distance_moved": 1375.1124616238274
+            }
+        }
+    ],
+    "quadKills": [],
+    "multiKills": []
+}

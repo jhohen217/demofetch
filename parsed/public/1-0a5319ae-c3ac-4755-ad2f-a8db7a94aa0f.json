@@ -1,0 +1,229 @@
+{
+    "demoInfo": {
+        "fileName": "1-0a5319ae-c3ac-4755-ad2f-a8db7a94aa0f.dem",
+        "mapName": "de_dust2",
+        "date": "2024-12-11 01:48:02",
+        "aceKills": 1,
+        "quadKills": 0,
+        "multiKills": 0
+    },
+    "aceKills": [
+        {
+            "roundNumber": 6,
+            "player": "PriDei",
+            "killCount": 5,
+            "duration_in_ticks": 1075,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "PriDei",
+                        "steam64id": "76561199439594125",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1765.2242431640625,
+                            "y": 2585.87841796875,
+                            "z": 32.853965759277344
+                        },
+                        "viewAngles": {
+                            "pitch": -8.755416870117188,
+                            "yaw": 8.297760009765625
+                        }
+                    },
+                    "victim": {
+                        "name": "KIRDUAA",
+                        "steam64id": "76561198007947665",
+                        "team": "CT",
+                        "position": {
+                            "x": -1261.984130859375,
+                            "y": 2657.760986328125,
+                            "z": 130.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 42419,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 13.129844665527344,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "PriDei",
+                        "steam64id": "76561199439594125",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1250.0408935546875,
+                            "y": 2683.70654296875,
+                            "z": 125.3292236328125
+                        },
+                        "viewAngles": {
+                            "pitch": 19.086685180664062,
+                            "yaw": -57.31086730957031
+                        }
+                    },
+                    "victim": {
+                        "name": "sh4gzilla",
+                        "steam64id": "76561198156007023",
+                        "team": "CT",
+                        "position": {
+                            "x": -942.9431762695312,
+                            "y": 2206.239990234375,
+                            "z": -68.0423583984375
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 42752,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 15.24777603149414,
+                        "ticks_since_last_kill": 333,
+                        "distance_moved_since_last_kill": 532.480890806917
+                    },
+                    "assist": {
+                        "name": "HYYPERION",
+                        "steam64id": "76561197963674244",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "PriDei",
+                        "steam64id": "76561199439594125",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -786.466064453125,
+                            "y": 2461.787841796875,
+                            "z": -72.1448974609375
+                        },
+                        "viewAngles": {
+                            "pitch": 8.450897216796875,
+                            "yaw": -27.341537475585938
+                        }
+                    },
+                    "victim": {
+                        "name": "--FMJ--",
+                        "steam64id": "76561198028752108",
+                        "team": "CT",
+                        "position": {
+                            "x": -2.936767578125,
+                            "y": 2053.4013671875,
+                            "z": -124.35113525390625
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 42999,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 22.500757217407227,
+                        "ticks_since_last_kill": 247,
+                        "distance_moved_since_last_kill": 550.586560504435
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "PriDei",
+                        "steam64id": "76561199439594125",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -649.2526245117188,
+                            "y": 2193.848876953125,
+                            "z": -120.44183349609375
+                        },
+                        "viewAngles": {
+                            "pitch": -1.2266845703125,
+                            "yaw": -2.1055908203125
+                        }
+                    },
+                    "victim": {
+                        "name": "coinfIip",
+                        "steam64id": "76561198210007660",
+                        "team": "CT",
+                        "position": {
+                            "x": 632.3306274414062,
+                            "y": 2139.880859375,
+                            "z": -88.10443115234375
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 43178,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 32.583518981933594,
+                        "ticks_since_last_kill": 179,
+                        "distance_moved_since_last_kill": 304.8793384479804
+                    },
+                    "assist": {
+                        "name": "SayByetoPast",
+                        "steam64id": "76561199127445641",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "PriDei",
+                        "steam64id": "76561199439594125",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -384.201171875,
+                            "y": 1522.3497314453125,
+                            "z": -126.32403564453125
+                        },
+                        "viewAngles": {
+                            "pitch": -0.246856689453125,
+                            "yaw": -148.1842803955078
+                        }
+                    },
+                    "victim": {
+                        "name": "pS-Tour",
+                        "steam64id": "76561198204896277",
+                        "team": "CT",
+                        "position": {
+                            "x": -680.663818359375,
+                            "y": 1339.50732421875,
+                            "z": -109.18408203125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 43494,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 8.850872993469238,
+                        "ticks_since_last_kill": 316,
+                        "distance_moved_since_last_kill": 721.9404236255733
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "ak47"
+                ],
+                "headshots": 5,
+                "wallbangs": 0,
+                "radius_moved": 968.043719890757,
+                "victims_in_radius": 1085.8617323384499,
+                "total_distance_moved": 2109.887213384906
+            }
+        }
+    ],
+    "quadKills": [],
+    "multiKills": []
+}

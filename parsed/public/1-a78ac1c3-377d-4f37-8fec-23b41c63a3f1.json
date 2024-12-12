@@ -1,0 +1,550 @@
+{
+    "demoInfo": {
+        "fileName": "1-a78ac1c3-377d-4f37-8fec-23b41c63a3f1.dem",
+        "mapName": "de_anubis",
+        "date": "2024-12-11 01:52:50",
+        "aceKills": 0,
+        "quadKills": 3,
+        "multiKills": 0
+    },
+    "aceKills": [],
+    "quadKills": [
+        {
+            "roundNumber": 12,
+            "player": "axis",
+            "killCount": 4,
+            "duration_in_ticks": 2354,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "axis",
+                        "steam64id": "76561198081261625",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1145.7755126953125,
+                            "y": 1546.9342041015625,
+                            "z": -151.96875
+                        },
+                        "viewAngles": {
+                            "pitch": -3.168182373046875,
+                            "yaw": -155.0397491455078
+                        }
+                    },
+                    "victim": {
+                        "name": "eg01st7",
+                        "steam64id": "76561199040277800",
+                        "team": "CT",
+                        "position": {
+                            "x": 599.7177124023438,
+                            "y": 1298.2972412109375,
+                            "z": -86.4765625
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 88160,
+                        "weapon": "glock",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 15.290393829345703,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "axis",
+                        "steam64id": "76561198081261625",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1152.6221923828125,
+                            "y": 1591.2099609375,
+                            "z": -151.96875
+                        },
+                        "viewAngles": {
+                            "pitch": -8.09588623046875,
+                            "yaw": -134.13963317871094
+                        }
+                    },
+                    "victim": {
+                        "name": "m34n",
+                        "steam64id": "76561198109752104",
+                        "team": "CT",
+                        "position": {
+                            "x": 869.5728149414062,
+                            "y": 1288.6187744140625,
+                            "z": -87.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 88373,
+                        "weapon": "glock",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 10.640311241149902,
+                        "ticks_since_last_kill": 213,
+                        "distance_moved_since_last_kill": 44.80200515756289
+                    },
+                    "assist": {
+                        "name": "Louislouie",
+                        "steam64id": "76561197965426981",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "axis",
+                        "steam64id": "76561198081261625",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 872.3374633789062,
+                            "y": 1382.300048828125,
+                            "z": -87.96875
+                        },
+                        "viewAngles": {
+                            "pitch": -4.3121337890625,
+                            "yaw": 97.46829223632812
+                        }
+                    },
+                    "victim": {
+                        "name": "Fallenfour",
+                        "steam64id": "76561198877912908",
+                        "team": "CT",
+                        "position": {
+                            "x": 801.8327026367188,
+                            "y": 1857.55908203125,
+                            "z": -39.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 88608,
+                        "weapon": "glock",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 12.237131118774414,
+                        "ticks_since_last_kill": 235,
+                        "distance_moved_since_last_kill": 355.3855380995968
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "axis",
+                        "steam64id": "76561198081261625",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1113.5489501953125,
+                            "y": 1748.6085205078125,
+                            "z": -191.96875
+                        },
+                        "viewAngles": {
+                            "pitch": -24.067962646484375,
+                            "yaw": 60.64007568359375
+                        }
+                    },
+                    "victim": {
+                        "name": "Z0b",
+                        "steam64id": "76561198213439020",
+                        "team": "CT",
+                        "position": {
+                            "x": 1194.8306884765625,
+                            "y": 1903.7618408203125,
+                            "z": -102.0057373046875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 90514,
+                        "weapon": "usp_silencer",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 5.000195503234863,
+                        "ticks_since_last_kill": 1906,
+                        "distance_moved_since_last_kill": 450.75589601966357
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "glock",
+                    "usp_silencer"
+                ],
+                "headshots": 3,
+                "wallbangs": 0,
+                "radius_moved": 277.6155463772791,
+                "victims_in_radius": 456.7642640975789,
+                "total_distance_moved": 850.9434392768233
+            }
+        },
+        {
+            "roundNumber": 13,
+            "player": "Beyjounn",
+            "killCount": 4,
+            "duration_in_ticks": 3023,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "Beyjounn",
+                        "steam64id": "76561198101043775",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -681.3506469726562,
+                            "y": 726.1174926757812,
+                            "z": 38.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 6.5375518798828125,
+                            "yaw": 159.58636474609375
+                        }
+                    },
+                    "victim": {
+                        "name": "Sh0k3d1",
+                        "steam64id": "76561198320719485",
+                        "team": "CT",
+                        "position": {
+                            "x": -1335.494140625,
+                            "y": 964.9305419921875,
+                            "z": 0.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 93833,
+                        "weapon": "galilar",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 17.72402572631836,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Beyjounn",
+                        "steam64id": "76561198101043775",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -707.0604858398438,
+                            "y": 785.0963745117188,
+                            "z": 38.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 2.6209259033203125,
+                            "yaw": 146.12847900390625
+                        }
+                    },
+                    "victim": {
+                        "name": "m34n",
+                        "steam64id": "76561198109752104",
+                        "team": "CT",
+                        "position": {
+                            "x": -949.0135498046875,
+                            "y": 937.7025756835938,
+                            "z": 35.031246185302734
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 94497,
+                        "weapon": "galilar",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 7.278722286224365,
+                        "ticks_since_last_kill": 664,
+                        "distance_moved_since_last_kill": 64.33897976494671
+                    },
+                    "assist": {
+                        "name": "Louislouie",
+                        "steam64id": "76561197965426981",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Beyjounn",
+                        "steam64id": "76561198101043775",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -782.0511474609375,
+                            "y": 77.08440399169922,
+                            "z": -89.9046630859375
+                        },
+                        "viewAngles": {
+                            "pitch": 8.602981567382812,
+                            "yaw": 10.2777099609375
+                        }
+                    },
+                    "victim": {
+                        "name": "Fallenfour",
+                        "steam64id": "76561198877912908",
+                        "team": "CT",
+                        "position": {
+                            "x": -189.427490234375,
+                            "y": 182.7482147216797,
+                            "z": -188.83367919921875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 95240,
+                        "weapon": "galilar",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 15.457265853881836,
+                        "ticks_since_last_kill": 743,
+                        "distance_moved_since_last_kill": 723.3755232153926
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Beyjounn",
+                        "steam64id": "76561198101043775",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1276.6517333984375,
+                            "y": 1638.055419921875,
+                            "z": 48.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 8.642120361328125,
+                            "yaw": -82.90351867675781
+                        }
+                    },
+                    "victim": {
+                        "name": "eg01st7",
+                        "steam64id": "76561199040277800",
+                        "team": "CT",
+                        "position": {
+                            "x": -1150.1214599609375,
+                            "y": 838.3513793945312,
+                            "z": 0.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 96856,
+                        "weapon": "galilar",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 20.608068466186523,
+                        "ticks_since_last_kill": 1616,
+                        "distance_moved_since_last_kill": 1643.2548701594208
+                    },
+                    "assist": {
+                        "name": "Louislouie",
+                        "steam64id": "76561197965426981",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "galilar"
+                ],
+                "headshots": 2,
+                "wallbangs": 0,
+                "radius_moved": 930.0624435157915,
+                "victims_in_radius": 914.670966610038,
+                "total_distance_moved": 2430.96937313976
+            }
+        },
+        {
+            "roundNumber": 18,
+            "player": "m34n",
+            "killCount": 4,
+            "duration_in_ticks": 1147,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "m34n",
+                        "steam64id": "76561198109752104",
+                        "team": "CT",
+                        "position": {
+                            "x": -259.5509033203125,
+                            "y": 1726.6982421875,
+                            "z": 27.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 7.90020751953125,
+                            "yaw": -31.0380859375
+                        }
+                    },
+                    "victim": {
+                        "name": "Alski",
+                        "steam64id": "76561198842953664",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 544.4378662109375,
+                            "y": 1366.2626953125,
+                            "z": -50.48040771484375
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 136559,
+                        "weapon": "inferno",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 22.52600860595703,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    },
+                    "assist": {
+                        "name": "Fallenfour",
+                        "steam64id": "76561198877912908",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "m34n",
+                        "steam64id": "76561198109752104",
+                        "team": "CT",
+                        "position": {
+                            "x": -259.5509033203125,
+                            "y": 1726.6982421875,
+                            "z": 27.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 7.90020751953125,
+                            "yaw": -31.0380859375
+                        }
+                    },
+                    "victim": {
+                        "name": "Beyjounn",
+                        "steam64id": "76561198101043775",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 510.8337097167969,
+                            "y": 1244.03173828125,
+                            "z": -31.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 136559,
+                        "weapon": "inferno",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 23.178539276123047,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    },
+                    "assist": {
+                        "name": "eg01st7",
+                        "steam64id": "76561199040277800",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "m34n",
+                        "steam64id": "76561198109752104",
+                        "team": "CT",
+                        "position": {
+                            "x": -257.1270751953125,
+                            "y": 1730.8486328125,
+                            "z": 27.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 10.474090576171875,
+                            "yaw": -30.741119384765625
+                        }
+                    },
+                    "victim": {
+                        "name": "TacoTurtle",
+                        "steam64id": "76561198198872213",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 527.1436767578125,
+                            "y": 1326.00537109375,
+                            "z": -39.21905517578125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 136585,
+                        "weapon": "inferno",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 22.540178298950195,
+                        "ticks_since_last_kill": 26,
+                        "distance_moved_since_last_kill": 4.806317209634514
+                    },
+                    "assist": {
+                        "name": "eg01st7",
+                        "steam64id": "76561199040277800",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "m34n",
+                        "steam64id": "76561198109752104",
+                        "team": "CT",
+                        "position": {
+                            "x": 398.59759521484375,
+                            "y": 1315.541015625,
+                            "z": -30.24859619140625
+                        },
+                        "viewAngles": {
+                            "pitch": 0.930755615234375,
+                            "yaw": -102.337646484375
+                        }
+                    },
+                    "victim": {
+                        "name": "Louislouie",
+                        "steam64id": "76561197965426981",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 338.8269958496094,
+                            "y": 1019.8211669921875,
+                            "z": -31.108642578125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 137706,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 7.690042972564697,
+                        "ticks_since_last_kill": 1121,
+                        "distance_moved_since_last_kill": 778.290589084937
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "inferno",
+                    "ak47"
+                ],
+                "headshots": 1,
+                "wallbangs": 0,
+                "radius_moved": 583.6365881776544,
+                "victims_in_radius": 260.99889620087185,
+                "total_distance_moved": 783.0969062945715
+            }
+        }
+    ],
+    "multiKills": []
+}

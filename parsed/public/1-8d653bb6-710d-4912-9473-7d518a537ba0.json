@@ -1,0 +1,180 @@
+{
+    "demoInfo": {
+        "fileName": "1-8d653bb6-710d-4912-9473-7d518a537ba0.dem",
+        "mapName": "de_mirage",
+        "date": "2024-12-11 01:52:09",
+        "aceKills": 0,
+        "quadKills": 1,
+        "multiKills": 0
+    },
+    "aceKills": [],
+    "quadKills": [
+        {
+            "roundNumber": 20,
+            "player": "ReddVoid",
+            "killCount": 4,
+            "duration_in_ticks": 2570,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "ReddVoid",
+                        "steam64id": "76561198092523889",
+                        "team": "CT",
+                        "position": {
+                            "x": -2055.123046875,
+                            "y": -631.2598266601562,
+                            "z": -167.96875
+                        },
+                        "viewAngles": {
+                            "pitch": -4.1246795654296875,
+                            "yaw": 71.78535461425781
+                        }
+                    },
+                    "victim": {
+                        "name": "d0b1-",
+                        "steam64id": "76561198355031130",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1584.5751953125,
+                            "y": 822.889892578125,
+                            "z": -47.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 148167,
+                        "weapon": "awp",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 38.79009246826172,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "ReddVoid",
+                        "steam64id": "76561198092523889",
+                        "team": "CT",
+                        "position": {
+                            "x": -2061.256591796875,
+                            "y": -636.2833251953125,
+                            "z": -167.96875
+                        },
+                        "viewAngles": {
+                            "pitch": -4.063232421875,
+                            "yaw": 71.85539245605469
+                        }
+                    },
+                    "victim": {
+                        "name": "bxckpxck",
+                        "steam64id": "76561199768604036",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1605.8994140625,
+                            "y": 815.868408203125,
+                            "z": -47.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 149072,
+                        "weapon": "awp",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 38.6994514465332,
+                        "ticks_since_last_kill": 905,
+                        "distance_moved_since_last_kill": 7.928171973499035
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "ReddVoid",
+                        "steam64id": "76561198092523889",
+                        "team": "CT",
+                        "position": {
+                            "x": -2002.6636962890625,
+                            "y": -630.1659545898438,
+                            "z": -167.96875
+                        },
+                        "viewAngles": {
+                            "pitch": -5.478057861328125,
+                            "yaw": 75.62542724609375
+                        }
+                    },
+                    "victim": {
+                        "name": "comberan",
+                        "steam64id": "76561198062382619",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1668.18603515625,
+                            "y": 797.9354248046875,
+                            "z": -0.65625
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 150424,
+                        "weapon": "awp",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 37.5550422668457,
+                        "ticks_since_last_kill": 1352,
+                        "distance_moved_since_last_kill": 58.911370949198655
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "ReddVoid",
+                        "steam64id": "76561198092523889",
+                        "team": "CT",
+                        "position": {
+                            "x": -1887.705078125,
+                            "y": -184.3912353515625,
+                            "z": -168.10528564453125
+                        },
+                        "viewAngles": {
+                            "pitch": 0.866546630859375,
+                            "yaw": 75.25222778320312
+                        }
+                    },
+                    "victim": {
+                        "name": "neoss1",
+                        "steam64id": "76561199190568432",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1774.74169921875,
+                            "y": 229.00709533691406,
+                            "z": -165.71875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 150737,
+                        "weapon": "awp",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 10.889989852905273,
+                        "ticks_since_last_kill": 313,
+                        "distance_moved_since_last_kill": 460.359210665043
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "awp"
+                ],
+                "headshots": 0,
+                "wallbangs": 0,
+                "radius_moved": 354.9336243920579,
+                "victims_in_radius": 463.5834756430635,
+                "total_distance_moved": 527.1987535877407
+            }
+        }
+    ],
+    "multiKills": []
+}

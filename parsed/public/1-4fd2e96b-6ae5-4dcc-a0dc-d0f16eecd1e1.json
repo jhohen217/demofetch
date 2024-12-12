@@ -1,0 +1,198 @@
+{
+    "demoInfo": {
+        "fileName": "1-4fd2e96b-6ae5-4dcc-a0dc-d0f16eecd1e1.dem",
+        "mapName": "de_mirage",
+        "date": "2024-12-11 01:49:51",
+        "aceKills": 0,
+        "quadKills": 1,
+        "multiKills": 0
+    },
+    "aceKills": [],
+    "quadKills": [
+        {
+            "roundNumber": 18,
+            "player": "tennoir",
+            "killCount": 4,
+            "duration_in_ticks": 1405,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "tennoir",
+                        "steam64id": "76561198133614749",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -607.0638427734375,
+                            "y": -1116.8505859375,
+                            "z": -167.96875
+                        },
+                        "viewAngles": {
+                            "pitch": -1.159393310546875,
+                            "yaw": -107.52113342285156
+                        }
+                    },
+                    "victim": {
+                        "name": "LOKASSO_",
+                        "steam64id": "76561198333129942",
+                        "team": "CT",
+                        "position": {
+                            "x": -753.0078125,
+                            "y": -1615.2955322265625,
+                            "z": -167.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 119714,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 12.857085227966309,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "tennoir",
+                        "steam64id": "76561198133614749",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -683.708984375,
+                            "y": -1860.9617919921875,
+                            "z": -179.96875
+                        },
+                        "viewAngles": {
+                            "pitch": -0.336456298828125,
+                            "yaw": -3.0631256103515625
+                        }
+                    },
+                    "victim": {
+                        "name": "DusteeBender",
+                        "steam64id": "76561198201771399",
+                        "team": "CT",
+                        "position": {
+                            "x": 143.2735137939453,
+                            "y": -1930.9432373046875,
+                            "z": -39.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 120026,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 21.40803337097168,
+                        "ticks_since_last_kill": 312,
+                        "distance_moved_since_last_kill": 748.1443475074079
+                    },
+                    "assist": {
+                        "name": "Subbedlime",
+                        "steam64id": "76561198995827605",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "tennoir",
+                        "steam64id": "76561198133614749",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -605.6705322265625,
+                            "y": -2325.013916015625,
+                            "z": -173.37493896484375
+                        },
+                        "viewAngles": {
+                            "pitch": 4.936981201171875,
+                            "yaw": -166.475830078125
+                        }
+                    },
+                    "victim": {
+                        "name": "SteveFrench3",
+                        "steam64id": "76561198091061480",
+                        "team": "CT",
+                        "position": {
+                            "x": -1047.259521484375,
+                            "y": -2428.845458984375,
+                            "z": -167.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 120973,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 11.524087905883789,
+                        "ticks_since_last_kill": 947,
+                        "distance_moved_since_last_kill": 470.61433485217503
+                    },
+                    "assist": {
+                        "name": "shmuk",
+                        "steam64id": "76561198169644733",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "tennoir",
+                        "steam64id": "76561198133614749",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -846.9622192382812,
+                            "y": -2390.915771484375,
+                            "z": -168.375732421875
+                        },
+                        "viewAngles": {
+                            "pitch": 2.6181793212890625,
+                            "yaw": 72.98423767089844
+                        }
+                    },
+                    "victim": {
+                        "name": "Dangbe",
+                        "steam64id": "76561197960531431",
+                        "team": "CT",
+                        "position": {
+                            "x": -535.151611328125,
+                            "y": -1329.6322021484375,
+                            "z": -159.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 121119,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 28.110980987548828,
+                        "ticks_since_last_kill": 146,
+                        "distance_moved_since_last_kill": 250.1793853242999
+                    },
+                    "assist": {
+                        "name": "Subbedlime",
+                        "steam64id": "76561198995827605",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "ak47"
+                ],
+                "headshots": 2,
+                "wallbangs": 0,
+                "radius_moved": 810.4360308678987,
+                "victims_in_radius": 783.3176227373577,
+                "total_distance_moved": 1468.9380676838828
+            }
+        }
+    ],
+    "multiKills": []
+}

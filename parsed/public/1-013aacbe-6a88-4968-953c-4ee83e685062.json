@@ -1,0 +1,352 @@
+{
+    "demoInfo": {
+        "fileName": "1-013aacbe-6a88-4968-953c-4ee83e685062.dem",
+        "mapName": "de_inferno",
+        "date": "2024-12-05 18:48:36",
+        "aceKills": 0,
+        "quadKills": 2,
+        "multiKills": 0
+    },
+    "aceKills": [],
+    "quadKills": [
+        {
+            "roundNumber": 2,
+            "player": "XIN33_U2",
+            "killCount": 4,
+            "duration_in_ticks": 5931,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "XIN33_U2",
+                        "steam64id": "76561198274361446",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -729.3881225585938,
+                            "y": -91.251953125,
+                            "z": -3.3011474609375
+                        },
+                        "viewAngles": {
+                            "pitch": -7.634124755859375,
+                            "yaw": 2.987945556640625
+                        }
+                    },
+                    "victim": {
+                        "name": "WARRIOR_97",
+                        "steam64id": "76561199050834053",
+                        "team": "CT",
+                        "position": {
+                            "x": 1214.2576904296875,
+                            "y": 19.283613204956055,
+                            "z": 256.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 19716,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 49.67208480834961,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "XIN33_U2",
+                        "steam64id": "76561198274361446",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1493.5875244140625,
+                            "y": 1184.4281005859375,
+                            "z": 177.11805725097656
+                        },
+                        "viewAngles": {
+                            "pitch": 9.415969848632812,
+                            "yaw": -96.7514419555664
+                        }
+                    },
+                    "victim": {
+                        "name": "corey",
+                        "steam64id": "76561198124544856",
+                        "team": "CT",
+                        "position": {
+                            "x": 1379.041748046875,
+                            "y": 223.80734252929688,
+                            "z": 128.90223693847656
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 24389,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 24.615402221679688,
+                        "ticks_since_last_kill": 4673,
+                        "distance_moved_since_last_kill": 2569.34454986059
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "XIN33_U2",
+                        "steam64id": "76561198274361446",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 448.3786926269531,
+                            "y": 3057.427734375,
+                            "z": 160.2645263671875
+                        },
+                        "viewAngles": {
+                            "pitch": 1.6939544677734375,
+                            "yaw": -66.24961853027344
+                        }
+                    },
+                    "victim": {
+                        "name": "zN_-",
+                        "steam64id": "76561197967701059",
+                        "team": "CT",
+                        "position": {
+                            "x": 806.325439453125,
+                            "y": 2206.293212890625,
+                            "z": 136.03128051757812
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 25556,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 23.51841926574707,
+                        "ticks_since_last_kill": 1167,
+                        "distance_moved_since_last_kill": 2144.9646085012655
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "XIN33_U2",
+                        "steam64id": "76561198274361446",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 416.2132263183594,
+                            "y": 3072.5537109375,
+                            "z": 161.26597595214844
+                        },
+                        "viewAngles": {
+                            "pitch": 6.0060882568359375,
+                            "yaw": -37.38578796386719
+                        }
+                    },
+                    "victim": {
+                        "name": "COREDISH",
+                        "steam64id": "76561199176939795",
+                        "team": "CT",
+                        "position": {
+                            "x": 962.2418212890625,
+                            "y": 2673.498291015625,
+                            "z": 140.0843048095703
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 25647,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 17.183277130126953,
+                        "ticks_since_last_kill": 91,
+                        "distance_moved_since_last_kill": 35.5586176768698
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "ak47"
+                ],
+                "headshots": 2,
+                "wallbangs": 0,
+                "radius_moved": 2215.120219714621,
+                "victims_in_radius": 1398.8942769025475,
+                "total_distance_moved": 4749.867776038725
+            }
+        },
+        {
+            "roundNumber": 12,
+            "player": "WARRIOR_97",
+            "killCount": 4,
+            "duration_in_ticks": 898,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "WARRIOR_97",
+                        "steam64id": "76561199050834053",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1949.596435546875,
+                            "y": 596.6655883789062,
+                            "z": 160.03125
+                        },
+                        "viewAngles": {
+                            "pitch": -6.68792724609375,
+                            "yaw": -88.48800659179688
+                        }
+                    },
+                    "victim": {
+                        "name": "Zovera",
+                        "steam64id": "76561199030396851",
+                        "team": "CT",
+                        "position": {
+                            "x": 1946.2724609375,
+                            "y": -206.682373046875,
+                            "z": 260.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 92577,
+                        "weapon": "glock",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 20.51869010925293,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    },
+                    "assist": {
+                        "name": "corey",
+                        "steam64id": "76561198124544856",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "WARRIOR_97",
+                        "steam64id": "76561199050834053",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 2136.095703125,
+                            "y": 477.656982421875,
+                            "z": 161.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 0.70416259765625,
+                            "yaw": -131.74014282226562
+                        }
+                    },
+                    "victim": {
+                        "name": "XIN33_U2",
+                        "steam64id": "76561198274361446",
+                        "team": "CT",
+                        "position": {
+                            "x": 1952.4581298828125,
+                            "y": 252.1053009033203,
+                            "z": 160.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 92792,
+                        "weapon": "glock",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 7.364749431610107,
+                        "ticks_since_last_kill": 215,
+                        "distance_moved_since_last_kill": 221.23748574555128
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "WARRIOR_97",
+                        "steam64id": "76561199050834053",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1876.96875,
+                            "y": 693.96875,
+                            "z": 160.02723693847656
+                        },
+                        "viewAngles": {
+                            "pitch": -0.09991455078125,
+                            "yaw": -70.80001831054688
+                        }
+                    },
+                    "victim": {
+                        "name": "7Newt7",
+                        "steam64id": "76561198119453567",
+                        "team": "CT",
+                        "position": {
+                            "x": 2075.80859375,
+                            "y": 171.85304260253906,
+                            "z": 160.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 93376,
+                        "weapon": "glock",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 14.195279121398926,
+                        "ticks_since_last_kill": 584,
+                        "distance_moved_since_last_kill": 337.54787315408527
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "WARRIOR_97",
+                        "steam64id": "76561199050834053",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1848.8038330078125,
+                            "y": 683.815185546875,
+                            "z": 160.02316284179688
+                        },
+                        "viewAngles": {
+                            "pitch": 0.911865234375,
+                            "yaw": -53.155975341796875
+                        }
+                    },
+                    "victim": {
+                        "name": "bleechpong",
+                        "steam64id": "76561199009125853",
+                        "team": "CT",
+                        "position": {
+                            "x": 2120.684326171875,
+                            "y": 339.0044250488281,
+                            "z": 160.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 93475,
+                        "weapon": "glock",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 11.213181495666504,
+                        "ticks_since_last_kill": 99,
+                        "distance_moved_since_last_kill": 29.939229062867327
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "glock"
+                ],
+                "headshots": 4,
+                "wallbangs": 0,
+                "radius_moved": 227.81256681498803,
+                "victims_in_radius": 362.189456713008,
+                "total_distance_moved": 588.7245879625038
+            }
+        }
+    ],
+    "multiKills": []
+}

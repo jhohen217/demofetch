@@ -1,0 +1,229 @@
+{
+    "demoInfo": {
+        "fileName": "1-73bca21d-3f3a-451d-880e-1d80732b106c.dem",
+        "mapName": "de_inferno",
+        "date": "2024-12-11 01:51:10",
+        "aceKills": 1,
+        "quadKills": 0,
+        "multiKills": 0
+    },
+    "aceKills": [
+        {
+            "roundNumber": 1,
+            "player": "yueziqing",
+            "killCount": 5,
+            "duration_in_ticks": 522,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "yueziqing",
+                        "steam64id": "76561199570680843",
+                        "team": "CT",
+                        "position": {
+                            "x": 517.1328735351562,
+                            "y": 2481.4140625,
+                            "z": 279.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 27.53173828125,
+                            "yaw": -16.095657348632812
+                        }
+                    },
+                    "victim": {
+                        "name": "19G3N197",
+                        "steam64id": "76561199389691824",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 788.3701171875,
+                            "y": 2382.441162109375,
+                            "z": 136.03146362304688
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 15057,
+                        "weapon": "mp9",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 8.395907402038574,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    },
+                    "assist": {
+                        "name": "Arsanistt",
+                        "steam64id": "76561199254136622",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "yueziqing",
+                        "steam64id": "76561199570680843",
+                        "team": "CT",
+                        "position": {
+                            "x": 560.7886352539062,
+                            "y": 2493.4365234375,
+                            "z": 279.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 30.056533813476562,
+                            "yaw": -30.856475830078125
+                        }
+                    },
+                    "victim": {
+                        "name": "2323245",
+                        "steam64id": "76561199441498846",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 836.5894165039062,
+                            "y": 2333.166259765625,
+                            "z": 140.0843048095703
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 15152,
+                        "weapon": "mp9",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 8.867706298828125,
+                        "ticks_since_last_kill": 95,
+                        "distance_moved_since_last_kill": 45.280957346747776
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "yueziqing",
+                        "steam64id": "76561199570680843",
+                        "team": "CT",
+                        "position": {
+                            "x": 550.2333984375,
+                            "y": 2645.752197265625,
+                            "z": 161.53123474121094
+                        },
+                        "viewAngles": {
+                            "pitch": 4.39556884765625,
+                            "yaw": -49.32965087890625
+                        }
+                    },
+                    "victim": {
+                        "name": "Diorp22",
+                        "steam64id": "76561198423034356",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 831.3482666015625,
+                            "y": 2361.83544921875,
+                            "z": 140.0843048095703
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 15393,
+                        "weapon": "mp9",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 10.207225799560547,
+                        "ticks_since_last_kill": 241,
+                        "distance_moved_since_last_kill": 192.6596249964736
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "yueziqing",
+                        "steam64id": "76561199570680843",
+                        "team": "CT",
+                        "position": {
+                            "x": 577.9854736328125,
+                            "y": 2655.510009765625,
+                            "z": 161.53123474121094
+                        },
+                        "viewAngles": {
+                            "pitch": 9.533721923828125,
+                            "yaw": -64.77367401123047
+                        }
+                    },
+                    "victim": {
+                        "name": "lowbdwol",
+                        "steam64id": "76561199589252186",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 780.068359375,
+                            "y": 2247.145751953125,
+                            "z": 136.03134155273438
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 15440,
+                        "weapon": "mp9",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 11.657984733581543,
+                        "ticks_since_last_kill": 47,
+                        "distance_moved_since_last_kill": 29.41755568417328
+                    },
+                    "assist": {
+                        "name": "Arsanistt",
+                        "steam64id": "76561199254136622",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "yueziqing",
+                        "steam64id": "76561199570680843",
+                        "team": "CT",
+                        "position": {
+                            "x": 793.5248413085938,
+                            "y": 2570.4169921875,
+                            "z": 136.03146362304688
+                        },
+                        "viewAngles": {
+                            "pitch": 6.533782958984375,
+                            "yaw": -104.06696319580078
+                        }
+                    },
+                    "victim": {
+                        "name": "Roxamada",
+                        "steam64id": "76561198426899740",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 638.7792358398438,
+                            "y": 1972.575439453125,
+                            "z": 136.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 15579,
+                        "weapon": "mp9",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 15.689386367797852,
+                        "ticks_since_last_kill": 139,
+                        "distance_moved_since_last_kill": 233.12717341765514
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "mp9"
+                ],
+                "headshots": 2,
+                "wallbangs": 0,
+                "radius_moved": 204.99208364368056,
+                "victims_in_radius": 317.57573241984846,
+                "total_distance_moved": 500.4853114450498
+            }
+        }
+    ],
+    "quadKills": [],
+    "multiKills": []
+}

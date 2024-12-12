@@ -1,0 +1,415 @@
+{
+    "demoInfo": {
+        "fileName": "1-594c28bd-1d6b-496b-a984-0a9bc2e8195b.dem",
+        "mapName": "de_inferno",
+        "date": "2024-12-11 01:50:12",
+        "aceKills": 1,
+        "quadKills": 1,
+        "multiKills": 0
+    },
+    "aceKills": [
+        {
+            "roundNumber": 5,
+            "player": "Haydnn",
+            "killCount": 5,
+            "duration_in_ticks": 5418,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "Haydnn",
+                        "steam64id": "76561198150133291",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -536.5216064453125,
+                            "y": 873.8192138671875,
+                            "z": 26.031248092651367
+                        },
+                        "viewAngles": {
+                            "pitch": -2.455780029296875,
+                            "yaw": -12.2003173828125
+                        }
+                    },
+                    "victim": {
+                        "name": "FUSION35",
+                        "steam64id": "76561198152560560",
+                        "team": "CT",
+                        "position": {
+                            "x": 1359.792724609375,
+                            "y": 446.56768798828125,
+                            "z": 125.64115905761719
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 35310,
+                        "weapon": "awp",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 49.27693557739258,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Haydnn",
+                        "steam64id": "76561198150133291",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 203.130859375,
+                            "y": 1431.5029296875,
+                            "z": 106.80977630615234
+                        },
+                        "viewAngles": {
+                            "pitch": -12.91546630859375,
+                            "yaw": 57.69813537597656
+                        }
+                    },
+                    "victim": {
+                        "name": "jacobTurnip_",
+                        "steam64id": "76561199706097973",
+                        "team": "CT",
+                        "position": {
+                            "x": 746.6123046875,
+                            "y": 1939.0640869140625,
+                            "z": 143.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 35962,
+                        "weapon": "hegrenade",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 18.811325073242188,
+                        "ticks_since_last_kill": 652,
+                        "distance_moved_since_last_kill": 929.8505620289526
+                    },
+                    "assist": {
+                        "name": "tennoir",
+                        "steam64id": "76561198133614749",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Haydnn",
+                        "steam64id": "76561198150133291",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 203.130859375,
+                            "y": 1431.5029296875,
+                            "z": 106.80977630615234
+                        },
+                        "viewAngles": {
+                            "pitch": -12.91546630859375,
+                            "yaw": 57.69813537597656
+                        }
+                    },
+                    "victim": {
+                        "name": "tennoir",
+                        "steam64id": "76561198133614749",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 522.385498046875,
+                            "y": 2055.08154296875,
+                            "z": 138.46066284179688
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 35962,
+                        "weapon": "hegrenade",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 17.748374938964844,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    },
+                    "assist": {
+                        "name": "Money_Hero",
+                        "steam64id": "76561198979344224",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Haydnn",
+                        "steam64id": "76561198150133291",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 2382.256591796875,
+                            "y": 1028.873046875,
+                            "z": 165.31637573242188
+                        },
+                        "viewAngles": {
+                            "pitch": 0.14178466796875,
+                            "yaw": -123.84166717529297
+                        }
+                    },
+                    "victim": {
+                        "name": "4lfi3",
+                        "steam64id": "76561199774774109",
+                        "team": "CT",
+                        "position": {
+                            "x": 1915.745361328125,
+                            "y": 318.21649169921875,
+                            "z": 161.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 39312,
+                        "weapon": "awp",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 21.592729568481445,
+                        "ticks_since_last_kill": 3350,
+                        "distance_moved_since_last_kill": 2216.7820827526566
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Haydnn",
+                        "steam64id": "76561198150133291",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 2230.427978515625,
+                            "y": 770.3981323242188,
+                            "z": 155.35250854492188
+                        },
+                        "viewAngles": {
+                            "pitch": 2.2597503662109375,
+                            "yaw": -114.5819091796875
+                        }
+                    },
+                    "victim": {
+                        "name": "Money_Hero",
+                        "steam64id": "76561198979344224",
+                        "team": "CT",
+                        "position": {
+                            "x": 1957.2733154296875,
+                            "y": 138.15744018554688,
+                            "z": 142.9769287109375
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 40728,
+                        "weapon": "awp",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": true,
+                        "distance_to_enemy": 17.673978805541992,
+                        "ticks_since_last_kill": 1416,
+                        "distance_moved_since_last_kill": 299.9341392910637
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "hegrenade",
+                    "awp"
+                ],
+                "headshots": 1,
+                "wallbangs": 0,
+                "radius_moved": 1488.7885549888915,
+                "victims_in_radius": 1327.5219868749355,
+                "total_distance_moved": 3446.566784072673
+            }
+        }
+    ],
+    "quadKills": [
+        {
+            "roundNumber": 18,
+            "player": "tennoir",
+            "killCount": 4,
+            "duration_in_ticks": 782,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "tennoir",
+                        "steam64id": "76561198133614749",
+                        "team": "CT",
+                        "position": {
+                            "x": 2023.0655517578125,
+                            "y": -224.22674560546875,
+                            "z": 262.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 18.400726318359375,
+                            "yaw": 118.07452392578125
+                        }
+                    },
+                    "victim": {
+                        "name": "jacobTurnip_",
+                        "steam64id": "76561199706097973",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1827.736083984375,
+                            "y": 135.58285522460938,
+                            "z": 138.43789672851562
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 130830,
+                        "weapon": "mp9",
+                        "penetrationKill": true,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 10.831010818481445,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    },
+                    "assist": {
+                        "name": "Haydnn",
+                        "steam64id": "76561198150133291",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "tennoir",
+                        "steam64id": "76561198133614749",
+                        "team": "CT",
+                        "position": {
+                            "x": 2070.561767578125,
+                            "y": -181.24261474609375,
+                            "z": 262.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 35.26817321777344,
+                            "yaw": 134.7548828125
+                        }
+                    },
+                    "victim": {
+                        "name": "FUSION35",
+                        "steam64id": "76561198152560560",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1863.687744140625,
+                            "y": 10.346396446228027,
+                            "z": 132.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 130939,
+                        "weapon": "mp9",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 8.21008586883545,
+                        "ticks_since_last_kill": 109,
+                        "distance_moved_since_last_kill": 64.05877007081527
+                    },
+                    "assist": {
+                        "name": "Noodle",
+                        "steam64id": "76561199180844657",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "tennoir",
+                        "steam64id": "76561198133614749",
+                        "team": "CT",
+                        "position": {
+                            "x": 2133.357421875,
+                            "y": -230.25518798828125,
+                            "z": 146.078125
+                        },
+                        "viewAngles": {
+                            "pitch": 6.3205718994140625,
+                            "yaw": 84.33929443359375
+                        }
+                    },
+                    "victim": {
+                        "name": "T4-_-",
+                        "steam64id": "76561197998595832",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 2173.01708984375,
+                            "y": 76.236083984375,
+                            "z": 126.12106323242188
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 131466,
+                        "weapon": "mp9",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 7.783425807952881,
+                        "ticks_since_last_kill": 527,
+                        "distance_moved_since_last_kill": 140.67925835623052
+                    },
+                    "assist": {
+                        "name": "Pai__Mei",
+                        "steam64id": "76561198105531106",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "tennoir",
+                        "steam64id": "76561198133614749",
+                        "team": "CT",
+                        "position": {
+                            "x": 2139.540771484375,
+                            "y": -165.12066650390625,
+                            "z": 97.71601104736328
+                        },
+                        "viewAngles": {
+                            "pitch": -3.328521728515625,
+                            "yaw": 113.58627319335938
+                        }
+                    },
+                    "victim": {
+                        "name": "Money_Hero",
+                        "steam64id": "76561198979344224",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1905.0023193359375,
+                            "y": 377.1329650878906,
+                            "z": 161.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 131612,
+                        "weapon": "mp9",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 14.976923942565918,
+                        "ticks_since_last_kill": 146,
+                        "distance_moved_since_last_kill": 81.36113179742577
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "mp9"
+                ],
+                "headshots": 1,
+                "wallbangs": 1,
+                "radius_moved": 111.39737959985509,
+                "victims_in_radius": 242.4748614860826,
+                "total_distance_moved": 286.0991602244716
+            }
+        }
+    ],
+    "multiKills": []
+}

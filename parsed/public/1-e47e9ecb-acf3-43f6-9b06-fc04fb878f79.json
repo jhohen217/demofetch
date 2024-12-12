@@ -1,0 +1,715 @@
+{
+    "demoInfo": {
+        "fileName": "1-e47e9ecb-acf3-43f6-9b06-fc04fb878f79.dem",
+        "mapName": "de_train",
+        "date": "2024-12-05 18:46:44",
+        "aceKills": 0,
+        "quadKills": 4,
+        "multiKills": 0
+    },
+    "aceKills": [],
+    "quadKills": [
+        {
+            "roundNumber": 11,
+            "player": "scrappy111",
+            "killCount": 4,
+            "duration_in_ticks": 604,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "scrappy111",
+                        "steam64id": "76561198799288088",
+                        "team": "CT",
+                        "position": {
+                            "x": 594.2933959960938,
+                            "y": 263.6830749511719,
+                            "z": -215.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 0.285980224609375,
+                            "yaw": 166.57058715820312
+                        }
+                    },
+                    "victim": {
+                        "name": "1ANTHONY",
+                        "steam64id": "76561197986261008",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -837.8846435546875,
+                            "y": 598.5958862304688,
+                            "z": -215.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 68993,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 37.23713302612305,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    },
+                    "assist": {
+                        "name": "s0uljawitch",
+                        "steam64id": "76561197987606398",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "scrappy111",
+                        "steam64id": "76561198799288088",
+                        "team": "CT",
+                        "position": {
+                            "x": 261.0238342285156,
+                            "y": 383.6241760253906,
+                            "z": -215.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 0.5719757080078125,
+                            "yaw": 174.349609375
+                        }
+                    },
+                    "victim": {
+                        "name": "-BIast-",
+                        "steam64id": "76561197997088463",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -778.6549072265625,
+                            "y": 479.6181335449219,
+                            "z": -215.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 69174,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 26.17477035522461,
+                        "ticks_since_last_kill": 181,
+                        "distance_moved_since_last_kill": 354.1955230203362
+                    },
+                    "assist": {
+                        "name": "dKim-",
+                        "steam64id": "76561198408845072",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "scrappy111",
+                        "steam64id": "76561198799288088",
+                        "team": "CT",
+                        "position": {
+                            "x": 245.809326171875,
+                            "y": 409.31524658203125,
+                            "z": -215.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 5.7200927734375,
+                            "yaw": -179.70166015625
+                        }
+                    },
+                    "victim": {
+                        "name": "Perc30k",
+                        "steam64id": "76561198125908913",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -592.0585327148438,
+                            "y": 400.95794677734375,
+                            "z": -215.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 69261,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 21.287761688232422,
+                        "ticks_since_last_kill": 87,
+                        "distance_moved_since_last_kill": 29.858204262009284
+                    },
+                    "assist": {
+                        "name": "Cronus25",
+                        "steam64id": "76561198132466819",
+                        "team": "CT",
+                        "flashAssist": true
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "scrappy111",
+                        "steam64id": "76561198799288088",
+                        "team": "CT",
+                        "position": {
+                            "x": 203.37716674804688,
+                            "y": 551.6393432617188,
+                            "z": -215.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 7.264373779296875,
+                            "yaw": -175.31399536132812
+                        }
+                    },
+                    "victim": {
+                        "name": "TheBearS",
+                        "steam64id": "76561198130731871",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -827.0084228515625,
+                            "y": 447.3603210449219,
+                            "z": -215.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 69597,
+                        "weapon": "m4a1_silencer",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 26.30906105041504,
+                        "ticks_since_last_kill": 336,
+                        "distance_moved_since_last_kill": 148.51476912771403
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "m4a1_silencer"
+                ],
+                "headshots": 3,
+                "wallbangs": 0,
+                "radius_moved": 301.76725128100986,
+                "victims_in_radius": 185.32429356742782,
+                "total_distance_moved": 532.5684964100595
+            }
+        },
+        {
+            "roundNumber": 12,
+            "player": "hawk-2-a",
+            "killCount": 4,
+            "duration_in_ticks": 1151,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "hawk-2-a",
+                        "steam64id": "76561199557446170",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -475.03369140625,
+                            "y": 240.66439819335938,
+                            "z": -215.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 1.1683349609375,
+                            "yaw": -49.88616943359375
+                        }
+                    },
+                    "victim": {
+                        "name": "kopite-",
+                        "steam64id": "76561198856086685",
+                        "team": "CT",
+                        "position": {
+                            "x": -85.0218505859375,
+                            "y": -212.9356689453125,
+                            "z": -215.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 72460,
+                        "weapon": "glock",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 15.143356323242188,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    },
+                    "assist": {
+                        "name": "Cronus25",
+                        "steam64id": "76561198132466819",
+                        "team": "TERRORIST",
+                        "flashAssist": true
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "hawk-2-a",
+                        "steam64id": "76561199557446170",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -104.94287109375,
+                            "y": -266.7586669921875,
+                            "z": -215.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 0.2176666259765625,
+                            "yaw": 6.929962158203125
+                        }
+                    },
+                    "victim": {
+                        "name": "Perc30k",
+                        "steam64id": "76561198125908913",
+                        "team": "CT",
+                        "position": {
+                            "x": 669.1010131835938,
+                            "y": -166.81622314453125,
+                            "z": -215.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 72846,
+                        "weapon": "glock",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 19.824270248413086,
+                        "ticks_since_last_kill": 386,
+                        "distance_moved_since_last_kill": 628.0488694057772
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "hawk-2-a",
+                        "steam64id": "76561199557446170",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 27.903627395629883,
+                            "y": -157.79998779296875,
+                            "z": -215.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 0.415771484375,
+                            "yaw": -45.510528564453125
+                        }
+                    },
+                    "victim": {
+                        "name": "-BIast-",
+                        "steam64id": "76561197997088463",
+                        "team": "CT",
+                        "position": {
+                            "x": 286.7825927734375,
+                            "y": -439.44488525390625,
+                            "z": -175.640625
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 72960,
+                        "weapon": "usp_silencer",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 9.777520179748535,
+                        "ticks_since_last_kill": 114,
+                        "distance_moved_since_last_kill": 171.81439384908086
+                    },
+                    "assist": {
+                        "name": "dKim-",
+                        "steam64id": "76561198408845072",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "hawk-2-a",
+                        "steam64id": "76561199557446170",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 793.0469970703125,
+                            "y": 122.91963958740234,
+                            "z": -211.96875
+                        },
+                        "viewAngles": {
+                            "pitch": -9.632598876953125,
+                            "yaw": 61.369964599609375
+                        }
+                    },
+                    "victim": {
+                        "name": "1ANTHONY",
+                        "steam64id": "76561197986261008",
+                        "team": "CT",
+                        "position": {
+                            "x": 843.0880737304688,
+                            "y": 200.47621154785156,
+                            "z": -211.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 73611,
+                        "weapon": "usp_silencer",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 2.5117075443267822,
+                        "ticks_since_last_kill": 651,
+                        "distance_moved_since_last_kill": 815.0238556960786
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "glock",
+                    "usp_silencer"
+                ],
+                "headshots": 3,
+                "wallbangs": 0,
+                "radius_moved": 745.7204827402517,
+                "victims_in_radius": 545.9669050460503,
+                "total_distance_moved": 1614.8871189509366
+            }
+        },
+        {
+            "roundNumber": 16,
+            "player": "-BIast-",
+            "killCount": 4,
+            "duration_in_ticks": 2463,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "-BIast-",
+                        "steam64id": "76561197997088463",
+                        "team": "CT",
+                        "position": {
+                            "x": 222.0777130126953,
+                            "y": 445.7026062011719,
+                            "z": -215.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 4.4000244140625,
+                            "yaw": -166.49609375
+                        }
+                    },
+                    "victim": {
+                        "name": "hawk-2-a",
+                        "steam64id": "76561199557446170",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -65.0142822265625,
+                            "y": 379.7633972167969,
+                            "z": -215.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 93868,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 7.496878623962402,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "-BIast-",
+                        "steam64id": "76561197997088463",
+                        "team": "CT",
+                        "position": {
+                            "x": 29.428890228271484,
+                            "y": 292.4087829589844,
+                            "z": -37.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 16.675872802734375,
+                            "yaw": 160.15182495117188
+                        }
+                    },
+                    "victim": {
+                        "name": "s0uljawitch",
+                        "steam64id": "76561197987606398",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -830.5599975585938,
+                            "y": 623.985107421875,
+                            "z": -215.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 94577,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": true,
+                        "distance_to_enemy": 23.849205017089844,
+                        "ticks_since_last_kill": 709,
+                        "distance_moved_since_last_kill": 303.8034976171791
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "-BIast-",
+                        "steam64id": "76561197997088463",
+                        "team": "CT",
+                        "position": {
+                            "x": 32.96342849731445,
+                            "y": 261.2122802734375,
+                            "z": -37.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 21.25201416015625,
+                            "yaw": 163.31967163085938
+                        }
+                    },
+                    "victim": {
+                        "name": "dKim-",
+                        "steam64id": "76561198408845072",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -882.5292358398438,
+                            "y": 570.513671875,
+                            "z": -215.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 94696,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": true,
+                        "distance_to_enemy": 24.839990615844727,
+                        "ticks_since_last_kill": 119,
+                        "distance_moved_since_last_kill": 31.39609435239776
+                    },
+                    "assist": {
+                        "name": "kopite-",
+                        "steam64id": "76561198856086685",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "-BIast-",
+                        "steam64id": "76561197997088463",
+                        "team": "CT",
+                        "position": {
+                            "x": -813.1158447265625,
+                            "y": 409.26544189453125,
+                            "z": -215.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 2.023895263671875,
+                            "yaw": 91.9078369140625
+                        }
+                    },
+                    "victim": {
+                        "name": "Cronus25",
+                        "steam64id": "76561198132466819",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -821.6780395507812,
+                            "y": 631.954833984375,
+                            "z": -215.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 96331,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 5.768883228302002,
+                        "ticks_since_last_kill": 1635,
+                        "distance_moved_since_last_kill": 877.1852000832239
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "ak47"
+                ],
+                "headshots": 0,
+                "wallbangs": 0,
+                "radius_moved": 689.1170930553646,
+                "victims_in_radius": 609.6363649191683,
+                "total_distance_moved": 1212.3847920528008
+            }
+        },
+        {
+            "roundNumber": 17,
+            "player": "-BIast-",
+            "killCount": 4,
+            "duration_in_ticks": 995,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "-BIast-",
+                        "steam64id": "76561197997088463",
+                        "team": "CT",
+                        "position": {
+                            "x": -471.41632080078125,
+                            "y": 153.5166473388672,
+                            "z": -215.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 2.20001220703125,
+                            "yaw": 43.643524169921875
+                        }
+                    },
+                    "victim": {
+                        "name": "hawk-2-a",
+                        "steam64id": "76561199557446170",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -323.9822998046875,
+                            "y": 293.6820373535156,
+                            "z": -215.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 98829,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": true,
+                        "distance_to_enemy": 5.453228950500488,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "-BIast-",
+                        "steam64id": "76561197997088463",
+                        "team": "CT",
+                        "position": {
+                            "x": -415.475341796875,
+                            "y": 270.9434814453125,
+                            "z": -215.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 4.004180908203125,
+                            "yaw": 12.887298583984375
+                        }
+                    },
+                    "victim": {
+                        "name": "Cronus25",
+                        "steam64id": "76561198132466819",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -24.647705078125,
+                            "y": 366.357177734375,
+                            "z": -215.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 98927,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 10.084267616271973,
+                        "ticks_since_last_kill": 98,
+                        "distance_moved_since_last_kill": 130.0709594805009
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "-BIast-",
+                        "steam64id": "76561197997088463",
+                        "team": "CT",
+                        "position": {
+                            "x": -634.0488891601562,
+                            "y": 319.7438659667969,
+                            "z": -215.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 6.292083740234375,
+                            "yaw": 117.2110595703125
+                        }
+                    },
+                    "victim": {
+                        "name": "dKim-",
+                        "steam64id": "76561198408845072",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -867.8917846679688,
+                            "y": 771.878662109375,
+                            "z": -215.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 99475,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 12.93774700164795,
+                        "ticks_since_last_kill": 548,
+                        "distance_moved_since_last_kill": 223.955069459062
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "-BIast-",
+                        "steam64id": "76561197997088463",
+                        "team": "CT",
+                        "position": {
+                            "x": -855.5619506835938,
+                            "y": 438.8665466308594,
+                            "z": -215.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 8.492095947265625,
+                            "yaw": 66.25923156738281
+                        }
+                    },
+                    "victim": {
+                        "name": "scrappy111",
+                        "steam64id": "76561198799288088",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -715.25927734375,
+                            "y": 759.1173706054688,
+                            "z": -215.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 99824,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 8.885204315185547,
+                        "ticks_since_last_kill": 349,
+                        "distance_moved_since_last_kill": 251.51192710103913
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "ak47"
+                ],
+                "headshots": 1,
+                "wallbangs": 0,
+                "radius_moved": 298.03733068001543,
+                "victims_in_radius": 492.89269410954495,
+                "total_distance_moved": 605.537956040602
+            }
+        }
+    ],
+    "multiKills": []
+}

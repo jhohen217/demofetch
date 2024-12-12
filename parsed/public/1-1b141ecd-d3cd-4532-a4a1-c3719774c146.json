@@ -1,0 +1,198 @@
+{
+    "demoInfo": {
+        "fileName": "1-1b141ecd-d3cd-4532-a4a1-c3719774c146.dem",
+        "mapName": "de_ancient",
+        "date": "2024-12-05 18:45:13",
+        "aceKills": 0,
+        "quadKills": 1,
+        "multiKills": 0
+    },
+    "aceKills": [],
+    "quadKills": [
+        {
+            "roundNumber": 2,
+            "player": "estintos",
+            "killCount": 4,
+            "duration_in_ticks": 954,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "estintos",
+                        "steam64id": "76561198155978045",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1093.4034423828125,
+                            "y": 628.822265625,
+                            "z": 116.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 13.442108154296875,
+                            "yaw": -175.62847900390625
+                        }
+                    },
+                    "victim": {
+                        "name": "lil-JUNIOR",
+                        "steam64id": "76561198812935200",
+                        "team": "CT",
+                        "position": {
+                            "x": -1273.2841796875,
+                            "y": 621.694580078125,
+                            "z": 73.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 15286,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 5.17556095123291,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "estintos",
+                        "steam64id": "76561198155978045",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1115.004150390625,
+                            "y": 841.820068359375,
+                            "z": 59.68230438232422
+                        },
+                        "viewAngles": {
+                            "pitch": -0.7038116455078125,
+                            "yaw": -117.94475555419922
+                        }
+                    },
+                    "victim": {
+                        "name": "NUDDER",
+                        "steam64id": "76561198066611302",
+                        "team": "CT",
+                        "position": {
+                            "x": -1306.4918212890625,
+                            "y": 479.3784484863281,
+                            "z": 73.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 15760,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 10.344541549682617,
+                        "ticks_since_last_kill": 474,
+                        "distance_moved_since_last_kill": 221.3817025599322
+                    },
+                    "assist": {
+                        "name": "yLiaD",
+                        "steam64id": "76561197998698000",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "estintos",
+                        "steam64id": "76561198155978045",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1168.6107177734375,
+                            "y": 657.4866943359375,
+                            "z": 63.537376403808594
+                        },
+                        "viewAngles": {
+                            "pitch": 1.298095703125,
+                            "yaw": 145.67288208007812
+                        }
+                    },
+                    "victim": {
+                        "name": "r3my",
+                        "steam64id": "76561198829269206",
+                        "team": "CT",
+                        "position": {
+                            "x": -1658.785400390625,
+                            "y": 975.567138671875,
+                            "z": 52.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 15987,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": true,
+                        "distance_to_enemy": 14.870940208435059,
+                        "ticks_since_last_kill": 227,
+                        "distance_moved_since_last_kill": 192.0086415391853
+                    },
+                    "assist": {
+                        "name": "yLiaD",
+                        "steam64id": "76561197998698000",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "estintos",
+                        "steam64id": "76561198155978045",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1168.0023193359375,
+                            "y": 904.726318359375,
+                            "z": 53.092628479003906
+                        },
+                        "viewAngles": {
+                            "pitch": 1.121978759765625,
+                            "yaw": -164.05712890625
+                        }
+                    },
+                    "victim": {
+                        "name": "Michael_Weki",
+                        "steam64id": "76561198816178162",
+                        "team": "CT",
+                        "position": {
+                            "x": -1643.9617919921875,
+                            "y": 747.5556030273438,
+                            "z": 52.031246185302734
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 16240,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": true,
+                        "distance_to_enemy": 12.8071928024292,
+                        "ticks_since_last_kill": 253,
+                        "distance_moved_since_last_kill": 247.4608950826821
+                    },
+                    "assist": {
+                        "name": "-ninjavitis",
+                        "steam64id": "76561198084682205",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "ak47"
+                ],
+                "headshots": 1,
+                "wallbangs": 0,
+                "radius_moved": 151.23994206624292,
+                "victims_in_radius": 328.86541667537773,
+                "total_distance_moved": 660.8512391817997
+            }
+        }
+    ],
+    "multiKills": []
+}

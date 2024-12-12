@@ -1,0 +1,874 @@
+{
+    "demoInfo": {
+        "fileName": "1-8a5a8b76-1539-4389-b159-d81647aba22c.dem",
+        "mapName": "de_vertigo",
+        "date": "2024-12-05 18:46:11",
+        "aceKills": 0,
+        "quadKills": 5,
+        "multiKills": 0
+    },
+    "aceKills": [],
+    "quadKills": [
+        {
+            "roundNumber": 1,
+            "player": "bietuifei",
+            "killCount": 4,
+            "duration_in_ticks": 825,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "bietuifei",
+                        "steam64id": "76561199652380664",
+                        "team": "CT",
+                        "position": {
+                            "x": -2048.663330078125,
+                            "y": 1014.353515625,
+                            "z": 11786.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 7.378692626953125,
+                            "yaw": -112.77397155761719
+                        }
+                    },
+                    "victim": {
+                        "name": "SENKAY1337",
+                        "steam64id": "76561197995857502",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -2360.71728515625,
+                            "y": 233.3167724609375,
+                            "z": 11744.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 11403,
+                        "weapon": "m4a1",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 21.439970016479492,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "bietuifei",
+                        "steam64id": "76561199652380664",
+                        "team": "CT",
+                        "position": {
+                            "x": -2097.965576171875,
+                            "y": 1071.073486328125,
+                            "z": 11751.8984375
+                        },
+                        "viewAngles": {
+                            "pitch": 7.264373779296875,
+                            "yaw": -106.31057739257812
+                        }
+                    },
+                    "victim": {
+                        "name": "burritocock",
+                        "steam64id": "76561198386005057",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -2434.852783203125,
+                            "y": -2.738525390625,
+                            "z": 11712.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 11589,
+                        "weapon": "m4a1",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 28.608182907104492,
+                        "ticks_since_last_kill": 186,
+                        "distance_moved_since_last_kill": 82.54038669410389
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "bietuifei",
+                        "steam64id": "76561199652380664",
+                        "team": "CT",
+                        "position": {
+                            "x": -2354.069091796875,
+                            "y": 733.4456176757812,
+                            "z": 11797.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 10.009918212890625,
+                            "yaw": -89.20761108398438
+                        }
+                    },
+                    "victim": {
+                        "name": "Dytox_",
+                        "steam64id": "76561198838917165",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -2337.729248046875,
+                            "y": -265.19854736328125,
+                            "z": 11660.8994140625
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 12115,
+                        "weapon": "m4a1",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 25.632808685302734,
+                        "ticks_since_last_kill": 526,
+                        "distance_moved_since_last_kill": 426.1672901225164
+                    },
+                    "assist": {
+                        "name": "Liuhuaqiangt",
+                        "steam64id": "76561198971772387",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "bietuifei",
+                        "steam64id": "76561199652380664",
+                        "team": "CT",
+                        "position": {
+                            "x": -2437.11962890625,
+                            "y": 727.2529296875,
+                            "z": 11744.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 7.207366943359375,
+                            "yaw": -80.5133056640625
+                        }
+                    },
+                    "victim": {
+                        "name": "BluSapphire",
+                        "steam64id": "76561198315046247",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -2287.40087890625,
+                            "y": -178.8721923828125,
+                            "z": 11684.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 12228,
+                        "weapon": "m4a1",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 23.390174865722656,
+                        "ticks_since_last_kill": 113,
+                        "distance_moved_since_last_kill": 98.71545521688019
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "m4a1"
+                ],
+                "headshots": 1,
+                "wallbangs": 0,
+                "radius_moved": 259.0447316325688,
+                "victims_in_radius": 290.066820124635,
+                "total_distance_moved": 607.4231320335005
+            }
+        },
+        {
+            "roundNumber": 7,
+            "player": "BluSapphire",
+            "killCount": 4,
+            "duration_in_ticks": 1732,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "BluSapphire",
+                        "steam64id": "76561198315046247",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1096.1630859375,
+                            "y": -728.5956420898438,
+                            "z": 11776.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 2.14508056640625,
+                            "yaw": 51.76963806152344
+                        }
+                    },
+                    "victim": {
+                        "name": "bietuife",
+                        "steam64id": "76561199080167717",
+                        "team": "CT",
+                        "position": {
+                            "x": -936.598876953125,
+                            "y": -528.5831909179688,
+                            "z": 11776.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 46536,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 6.930026531219482,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "BluSapphire",
+                        "steam64id": "76561198315046247",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -112.89141845703125,
+                            "y": -54.8275146484375,
+                            "z": 11776.03125
+                        },
+                        "viewAngles": {
+                            "pitch": -22.659988403320312,
+                            "yaw": 161.49490356445312
+                        }
+                    },
+                    "victim": {
+                        "name": "Eason066",
+                        "steam64id": "76561198832531023",
+                        "team": "CT",
+                        "position": {
+                            "x": -342.28387451171875,
+                            "y": 22.657245635986328,
+                            "z": 11873.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 47256,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 6.625155448913574,
+                        "ticks_since_last_kill": 720,
+                        "distance_moved_since_last_kill": 1191.9675589653102
+                    },
+                    "assist": {
+                        "name": "SENKAY1337",
+                        "steam64id": "76561197995857502",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "BluSapphire",
+                        "steam64id": "76561198315046247",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -121.78448486328125,
+                            "y": 61.318119049072266,
+                            "z": 11776.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 4.179962158203125,
+                            "yaw": 174.03475952148438
+                        }
+                    },
+                    "victim": {
+                        "name": "bietuifei",
+                        "steam64id": "76561199652380664",
+                        "team": "CT",
+                        "position": {
+                            "x": -427.1148681640625,
+                            "y": 89.60281372070312,
+                            "z": 11776.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 47358,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 7.81383752822876,
+                        "ticks_since_last_kill": 102,
+                        "distance_moved_since_last_kill": 116.48559935503654
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "BluSapphire",
+                        "steam64id": "76561198315046247",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -92.5052490234375,
+                            "y": -140.49432373046875,
+                            "z": 11776.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 2.8598785400390625,
+                            "yaw": 112.81997680664062
+                        }
+                    },
+                    "victim": {
+                        "name": "-Storm----",
+                        "steam64id": "76561198876144259",
+                        "team": "CT",
+                        "position": {
+                            "x": -221.2987060546875,
+                            "y": 137.9987335205078,
+                            "z": 11776.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 48268,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 7.801107406616211,
+                        "ticks_since_last_kill": 910,
+                        "distance_moved_since_last_kill": 203.92531895772703
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "ak47"
+                ],
+                "headshots": 2,
+                "wallbangs": 0,
+                "radius_moved": 900.6650328991165,
+                "victims_in_radius": 646.5996420259531,
+                "total_distance_moved": 1512.378477278074
+            }
+        },
+        {
+            "roundNumber": 10,
+            "player": "BluSapphire",
+            "killCount": 4,
+            "duration_in_ticks": 724,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "BluSapphire",
+                        "steam64id": "76561198315046247",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1530.3634033203125,
+                            "y": -399.694091796875,
+                            "z": 11776.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 1.990936279296875,
+                            "yaw": 118.69183349609375
+                        }
+                    },
+                    "victim": {
+                        "name": "Eason066",
+                        "steam64id": "76561198832531023",
+                        "team": "CT",
+                        "position": {
+                            "x": -1893.3046875,
+                            "y": 258.8463439941406,
+                            "z": 11776.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 63834,
+                        "weapon": "awp",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 19.10454750061035,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "BluSapphire",
+                        "steam64id": "76561198315046247",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1946.25634765625,
+                            "y": 150.56544494628906,
+                            "z": 11776.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 0.51531982421875,
+                            "yaw": 7.9534149169921875
+                        }
+                    },
+                    "victim": {
+                        "name": "Liuhuaqiangt",
+                        "steam64id": "76561198971772387",
+                        "team": "CT",
+                        "position": {
+                            "x": -1285.861572265625,
+                            "y": 232.40121459960938,
+                            "z": 11776.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 64135,
+                        "weapon": "awp",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 17.001611709594727,
+                        "ticks_since_last_kill": 301,
+                        "distance_moved_since_last_kill": 689.7481416613
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "BluSapphire",
+                        "steam64id": "76561198315046247",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1415.6446533203125,
+                            "y": 542.3050537109375,
+                            "z": 11874.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 16.666946411132812,
+                            "yaw": 87.73406982421875
+                        }
+                    },
+                    "victim": {
+                        "name": "bietuifei",
+                        "steam64id": "76561199652380664",
+                        "team": "CT",
+                        "position": {
+                            "x": -1383.5517578125,
+                            "y": 901.0215454101562,
+                            "z": 11776.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 64437,
+                        "weapon": "awp",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 9.360912322998047,
+                        "ticks_since_last_kill": 302,
+                        "distance_moved_since_last_kill": 666.7928398244346
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "BluSapphire",
+                        "steam64id": "76561198315046247",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1555.054443359375,
+                            "y": 664.4973754882812,
+                            "z": 11874.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 11.30938720703125,
+                            "yaw": -172.7105712890625
+                        }
+                    },
+                    "victim": {
+                        "name": "-Storm----",
+                        "steam64id": "76561198876144259",
+                        "team": "CT",
+                        "position": {
+                            "x": -2164.694091796875,
+                            "y": 597.1399536132812,
+                            "z": 11772.1923828125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 64558,
+                        "weapon": "awp",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 16.07187843322754,
+                        "ticks_since_last_kill": 121,
+                        "distance_moved_since_last_kill": 185.38083250453215
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "awp"
+                ],
+                "headshots": 0,
+                "wallbangs": 0,
+                "radius_moved": 646.1444071392627,
+                "victims_in_radius": 501.9297330185502,
+                "total_distance_moved": 1541.9218139902669
+            }
+        },
+        {
+            "roundNumber": 15,
+            "player": "BluSapphire",
+            "killCount": 4,
+            "duration_in_ticks": 2528,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "BluSapphire",
+                        "steam64id": "76561198315046247",
+                        "team": "CT",
+                        "position": {
+                            "x": -943.544921875,
+                            "y": -459.9456787109375,
+                            "z": 11777.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 2.089813232421875,
+                            "yaw": -29.851226806640625
+                        }
+                    },
+                    "victim": {
+                        "name": "Eason066",
+                        "steam64id": "76561198832531023",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -215.84686279296875,
+                            "y": -864.6995849609375,
+                            "z": 11776.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 94128,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 21.318477630615234,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    },
+                    "assist": {
+                        "name": "Divinity3rd",
+                        "steam64id": "76561198416349894",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "BluSapphire",
+                        "steam64id": "76561198315046247",
+                        "team": "CT",
+                        "position": {
+                            "x": -895.2244262695312,
+                            "y": -511.97320556640625,
+                            "z": 11776.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 3.68487548828125,
+                            "yaw": -20.336380004882812
+                        }
+                    },
+                    "victim": {
+                        "name": "bietuife",
+                        "steam64id": "76561199080167717",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -81.14923095703125,
+                            "y": -807.59716796875,
+                            "z": 11776.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 94355,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 21.999414443969727,
+                        "ticks_since_last_kill": 227,
+                        "distance_moved_since_last_kill": 71.01220913515257
+                    },
+                    "assist": {
+                        "name": "burritocock",
+                        "steam64id": "76561198386005057",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "BluSapphire",
+                        "steam64id": "76561198315046247",
+                        "team": "CT",
+                        "position": {
+                            "x": -469.2276611328125,
+                            "y": -608.836181640625,
+                            "z": 11776.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 1.7598724365234375,
+                            "yaw": -62.19154357910156
+                        }
+                    },
+                    "victim": {
+                        "name": "Liuhuaqiangt",
+                        "steam64id": "76561198971772387",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -283.62408447265625,
+                            "y": -951.1160888671875,
+                            "z": 11776.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 94851,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 10.242528915405273,
+                        "ticks_since_last_kill": 496,
+                        "distance_moved_since_last_kill": 436.8703240561247
+                    },
+                    "assist": {
+                        "name": "Dytox_",
+                        "steam64id": "76561198838917165",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "BluSapphire",
+                        "steam64id": "76561198315046247",
+                        "team": "CT",
+                        "position": {
+                            "x": 63.78471755981445,
+                            "y": -572.3604125976562,
+                            "z": 11785.8271484375
+                        },
+                        "viewAngles": {
+                            "pitch": 0.054931640625,
+                            "yaw": 92.57904052734375
+                        }
+                    },
+                    "victim": {
+                        "name": "-Storm----",
+                        "steam64id": "76561198876144259",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 43.82402038574219,
+                            "y": -32.8223876953125,
+                            "z": 11783.376953125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 96656,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 13.712032318115234,
+                        "ticks_since_last_kill": 1805,
+                        "distance_moved_since_last_kill": 534.3487973159911
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "ak47"
+                ],
+                "headshots": 2,
+                "wallbangs": 0,
+                "radius_moved": 625.8068250845258,
+                "victims_in_radius": 655.8825958210671,
+                "total_distance_moved": 1042.2313305072685
+            }
+        },
+        {
+            "roundNumber": 18,
+            "player": "bietuifei",
+            "killCount": 4,
+            "duration_in_ticks": 677,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "bietuifei",
+                        "steam64id": "76561199652380664",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -427.6722412109375,
+                            "y": -1159.712890625,
+                            "z": 11724.142578125
+                        },
+                        "viewAngles": {
+                            "pitch": -3.0888671875,
+                            "yaw": 64.69195556640625
+                        }
+                    },
+                    "victim": {
+                        "name": "BluSapphire",
+                        "steam64id": "76561198315046247",
+                        "team": "CT",
+                        "position": {
+                            "x": -225.7471923828125,
+                            "y": -705.3796997070312,
+                            "z": 11776.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 112563,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 12.760987281799316,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "bietuifei",
+                        "steam64id": "76561199652380664",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -293.475830078125,
+                            "y": -1195.9244384765625,
+                            "z": 11768.8740234375
+                        },
+                        "viewAngles": {
+                            "pitch": -4.576141357421875,
+                            "yaw": 87.5150146484375
+                        }
+                    },
+                    "victim": {
+                        "name": "burritocock",
+                        "steam64id": "76561198386005057",
+                        "team": "CT",
+                        "position": {
+                            "x": -248.0594482421875,
+                            "y": -38.5350341796875,
+                            "z": 11873.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 112832,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 29.515609741210938,
+                        "ticks_since_last_kill": 269,
+                        "distance_moved_since_last_kill": 146.0166263083695
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "bietuifei",
+                        "steam64id": "76561199652380664",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 57.565757751464844,
+                            "y": -1129.494873046875,
+                            "z": 11785.0634765625
+                        },
+                        "viewAngles": {
+                            "pitch": 4.1754913330078125,
+                            "yaw": 92.0908203125
+                        }
+                    },
+                    "victim": {
+                        "name": "Divinity3rd",
+                        "steam64id": "76561198416349894",
+                        "team": "CT",
+                        "position": {
+                            "x": 19.063758850097656,
+                            "y": -314.6671142578125,
+                            "z": 11780.3369140625
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 112993,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": true,
+                        "distance_to_enemy": 20.38337516784668,
+                        "ticks_since_last_kill": 161,
+                        "distance_moved_since_last_kill": 357.6383395856537
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "bietuifei",
+                        "steam64id": "76561199652380664",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -236.38848876953125,
+                            "y": -779.9541625976562,
+                            "z": 11776.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 6.406402587890625,
+                            "yaw": 158.04244995117188
+                        }
+                    },
+                    "victim": {
+                        "name": "Dytox_",
+                        "steam64id": "76561198838917165",
+                        "team": "CT",
+                        "position": {
+                            "x": -879.2462768554688,
+                            "y": -525.2199096679688,
+                            "z": 11776.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 113240,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 17.573566436767578,
+                        "ticks_since_last_kill": 247,
+                        "distance_moved_since_last_kill": 456.8034461622936
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "ak47"
+                ],
+                "headshots": 1,
+                "wallbangs": 0,
+                "radius_moved": 290.3450528722774,
+                "victims_in_radius": 561.4213928105432,
+                "total_distance_moved": 960.4584120563168
+            }
+        }
+    ],
+    "multiKills": []
+}

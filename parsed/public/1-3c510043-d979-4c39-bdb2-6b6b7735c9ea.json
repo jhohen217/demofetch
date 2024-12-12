@@ -1,0 +1,543 @@
+{
+    "demoInfo": {
+        "fileName": "1-3c510043-d979-4c39-bdb2-6b6b7735c9ea.dem",
+        "mapName": "de_dust2",
+        "date": "2024-12-11 01:49:26",
+        "aceKills": 0,
+        "quadKills": 3,
+        "multiKills": 0
+    },
+    "aceKills": [],
+    "quadKills": [
+        {
+            "roundNumber": 2,
+            "player": "Steren",
+            "killCount": 4,
+            "duration_in_ticks": 646,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "Steren",
+                        "steam64id": "76561199632832400",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 350.9909362792969,
+                            "y": 2434.69189453125,
+                            "z": 96.37818145751953
+                        },
+                        "viewAngles": {
+                            "pitch": 11.930465698242188,
+                            "yaw": -25.179977416992188
+                        }
+                    },
+                    "victim": {
+                        "name": "RAMINO94",
+                        "steam64id": "76561198036064529",
+                        "team": "CT",
+                        "position": {
+                            "x": 1555.9388427734375,
+                            "y": 1882.0140380859375,
+                            "z": -7.92034912109375
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 15904,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 33.772884368896484,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Steren",
+                        "steam64id": "76561199632832400",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 483.64788818359375,
+                            "y": 2490.81298828125,
+                            "z": 95.72314453125
+                        },
+                        "viewAngles": {
+                            "pitch": 4.283294677734375,
+                            "yaw": -30.86712646484375
+                        }
+                    },
+                    "victim": {
+                        "name": "w8_4ME-",
+                        "steam64id": "76561199064142000",
+                        "team": "CT",
+                        "position": {
+                            "x": 1648.4671630859375,
+                            "y": 1791.594482421875,
+                            "z": -0.07574462890625
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 16004,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 34.58484649658203,
+                        "ticks_since_last_kill": 100,
+                        "distance_moved_since_last_kill": 144.04122023091168
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Steren",
+                        "steam64id": "76561199632832400",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 786.1822509765625,
+                            "y": 2272.077392578125,
+                            "z": -40.05950927734375
+                        },
+                        "viewAngles": {
+                            "pitch": 9.679641723632812,
+                            "yaw": 175.946044921875
+                        }
+                    },
+                    "victim": {
+                        "name": "JMSJMSJMSJMS",
+                        "steam64id": "76561198806766714",
+                        "team": "CT",
+                        "position": {
+                            "x": 222.1151123046875,
+                            "y": 2307.36669921875,
+                            "z": -118.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 16308,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 14.431879997253418,
+                        "ticks_since_last_kill": 304,
+                        "distance_moved_since_last_kill": 397.2520995205098
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Steren",
+                        "steam64id": "76561199632832400",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 618.9141235351562,
+                            "y": 2214.75439453125,
+                            "z": -94.5718994140625
+                        },
+                        "viewAngles": {
+                            "pitch": 0.943450927734375,
+                            "yaw": 179.5516357421875
+                        }
+                    },
+                    "victim": {
+                        "name": "-KromaK-",
+                        "steam64id": "76561198080370668",
+                        "team": "CT",
+                        "position": {
+                            "x": -793.4649047851562,
+                            "y": 2232.9677734375,
+                            "z": -107.039306640625
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 16550,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 35.88246536254883,
+                        "ticks_since_last_kill": 242,
+                        "distance_moved_since_last_kill": 185.03014143985945
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "ak47"
+                ],
+                "headshots": 2,
+                "wallbangs": 0,
+                "radius_moved": 246.39958675618232,
+                "victims_in_radius": 1463.58693926437,
+                "total_distance_moved": 726.3234611912809
+            }
+        },
+        {
+            "roundNumber": 5,
+            "player": "-KromaK-",
+            "killCount": 4,
+            "duration_in_ticks": 698,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "-KromaK-",
+                        "steam64id": "76561198080370668",
+                        "team": "CT",
+                        "position": {
+                            "x": -1108.62646484375,
+                            "y": 2371.7509765625,
+                            "z": 11.405086517333984
+                        },
+                        "viewAngles": {
+                            "pitch": -5.6517791748046875,
+                            "yaw": -143.23529052734375
+                        }
+                    },
+                    "victim": {
+                        "name": "Steren",
+                        "steam64id": "76561199632832400",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1846.922607421875,
+                            "y": 1814.03271484375,
+                            "z": 132.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 28581,
+                        "weapon": "mp9",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 23.813520431518555,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    },
+                    "assist": {
+                        "name": "-sunny",
+                        "steam64id": "76561197998649558",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "-KromaK-",
+                        "steam64id": "76561198080370668",
+                        "team": "CT",
+                        "position": {
+                            "x": -1505.9169921875,
+                            "y": 2761.396728515625,
+                            "z": 7.942990303039551
+                        },
+                        "viewAngles": {
+                            "pitch": 3.068267822265625,
+                            "yaw": -152.18124389648438
+                        }
+                    },
+                    "victim": {
+                        "name": "AT128",
+                        "steam64id": "76561198361211288",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1923.0994873046875,
+                            "y": 2533.119140625,
+                            "z": 26.52900505065918
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 29051,
+                        "weapon": "mp9",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 12.084444046020508,
+                        "ticks_since_last_kill": 470,
+                        "distance_moved_since_last_kill": 556.4850054066042
+                    },
+                    "assist": {
+                        "name": "-sunny",
+                        "steam64id": "76561197998649558",
+                        "team": "CT",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "-KromaK-",
+                        "steam64id": "76561198080370668",
+                        "team": "CT",
+                        "position": {
+                            "x": -1545.6929931640625,
+                            "y": 2831.045166015625,
+                            "z": 8.844864845275879
+                        },
+                        "viewAngles": {
+                            "pitch": 3.681793212890625,
+                            "yaw": -142.65403747558594
+                        }
+                    },
+                    "victim": {
+                        "name": "R-o-N-1-n",
+                        "steam64id": "76561199013619547",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1965.30029296875,
+                            "y": 2501.22216796875,
+                            "z": 26.60987091064453
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 29090,
+                        "weapon": "mp9",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 13.563108444213867,
+                        "ticks_since_last_kill": 39,
+                        "distance_moved_since_last_kill": 80.21127400539677
+                    },
+                    "assist": {
+                        "name": "RAMINO94",
+                        "steam64id": "76561198036064529",
+                        "team": "CT",
+                        "flashAssist": true
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "-KromaK-",
+                        "steam64id": "76561198080370668",
+                        "team": "CT",
+                        "position": {
+                            "x": -1552.3446044921875,
+                            "y": 2812.74755859375,
+                            "z": 9.160439491271973
+                        },
+                        "viewAngles": {
+                            "pitch": 0.419891357421875,
+                            "yaw": -134.90283203125
+                        }
+                    },
+                    "victim": {
+                        "name": "1Juniors",
+                        "steam64id": "76561198343101835",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1905.40625,
+                            "y": 2429.015869140625,
+                            "z": 17.975725173950195
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 29279,
+                        "weapon": "usp_silencer",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 13.194685935974121,
+                        "ticks_since_last_kill": 189,
+                        "distance_moved_since_last_kill": 19.471670652070188
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "usp_silencer",
+                    "mp9"
+                ],
+                "headshots": 3,
+                "wallbangs": 0,
+                "radius_moved": 453.97417204065505,
+                "victims_in_radius": 515.699031728651,
+                "total_distance_moved": 656.1679500640711
+            }
+        },
+        {
+            "roundNumber": 15,
+            "player": "JMSJMSJMSJMS",
+            "killCount": 4,
+            "duration_in_ticks": 795,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "JMSJMSJMSJMS",
+                        "steam64id": "76561198806766714",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -259.74188232421875,
+                            "y": 363.0007629394531,
+                            "z": -2.2239990234375
+                        },
+                        "viewAngles": {
+                            "pitch": 7.9595947265625,
+                            "yaw": 95.47702026367188
+                        }
+                    },
+                    "victim": {
+                        "name": "Steren",
+                        "steam64id": "76561199632832400",
+                        "team": "CT",
+                        "position": {
+                            "x": -330.2548828125,
+                            "y": 1185.760498046875,
+                            "z": -92.40789794921875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 84609,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 21.011829376220703,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    },
+                    "assist": {
+                        "name": "-sunny",
+                        "steam64id": "76561197998649558",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "JMSJMSJMSJMS",
+                        "steam64id": "76561198806766714",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -302.89764404296875,
+                            "y": 361.65716552734375,
+                            "z": -0.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 0.5146484375,
+                            "yaw": 81.02313232421875
+                        }
+                    },
+                    "victim": {
+                        "name": "Hortencio",
+                        "steam64id": "76561198824341575",
+                        "team": "CT",
+                        "position": {
+                            "x": -102.378173828125,
+                            "y": 1559.990966796875,
+                            "z": 1.5996007919311523
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 84696,
+                        "weapon": "ak47",
+                        "penetrationKill": true,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 30.856857299804688,
+                        "ticks_since_last_kill": 87,
+                        "distance_moved_since_last_kill": 43.19491490490745
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "JMSJMSJMSJMS",
+                        "steam64id": "76561198806766714",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -509.9639892578125,
+                            "y": 458.7405700683594,
+                            "z": 9.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 0.03948974609375,
+                            "yaw": 68.31161499023438
+                        }
+                    },
+                    "victim": {
+                        "name": "AT128",
+                        "steam64id": "76561198361211288",
+                        "team": "CT",
+                        "position": {
+                            "x": -60.134521484375,
+                            "y": 1557.5191650390625,
+                            "z": 1.6039257049560547
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 84839,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 29.944028854370117,
+                        "ticks_since_last_kill": 143,
+                        "distance_moved_since_last_kill": 228.91408597530065
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "JMSJMSJMSJMS",
+                        "steam64id": "76561198806766714",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -331.0198974609375,
+                            "y": 1364.6510009765625,
+                            "z": -27.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 3.841094970703125,
+                            "yaw": 107.91183471679688
+                        }
+                    },
+                    "victim": {
+                        "name": "R-o-N-1-n",
+                        "steam64id": "76561199013619547",
+                        "team": "CT",
+                        "position": {
+                            "x": -718.9893798828125,
+                            "y": 2507.978271484375,
+                            "z": -80.3006591796875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 85404,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": true,
+                        "distance_to_enemy": 30.68442153930664,
+                        "ticks_since_last_kill": 565,
+                        "distance_moved_since_last_kill": 924.1556669832711
+                    },
+                    "assist": {
+                        "name": "-sunny",
+                        "steam64id": "76561197998649558",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "ak47"
+                ],
+                "headshots": 2,
+                "wallbangs": 1,
+                "radius_moved": 728.256001657175,
+                "victims_in_radius": 907.0988597736097,
+                "total_distance_moved": 1196.2646678634792
+            }
+        }
+    ],
+    "multiKills": []
+}

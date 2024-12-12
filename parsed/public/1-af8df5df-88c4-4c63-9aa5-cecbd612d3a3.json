@@ -1,0 +1,186 @@
+{
+    "demoInfo": {
+        "fileName": "1-af8df5df-88c4-4c63-9aa5-cecbd612d3a3.dem",
+        "mapName": "de_dust2",
+        "date": "2024-12-11 01:53:04",
+        "aceKills": 0,
+        "quadKills": 1,
+        "multiKills": 0
+    },
+    "aceKills": [],
+    "quadKills": [
+        {
+            "roundNumber": 12,
+            "player": "pewpewpia",
+            "killCount": 4,
+            "duration_in_ticks": 2885,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "pewpewpia",
+                        "steam64id": "76561198368069068",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1364.214599609375,
+                            "y": 963.6756591796875,
+                            "z": -8.783203125
+                        },
+                        "viewAngles": {
+                            "pitch": 1.7736053466796875,
+                            "yaw": 91.61016845703125
+                        }
+                    },
+                    "victim": {
+                        "name": "toxxcccc",
+                        "steam64id": "76561198123370174",
+                        "team": "CT",
+                        "position": {
+                            "x": 1336.122802734375,
+                            "y": 1920.7132568359375,
+                            "z": -3.6473388671875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 80169,
+                        "weapon": "glock",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 24.322498321533203,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    },
+                    "assist": {
+                        "name": "Kujojotairo",
+                        "steam64id": "76561198324631560",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "pewpewpia",
+                        "steam64id": "76561198368069068",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1566.95556640625,
+                            "y": 1307.2364501953125,
+                            "z": 1.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 0.22967529296875,
+                            "yaw": -158.424560546875
+                        }
+                    },
+                    "victim": {
+                        "name": "SamG23",
+                        "steam64id": "76561198175383662",
+                        "team": "CT",
+                        "position": {
+                            "x": 1054.1475830078125,
+                            "y": 1099.4342041015625,
+                            "z": -0.1357421875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 81557,
+                        "weapon": "glock",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 14.040740966796875,
+                        "ticks_since_last_kill": 1388,
+                        "distance_moved_since_last_kill": 399.0416522509353
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "pewpewpia",
+                        "steam64id": "76561198368069068",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1420.522705078125,
+                            "y": 1585.030029296875,
+                            "z": -6.89373779296875
+                        },
+                        "viewAngles": {
+                            "pitch": -6.379974365234375,
+                            "yaw": 94.7862548828125
+                        }
+                    },
+                    "victim": {
+                        "name": "Hawkeeman",
+                        "steam64id": "76561199091718787",
+                        "team": "CT",
+                        "position": {
+                            "x": 1346.5850830078125,
+                            "y": 2694.8623046875,
+                            "z": 102.10810852050781
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 82060,
+                        "weapon": "glock",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 28.332015991210938,
+                        "ticks_since_last_kill": 503,
+                        "distance_moved_since_last_kill": 314.12523123480014
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "pewpewpia",
+                        "steam64id": "76561198368069068",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1512.9169921875,
+                            "y": 1730.087890625,
+                            "z": -2.62994384765625
+                        },
+                        "viewAngles": {
+                            "pitch": 1.173828125,
+                            "yaw": 128.47344970703125
+                        }
+                    },
+                    "victim": {
+                        "name": "Fl1CK3RR_",
+                        "steam64id": "76561199562237454",
+                        "team": "CT",
+                        "position": {
+                            "x": 1119.694091796875,
+                            "y": 2222.9423828125,
+                            "z": 8.827000617980957
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 83054,
+                        "weapon": "glock",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 16.019895553588867,
+                        "ticks_since_last_kill": 994,
+                        "distance_moved_since_last_kill": 172.03681978677486
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "glock"
+                ],
+                "headshots": 4,
+                "wallbangs": 0,
+                "radius_moved": 444.6961516143797,
+                "victims_in_radius": 899.8010413299181,
+                "total_distance_moved": 885.2037032725102
+            }
+        }
+    ],
+    "multiKills": []
+}

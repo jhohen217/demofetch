@@ -1,0 +1,518 @@
+{
+    "demoInfo": {
+        "fileName": "1-2fcc985a-59b9-4767-a135-72747f2815d9.dem",
+        "mapName": "de_vertigo",
+        "date": "2024-12-11 01:49:04",
+        "aceKills": 0,
+        "quadKills": 3,
+        "multiKills": 0
+    },
+    "aceKills": [],
+    "quadKills": [
+        {
+            "roundNumber": 3,
+            "player": "jooberto",
+            "killCount": 4,
+            "duration_in_ticks": 6321,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "jooberto",
+                        "steam64id": "76561198215541647",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1522.8604736328125,
+                            "y": -372.501220703125,
+                            "z": 11776.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 1.16009521484375,
+                            "yaw": 117.74185180664062
+                        }
+                    },
+                    "victim": {
+                        "name": "333z_",
+                        "steam64id": "76561199444012052",
+                        "team": "CT",
+                        "position": {
+                            "x": -1593.2340087890625,
+                            "y": -230.3028564453125,
+                            "z": 11776.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 22220,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 4.061697959899902,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "jooberto",
+                        "steam64id": "76561198215541647",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1149.771484375,
+                            "y": 157.01792907714844,
+                            "z": 11776.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 0.74432373046875,
+                            "yaw": 96.84344482421875
+                        }
+                    },
+                    "victim": {
+                        "name": "T0ubro",
+                        "steam64id": "76561198858544366",
+                        "team": "CT",
+                        "position": {
+                            "x": -1201.453125,
+                            "y": 614.2930297851562,
+                            "z": 11776.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 25011,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 11.764935493469238,
+                        "ticks_since_last_kill": 2791,
+                        "distance_moved_since_last_kill": 647.7545244067692
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "jooberto",
+                        "steam64id": "76561198215541647",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -2124.624755859375,
+                            "y": 1030.822021484375,
+                            "z": 11746.9560546875
+                        },
+                        "viewAngles": {
+                            "pitch": 1.532257080078125,
+                            "yaw": -106.7709732055664
+                        }
+                    },
+                    "victim": {
+                        "name": "ToffeeNosed",
+                        "steam64id": "76561198122295229",
+                        "team": "CT",
+                        "position": {
+                            "x": -2362.49560546875,
+                            "y": 174.81591796875,
+                            "z": 11749.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 26239,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 22.509063720703125,
+                        "ticks_since_last_kill": 1228,
+                        "distance_moved_since_last_kill": 1309.4723593164788
+                    },
+                    "assist": {
+                        "name": "ilrip",
+                        "steam64id": "76561198943264094",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "jooberto",
+                        "steam64id": "76561198215541647",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -2194.93798828125,
+                            "y": 658.9846801757812,
+                            "z": 11744.03125
+                        },
+                        "viewAngles": {
+                            "pitch": -4.8593902587890625,
+                            "yaw": -4.80377197265625
+                        }
+                    },
+                    "victim": {
+                        "name": "B1sk4s",
+                        "steam64id": "76561199568424064",
+                        "team": "CT",
+                        "position": {
+                            "x": -1795.7960205078125,
+                            "y": 620.39794921875,
+                            "z": 11776.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 28541,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 10.248258590698242,
+                        "ticks_since_last_kill": 2302,
+                        "distance_moved_since_last_kill": 378.4382558985234
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "ak47"
+                ],
+                "headshots": 2,
+                "wallbangs": 0,
+                "radius_moved": 774.6905845111653,
+                "victims_in_radius": 635.9997565865187,
+                "total_distance_moved": 2335.6651396217712
+            }
+        },
+        {
+            "roundNumber": 12,
+            "player": "T0ubro",
+            "killCount": 4,
+            "duration_in_ticks": 2449,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "T0ubro",
+                        "steam64id": "76561198858544366",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -2572.391357421875,
+                            "y": 344.67926025390625,
+                            "z": 11747.517578125
+                        },
+                        "viewAngles": {
+                            "pitch": 0.0,
+                            "yaw": 39.825103759765625
+                        }
+                    },
+                    "victim": {
+                        "name": "SOTHO",
+                        "steam64id": "76561198973376550",
+                        "team": "CT",
+                        "position": {
+                            "x": -1833.638427734375,
+                            "y": 975.8200073242188,
+                            "z": 11744.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 85242,
+                        "weapon": "glock",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 24.67724609375,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "T0ubro",
+                        "steam64id": "76561198858544366",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -2613.0771484375,
+                            "y": 490.9125671386719,
+                            "z": 11752.5126953125
+                        },
+                        "viewAngles": {
+                            "pitch": 5.205108642578125,
+                            "yaw": -74.26036834716797
+                        }
+                    },
+                    "victim": {
+                        "name": "ilrip",
+                        "steam64id": "76561198943264094",
+                        "team": "CT",
+                        "position": {
+                            "x": -2416.798583984375,
+                            "y": -142.7220458984375,
+                            "z": 11689.173828125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 86170,
+                        "weapon": "glock",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 16.868534088134766,
+                        "ticks_since_last_kill": 928,
+                        "distance_moved_since_last_kill": 151.86989441208553
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "T0ubro",
+                        "steam64id": "76561198858544366",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -2528.564697265625,
+                            "y": 329.189453125,
+                            "z": 11744.03125
+                        },
+                        "viewAngles": {
+                            "pitch": -0.11431884765625,
+                            "yaw": 47.20379638671875
+                        }
+                    },
+                    "victim": {
+                        "name": "jooberto",
+                        "steam64id": "76561198215541647",
+                        "team": "CT",
+                        "position": {
+                            "x": -1952.913330078125,
+                            "y": 987.3652954101562,
+                            "z": 11744.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 86816,
+                        "weapon": "glock",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 22.162914276123047,
+                        "ticks_since_last_kill": 646,
+                        "distance_moved_since_last_kill": 182.67089238284953
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "T0ubro",
+                        "steam64id": "76561198858544366",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1676.7056884765625,
+                            "y": 582.168701171875,
+                            "z": 11776.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 0.657806396484375,
+                            "yaw": 70.02685546875
+                        }
+                    },
+                    "victim": {
+                        "name": "_AwesomePony",
+                        "steam64id": "76561199422699423",
+                        "team": "CT",
+                        "position": {
+                            "x": -1538.0367431640625,
+                            "y": 970.6279296875,
+                            "z": 11776.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 87691,
+                        "weapon": "glock",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 10.477206230163574,
+                        "ticks_since_last_kill": 875,
+                        "distance_moved_since_last_kill": 889.2054154116732
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "glock"
+                ],
+                "headshots": 4,
+                "wallbangs": 0,
+                "radius_moved": 686.8802214985559,
+                "victims_in_radius": 969.8672431259732,
+                "total_distance_moved": 1223.7462022066084
+            }
+        },
+        {
+            "roundNumber": 20,
+            "player": "T0ubro",
+            "killCount": 4,
+            "duration_in_ticks": 2463,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "T0ubro",
+                        "steam64id": "76561198858544366",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1685.6888427734375,
+                            "y": -477.34014892578125,
+                            "z": 11776.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 7.9506683349609375,
+                            "yaw": 25.367431640625
+                        }
+                    },
+                    "victim": {
+                        "name": "SOTHO",
+                        "steam64id": "76561198973376550",
+                        "team": "CT",
+                        "position": {
+                            "x": -1399.304931640625,
+                            "y": -317.68896484375,
+                            "z": 11776.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 130211,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 8.27530574798584,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "T0ubro",
+                        "steam64id": "76561198858544366",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1478.352294921875,
+                            "y": -163.64398193359375,
+                            "z": 11776.03125
+                        },
+                        "viewAngles": {
+                            "pitch": -2.917205810546875,
+                            "yaw": -159.31411743164062
+                        }
+                    },
+                    "victim": {
+                        "name": "Aciri",
+                        "steam64id": "76561198062361239",
+                        "team": "CT",
+                        "position": {
+                            "x": -1822.97998046875,
+                            "y": -291.688232421875,
+                            "z": 11799.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 130518,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 9.393816947937012,
+                        "ticks_since_last_kill": 307,
+                        "distance_moved_since_last_kill": 376.0235754053111
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "T0ubro",
+                        "steam64id": "76561198858544366",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1341.75146484375,
+                            "y": 957.0377807617188,
+                            "z": 11776.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 3.48919677734375,
+                            "yaw": -30.213775634765625
+                        }
+                    },
+                    "victim": {
+                        "name": "_AwesomePony",
+                        "steam64id": "76561199422699423",
+                        "team": "CT",
+                        "position": {
+                            "x": -945.8760375976562,
+                            "y": 740.15185546875,
+                            "z": 11776.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 132151,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 11.477765083312988,
+                        "ticks_since_last_kill": 1633,
+                        "distance_moved_since_last_kill": 1128.9762619364083
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "T0ubro",
+                        "steam64id": "76561198858544366",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1380.496337890625,
+                            "y": 929.152587890625,
+                            "z": 11776.03125
+                        },
+                        "viewAngles": {
+                            "pitch": -12.66998291015625,
+                            "yaw": -97.9098129272461
+                        }
+                    },
+                    "victim": {
+                        "name": "jooberto",
+                        "steam64id": "76561198215541647",
+                        "team": "CT",
+                        "position": {
+                            "x": -1431.2545166015625,
+                            "y": 549.2322998046875,
+                            "z": 11874.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 132674,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 10.104774475097656,
+                        "ticks_since_last_kill": 523,
+                        "distance_moved_since_last_kill": 47.7362458607352
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "ak47"
+                ],
+                "headshots": 3,
+                "wallbangs": 0,
+                "radius_moved": 817.1913275760461,
+                "victims_in_radius": 729.4395701097418,
+                "total_distance_moved": 1552.7360832024544
+            }
+        }
+    ],
+    "multiKills": []
+}

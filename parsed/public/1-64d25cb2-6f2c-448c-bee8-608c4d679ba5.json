@@ -1,0 +1,180 @@
+{
+    "demoInfo": {
+        "fileName": "1-64d25cb2-6f2c-448c-bee8-608c4d679ba5.dem",
+        "mapName": "de_anubis",
+        "date": "2024-12-11 01:50:40",
+        "aceKills": 0,
+        "quadKills": 1,
+        "multiKills": 0
+    },
+    "aceKills": [],
+    "quadKills": [
+        {
+            "roundNumber": 12,
+            "player": "WGRX",
+            "killCount": 4,
+            "duration_in_ticks": 1012,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "WGRX",
+                        "steam64id": "76561198871345432",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 184.43214416503906,
+                            "y": 783.1021118164062,
+                            "z": -28.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 0.237579345703125,
+                            "yaw": -15.506515502929688
+                        }
+                    },
+                    "victim": {
+                        "name": "1ANTHONY",
+                        "steam64id": "76561197986261008",
+                        "team": "CT",
+                        "position": {
+                            "x": 325.71173095703125,
+                            "y": 741.2940063476562,
+                            "z": -29.87908935546875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 86019,
+                        "weapon": "glock",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 3.7542734146118164,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "WGRX",
+                        "steam64id": "76561198871345432",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1544.0518798828125,
+                            "y": 1641.8060302734375,
+                            "z": -151.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 0.607330322265625,
+                            "yaw": -73.7186050415039
+                        }
+                    },
+                    "victim": {
+                        "name": "-BIast-",
+                        "steam64id": "76561197997088463",
+                        "team": "CT",
+                        "position": {
+                            "x": 1697.08984375,
+                            "y": 1084.52783203125,
+                            "z": -151.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 86669,
+                        "weapon": "glock",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 14.67851448059082,
+                        "ticks_since_last_kill": 650,
+                        "distance_moved_since_last_kill": 1612.7824544329367
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "WGRX",
+                        "steam64id": "76561198871345432",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1698.4635009765625,
+                            "y": 1573.1644287109375,
+                            "z": -151.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 0.1847076416015625,
+                            "yaw": -109.27928924560547
+                        }
+                    },
+                    "victim": {
+                        "name": "TheBearS",
+                        "steam64id": "76561198130731871",
+                        "team": "CT",
+                        "position": {
+                            "x": 1464.643798828125,
+                            "y": 879.0906982421875,
+                            "z": -151.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 86781,
+                        "weapon": "glock",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 18.59223175048828,
+                        "ticks_since_last_kill": 112,
+                        "distance_moved_since_last_kill": 168.98111786192214
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "WGRX",
+                        "steam64id": "76561198871345432",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1277.201171875,
+                            "y": 1556.5733642578125,
+                            "z": -151.96875
+                        },
+                        "viewAngles": {
+                            "pitch": -6.019134521484375,
+                            "yaw": -159.99356079101562
+                        }
+                    },
+                    "victim": {
+                        "name": "Perc30k",
+                        "steam64id": "76561198125908913",
+                        "team": "CT",
+                        "position": {
+                            "x": 573.5115356445312,
+                            "y": 1305.721923828125,
+                            "z": -69.412109375
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 87031,
+                        "weapon": "glock",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 19.11564826965332,
+                        "ticks_since_last_kill": 250,
+                        "distance_moved_since_last_kill": 421.5889151054151
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "glock"
+                ],
+                "headshots": 3,
+                "wallbangs": 0,
+                "radius_moved": 1165.543972183922,
+                "victims_in_radius": 740.80390131861,
+                "total_distance_moved": 2203.352487400274
+            }
+        }
+    ],
+    "multiKills": []
+}

@@ -1,0 +1,192 @@
+{
+    "demoInfo": {
+        "fileName": "1-ef0677e6-92d2-4eb9-8123-0954c2530016.dem",
+        "mapName": "de_vertigo",
+        "date": "2024-12-05 18:43:14",
+        "aceKills": 0,
+        "quadKills": 1,
+        "multiKills": 0
+    },
+    "aceKills": [],
+    "quadKills": [
+        {
+            "roundNumber": 20,
+            "player": "Reking",
+            "killCount": 4,
+            "duration_in_ticks": 1231,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "Reking",
+                        "steam64id": "76561199207868071",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1968.699462890625,
+                            "y": 721.2285766601562,
+                            "z": 11776.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 9.350051879882812,
+                            "yaw": 107.26123046875
+                        }
+                    },
+                    "victim": {
+                        "name": "wtv",
+                        "steam64id": "76561198236198624",
+                        "team": "CT",
+                        "position": {
+                            "x": -2074.023681640625,
+                            "y": 1054.367431640625,
+                            "z": 11749.84765625
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 126637,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 8.861726760864258,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    },
+                    "assist": {
+                        "name": "hornybaiser",
+                        "steam64id": "76561197996115143",
+                        "team": "TERRORIST",
+                        "flashAssist": true
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Reking",
+                        "steam64id": "76561199207868071",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1976.1143798828125,
+                            "y": 835.8107299804688,
+                            "z": 11776.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 10.252304077148438,
+                            "yaw": -5.8629150390625
+                        }
+                    },
+                    "victim": {
+                        "name": "Vinak",
+                        "steam64id": "76561199508505819",
+                        "team": "CT",
+                        "position": {
+                            "x": -1576.79248046875,
+                            "y": 798.2783203125,
+                            "z": 11776.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 126756,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": true,
+                        "distance_to_enemy": 10.186914443969727,
+                        "ticks_since_last_kill": 119,
+                        "distance_moved_since_last_kill": 114.82182220083703
+                    },
+                    "assist": {
+                        "name": "hornybaiser",
+                        "steam64id": "76561197996115143",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Reking",
+                        "steam64id": "76561199207868071",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -2005.3431396484375,
+                            "y": 835.0515747070312,
+                            "z": 11776.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 2.6621246337890625,
+                            "yaw": 0.121185302734375
+                        }
+                    },
+                    "victim": {
+                        "name": "reject",
+                        "steam64id": "76561198827249170",
+                        "team": "CT",
+                        "position": {
+                            "x": -1475.197021484375,
+                            "y": 823.307861328125,
+                            "z": 11776.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 126863,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 13.472192764282227,
+                        "ticks_since_last_kill": 107,
+                        "distance_moved_since_last_kill": 29.238616830585656
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Reking",
+                        "steam64id": "76561199207868071",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1656.2369384765625,
+                            "y": 538.6278076171875,
+                            "z": 11776.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 5.8742523193359375,
+                            "yaw": 80.42233276367188
+                        }
+                    },
+                    "victim": {
+                        "name": "bowsaaaa",
+                        "steam64id": "76561198867247080",
+                        "team": "CT",
+                        "position": {
+                            "x": -1625.7337646484375,
+                            "y": 768.54931640625,
+                            "z": 11776.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 127868,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 5.880049228668213,
+                        "ticks_since_last_kill": 1005,
+                        "distance_moved_since_last_kill": 457.97618867403094
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "ak47"
+                ],
+                "headshots": 1,
+                "wallbangs": 0,
+                "radius_moved": 312.8232925039932,
+                "victims_in_radius": 432.1933851521987,
+                "total_distance_moved": 602.0366277054536
+            }
+        }
+    ],
+    "multiKills": []
+}

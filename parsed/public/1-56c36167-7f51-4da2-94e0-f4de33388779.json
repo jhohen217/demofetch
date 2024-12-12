@@ -1,0 +1,198 @@
+{
+    "demoInfo": {
+        "fileName": "1-56c36167-7f51-4da2-94e0-f4de33388779.dem",
+        "mapName": "de_nuke",
+        "date": "2024-12-11 01:50:09",
+        "aceKills": 0,
+        "quadKills": 1,
+        "multiKills": 0
+    },
+    "aceKills": [],
+    "quadKills": [
+        {
+            "roundNumber": 22,
+            "player": "WillGenooo",
+            "killCount": 4,
+            "duration_in_ticks": 2192,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "WillGenooo",
+                        "steam64id": "76561199079652661",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 70.462646484375,
+                            "y": -2220.45166015625,
+                            "z": -415.96875
+                        },
+                        "viewAngles": {
+                            "pitch": -0.0823974609375,
+                            "yaw": 30.159881591796875
+                        }
+                    },
+                    "victim": {
+                        "name": "MaxMyToilet",
+                        "steam64id": "76561198156369103",
+                        "team": "CT",
+                        "position": {
+                            "x": 796.9223022460938,
+                            "y": -1811.9459228515625,
+                            "z": -407.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 138598,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 20.436338424682617,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    },
+                    "assist": {
+                        "name": "Luciano655",
+                        "steam64id": "76561199092087653",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "WillGenooo",
+                        "steam64id": "76561199079652661",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 681.4863891601562,
+                            "y": -2429.813720703125,
+                            "z": -415.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 1.209869384765625,
+                            "yaw": 44.02015686035156
+                        }
+                    },
+                    "victim": {
+                        "name": "TakeEmAway",
+                        "steam64id": "76561197961702434",
+                        "team": "CT",
+                        "position": {
+                            "x": 1103.587646484375,
+                            "y": -2032.865234375,
+                            "z": -415.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 138945,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 14.72082805633545,
+                        "ticks_since_last_kill": 347,
+                        "distance_moved_since_last_kill": 645.8966531187111
+                    },
+                    "assist": {
+                        "name": "tepurts",
+                        "steam64id": "76561198172297570",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "WillGenooo",
+                        "steam64id": "76561199079652661",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1153.0670166015625,
+                            "y": -1639.979248046875,
+                            "z": -639.96875
+                        },
+                        "viewAngles": {
+                            "pitch": 2.11761474609375,
+                            "yaw": -173.33782958984375
+                        }
+                    },
+                    "victim": {
+                        "name": "slippyslinks",
+                        "steam64id": "76561198236185286",
+                        "team": "CT",
+                        "position": {
+                            "x": 865.614013671875,
+                            "y": -1684.2486572265625,
+                            "z": -639.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 139970,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 7.387577533721924,
+                        "ticks_since_last_kill": 1025,
+                        "distance_moved_since_last_kill": 946.7854996641039
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "WillGenooo",
+                        "steam64id": "76561199079652661",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 439.4897155761719,
+                            "y": -1420.0313720703125,
+                            "z": -425.90625
+                        },
+                        "viewAngles": {
+                            "pitch": -12.53985595703125,
+                            "yaw": 118.4346923828125
+                        }
+                    },
+                    "victim": {
+                        "name": "hyperbolass",
+                        "steam64id": "76561199445017318",
+                        "team": "CT",
+                        "position": {
+                            "x": 397.56182861328125,
+                            "y": -1296.8934326171875,
+                            "z": -415.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 140790,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 3.3513314723968506,
+                        "ticks_since_last_kill": 820,
+                        "distance_moved_since_last_kill": 776.7833588533757
+                    },
+                    "assist": {
+                        "name": "GoonSTLR",
+                        "steam64id": "76561198427093690",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "ak47"
+                ],
+                "headshots": 1,
+                "wallbangs": 0,
+                "radius_moved": 656.9055509492651,
+                "victims_in_radius": 570.4522372615263,
+                "total_distance_moved": 2369.465511636191
+            }
+        }
+    ],
+    "multiKills": []
+}

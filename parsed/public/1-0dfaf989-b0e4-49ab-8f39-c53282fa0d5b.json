@@ -1,0 +1,205 @@
+{
+    "demoInfo": {
+        "fileName": "1-0dfaf989-b0e4-49ab-8f39-c53282fa0d5b.dem",
+        "mapName": "de_ancient",
+        "date": "2024-12-11 01:48:09",
+        "aceKills": 0,
+        "quadKills": 1,
+        "multiKills": 0
+    },
+    "aceKills": [],
+    "quadKills": [
+        {
+            "roundNumber": 16,
+            "player": "Sagepath1",
+            "killCount": 4,
+            "duration_in_ticks": 2580,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "Sagepath1",
+                        "steam64id": "76561198311551353",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -661.73876953125,
+                            "y": -779.345947265625,
+                            "z": 32.031253814697266
+                        },
+                        "viewAngles": {
+                            "pitch": 1.7159271240234375,
+                            "yaw": 54.729766845703125
+                        }
+                    },
+                    "victim": {
+                        "name": "StayLowk3y",
+                        "steam64id": "76561199806924160",
+                        "team": "CT",
+                        "position": {
+                            "x": -156.42559814453125,
+                            "y": -203.931640625,
+                            "z": 68.03117370605469
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 92829,
+                        "weapon": "hegrenade",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 19.442485809326172,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    },
+                    "assist": {
+                        "name": "-El_Patron--",
+                        "steam64id": "76561198408086592",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Sagepath1",
+                        "steam64id": "76561198311551353",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 159.9423065185547,
+                            "y": 854.59521484375,
+                            "z": 88.17301940917969
+                        },
+                        "viewAngles": {
+                            "pitch": -0.15826416015625,
+                            "yaw": 4.56927490234375
+                        }
+                    },
+                    "victim": {
+                        "name": "FlunkGG",
+                        "steam64id": "76561198091896521",
+                        "team": "CT",
+                        "position": {
+                            "x": 900.0527954101562,
+                            "y": 921.373291015625,
+                            "z": 104.0273208618164
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 94084,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 18.785181045532227,
+                        "ticks_since_last_kill": 1255,
+                        "distance_moved_since_last_kill": 1829.7746882656797
+                    },
+                    "assist": {
+                        "name": "Hellsing_1",
+                        "steam64id": "76561198311468485",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Sagepath1",
+                        "steam64id": "76561198311551353",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1193.0875244140625,
+                            "y": 766.2603149414062,
+                            "z": 118.5298080444336
+                        },
+                        "viewAngles": {
+                            "pitch": 8.923309326171875,
+                            "yaw": -177.67982482910156
+                        }
+                    },
+                    "victim": {
+                        "name": "SunsetTAS",
+                        "steam64id": "76561199161857579",
+                        "team": "CT",
+                        "position": {
+                            "x": 1079.446533203125,
+                            "y": 758.61181640625,
+                            "z": 133.78878784179688
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 95390,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 3.0254180431365967,
+                        "ticks_since_last_kill": 1306,
+                        "distance_moved_since_last_kill": 1037.3589689289618
+                    },
+                    "assist": {
+                        "name": "Liesemberg_1",
+                        "steam64id": "76561198194813771",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "Sagepath1",
+                        "steam64id": "76561198311551353",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1193.0740966796875,
+                            "y": 751.7615356445312,
+                            "z": 119.22160339355469
+                        },
+                        "viewAngles": {
+                            "pitch": 9.213409423828125,
+                            "yaw": 164.97552490234375
+                        }
+                    },
+                    "victim": {
+                        "name": "JEAF2025",
+                        "steam64id": "76561198301880746",
+                        "team": "CT",
+                        "position": {
+                            "x": 972.3972778320312,
+                            "y": 835.0989379882812,
+                            "z": 114.64295196533203
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 95409,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 6.014491558074951,
+                        "ticks_since_last_kill": 19,
+                        "distance_moved_since_last_kill": 14.51528030072472
+                    },
+                    "assist": {
+                        "name": "Liesemberg_1",
+                        "steam64id": "76561198194813771",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "hegrenade",
+                    "ak47"
+                ],
+                "headshots": 0,
+                "wallbangs": 0,
+                "radius_moved": 1635.0832332527154,
+                "victims_in_radius": 1159.3050679247951,
+                "total_distance_moved": 2881.6489374953658
+            }
+        }
+    ],
+    "multiKills": []
+}

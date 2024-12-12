@@ -1,0 +1,696 @@
+{
+    "demoInfo": {
+        "fileName": "1-9bb56637-7bed-4756-8891-28bb132ee355.dem",
+        "mapName": "de_anubis",
+        "date": "2024-12-11 01:52:32",
+        "aceKills": 0,
+        "quadKills": 4,
+        "multiKills": 0
+    },
+    "aceKills": [],
+    "quadKills": [
+        {
+            "roundNumber": 2,
+            "player": "theBoystraw",
+            "killCount": 4,
+            "duration_in_ticks": 2316,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "theBoystraw",
+                        "steam64id": "76561198306745814",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1821.3238525390625,
+                            "y": -3.11688232421875,
+                            "z": 32.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 0.759765625,
+                            "yaw": 49.26612854003906
+                        }
+                    },
+                    "victim": {
+                        "name": "MoneyKoin",
+                        "steam64id": "76561199050612120",
+                        "team": "CT",
+                        "position": {
+                            "x": -958.1572265625,
+                            "y": 1031.0872802734375,
+                            "z": 35.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 21375,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 34.19412612915039,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    },
+                    "assist": {
+                        "name": "Rotttsen",
+                        "steam64id": "76561199468456959",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "theBoystraw",
+                        "steam64id": "76561198306745814",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1841.7777099609375,
+                            "y": 397.5928955078125,
+                            "z": 72.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 1.74029541015625,
+                            "yaw": -43.748931884765625
+                        }
+                    },
+                    "victim": {
+                        "name": "Bandit990",
+                        "steam64id": "76561199526568606",
+                        "team": "CT",
+                        "position": {
+                            "x": -705.9061889648438,
+                            "y": -671.0490112304688,
+                            "z": 106.03125762939453
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 21842,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 39.66423416137695,
+                        "ticks_since_last_kill": 467,
+                        "distance_moved_since_last_kill": 403.22039424318586
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "theBoystraw",
+                        "steam64id": "76561198306745814",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1499.823486328125,
+                            "y": 809.9671630859375,
+                            "z": 38.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 4.117462158203125,
+                            "yaw": -28.037796020507812
+                        }
+                    },
+                    "victim": {
+                        "name": "DarkClap",
+                        "steam64id": "76561198990085772",
+                        "team": "CT",
+                        "position": {
+                            "x": -878.8778686523438,
+                            "y": 464.27685546875,
+                            "z": 1.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 23534,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 17.771047592163086,
+                        "ticks_since_last_kill": 1692,
+                        "distance_moved_since_last_kill": 536.7878795398743
+                    },
+                    "assist": {
+                        "name": "workees-",
+                        "steam64id": "76561199221464145",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "theBoystraw",
+                        "steam64id": "76561198306745814",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1342.5074462890625,
+                            "y": 678.997802734375,
+                            "z": 0.03125
+                        },
+                        "viewAngles": {
+                            "pitch": -0.318603515625,
+                            "yaw": 38.2615966796875
+                        }
+                    },
+                    "victim": {
+                        "name": "SerChaing",
+                        "steam64id": "76561198381108749",
+                        "team": "CT",
+                        "position": {
+                            "x": -879.660400390625,
+                            "y": 1036.9952392578125,
+                            "z": 35.031246185302734
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 23691,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 14.883172035217285,
+                        "ticks_since_last_kill": 157,
+                        "distance_moved_since_last_kill": 208.1953645124438
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "ak47"
+                ],
+                "headshots": 0,
+                "wallbangs": 0,
+                "radius_moved": 512.5214165098687,
+                "victims_in_radius": 1147.862439650704,
+                "total_distance_moved": 1148.2036382955039
+            }
+        },
+        {
+            "roundNumber": 9,
+            "player": "DarkClap",
+            "killCount": 4,
+            "duration_in_ticks": 364,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "DarkClap",
+                        "steam64id": "76561198990085772",
+                        "team": "CT",
+                        "position": {
+                            "x": -1067.8631591796875,
+                            "y": 876.707763671875,
+                            "z": 0.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 7.1795654296875,
+                            "yaw": -128.82362365722656
+                        }
+                    },
+                    "victim": {
+                        "name": "workees-",
+                        "steam64id": "76561199221464145",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1446.0252685546875,
+                            "y": 390.5998840332031,
+                            "z": 0.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 66347,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 15.751838684082031,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "DarkClap",
+                        "steam64id": "76561198990085772",
+                        "team": "CT",
+                        "position": {
+                            "x": -1070.5274658203125,
+                            "y": 879.0435180664062,
+                            "z": 0.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 10.549285888671875,
+                            "yaw": -137.19143676757812
+                        }
+                    },
+                    "victim": {
+                        "name": "ZACK47RM",
+                        "steam64id": "76561199543519965",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1532.8865966796875,
+                            "y": 470.70306396484375,
+                            "z": 0.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 66437,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 15.904295921325684,
+                        "ticks_since_last_kill": 90,
+                        "distance_moved_since_last_kill": 3.5432017253961874
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "DarkClap",
+                        "steam64id": "76561198990085772",
+                        "team": "CT",
+                        "position": {
+                            "x": -1070.5274658203125,
+                            "y": 879.0435180664062,
+                            "z": 0.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 9.751739501953125,
+                            "yaw": -132.07969665527344
+                        }
+                    },
+                    "victim": {
+                        "name": "theBoystraw",
+                        "steam64id": "76561198306745814",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1441.781982421875,
+                            "y": 458.1698913574219,
+                            "z": 0.031248092651367188
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 66462,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 14.251514434814453,
+                        "ticks_since_last_kill": 25,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "DarkClap",
+                        "steam64id": "76561198990085772",
+                        "team": "CT",
+                        "position": {
+                            "x": -1021.086181640625,
+                            "y": 942.9674072265625,
+                            "z": 35.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 8.319061279296875,
+                            "yaw": -130.82623291015625
+                        }
+                    },
+                    "victim": {
+                        "name": "Jovanee17",
+                        "steam64id": "76561198421869891",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1314.704345703125,
+                            "y": 586.6312255859375,
+                            "z": 0.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 66711,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": true,
+                        "distance_to_enemy": 11.927762031555176,
+                        "ticks_since_last_kill": 249,
+                        "distance_moved_since_last_kill": 88.0664759525244
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "ak47"
+                ],
+                "headshots": 0,
+                "wallbangs": 0,
+                "radius_moved": 66.1056893061682,
+                "victims_in_radius": 162.23050402893142,
+                "total_distance_moved": 91.60967767792059
+            }
+        },
+        {
+            "roundNumber": 11,
+            "player": "theBoystraw",
+            "killCount": 4,
+            "duration_in_ticks": 3147,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "theBoystraw",
+                        "steam64id": "76561198306745814",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -196.0064697265625,
+                            "y": -338.99951171875,
+                            "z": 0.26424598693847656
+                        },
+                        "viewAngles": {
+                            "pitch": -0.24169921875,
+                            "yaw": 81.66000366210938
+                        }
+                    },
+                    "victim": {
+                        "name": "MoneyKoin",
+                        "steam64id": "76561199050612120",
+                        "team": "CT",
+                        "position": {
+                            "x": 17.764387130737305,
+                            "y": 868.112060546875,
+                            "z": 0.2591285705566406
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 75473,
+                        "weapon": "awp",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": true,
+                        "distance_to_enemy": 31.081069946289062,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "theBoystraw",
+                        "steam64id": "76561198306745814",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1793.072265625,
+                            "y": 321.13177490234375,
+                            "z": -0.0574951171875
+                        },
+                        "viewAngles": {
+                            "pitch": -2.4520111083984375,
+                            "yaw": -43.98582458496094
+                        }
+                    },
+                    "victim": {
+                        "name": "SerChaing",
+                        "steam64id": "76561198381108749",
+                        "team": "CT",
+                        "position": {
+                            "x": -830.9558715820312,
+                            "y": -644.9417114257812,
+                            "z": 64.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 78023,
+                        "weapon": "awp",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 34.6759033203125,
+                        "ticks_since_last_kill": 2550,
+                        "distance_moved_since_last_kill": 1728.1182180400936
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "theBoystraw",
+                        "steam64id": "76561198306745814",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1851.9580078125,
+                            "y": 23.307382583618164,
+                            "z": 32.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 0.012359619140625,
+                            "yaw": 47.834808349609375
+                        }
+                    },
+                    "victim": {
+                        "name": "DarkClap",
+                        "steam64id": "76561198990085772",
+                        "team": "CT",
+                        "position": {
+                            "x": -835.6327514648438,
+                            "y": 1173.9658203125,
+                            "z": 36.031246185302734
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 78391,
+                        "weapon": "awp",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 39.32642364501953,
+                        "ticks_since_last_kill": 368,
+                        "distance_moved_since_last_kill": 305.28116033615095
+                    },
+                    "assist": {
+                        "name": "ZACK47RM",
+                        "steam64id": "76561199543519965",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "theBoystraw",
+                        "steam64id": "76561198306745814",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -1763.674072265625,
+                            "y": -108.7841796875,
+                            "z": 32.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 2.53680419921875,
+                            "yaw": 61.0877685546875
+                        }
+                    },
+                    "victim": {
+                        "name": "Bandit990",
+                        "steam64id": "76561199526568606",
+                        "team": "CT",
+                        "position": {
+                            "x": -1158.3009033203125,
+                            "y": 1001.551513671875,
+                            "z": 1.733978271484375
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 78620,
+                        "weapon": "awp",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 32.12395477294922,
+                        "ticks_since_last_kill": 229,
+                        "distance_moved_since_last_kill": 158.87804788223409
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "awp"
+                ],
+                "headshots": 1,
+                "wallbangs": 0,
+                "radius_moved": 1245.2946406230328,
+                "victims_in_radius": 1251.8916700434183,
+                "total_distance_moved": 2192.2774262584785
+            }
+        },
+        {
+            "roundNumber": 14,
+            "player": "MoneyKoin",
+            "killCount": 4,
+            "duration_in_ticks": 1946,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "MoneyKoin",
+                        "steam64id": "76561199050612120",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": -79.2557373046875,
+                            "y": 485.92254638671875,
+                            "z": 0.25653791427612305
+                        },
+                        "viewAngles": {
+                            "pitch": 25.33551025390625,
+                            "yaw": 25.71246337890625
+                        }
+                    },
+                    "victim": {
+                        "name": "Rotttsen",
+                        "steam64id": "76561199468456959",
+                        "team": "CT",
+                        "position": {
+                            "x": 99.4734878540039,
+                            "y": 572.9797973632812,
+                            "z": -29.19512939453125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 93153,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 5.116189956665039,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "MoneyKoin",
+                        "steam64id": "76561199050612120",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 76.51958465576172,
+                            "y": 882.380859375,
+                            "z": 2.0312490463256836
+                        },
+                        "viewAngles": {
+                            "pitch": 6.314727783203125,
+                            "yaw": 80.223876953125
+                        }
+                    },
+                    "victim": {
+                        "name": "ZACK47RM",
+                        "steam64id": "76561199543519965",
+                        "team": "CT",
+                        "position": {
+                            "x": 202.7333221435547,
+                            "y": 1612.0234375,
+                            "z": -31.96875
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 93641,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 18.819744110107422,
+                        "ticks_since_last_kill": 488,
+                        "distance_moved_since_last_kill": 425.9674805299083
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "MoneyKoin",
+                        "steam64id": "76561199050612120",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 561.404052734375,
+                            "y": 216.806884765625,
+                            "z": -188.8201904296875
+                        },
+                        "viewAngles": {
+                            "pitch": -1.4573974609375,
+                            "yaw": -176.1510009765625
+                        }
+                    },
+                    "victim": {
+                        "name": "Jovanee17",
+                        "steam64id": "76561198421869891",
+                        "team": "CT",
+                        "position": {
+                            "x": -780.5372314453125,
+                            "y": 127.28697204589844,
+                            "z": -91.4185791015625
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 94323,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 34.21699905395508,
+                        "ticks_since_last_kill": 682,
+                        "distance_moved_since_last_kill": 845.2963592795529
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "MoneyKoin",
+                        "steam64id": "76561199050612120",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1751.7921142578125,
+                            "y": 1682.345947265625,
+                            "z": -142.39849853515625
+                        },
+                        "viewAngles": {
+                            "pitch": -3.916290283203125,
+                            "yaw": -178.13919067382812
+                        }
+                    },
+                    "victim": {
+                        "name": "theBoystraw",
+                        "steam64id": "76561198306745814",
+                        "team": "CT",
+                        "position": {
+                            "x": 743.0343017578125,
+                            "y": 1651.967529296875,
+                            "z": -63.31744384765625
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 95099,
+                        "weapon": "ak47",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 25.706436157226562,
+                        "ticks_since_last_kill": 776,
+                        "distance_moved_since_last_kill": 1888.645931404099
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "ak47"
+                ],
+                "headshots": 2,
+                "wallbangs": 0,
+                "radius_moved": 1459.9214724123933,
+                "victims_in_radius": 1210.1391543728073,
+                "total_distance_moved": 3159.90977121356
+            }
+        }
+    ],
+    "multiKills": []
+}

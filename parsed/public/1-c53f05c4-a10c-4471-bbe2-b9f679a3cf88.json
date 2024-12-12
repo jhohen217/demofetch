@@ -1,0 +1,236 @@
+{
+    "demoInfo": {
+        "fileName": "1-c53f05c4-a10c-4471-bbe2-b9f679a3cf88.dem",
+        "mapName": "de_inferno",
+        "date": "2024-12-11 01:53:29",
+        "aceKills": 1,
+        "quadKills": 0,
+        "multiKills": 0
+    },
+    "aceKills": [
+        {
+            "roundNumber": 13,
+            "player": "LaZii",
+            "killCount": 5,
+            "duration_in_ticks": 3888,
+            "kills": [
+                {
+                    "attacker": {
+                        "name": "LaZii",
+                        "steam64id": "76561198076674485",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 290.82763671875,
+                            "y": 1809.1944580078125,
+                            "z": 126.26581573486328
+                        },
+                        "viewAngles": {
+                            "pitch": 4.32965087890625,
+                            "yaw": 43.353424072265625
+                        }
+                    },
+                    "victim": {
+                        "name": "yakrtytoi",
+                        "steam64id": "76561199127616959",
+                        "team": "CT",
+                        "position": {
+                            "x": 431.3495788574219,
+                            "y": 1939.1536865234375,
+                            "z": 136.03125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 85001,
+                        "weapon": "mac10",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 4.901285648345947,
+                        "ticks_since_last_kill": 0,
+                        "distance_moved_since_last_kill": 0.0
+                    },
+                    "assist": {
+                        "name": "qLevi",
+                        "steam64id": "76561199232695090",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "LaZii",
+                        "steam64id": "76561198076674485",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 165.28558349609375,
+                            "y": 1622.8692626953125,
+                            "z": 110.67298126220703
+                        },
+                        "viewAngles": {
+                            "pitch": 6.91693115234375,
+                            "yaw": -93.26637268066406
+                        }
+                    },
+                    "victim": {
+                        "name": "Ilikefacts",
+                        "steam64id": "76561199783018886",
+                        "team": "CT",
+                        "position": {
+                            "x": 139.4361114501953,
+                            "y": 1135.44287109375,
+                            "z": 91.04276275634766
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 85425,
+                        "weapon": "mac10",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 12.431056022644043,
+                        "ticks_since_last_kill": 424,
+                        "distance_moved_since_last_kill": 225.2132811858421
+                    },
+                    "assist": {
+                        "name": "qLevi",
+                        "steam64id": "76561199232695090",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "LaZii",
+                        "steam64id": "76561198076674485",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 191.81105041503906,
+                            "y": 1621.09716796875,
+                            "z": 110.96247863769531
+                        },
+                        "viewAngles": {
+                            "pitch": 8.184127807617188,
+                            "yaw": -96.77753448486328
+                        }
+                    },
+                    "victim": {
+                        "name": "ssuoojoo",
+                        "steam64id": "76561199373252210",
+                        "team": "CT",
+                        "position": {
+                            "x": 97.15596008300781,
+                            "y": 757.1611328125,
+                            "z": 80.15743255615234
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 85439,
+                        "weapon": "mac10",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 22.086219787597656,
+                        "ticks_since_last_kill": 14,
+                        "distance_moved_since_last_kill": 26.586171663449164
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "LaZii",
+                        "steam64id": "76561198076674485",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 1999.0050048828125,
+                            "y": 503.9710693359375,
+                            "z": 160.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 6.336029052734375,
+                            "yaw": 44.72637939453125
+                        }
+                    },
+                    "victim": {
+                        "name": "NoTouchGrass",
+                        "steam64id": "76561198048751732",
+                        "team": "CT",
+                        "position": {
+                            "x": 2381.51123046875,
+                            "y": 920.9478759765625,
+                            "z": 161.21466064453125
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 88750,
+                        "weapon": "galilar",
+                        "penetrationKill": false,
+                        "headshot": false,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 14.369256019592285,
+                        "ticks_since_last_kill": 3311,
+                        "distance_moved_since_last_kill": 2125.1655120565183
+                    }
+                },
+                {
+                    "attacker": {
+                        "name": "LaZii",
+                        "steam64id": "76561198076674485",
+                        "team": "TERRORIST",
+                        "position": {
+                            "x": 2136.6064453125,
+                            "y": 479.7484130859375,
+                            "z": 161.03125
+                        },
+                        "viewAngles": {
+                            "pitch": 5.0159454345703125,
+                            "yaw": -119.93053436279297
+                        }
+                    },
+                    "victim": {
+                        "name": "Alkarrr",
+                        "steam64id": "76561198975938548",
+                        "team": "CT",
+                        "position": {
+                            "x": 1925.49169921875,
+                            "y": 107.80565643310547,
+                            "z": 133.33795166015625
+                        }
+                    },
+                    "killDetails": {
+                        "tick": 88889,
+                        "weapon": "galilar",
+                        "penetrationKill": false,
+                        "headshot": true,
+                        "noscope": false,
+                        "thrusmoke": false,
+                        "distance_to_enemy": 11.402263641357422,
+                        "ticks_since_last_kill": 139,
+                        "distance_moved_since_last_kill": 139.72076969488288
+                    },
+                    "assist": {
+                        "name": "qLevi",
+                        "steam64id": "76561199232695090",
+                        "team": "TERRORIST",
+                        "flashAssist": false
+                    }
+                }
+            ],
+            "metadata": {
+                "weapons_used": [
+                    "galilar",
+                    "mac10"
+                ],
+                "headshots": 2,
+                "wallbangs": 0,
+                "radius_moved": 1386.4870391376987,
+                "victims_in_radius": 1388.067095545899,
+                "total_distance_moved": 2516.6857346006927
+            }
+        }
+    ],
+    "quadKills": [],
+    "multiKills": []
+}
