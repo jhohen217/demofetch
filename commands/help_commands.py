@@ -19,7 +19,8 @@ getdemos <username> - Download demos for a user
 parse <source> [number] - Parse demos from category/user (source: ace/quad/username)
 start - Start fetching NA East match IDs (runs every 3-5 minutes)
 stop [service] - Stop services (fetch/download/parse or all if no service specified)
-prefix - Update match IDs with ace/quad kill count prefixes"""
+prefix - Update match IDs with ace/quad kill count prefixes
+update - Update the bot (will restart the service)"""
         await bot.send_message(message.author, help_text)
         return True
         

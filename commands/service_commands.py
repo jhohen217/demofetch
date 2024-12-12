@@ -1,5 +1,6 @@
 import logging
 import asyncio
+import sys
 from core.migrate_matches import migrate_matches
 from core.match_scrape import start_match_scraping
 
@@ -68,6 +69,18 @@ async def handle_message(bot, message):
             return True
         except Exception as e:
             error_msg = f"Error during prefix migration: {str(e)}"
+            logger.error(error_msg)
+            await bot.send_message(message.author, error_msg)
+            return True
+
+    elif command == 'update':
+        try:
+            await bot.send_message(message.author, "Initiating update process. Bot will restart momentarily...")
+            logger.info("Update command received. Exiting program for service restart.")
+            sys.exit(0)  # Exit with success code for clean restart
+            return True
+        except Exception as e:
+            error_msg = f"Error during update: {str(e)}"
             logger.error(error_msg)
             await bot.send_message(message.author, error_msg)
             return True
