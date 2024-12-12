@@ -5,15 +5,21 @@ from .score_filter import MatchProcessor
 
 async def migrate_matches():
     """
-    Migrate quad matches from quad_matchids_old.txt to quad_matchids.txt with new naming schema.
+    Migrate matches to use prefixed addresses and merge acequad matches into ace_matchids.txt.
     """
     processor = MatchProcessor()
     
     # Paths
-    old_quad_file = os.path.join(processor.textfiles_dir, "quad_matchids_old.txt")
+    ace_file = processor.ace_file
     quad_file = processor.quad_file
+    acequad_file = os.path.join(processor.textfiles_dir, "acequad_matchids.txt")
     
-    # Ensure files exist
+    # Temporary files
+    ace_temp = ace_file + ".temp"
+    quad_temp = quad_file + ".temp"
+    
+    # Ensure main files exist
+    processor.ensure_file_exists(ace_file)
     processor.ensure_file_exists(quad_file)
     
     # Set to track all processed matches
@@ -23,44 +29,81 @@ async def migrate_matches():
     semaphore = asyncio.Semaphore(processor.max_concurrent_requests)
     
     async with aiohttp.ClientSession() as session:
-        # Process quad matches from old file
-        print("\nProcessing matches from quad_matchids_old.txt...")
-        if os.path.exists(old_quad_file):
-            with open(old_quad_file, "r") as f:
-                matches = [line.strip() for line in f if line.strip()]
+        # Read all existing matches
+        ace_matches = set()
+        quad_matches = set()
+        acequad_matches = set()
+        
+        if os.path.exists(ace_file):
+            with open(ace_file, "r") as f:
+                ace_matches = {line.strip() for line in f if line.strip()}
+        
+        if os.path.exists(quad_file):
+            with open(quad_file, "r") as f:
+                quad_matches = {line.strip() for line in f if line.strip()}
+        
+        if os.path.exists(acequad_file):
+            with open(acequad_file, "r") as f:
+                acequad_matches = {line.strip() for line in f if line.strip()}
+        
+        # Process and update matches
+        async def process_match(match_id):
+            if match_id in processed_matches:
+                return None, None
             
-            # Filter out already processed matches
-            matches = [m for m in matches if m not in processed_matches]
-            
-            # Temporary storage for new formatted IDs
-            new_matches = []
-            
-            for match_id in matches:
-                print(f"\nProcessing match {match_id}")
-                match_data = await processor.fetch_scoreboard(session, match_id, semaphore)
-                if match_data:
-                    result = processor.analyze_match(match_data)
-                    result.match_id = match_id
-                    if result.has_quad:  # Only include if it actually has quad kills
-                        new_matches.append(result.formatted_match_id)
-                        print(f"Reformatted match {match_id} -> {result.formatted_match_id}")
-                    processed_matches.add(match_id)
-                await asyncio.sleep(processor.rate_limit_delay)
-            
-            # Read existing matches from quad_matchids.txt
-            existing_matches = []
-            if os.path.exists(quad_file):
-                with open(quad_file, "r") as f:
-                    existing_matches = [line.strip() for line in f if line.strip()]
-            
-            # Combine existing matches with new ones and sort
-            all_matches = existing_matches + new_matches
-            all_matches.sort(reverse=True)
-            
-            # Write all matches back to file
-            with open(quad_file, "w") as f:
-                for match_id in all_matches:
-                    f.write(match_id + "\n")
+            print(f"\nProcessing match {match_id}")
+            match_data = await processor.fetch_scoreboard(session, match_id, semaphore)
+            if match_data:
+                result = processor.analyze_match(match_data)
+                result.match_id = match_id
+                processed_matches.add(match_id)
+                return match_id, result.formatted_match_id
+            return None, None
+        
+        # Process all matches
+        new_ace_matches = set()
+        new_quad_matches = set()
+        
+        # Process ace matches
+        print("\nProcessing ace matches...")
+        tasks = [process_match(match_id) for match_id in ace_matches]
+        results = await asyncio.gather(*tasks)
+        for old_id, new_id in results:
+            if new_id:
+                new_ace_matches.add(new_id)
+        
+        # Process quad matches
+        print("\nProcessing quad matches...")
+        tasks = [process_match(match_id) for match_id in quad_matches]
+        results = await asyncio.gather(*tasks)
+        for old_id, new_id in results:
+            if new_id:
+                new_quad_matches.add(new_id)
+        
+        # Process acequad matches and add them to ace matches
+        print("\nProcessing acequad matches...")
+        tasks = [process_match(match_id) for match_id in acequad_matches]
+        results = await asyncio.gather(*tasks)
+        for old_id, new_id in results:
+            if new_id:
+                new_ace_matches.add(new_id)
+        
+        # Write updated matches to temporary files
+        with open(ace_temp, "w") as f:
+            for match_id in sorted(new_ace_matches, reverse=True):
+                f.write(match_id + "\n")
+        
+        with open(quad_temp, "w") as f:
+            for match_id in sorted(new_quad_matches, reverse=True):
+                f.write(match_id + "\n")
+        
+        # Replace original files with updated ones
+        os.replace(ace_temp, ace_file)
+        os.replace(quad_temp, quad_file)
+        
+        # Remove acequad file if it exists
+        if os.path.exists(acequad_file):
+            os.remove(acequad_file)
     
     print("\nMigration complete!")
 

@@ -26,6 +26,9 @@ config.json
 public_demos/
 textfiles/
 demo_test/
+parsed/public/
+usermatches/
+parsed/
 
 # IDE
 .idea/
