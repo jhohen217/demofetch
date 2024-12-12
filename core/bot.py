@@ -18,8 +18,8 @@ logging.getLogger('nextcord.websocket').setLevel(logging.ERROR)
 
 # Set up minimal logging for our bot
 logging.basicConfig(
-    level=logging.ERROR,
-    format='%(levelname)s - %(message)s',
+    level=logging.DEBUG,  # Set to DEBUG level for more info
+    format='%(asctime)s - %(levelname)s - %(module)s - %(message)s',
     handlers=[
         logging.FileHandler('bot.log'),
         logging.StreamHandler()
@@ -44,6 +44,9 @@ class DemoBot(nextcord.Client):
 
         # Store owner ID from config
         self.owner_id = self.config['discord']['owner_id']
+        
+        # Initialize command modules list
+        self.command_modules = []
         
         # Load command modules
         self.load_commands()
@@ -75,33 +78,42 @@ class DemoBot(nextcord.Client):
                 sys.path.insert(0, project_dir)
                 logger.debug(f"Added {project_dir} to Python path")
             
-            # Import and store command modules
-            self.command_modules = []
+            # Import command modules
             for filename in os.listdir(commands_dir):
                 if filename.endswith(".py") and not filename.startswith("__"):
                     try:
                         module_name = f"commands.{filename[:-3]}"
+                        logger.debug(f"Attempting to load module: {module_name}")
                         
                         # Import the module using importlib to ensure proper package resolution
                         import importlib
                         module = importlib.import_module(module_name)
                         
-                        # Call setup function
-                        if hasattr(module, 'setup'):
-                            module.setup(self)
-                        
                         # Store module if it has handle_message
                         if hasattr(module, 'handle_message'):
+                            # Call setup function if it exists
+                            if hasattr(module, 'setup'):
+                                try:
+                                    module.setup(self)
+                                except Exception as e:
+                                    logger.error(f"Error in setup for {module_name}: {e}")
+                            
                             self.command_modules.append(module)
                             logger.debug(f"Successfully loaded module {module_name}")
+                        else:
+                            logger.warning(f"Module {module_name} has no handle_message function")
                     except Exception as e:
                         logger.error(f'Failed to load module {filename}: {e}')
+                        logger.exception("Full traceback:")
         except Exception as e:
             logger.error(f"Error loading commands: {str(e)}")
+            logger.exception("Full traceback:")
 
     async def on_ready(self):
         """Called when the bot is ready"""
         logger.info(f"Bot is ready as {self.user}")
+        # Log loaded command modules
+        logger.info(f"Loaded command modules: {[m.__name__ for m in self.command_modules]}")
 
     def is_owner(self, user_id):
         """Check if a user is the bot owner"""
@@ -117,6 +129,10 @@ class DemoBot(nextcord.Client):
         if not self.is_owner(message.author.id):
             return
 
+        # Log the received message
+        logger.debug(f"Processing message: {message.content}")
+        logger.debug(f"Available command modules: {[m.__name__ for m in self.command_modules]}")
+
         # Let each command module handle the message
         command_handled = False
         for module in self.command_modules:
@@ -125,21 +141,25 @@ class DemoBot(nextcord.Client):
                 handled = await module.handle_message(self, message)
                 if handled:
                     command_handled = True
+                    logger.debug(f"Command handled by module: {module.__name__}")
                     # Break after first module handles the command
                     break
             except Exception as e:
                 logger.error(f"Error in module {module.__name__}: {str(e)}")
+                logger.exception("Full traceback:")
                 await self.send_message(message.author, f"Error processing command: {str(e)}")
                 command_handled = True  # Consider errored commands as handled
                 break
 
         # If no module handled the command, send unknown command message
         if not command_handled:
+            logger.warning(f"No module handled command: {message.content}")
             await self.send_message(message.author, "Unknown command. Use 'help' to see available commands.")
 
     async def on_error(self, event, *args, **kwargs):
         """Handle any errors"""
         logger.error(f'Error in {event}: {sys.exc_info()[1]}')
+        logger.exception("Full traceback:")
 
 # Export the DemoBot class
 __all__ = ['DemoBot']
