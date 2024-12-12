@@ -23,7 +23,7 @@ fi
 # Install Python 3 and pip if not present
 if ! command_exists python3; then
     echo "Installing Python 3..."
-    sudo apt-get install -y python3 python3-pip
+    sudo apt-get install -y python3 python3-pip python3-venv
 fi
 
 # Clone or update repository
@@ -55,11 +55,14 @@ if [ ! -d "venv" ]; then
     python3 -m venv venv
 fi
 
-# Activate virtual environment and install/update dependencies
-echo "Activating virtual environment and installing dependencies..."
-source venv/bin/activate
-pip install --upgrade pip
-pip install -r requirements.txt
+# Ensure virtual environment is activated
+echo "Activating virtual environment..."
+source venv/bin/activate || exit 1
+
+# Upgrade pip and install dependencies
+echo "Installing dependencies..."
+python3 -m pip install --upgrade pip
+python3 -m pip install -r requirements.txt
 
 # Check if config.json exists; if not, create from example
 if [ ! -f "config.json" ] && [ -f "config.json.example" ]; then
