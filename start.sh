@@ -60,7 +60,6 @@ echo "Activating virtual environment and installing dependencies..."
 source venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
-deactivate
 
 # Check if config.json exists; if not, create from example
 if [ ! -f "config.json" ] && [ -f "config.json.example" ]; then
@@ -72,5 +71,4 @@ fi
 
 # Start the bot
 echo "Starting the bot..."
-source venv/bin/activate
-python3 bot.py
+python3 start.py
