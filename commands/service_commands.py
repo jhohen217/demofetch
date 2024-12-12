@@ -13,9 +13,12 @@ async def run_match_scraping():
     """Run match scraping in a loop"""
     while True:
         try:
+            logger.debug("Starting match scraping cycle")
             await start_match_scraping()
+            logger.debug("Match scraping cycle completed")
         except Exception as e:
             logger.error(f"Error in match scraping: {e}")
+        logger.debug("Waiting 5 minutes before next scraping cycle")
         await asyncio.sleep(300)  # Wait 5 minutes between runs
 
 async def handle_message(bot, message):
@@ -24,14 +27,18 @@ async def handle_message(bot, message):
     args = content.split()
     command = args[0] if args else ""
 
+    logger.debug(f"Service commands handling message: {content}")
+
     if command == 'start':
         try:
             # Check if service is already running
             if 'match_scraping' in background_tasks and not background_tasks['match_scraping'].done():
+                logger.debug("Match fetching service is already running")
                 await bot.send_message(message.author, "Match fetching service is already running!")
                 return True
 
             # Start match fetching service
+            logger.debug("Starting match fetching service")
             await bot.send_message(message.author, "Starting match fetching service...")
             task = asyncio.create_task(run_match_scraping())
             background_tasks['match_scraping'] = task
@@ -48,9 +55,11 @@ async def handle_message(bot, message):
         try:
             # Stop match fetching service if running
             if 'match_scraping' in background_tasks:
+                logger.debug("Stopping match fetching service")
                 background_tasks['match_scraping'].cancel()
                 await bot.send_message(message.author, "Match fetching service stopped.")
             else:
+                logger.debug("No services are currently running")
                 await bot.send_message(message.author, "No services are currently running.")
             return True
 
@@ -63,8 +72,10 @@ async def handle_message(bot, message):
     elif command == 'prefix':
         try:
             # Run match migration to update prefixes
+            logger.debug("Starting match prefix migration")
             await bot.send_message(message.author, "Starting match prefix migration...")
             await migrate_matches()
+            logger.debug("Match prefix migration completed")
             await bot.send_message(message.author, "Match prefix migration completed!")
             return True
         except Exception as e:
@@ -75,8 +86,9 @@ async def handle_message(bot, message):
 
     elif command == 'update':
         try:
+            logger.info("Update command received")
             await bot.send_message(message.author, "Initiating update process. Bot will restart momentarily...")
-            logger.info("Update command received. Exiting program for service restart.")
+            logger.info("Exiting program for service restart.")
             sys.exit(0)  # Exit with success code for clean restart
             return True
         except Exception as e:
@@ -85,8 +97,10 @@ async def handle_message(bot, message):
             await bot.send_message(message.author, error_msg)
             return True
 
+    logger.debug(f"Command not handled: {content}")
     return False
 
 def setup(bot):
     """Required setup function for the extension"""
+    logger.debug("Service commands module setup")
     return True
