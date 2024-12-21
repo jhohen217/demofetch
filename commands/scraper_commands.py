@@ -28,38 +28,49 @@ async def continuous_scraping():
     """Continuously scrape matches with random intervals"""
     while True:
         try:
+            # Wait for configured interval before starting
+            wait_time = random.randint(fetch_delay_min, fetch_delay_max)
+            logger.info(f"Waiting {wait_time} seconds before next scrape...")
+            await asyncio.sleep(wait_time)
+            
             # Start scraping
             result = await start_match_scraping()
             if result:
                 logger.info("Match scraping completed successfully")
                 
-                # Start filtering
-                global filtering_task
+                # Start filtering and parsing tasks
+                global filtering_task, parsing_task
                 filtering_task = asyncio.create_task(start_match_filtering())
-                
-                # Start parsing in parallel for any previously unfiltered matches
                 parser = DemoParser()
-                global parsing_task
                 parsing_task = asyncio.create_task(parser.parse_new_matches())
                 
-                # Wait for both tasks to complete
-                await asyncio.gather(filtering_task, parsing_task)
-                
-                logger.info("All processing completed")
+                # Wait for both tasks to complete before next iteration
+                try:
+                    await asyncio.gather(filtering_task, parsing_task)
+                    logger.info("All processing completed")
+                    
+                    # Calculate and display next scrape time
+                    next_scrape = datetime.now() + timedelta(seconds=wait_time)
+                    logger.info("=" * 50)
+                    logger.info(f"Next scrape scheduled for: {next_scrape.strftime('%H:%M:%S')}")
+                    logger.info("=" * 50)
+                except Exception as task_error:
+                    logger.error(f"Error in filtering/parsing tasks: {str(task_error)}")
             else:
                 logger.error("Match scraping encountered an error")
-
-            # Wait for random interval before next fetch
-            wait_time = random.randint(fetch_delay_min, fetch_delay_max)
-            logger.info(f"Next fetch in {wait_time} seconds...")
-            await asyncio.sleep(wait_time)
+                
+                # Even on error, show next scrape time
+                next_scrape = datetime.now() + timedelta(seconds=wait_time)
+                logger.info("=" * 50)
+                logger.info(f"Next scrape scheduled for: {next_scrape.strftime('%H:%M:%S')}")
+                logger.info("=" * 50)
             
         except asyncio.CancelledError:
             logger.info("Scraping task cancelled")
             break
         except Exception as e:
             logger.error(f"Error in continuous scraping: {str(e)}")
-            # Wait before retrying
+            # Wait before retrying on error
             await asyncio.sleep(60)
 
 async def handle_message(bot, message):
