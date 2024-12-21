@@ -59,18 +59,6 @@ fi
 echo "Activating virtual environment..."
 source venv/bin/activate || exit 1
 
-# Upgrade pip and install dependencies
-echo "Installing dependencies..."
-python3 -m pip install --upgrade pip
-
-# Install nextcord first
-echo "Installing nextcord..."
-python3 -m pip install --no-cache-dir nextcord>=2.5.0
-
-# Then install other requirements
-echo "Installing other dependencies..."
-python3 -m pip install --no-cache-dir -r requirements.txt
-
 # Check if config.json exists; if not, create from example
 if [ ! -f "config.json" ] && [ -f "config.json.example" ]; then
     echo "Config file missing. Creating default config.json from example..."
