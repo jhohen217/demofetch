@@ -2,6 +2,7 @@ import asyncio
 import random
 import json
 import logging
+import nextcord
 from datetime import datetime, timedelta
 from core.match_scrape import start_match_scraping
 from core.score_filter import start_match_filtering
@@ -86,6 +87,8 @@ async def handle_message(bot, message):
 
             # Create and start the continuous scraping task
             await bot.send_message(message.author, "Started fetching NA East Match IDs")
+            # Change status to watching when scraping starts
+            await bot.change_presence(activity=nextcord.Activity(type=nextcord.ActivityType.watching, name="for demos"))
             scraping_task = asyncio.create_task(continuous_scraping())
             return True
             
@@ -141,6 +144,8 @@ async def handle_message(bot, message):
                     except asyncio.CancelledError:
                         pass
                     scraping_task = None
+                    # Change status back to listening when scraping stops
+                    await bot.change_presence(activity=nextcord.Activity(type=nextcord.ActivityType.listening, name="for commands"))
                     message_parts.append("Match scraping stopped")
 
                 # Stop filtering task if it exists

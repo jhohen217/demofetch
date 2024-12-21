@@ -39,7 +39,7 @@ class DemoBot(nextcord.Client):
         
         super().__init__(
             intents=intents,
-            activity=nextcord.Activity(type=nextcord.ActivityType.watching, name="for demos")
+            activity=nextcord.Activity(type=nextcord.ActivityType.listening, name="for commands")
         )
 
         # Store owner ID from config
