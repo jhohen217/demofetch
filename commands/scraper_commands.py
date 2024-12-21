@@ -2,6 +2,7 @@ import asyncio
 import random
 import json
 import logging
+from datetime import datetime, timedelta
 from core.match_scrape import start_match_scraping
 from core.score_filter import start_match_filtering
 from core.public_downloader import stop_processes
@@ -79,6 +80,39 @@ async def handle_message(bot, message):
             
         except Exception as e:
             await bot.send_message(message.author, f"Error: {str(e)}")
+            return True
+
+    elif content == "next":
+        try:
+            if not scraping_task or scraping_task.done():
+                await bot.send_message(message.author, "Match scraping is not currently running. Use 'start' to begin scraping.")
+                return True
+                
+            # Get the task's wait time from the sleep call
+            frame = scraping_task.get_coro().cr_frame
+            if frame and 'wait_time' in frame.f_locals:
+                wait_time = frame.f_locals['wait_time']
+                elapsed = frame.f_locals.get('_time', 0)  # Time elapsed in sleep
+                remaining = max(0, wait_time - elapsed)
+                
+                next_scrape = datetime.now() + timedelta(seconds=remaining)
+                
+                response = (
+                    f"Next scraping event in: {remaining} seconds\n"
+                    f"Time of next scrape: {next_scrape.strftime('%H:%M:%S')}\n"
+                    f"Scraping interval: {fetch_delay_min}-{fetch_delay_max} seconds"
+                )
+            else:
+                response = (
+                    f"Scraping is active but timing information is not available.\n"
+                    f"Scraping interval: {fetch_delay_min}-{fetch_delay_max} seconds"
+                )
+                
+            await bot.send_message(message.author, response)
+            return True
+            
+        except Exception as e:
+            await bot.send_message(message.author, f"Error getting next scrape time: {str(e)}")
             return True
 
     elif content.startswith("stop"):
