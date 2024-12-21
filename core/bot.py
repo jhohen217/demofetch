@@ -114,6 +114,14 @@ class DemoBot(nextcord.Client):
         logger.info(f"Bot is ready as {self.user}")
         # Log loaded command modules
         logger.info(f"Loaded command modules: {[m.__name__ for m in self.command_modules]}")
+        
+        # Send DM to owner
+        try:
+            owner = await self.fetch_user(self.owner_id)
+            if owner:
+                await self.send_message(owner, f"Bot is now online and ready as {self.user}")
+        except Exception as e:
+            logger.error(f"Failed to send startup DM to owner: {e}")
 
     def is_owner(self, user_id):
         """Check if a user is the bot owner"""
