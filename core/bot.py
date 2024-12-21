@@ -125,8 +125,8 @@ class DemoBot(nextcord.Client):
         if message.author == self.user:
             return
 
-        # Only process messages from the bot owner
-        if not self.is_owner(message.author.id):
+        # Only process direct messages from the bot owner
+        if not self.is_owner(message.author.id) or message.guild is not None:
             return
 
         # Log the received message
