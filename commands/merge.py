@@ -21,37 +21,61 @@ def merge_files():
     # Get all txt files in merge directory
     merge_files = glob.glob(os.path.join(merge_dir, "*.txt"))
     
+    if not merge_files:
+        logger.info("No .txt files found in merge directory")
+        return
+        
+    merged_files = []
+    skipped_files = []
+    
     for merge_file_path in merge_files:
         # Get the filename without path
         filename = os.path.basename(merge_file_path)
         textfiles_path = os.path.join(textfiles_dir, filename)
         
-        # Skip if corresponding file doesn't exist in textfiles directory
-        if not os.path.exists(textfiles_path):
-            logger.warning(f"No matching file found for {filename} in textfiles directory")
-            continue
-            
-        # Read content from both files
-        with open(merge_file_path, 'r', encoding='utf-8') as f:
-            merge_content = set(line.strip() for line in f if line.strip())
-            
-        with open(textfiles_path, 'r', encoding='utf-8') as f:
-            textfiles_content = set(line.strip() for line in f if line.strip())
-            
-        # Merge content and sort
-        merged_content = sorted(merge_content.union(textfiles_content))
-        
-        # Write merged content back to textfiles directory
-        with open(textfiles_path, 'w', encoding='utf-8') as f:
-            f.write('\n'.join(merged_content))
-            if merged_content:  # Add final newline if file is not empty
-                f.write('\n')
+        try:
+            # Check if corresponding file exists in textfiles directory
+            if not os.path.exists(textfiles_path):
+                logger.warning(f"No matching file found for {filename} in textfiles directory")
+                skipped_files.append(filename)
+                continue
                 
-        logger.info(f"Successfully merged {filename}")
-        
-        # Delete the processed file from merge directory
-        os.remove(merge_file_path)
-        logger.info(f"Deleted {filename} from merge directory")
+            # Read content from both files
+            with open(merge_file_path, 'r', encoding='utf-8') as f:
+                merge_content = set(line.strip() for line in f if line.strip())
+                
+            with open(textfiles_path, 'r', encoding='utf-8') as f:
+                textfiles_content = set(line.strip() for line in f if line.strip())
+                
+            # Merge content and sort
+            merged_content = sorted(merge_content.union(textfiles_content))
+            
+            # Write merged content back to textfiles directory
+            with open(textfiles_path, 'w', encoding='utf-8') as f:
+                f.write('\n'.join(merged_content))
+                if merged_content:  # Add final newline if file is not empty
+                    f.write('\n')
+                    
+            merged_files.append(filename)
+            logger.info(f"Successfully merged {filename}")
+            
+        except Exception as e:
+            logger.error(f"Error processing {filename}: {str(e)}")
+            skipped_files.append(filename)
+            
+    # Delete all txt files from merge directory
+    for merge_file_path in merge_files:
+        try:
+            os.remove(merge_file_path)
+            logger.info(f"Deleted {os.path.basename(merge_file_path)} from merge directory")
+        except Exception as e:
+            logger.error(f"Error deleting {os.path.basename(merge_file_path)}: {str(e)}")
+            
+    # Return summary
+    return {
+        'merged': merged_files,
+        'skipped': skipped_files
+    }
 
 HELP_TEXT = """
 merge - Merge text files from merge directory into textfiles directory
@@ -69,21 +93,27 @@ async def handle_message(bot, message):
         return False
         
     try:
-        # Check if merge directory exists and has files
+        # Check if merge directory exists
         merge_dir = r"C:\demofetch\merge"
         if not os.path.exists(merge_dir):
             await bot.send_message(message.author, "Error: Merge directory does not exist")
             return True
             
-        txt_files = [f for f in os.listdir(merge_dir) if f.endswith('.txt')]
-        if not txt_files:
+        # Run merge operation
+        result = merge_files()
+        
+        if not result:
             await bot.send_message(message.author, "No .txt files found in merge directory")
             return True
             
-        # Run merge operation
-        merge_files()
-        
-        await bot.send_message(message.author, "Merge operation completed successfully")
+        # Format summary message
+        summary = "Merge operation completed:\n"
+        if result['merged']:
+            summary += f"\nMerged files:\n" + "\n".join(f"- {f}" for f in result['merged'])
+        if result['skipped']:
+            summary += f"\n\nSkipped files (no matching file in textfiles):\n" + "\n".join(f"- {f}" for f in result['skipped'])
+            
+        await bot.send_message(message.author, summary)
         return True
         
     except Exception as e:
@@ -98,9 +128,22 @@ def setup(bot):
 if __name__ == "__main__":
     try:
         print("Starting merge operation...")
-        merge_files()
-        print("Merge operation completed successfully")
-        input("Press Enter to exit...")  # Keep window open
+        result = merge_files()
+        
+        if not result:
+            print("No .txt files found in merge directory")
+        else:
+            print("\nMerge operation completed:")
+            if result['merged']:
+                print("\nMerged files:")
+                for f in result['merged']:
+                    print(f"- {f}")
+            if result['skipped']:
+                print("\nSkipped files (no matching file in textfiles):")
+                for f in result['skipped']:
+                    print(f"- {f}")
+                    
+        input("\nPress Enter to exit...")  # Keep window open
     except Exception as e:
         print(f"Error during merge: {str(e)}")
-        input("Press Enter to exit...")  # Keep window open on error
+        input("\nPress Enter to exit...")  # Keep window open on error
