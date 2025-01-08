@@ -47,8 +47,8 @@ def merge_files():
             with open(textfiles_path, 'r', encoding='utf-8') as f:
                 textfiles_content = set(line.strip() for line in f if line.strip())
                 
-            # Merge content and sort
-            merged_content = sorted(merge_content.union(textfiles_content))
+            # Merge content and sort (reverse=True for bigger numbers at top)
+            merged_content = sorted(merge_content.union(textfiles_content), reverse=True)
             
             # Write merged content back to textfiles directory
             with open(textfiles_path, 'w', encoding='utf-8') as f:
