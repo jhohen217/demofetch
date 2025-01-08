@@ -6,19 +6,33 @@ def calculate_storage_cost() -> tuple:
     """Calculate total storage size, cost, and file count of demos"""
     total_size = 0
     file_count = 0
-    cost_per_gb = 0.023  # Example cost per GB
+    cost_per_gb = 0.03  # Cost per GB
 
-    if os.path.exists("demos"):
-        for root, _, files in os.walk("demos"):
-            for file in files:
-                if file.endswith('.dem'):
-                    file_path = os.path.join(root, file)
-                    try:
-                        size = os.path.getsize(file_path)
-                        total_size += size
-                        file_count += 1
-                    except OSError:
-                        continue
+    # Load config to get directory paths
+    try:
+        import json
+        with open(os.path.join("config.json"), 'r') as f:
+            config = json.load(f)
+            project_dir = config['project']['directory']
+            public_demos_dir = config['project']['public_demos_directory']
+    except Exception as e:
+        print(f"Error loading config: {e}")
+        return 0, 0, 0
+
+    # Check both demos and public_demos directories
+    for directory in [os.path.join(project_dir, "demos"), public_demos_dir]:
+        if os.path.exists(directory):
+            for root, _, files in os.walk(directory):
+                for file in files:
+                    # Count both .dem and .dem.gz files
+                    if file.endswith(('.dem', '.dem.gz')):
+                        file_path = os.path.join(root, file)
+                        try:
+                            size = os.path.getsize(file_path)
+                            total_size += size
+                            file_count += 1
+                        except OSError:
+                            continue
 
     size_gb = total_size / (1024 * 1024 * 1024)  # Convert to GB
     cost = size_gb * cost_per_gb
