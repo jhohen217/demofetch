@@ -2,7 +2,15 @@ import os
 import glob
 import logging
 
+# Set up logging
 logger = logging.getLogger('discord_bot')
+if __name__ == "__main__":
+    # Configure basic logging when running as standalone
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(message)s'
+    )
+    logger = logging.getLogger(__name__)
 
 def merge_files():
     """Merge txt files from merge directory into textfiles directory"""
@@ -86,3 +94,13 @@ async def handle_message(bot, message):
 def setup(bot):
     """Optional setup function"""
     logger.info("Merge command module loaded")
+
+if __name__ == "__main__":
+    try:
+        print("Starting merge operation...")
+        merge_files()
+        print("Merge operation completed successfully")
+        input("Press Enter to exit...")  # Keep window open
+    except Exception as e:
+        print(f"Error during merge: {str(e)}")
+        input("Press Enter to exit...")  # Keep window open on error
