@@ -37,16 +37,22 @@ if [ -d ".git" ]; then
     if [ "$LOCAL" = "$REMOTE" ]; then
         echo "Local repository is up-to-date."
     elif [ "$LOCAL" = "$BASE" ]; then
-        echo "Local repository is outdated. Pulling latest changes..."
-        git reset --hard origin/master
-    else
-        echo "Local and remote branches have diverged. Forcing update..."
-        git reset --hard origin/master
-    fi
+    echo "Local repository is outdated. Pulling latest changes..."
+    git reset --hard origin/master
+    echo "Updating submodules..."
+    git submodule update --init --recursive
+else
+    echo "Local and remote branches have diverged. Forcing update..."
+    git reset --hard origin/master
+    echo "Updating submodules..."
+    git submodule update --init --recursive
+fi
 else
     echo "Cloning repository..."
     git clone "$REPO_URL" "$INSTALL_DIR"
     cd "$INSTALL_DIR" || exit
+    echo "Initializing submodules..."
+    git submodule update --init --recursive
 fi
 
 # Create virtual environment if it doesn't exist
