@@ -43,6 +43,12 @@ async def continuous_scraping():
                 global filtering_task
                 logger.info("Starting match filtering...")
                 try:
+                    # Initialize filter queue before filtering
+                    from core.score_filter import MatchProcessor
+                    processor = MatchProcessor()
+                    processor.initialize_filter_queue()
+                    
+                    # Run filtering
                     filter_result = await start_match_filtering()
                     if filter_result:
                         logger.info("Match filtering completed successfully")
