@@ -109,6 +109,17 @@ class DemoBot(nextcord.Client):
             logger.error(f"Error loading commands: {str(e)}")
             logger.exception("Full traceback:")
 
+    async def start_background_tasks(self):
+        """Start background tasks like match filtering"""
+        try:
+            from core.score_filter import start_match_filtering
+            logger.info("Starting match filtering background task...")
+            await start_match_filtering()
+            logger.info("Match filtering task completed")
+        except Exception as e:
+            logger.error(f"Error in match filtering task: {str(e)}")
+            logger.exception("Full traceback:")
+
     async def on_ready(self):
         """Called when the bot is ready"""
         logger.info(f"Bot is ready as {self.user}")
@@ -120,6 +131,10 @@ class DemoBot(nextcord.Client):
             owner = await self.fetch_user(self.owner_id)
             if owner:
                 await self.send_message(owner, f"Bot is now online and ready as {self.user}")
+                
+            # Start background tasks
+            self.loop.create_task(self.start_background_tasks())
+            
         except Exception as e:
             logger.error(f"Failed to send startup DM to owner: {e}")
 
