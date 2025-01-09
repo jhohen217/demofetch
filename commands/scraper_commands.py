@@ -40,8 +40,12 @@ async def continuous_scraping():
             if result:
                 logger.info("Match scraping completed successfully")
                 
+                # Get project directory from config
+                project_dir = config['project']['directory']
+                match_ids_path = os.path.join(project_dir, "textfiles", "match_ids.txt")
+                
                 # Check if new matches were found
-                with open(os.path.join("textfiles", "match_ids.txt"), 'r') as f:
+                with open(match_ids_path, 'r') as f:
                     match_count_before = sum(1 for line in f if line.strip())
                 
                 # Start filtering task
@@ -54,7 +58,7 @@ async def continuous_scraping():
                         logger.info("Match filtering completed successfully")
                         
                         # Check if new matches were added
-                        with open(os.path.join("textfiles", "match_ids.txt"), 'r') as f:
+                        with open(match_ids_path, 'r') as f:
                             match_count_after = sum(1 for line in f if line.strip())
                         
                         if match_count_after > match_count_before:
