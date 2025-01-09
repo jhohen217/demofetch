@@ -39,24 +39,35 @@ async def continuous_scraping():
             if result:
                 logger.info("Match scraping completed successfully")
                 
-                # Start filtering and parsing tasks
-                global filtering_task, parsing_task
-                filtering_task = asyncio.create_task(start_match_filtering())
-                parser = DemoParser()
-                parsing_task = asyncio.create_task(parser.parse_new_matches())
-                
-                # Wait for both tasks to complete before next iteration
+                # Start filtering task
+                global filtering_task
+                logger.info("Starting match filtering...")
                 try:
-                    await asyncio.gather(filtering_task, parsing_task)
-                    logger.info("All processing completed")
-                    
-                    # Calculate and display next scrape time
-                    next_scrape = datetime.now() + timedelta(seconds=wait_time)
-                    logger.info("=" * 50)
-                    logger.info(f"Next scrape scheduled for: {next_scrape.strftime('%H:%M:%S')}")
-                    logger.info("=" * 50)
-                except Exception as task_error:
-                    logger.error(f"Error in filtering/parsing tasks: {str(task_error)}")
+                    filter_result = await start_match_filtering()
+                    if filter_result:
+                        logger.info("Match filtering completed successfully")
+                    else:
+                        logger.error("Match filtering failed")
+                except Exception as filter_error:
+                    logger.error(f"Error in filtering task: {str(filter_error)}")
+                
+                # Start parsing task
+                global parsing_task
+                try:
+                    parser = DemoParser()
+                    parsing_task = asyncio.create_task(parser.parse_new_matches())
+                    await parsing_task
+                    logger.info("Match parsing completed")
+                except Exception as parse_error:
+                    logger.error(f"Error in parsing task: {str(parse_error)}")
+                
+                logger.info("All processing completed")
+                
+                # Calculate and display next scrape time
+                next_scrape = datetime.now() + timedelta(seconds=wait_time)
+                logger.info("=" * 50)
+                logger.info(f"Next scrape scheduled for: {next_scrape.strftime('%H:%M:%S')}")
+                logger.info("=" * 50)
             else:
                 logger.error("Match scraping encountered an error")
                 
