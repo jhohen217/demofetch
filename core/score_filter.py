@@ -296,15 +296,19 @@ class MatchProcessor:
             # Initialize filter queue with unfiltered matches
             self.initialize_filter_queue()
 
-            # Read filtered matches into a set for quick lookup
+            # Read all matches and filtered matches
+            all_matches = set()
             filtered_matches = set()
-            with open(self.filtered_file, "r") as f:
-                filtered_matches = {line.strip() for line in f if line.strip()}
+            
+            with open(self.match_ids_file, "r") as f:
+                all_matches = {line.strip() for line in f if line.strip()}
+                
+            if os.path.exists(self.filtered_file):
+                with open(self.filtered_file, "r") as f:
+                    filtered_matches = {line.strip() for line in f if line.strip()}
 
-            # Read matches from filter queue
-            with open(self.filter_queue_file, "r") as fq:
-                queue = [line.strip() for line in fq if line.strip()]
-                unfiltered_matches = [m for m in queue if m not in filtered_matches]
+            # Find unfiltered matches
+            unfiltered_matches = list(all_matches - filtered_matches)
 
             if not unfiltered_matches:
                 return True
