@@ -1,3 +1,4 @@
+import os
 import asyncio
 import random
 import json
@@ -39,20 +40,31 @@ async def continuous_scraping():
             if result:
                 logger.info("Match scraping completed successfully")
                 
+                # Check if new matches were found
+                with open(os.path.join("textfiles", "match_ids.txt"), 'r') as f:
+                    match_count_before = sum(1 for line in f if line.strip())
+                
                 # Start filtering task
                 global filtering_task
                 logger.info("Starting match filtering...")
                 try:
-                    # Clear the filter queue file to force reprocessing of all unfiltered matches
-                    from core.score_filter import MatchProcessor
-                    processor = MatchProcessor()
-                    with open(processor.filter_queue_file, 'w') as f:
-                        f.write('')  # Clear the file
-                    
                     # Run filtering
                     filter_result = await start_match_filtering()
                     if filter_result:
                         logger.info("Match filtering completed successfully")
+                        
+                        # Check if new matches were added
+                        with open(os.path.join("textfiles", "match_ids.txt"), 'r') as f:
+                            match_count_after = sum(1 for line in f if line.strip())
+                        
+                        if match_count_after > match_count_before:
+                            logger.info(f"Found {match_count_after - match_count_before} new matches, running filter again...")
+                            # Run filtering again to catch new matches
+                            filter_result = await start_match_filtering()
+                            if filter_result:
+                                logger.info("Second filtering pass completed successfully")
+                            else:
+                                logger.error("Second filtering pass failed")
                     else:
                         logger.error("Match filtering failed")
                 except Exception as filter_error:
