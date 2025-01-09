@@ -35,18 +35,27 @@ async def continuous_scraping():
             logger.info(f"Waiting {wait_time} seconds before next scrape...")
             await asyncio.sleep(wait_time)
             
+            # Get project directory from config
+            project_dir = config['project']['directory']
+            match_ids_path = os.path.join(project_dir, "textfiles", "match_ids.txt")
+            
+            # Get count before scraping
+            match_count_before = 0
+            if os.path.exists(match_ids_path):
+                with open(match_ids_path, 'r') as f:
+                    match_count_before = sum(1 for line in f if line.strip())
+            
             # Start scraping
             result = await start_match_scraping()
             if result:
                 logger.info("Match scraping completed successfully")
                 
-                # Get project directory from config
-                project_dir = config['project']['directory']
-                match_ids_path = os.path.join(project_dir, "textfiles", "match_ids.txt")
-                
                 # Check if new matches were found
                 with open(match_ids_path, 'r') as f:
-                    match_count_before = sum(1 for line in f if line.strip())
+                    match_count_after = sum(1 for line in f if line.strip())
+                    
+                if match_count_after > match_count_before:
+                    logger.info(f"Found {match_count_after - match_count_before} new matches, starting filtering...")
                 
                 # Start filtering task
                 global filtering_task
