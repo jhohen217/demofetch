@@ -1,6 +1,7 @@
 import os
 import sys
 import json
+import asyncio
 import logging
 from pathlib import Path
 
@@ -109,15 +110,33 @@ class DemoBot(nextcord.Client):
             logger.error(f"Error loading commands: {str(e)}")
             logger.exception("Full traceback:")
 
+    async def periodic_match_filtering(self):
+        """Run match filtering periodically"""
+        try:
+            from core.score_filter import start_match_filtering
+            while True:
+                logger.info("Starting periodic match filtering...")
+                try:
+                    await start_match_filtering()
+                    logger.info("Periodic match filtering completed")
+                except Exception as e:
+                    logger.error(f"Error in periodic match filtering: {str(e)}")
+                    logger.exception("Full traceback:")
+                
+                # Wait 5 minutes before next filtering
+                await asyncio.sleep(300)
+        except Exception as e:
+            logger.error(f"Error in periodic match filtering task: {str(e)}")
+            logger.exception("Full traceback:")
+
     async def start_background_tasks(self):
         """Start background tasks like match filtering"""
         try:
-            from core.score_filter import start_match_filtering
-            logger.info("Starting match filtering background task...")
-            await start_match_filtering()
-            logger.info("Match filtering task completed")
+            # Start periodic match filtering
+            self.loop.create_task(self.periodic_match_filtering())
+            logger.info("Started periodic match filtering task")
         except Exception as e:
-            logger.error(f"Error in match filtering task: {str(e)}")
+            logger.error(f"Error starting background tasks: {str(e)}")
             logger.exception("Full traceback:")
 
     async def on_ready(self):

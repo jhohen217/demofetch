@@ -50,26 +50,20 @@ async def continuous_scraping():
             if result:
                 logger.info("Match scraping completed successfully")
                 
-                # Check if new matches were found
-                with open(match_ids_path, 'r') as f:
-                    match_count_after = sum(1 for line in f if line.strip())
-                    
-                if match_count_after > match_count_before:
-                    logger.info(f"Found {match_count_after - match_count_before} new matches, starting filtering...")
-                    
-                    # Start filtering task
-                    global filtering_task
-                    try:
-                        # Run filtering
-                        filter_result = await start_match_filtering()
-                        if filter_result:
-                            logger.info("Match filtering completed successfully")
-                        else:
-                            logger.error("Match filtering failed")
-                    except Exception as filter_error:
-                        logger.error(f"Error in filtering task: {str(filter_error)}")
-                else:
-                    logger.info("No new matches found, skipping filtering")
+                # Always run filtering to catch any unfiltered matches
+                logger.info("Starting match filtering...")
+                
+                # Start filtering task
+                global filtering_task
+                try:
+                    # Run filtering
+                    filter_result = await start_match_filtering()
+                    if filter_result:
+                        logger.info("Match filtering completed successfully")
+                    else:
+                        logger.error("Match filtering failed")
+                except Exception as filter_error:
+                    logger.error(f"Error in filtering task: {str(filter_error)}")
                 
                 # Start parsing task
                 global parsing_task
