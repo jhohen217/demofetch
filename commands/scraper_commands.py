@@ -43,10 +43,11 @@ async def continuous_scraping():
                 global filtering_task
                 logger.info("Starting match filtering...")
                 try:
-                    # Initialize filter queue before filtering
+                    # Clear the filter queue file to force reprocessing of all unfiltered matches
                     from core.score_filter import MatchProcessor
                     processor = MatchProcessor()
-                    processor.initialize_filter_queue()
+                    with open(processor.filter_queue_file, 'w') as f:
+                        f.write('')  # Clear the file
                     
                     # Run filtering
                     filter_result = await start_match_filtering()
