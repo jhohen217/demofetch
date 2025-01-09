@@ -3,6 +3,7 @@ import asyncio
 import sys
 from core.migrate_matches import migrate_matches
 from core.match_scrape import start_match_scraping
+from core.score_filter import start_match_filtering
 
 logger = logging.getLogger('discord_bot')
 
@@ -14,7 +15,23 @@ async def run_match_scraping():
     while True:
         try:
             logger.debug("Starting match scraping cycle")
-            await start_match_scraping()
+            result = await start_match_scraping()
+            if result:
+                logger.debug("Match scraping completed successfully")
+                
+                # Always run filtering to catch any unfiltered matches
+                logger.debug("Starting match filtering...")
+                try:
+                    filter_result = await start_match_filtering()
+                    if filter_result:
+                        logger.debug("Match filtering completed successfully")
+                    else:
+                        logger.error("Match filtering failed")
+                except Exception as filter_error:
+                    logger.error(f"Error in filtering task: {str(filter_error)}")
+            else:
+                logger.error("Match scraping encountered an error")
+            
             logger.debug("Match scraping cycle completed")
         except Exception as e:
             logger.error(f"Error in match scraping: {e}")
