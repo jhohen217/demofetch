@@ -112,8 +112,9 @@ async def handle_message(bot, message):
 
             # Create and start the continuous scraping task
             await bot.send_message(message.author, "Started fetching NA East Match IDs")
-            # Change status to watching when scraping starts
-            await bot.change_presence(activity=nextcord.Activity(type=nextcord.ActivityType.watching, name="for demos"))
+            # Update service status and bot presence
+            bot.is_service_running = True
+            await bot.update_status()
             scraping_task = asyncio.create_task(continuous_scraping())
             return True
             
@@ -169,8 +170,9 @@ async def handle_message(bot, message):
                     except asyncio.CancelledError:
                         pass
                     scraping_task = None
-                    # Change status back to listening when scraping stops
-                    await bot.change_presence(activity=nextcord.Activity(type=nextcord.ActivityType.listening, name="for commands"))
+                    # Update service status and bot presence
+                    bot.is_service_running = False
+                    await bot.update_status()
                     message_parts.append("Match scraping stopped")
 
                 # Stop filtering task if it exists

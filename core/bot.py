@@ -38,9 +38,9 @@ class DemoBot(nextcord.Client):
         intents.guilds = True
         intents.messages = True
         
+        # Initialize without activity - we'll set it in on_ready
         super().__init__(
-            intents=intents,
-            activity=nextcord.Activity(type=nextcord.ActivityType.listening, name="for commands")
+            intents=intents
         )
 
         # Store owner ID from config
@@ -51,6 +51,9 @@ class DemoBot(nextcord.Client):
         
         # Load command modules
         self.load_commands()
+
+        # Track service status
+        self.is_service_running = False
 
     def format_message(self, content: str) -> str:
         """Format a message in a code block for highlighted appearance"""
@@ -139,6 +142,13 @@ class DemoBot(nextcord.Client):
             logger.error(f"Error starting background tasks: {str(e)}")
             logger.exception("Full traceback:")
 
+    async def update_status(self):
+        """Update bot status based on service state"""
+        if self.is_service_running:
+            await self.change_presence(activity=nextcord.Activity(type=nextcord.ActivityType.watching, name="for demos"))
+        else:
+            await self.change_presence(activity=nextcord.Activity(type=nextcord.ActivityType.listening, name="for commands"))
+
     async def on_ready(self):
         """Called when the bot is ready"""
         logger.info(f"Bot is ready as {self.user}")
@@ -150,6 +160,9 @@ class DemoBot(nextcord.Client):
             owner = await self.fetch_user(self.owner_id)
             if owner:
                 await self.send_message(owner, f"Bot is now online and ready as {self.user}")
+            
+            # Set initial status
+            await self.update_status()
                 
             # Start background tasks
             self.loop.create_task(self.start_background_tasks())

@@ -1,6 +1,7 @@
 import logging
 import asyncio
 import sys
+import nextcord
 from core.migrate_matches import migrate_matches
 from core.match_scrape import start_match_scraping
 from core.score_filter import start_match_filtering
@@ -57,6 +58,9 @@ async def handle_message(bot, message):
             # Start match fetching service
             logger.debug("Starting match fetching service")
             await bot.send_message(message.author, "Starting match fetching service...")
+            # Update service status and bot presence
+            bot.is_service_running = True
+            await bot.update_status()
             task = asyncio.create_task(run_match_scraping())
             background_tasks['match_scraping'] = task
             await bot.send_message(message.author, "Match fetching service started successfully!")
@@ -74,6 +78,9 @@ async def handle_message(bot, message):
             if 'match_scraping' in background_tasks:
                 logger.debug("Stopping match fetching service")
                 background_tasks['match_scraping'].cancel()
+                # Update service status and bot presence
+                bot.is_service_running = False
+                await bot.update_status()
                 await bot.send_message(message.author, "Match fetching service stopped.")
             else:
                 logger.debug("No services are currently running")
