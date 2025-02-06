@@ -32,7 +32,7 @@ with open(config_path, 'r') as f:
 fetch_delay_min = config.get('downloader', {}).get('fetch_delay', {}).get('min', 180)
 fetch_delay_max = config.get('downloader', {}).get('fetch_delay', {}).get('max', 300)
 
-async def continuous_scraping():
+async def continuous_scraping(bot=None):
     """Continuously scrape matches with random intervals"""
     while True:
         try:
@@ -58,7 +58,7 @@ async def continuous_scraping():
                 os.makedirs(month_dir, exist_ok=True)
             
             # Start scraping
-            result = await start_match_scraping()
+            result = await start_match_scraping(bot)
             if result:
                 logger.info("Match scraping completed successfully")
                 
@@ -69,7 +69,7 @@ async def continuous_scraping():
                 global filtering_task
                 try:
                     # Run filtering
-                    filter_result = await start_match_filtering()
+                    filter_result = await start_match_filtering(bot)
                     if filter_result:
                         logger.info("Match filtering completed successfully")
                     else:
@@ -148,7 +148,7 @@ async def handle_message(bot, message):
 
             # Create and start the date fetching task
             await bot.send_message(message.author, "Started processing undated matches")
-            datefetch_task = asyncio.create_task(start_date_fetching())
+            datefetch_task = asyncio.create_task(start_date_fetching(bot))
             return True
             
         except Exception as e:
@@ -166,7 +166,7 @@ async def handle_message(bot, message):
             # Update service status and bot presence
             bot.is_service_running = True
             await bot.update_status()
-            scraping_task = asyncio.create_task(continuous_scraping())
+            scraping_task = asyncio.create_task(continuous_scraping(bot))
             return True
             
         except Exception as e:

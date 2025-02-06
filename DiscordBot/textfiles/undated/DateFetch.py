@@ -21,7 +21,7 @@ class MatchDate:
     new_name: str
 
 class DateFetcher:
-    def __init__(self):
+    def __init__(self, bot=None):
         # Load configuration from project root
         script_dir = os.path.dirname(os.path.abspath(__file__))  # undated directory
         project_dir = os.path.dirname(os.path.dirname(os.path.dirname(script_dir)))  # project root
@@ -38,6 +38,9 @@ class DateFetcher:
         
         # Set up processed file path
         self.processed_file = os.path.join(self.undated_dir, "processed.txt")
+        
+        # Discord bot instance
+        self.bot = bot
         
         # API configuration
         self.api_base_url = "https://open.faceit.com/data/v4/matches/{match_id}"
@@ -171,7 +174,16 @@ class DateFetcher:
                         if timestamp:
                             return datetime.fromtimestamp(timestamp)
                     elif response.status == 429:  # Rate limited
-                        print_highlighted(f"Rate limited. Cooling down for {self.rate_limit_cooldown} seconds...")
+                        rate_limit_msg = f"[DATEFETCH] Rate limited - Trying again in {self.rate_limit_cooldown} seconds..."
+                        print_highlighted(rate_limit_msg)
+                        
+                        # Send DM if bot instance is available
+                        if self.bot and self.bot.owner:
+                            try:
+                                await self.bot.send_message(self.bot.owner, rate_limit_msg)
+                            except:
+                                pass  # Ignore DM sending failures
+                                
                         await asyncio.sleep(self.rate_limit_cooldown)
                         retries += 1
                         continue
@@ -331,10 +343,10 @@ class DateFetcher:
             print_highlighted(f"Error during date fetching: {str(e)}")
             return False
 
-async def start_date_fetching():
+async def start_date_fetching(bot=None):
     """Entry point for date fetching"""
     try:
-        fetcher = DateFetcher()
+        fetcher = DateFetcher(bot)
         return await fetcher.process_matches()
     except Exception as e:
         print_highlighted(f"Error during date fetching: {str(e)}")

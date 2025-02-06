@@ -6,7 +6,9 @@ from typing import List, Set, Optional
 from datetime import datetime
 
 class MatchScraper:
-    def __init__(self):
+    def __init__(self, bot=None):
+        # Discord bot instance
+        self.bot = bot
         # Load configuration from project root
         core_dir = os.path.dirname(os.path.abspath(__file__))  # core directory
         project_dir = os.path.dirname(core_dir)  # DiscordBot directory
@@ -63,7 +65,16 @@ class MatchScraper:
                             print("Successfully received response from API")
                             return await response.json()
                         elif response.status == 429:  # Rate limited
-                            print(f"Rate limited. Cooling down for {self.rate_limit_cooldown} seconds...")
+                            rate_limit_msg = f"[SCRAPER] Rate limited - Trying again in {self.rate_limit_cooldown} seconds..."
+                            print(rate_limit_msg)
+                            
+                            # Send DM if bot instance is available
+                            if self.bot and self.bot.owner:
+                                try:
+                                    await self.bot.send_message(self.bot.owner, rate_limit_msg)
+                                except:
+                                    pass  # Ignore DM sending failures
+                                    
                             await asyncio.sleep(self.rate_limit_cooldown)
                             retries += 1
                             continue
@@ -166,10 +177,10 @@ class MatchScraper:
             print(f"Error during match processing: {str(e)}")
             return False
 
-async def start_match_scraping():
+async def start_match_scraping(bot=None):
     """Entry point for match scraping"""
     try:
-        scraper = MatchScraper()
+        scraper = MatchScraper(bot)
         return await scraper.process_matches()
     except Exception as e:
         print(f"Error during match scraping: {str(e)}")

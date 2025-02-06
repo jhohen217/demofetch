@@ -55,7 +55,9 @@ class MatchResult:
             return os.path.join(month_dir, f"unapproved_matchids_{month_lower}.txt")
 
 class MatchProcessor:
-    def __init__(self):
+    def __init__(self, bot=None):
+        # Discord bot instance
+        self.bot = bot
         # Load configuration from project root
         core_dir = os.path.dirname(os.path.abspath(__file__))  # core directory
         project_dir = os.path.dirname(core_dir)  # DiscordBot directory
@@ -204,7 +206,16 @@ class MatchProcessor:
                         if response.status == 200:
                             match_details = await response.json()
                         elif response.status == 429:
-                            print_highlighted(f"Rate limited. Cooling down for {self.rate_limit_cooldown} seconds...")
+                            rate_limit_msg = f"[FILTER] Rate limited - Trying again in {self.rate_limit_cooldown} seconds..."
+                            print_highlighted(rate_limit_msg)
+                            
+                            # Send DM if bot instance is available
+                            if self.bot and self.bot.owner:
+                                try:
+                                    await self.bot.send_message(self.bot.owner, rate_limit_msg)
+                                except:
+                                    pass  # Ignore DM sending failures
+                                    
                             await asyncio.sleep(self.rate_limit_cooldown)
                             retries += 1
                             continue
@@ -394,10 +405,10 @@ class MatchProcessor:
             print_highlighted(f"Error during match filtering: {str(e)}")
             return False
 
-async def start_match_filtering():
+async def start_match_filtering(bot=None):
     """Entry point for match filtering"""
     try:
-        processor = MatchProcessor()
+        processor = MatchProcessor(bot)
         return await processor.process_matches()
     except Exception as e:
         print_highlighted(f"Error during match filtering: {str(e)}")
