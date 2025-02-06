@@ -41,10 +41,10 @@ async def continuous_scraping():
             logger.info(f"Waiting {wait_time} seconds before next scrape...")
             await asyncio.sleep(wait_time)
             
-            # Get project directory and current month from config
-            project_dir = config['project']['directory']
+            # Get textfiles directory and current month from config
+            textfiles_dir = config['project']['textfiles_directory']
             current_month = datetime.now().strftime("%B")  # e.g., "February"
-            month_dir = os.path.join(project_dir, "textfiles", current_month)
+            month_dir = os.path.join(textfiles_dir, current_month)
             month_lower = current_month.lower()
             match_ids_path = os.path.join(month_dir, f"match_ids_{month_lower}.txt")
             
@@ -88,7 +88,7 @@ async def continuous_scraping():
                     )
                     
                     # Get demos directory from config
-                    demos_dir = os.path.join(project_dir, "public_demos")
+                    demos_dir = config['project']['public_demos_directory']
                     
                     # Run the C# parser
                     parsing_task = asyncio.create_task(

@@ -16,8 +16,8 @@ def get_month_files(month: str):
     with open(config_path, 'r') as f:
         config = json.load(f)
     
-    project_dir = config['project']['directory']
-    month_dir = os.path.join(project_dir, "textfiles", month)
+    textfiles_dir = config['project']['textfiles_directory']
+    month_dir = os.path.join(textfiles_dir, month)
     month_lower = month.lower()
     
     return {

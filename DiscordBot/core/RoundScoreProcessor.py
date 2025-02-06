@@ -46,9 +46,15 @@ def calculate_storage_cost() -> tuple:
 def get_match_ids_count() -> int:
     """Get total count of match IDs"""
     try:
-        core_dir = os.path.dirname(os.path.abspath(__file__))
-        project_dir = os.path.dirname(core_dir)
-        textfiles_dir = os.path.join(project_dir, "textfiles")
+        # Load config to get directory paths
+        import json
+        core_dir = os.path.dirname(os.path.abspath(__file__))  # core directory
+        project_dir = os.path.dirname(core_dir)  # DiscordBot directory
+        config_path = os.path.join(os.path.dirname(project_dir), 'config.json')
+        
+        with open(config_path, 'r') as f:
+            config = json.load(f)
+            textfiles_dir = config['project']['textfiles_directory']
         with open(os.path.join(textfiles_dir, "match_ids.txt"), 'r') as f:
             return sum(1 for line in f if line.strip())
     except:
@@ -57,9 +63,15 @@ def get_match_ids_count() -> int:
 def get_downloaded_match_ids_count() -> int:
     """Get count of downloaded match IDs"""
     try:
-        core_dir = os.path.dirname(os.path.abspath(__file__))
-        project_dir = os.path.dirname(core_dir)
-        textfiles_dir = os.path.join(project_dir, "textfiles")
+        # Load config to get directory paths
+        import json
+        core_dir = os.path.dirname(os.path.abspath(__file__))  # core directory
+        project_dir = os.path.dirname(core_dir)  # DiscordBot directory
+        config_path = os.path.join(os.path.dirname(project_dir), 'config.json')
+        
+        with open(config_path, 'r') as f:
+            config = json.load(f)
+            textfiles_dir = config['project']['textfiles_directory']
         with open(os.path.join(textfiles_dir, "match_downloaded.txt"), 'r') as f:
             return sum(1 for line in f if line.strip())
     except:
@@ -68,9 +80,15 @@ def get_downloaded_match_ids_count() -> int:
 def get_rejected_match_ids_count() -> int:
     """Get count of rejected match IDs"""
     try:
-        core_dir = os.path.dirname(os.path.abspath(__file__))
-        project_dir = os.path.dirname(core_dir)
-        textfiles_dir = os.path.join(project_dir, "textfiles")
+        # Load config to get directory paths
+        import json
+        core_dir = os.path.dirname(os.path.abspath(__file__))  # core directory
+        project_dir = os.path.dirname(core_dir)  # DiscordBot directory
+        config_path = os.path.join(os.path.dirname(project_dir), 'config.json')
+        
+        with open(config_path, 'r') as f:
+            config = json.load(f)
+            textfiles_dir = config['project']['textfiles_directory']
         with open(os.path.join(textfiles_dir, "match_rejected.txt"), 'r') as f:
             return sum(1 for line in f if line.strip())
     except:
@@ -86,9 +104,16 @@ def get_undownloaded_match_ids_count() -> int:
 def get_category_counts() -> Dict[str, int]:
     """Get counts for each category (ace, quad, unapproved)"""
     counts = {'ace': 0, 'quad': 0, 'unapproved': 0}
-    core_dir = os.path.dirname(os.path.abspath(__file__))
-    project_dir = os.path.dirname(core_dir)
-    textfiles_dir = os.path.join(project_dir, "textfiles")
+    
+    # Load config to get directory paths
+    import json
+    core_dir = os.path.dirname(os.path.abspath(__file__))  # core directory
+    project_dir = os.path.dirname(core_dir)  # DiscordBot directory
+    config_path = os.path.join(os.path.dirname(project_dir), 'config.json')
+    
+    with open(config_path, 'r') as f:
+        config = json.load(f)
+        textfiles_dir = config['project']['textfiles_directory']
 
     # Count ace matches
     try:

@@ -157,11 +157,12 @@ class FaceitUserFetcher:
             print(message)
             return message, None
 
-        # Ensure usermatches directory exists
-        os.makedirs("usermatches", exist_ok=True)
+        # Get usermatches directory from config
+        usermatches_dir = os.path.join(self.config['project']['directory'], "usermatches")
+        os.makedirs(usermatches_dir, exist_ok=True)
         
         # Save to usermatches directory
-        filename = os.path.join("usermatches", f"{username}.txt")
+        filename = os.path.join(usermatches_dir, f"{username}.txt")
         try:
             with open(filename, "w") as f:
                 for match_id in matches:

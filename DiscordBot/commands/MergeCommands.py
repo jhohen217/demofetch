@@ -21,10 +21,7 @@ def merge_files():
     
     with open(config_path, 'r') as f:
         config = json.load(f)
-        project_dir = config['project']['directory']
-        
-    # Source directories
-    textfiles_dir = os.path.join(project_dir, "textfiles")
+        textfiles_dir = config['project']['textfiles_directory']
     merge_dir = os.path.join(textfiles_dir, "MergeMe")
     
     # Get all txt files in merge directory
@@ -108,9 +105,9 @@ async def handle_message(bot, message):
         
         with open(config_path, 'r') as f:
             config = json.load(f)
-            project_dir = config['project']['directory']
+            textfiles_dir = config['project']['textfiles_directory']
             
-        merge_dir = os.path.join(project_dir, "textfiles", "MergeMe")
+        merge_dir = os.path.join(textfiles_dir, "MergeMe")
         
         # Check if merge directory exists
         if not os.path.exists(merge_dir):

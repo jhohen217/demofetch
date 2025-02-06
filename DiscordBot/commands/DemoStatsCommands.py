@@ -16,8 +16,7 @@ def _count_parsed_matches():
         
         with open(config_path, 'r') as f:
             config = json.load(f)
-            project_dir = config['project']['directory']
-            parsed_dir = os.path.join(project_dir, "parsed")
+            parsed_dir = config['project']['KillCollectionParse']
             
         if os.path.exists(parsed_dir):
             txt_files = glob.glob(os.path.join(parsed_dir, "**", "*.txt"), recursive=True)
