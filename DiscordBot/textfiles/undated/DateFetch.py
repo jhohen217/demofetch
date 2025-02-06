@@ -59,6 +59,7 @@ class DateFetcher:
             'failed': 0,
             'skipped': 0,
             'january': 0,
+            'february': 0,
             'december': 0
         }
 
@@ -139,8 +140,8 @@ class DateFetcher:
         return False, None
 
     def ensure_month_directories(self):
-        """Ensure January and December directories exist"""
-        for month in ['January', 'December']:
+        """Ensure month directories exist"""
+        for month in ['January', 'February', 'December']:
             month_dir = os.path.join(self.textfiles_dir, month)
             os.makedirs(month_dir, exist_ok=True)
 
@@ -243,7 +244,7 @@ class DateFetcher:
 
             # Determine month folder and create new name
             month_name = match_date.strftime("%B")  # Full month name
-            if month_name not in ['January', 'December']:
+            if month_name not in ['January', 'February', 'December']:
                 print_highlighted(f"Unexpected month {month_name} for match {match_id}")
                 self.stats['failed'] += 1
                 return None
@@ -319,6 +320,7 @@ class DateFetcher:
                 f"Successfully processed: {self.stats['processed']}",
                 f"Skipped (already processed): {self.stats['skipped']}",
                 f"January matches: {self.stats['january']}",
+                f"February matches: {self.stats['february']}",
                 f"December matches: {self.stats['december']}",
                 f"Failed to process: {self.stats['failed']}"
             ]
