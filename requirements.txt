@@ -1,29 +1,4 @@
-# Core dependencies
-discord.py>=2.0.0     # Discord bot framework
-websockets>=10.0      # For WebSocket communication with CS2 server plugin
-pathlib>=1.0         # For cross-platform path handling
-typing>=3.7          # For type hints
-asyncio>=3.4         # For async/await functionality
-
-# Logging and configuration
-python-json-logger>=2.0  # For structured JSON logging
-
-# Video processing
-opencv-python>=4.5    # For video processing capabilities
-numpy>=1.19          # Required by opencv-python and for frame processing
-pillow>=8.0          # For image processing
-
-# Blender integration (for future implementation)
-bpy                  # Blender Python API (installed with Blender)
-mathutils            # Blender math utilities (installed with Blender)
-
-# Development dependencies
-pytest>=6.0          # For testing
-pytest-asyncio       # For testing async code
-black               # For code formatting
-mypy                # For static type checking
-pylint              # For code linting
-
-# Note: bpy and mathutils are provided by Blender installation
-# Make sure Blender is installed and its Python environment is properly configured
-# Current Blender scripts are located in C:\demofetch\blender
+nextcord>=2.0.0
+requests>=2.31.0
+urllib3>=2.0.0
+python-dotenv>=1.0.0
