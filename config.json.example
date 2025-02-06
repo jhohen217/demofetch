@@ -7,13 +7,13 @@
         "api_key": "YOUR_FACEIT_API_KEY_HERE"
     },
     "project": {
-        "directory": "C:\\path\\to\\project\\DiscordBot",
-        "public_demos_directory": "C:\\path\\to\\project\\public_demos",
-        "textfiles_directory": "C:\\path\\to\\project\\DiscordBot\\textfiles",
-        "KillCollectionParse": "C:\\path\\to\\project\\DiscordBot\\parsed\\KillCollections",
-        "TickByTickParse": "C:\\path\\to\\project\\DiscordBot\\parsed\\TickByTick",
-        "EnvironmentCams": "C:\\path\\to\\project\\DiscordBot\\parsed\\env",
-        "KillCollectionMasterPath": "C:\\path\\to\\project\\DiscordBot\\parsed\\KillCollectionMaster.csv",
+        "directory": "/path/to/project/DiscordBot",
+        "public_demos_directory": "/path/to/project/public_demos",
+        "textfiles_directory": "/path/to/project/DiscordBot/textfiles",
+        "KillCollectionParse": "/path/to/project/DiscordBot/parsed/KillCollections",
+        "TickByTickParse": "/path/to/project/DiscordBot/parsed/TickByTick",
+        "EnvironmentCams": "/path/to/project/DiscordBot/parsed/env",
+        "KillCollectionMasterPath": "/path/to/project/DiscordBot/parsed/KillCollectionMaster.csv",
         "POVCollections": {
             "Aces": true,
             "Quads": true,
