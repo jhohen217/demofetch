@@ -64,10 +64,10 @@ class MatchProcessor:
         with open(config_path, 'r') as f:
             self.config = json.load(f)
 
-        # Use configured project directory
+        # Use configured directories
         self.project_dir = self.config['project']['directory']
         self.api_key = self.config["faceit"]["api_key"]
-        self.textfiles_dir = os.path.join(self.project_dir, "textfiles")
+        self.textfiles_dir = self.config['project']['textfiles_directory']
         
         # Get current month directory and name
         current_month = datetime.now().strftime("%B")  # e.g., "February"

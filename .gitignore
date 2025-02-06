@@ -54,3 +54,5 @@ cs-demo-manager-main/
 CS2DemoRenderer/
 CS2RemoteConsole-V2/
 CSharpParser/
+DiscordBot/old/
+*.txt

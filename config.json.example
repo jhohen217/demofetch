@@ -9,6 +9,7 @@
     "project": {
         "directory": "C:\\path\\to\\project\\DiscordBot",
         "public_demos_directory": "C:\\path\\to\\project\\public_demos",
+        "textfiles_directory": "C:\\path\\to\\project\\DiscordBot\\textfiles",
         "KillCollectionParse": "C:\\path\\to\\project\\DiscordBot\\parsed\\KillCollections",
         "TickByTickParse": "C:\\path\\to\\project\\DiscordBot\\parsed\\TickByTick",
         "EnvironmentCams": "C:\\path\\to\\project\\DiscordBot\\parsed\\env",

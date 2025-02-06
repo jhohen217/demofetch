@@ -28,8 +28,8 @@ BATCH_SIZE = config.get('downloader', {}).get('batch_size', 100)
 FETCH_DELAY_MIN = config.get('downloader', {}).get('fetch_delay', {}).get('min', 180)  # 3 minutes default
 FETCH_DELAY_MAX = config.get('downloader', {}).get('fetch_delay', {}).get('max', 300)  # 5 minutes default
 
-# Create textfiles directory and month subdirectory
-TEXTFILES_DIR = os.path.join(PROJECT_DIR, 'textfiles')
+# Use configured textfiles directory
+TEXTFILES_DIR = config['project']['textfiles_directory']
 CURRENT_MONTH = datetime.now().strftime("%B")  # e.g., "February"
 MONTH_DIR = os.path.join(TEXTFILES_DIR, CURRENT_MONTH)
 os.makedirs(MONTH_DIR, exist_ok=True)

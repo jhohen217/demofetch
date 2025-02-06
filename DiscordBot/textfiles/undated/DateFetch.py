@@ -24,8 +24,7 @@ class DateFetcher:
     def __init__(self):
         # Load configuration from project root
         script_dir = os.path.dirname(os.path.abspath(__file__))  # undated directory
-        textfiles_dir = os.path.dirname(script_dir)  # textfiles directory
-        project_dir = os.path.dirname(os.path.dirname(textfiles_dir))  # project root
+        project_dir = os.path.dirname(os.path.dirname(os.path.dirname(script_dir)))  # project root
         config_path = os.path.join(project_dir, 'config.json')
         
         with open(config_path, 'r') as f:
@@ -34,8 +33,8 @@ class DateFetcher:
         # Set up directories
         self.project_dir = project_dir
         self.api_key = self.config["faceit"]["api_key"]
-        self.textfiles_dir = textfiles_dir
-        self.undated_dir = script_dir
+        self.textfiles_dir = self.config["project"]["textfiles_directory"]
+        self.undated_dir = os.path.join(self.textfiles_dir, "undated")
         
         # Set up processed file path
         self.processed_file = os.path.join(self.undated_dir, "processed.txt")
