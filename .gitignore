@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+bot.log
+
+# Config files
+config.json
+*.ini
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+parsed/
+usermatches/
+public_demos/
+blender/
+advancedfx-main/
+cs-demo-manager-main/
+CS2DemoRenderer/
+CS2RemoteConsole-V2/
+CSharpParser/
