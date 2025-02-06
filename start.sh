@@ -6,7 +6,7 @@ REPO_URL="https://github.com/jhohen217/demofetch.git"
 
 # Ensure the script is running in the correct directory
 mkdir -p "$INSTALL_DIR"
-cd "$INSTALL_DIR/.." || exit  # Go to parent directory for git operations
+cd "$INSTALL_DIR" || exit  # Move to bot directory for all operations
 
 # Function to check if a command exists
 command_exists() {
@@ -27,7 +27,7 @@ if ! command_exists python3; then
 fi
 
 # Clone or update repository
-if [ -d ".git" ]; then
+if [ -d "$INSTALL_DIR/.git" ]; then
     echo "Checking for updates from GitHub..."
     git fetch origin
     LOCAL=$(git rev-parse HEAD)
@@ -37,16 +37,18 @@ if [ -d ".git" ]; then
     if [ "$LOCAL" = "$REMOTE" ]; then
         echo "Local repository is up-to-date."
     elif [ "$LOCAL" = "$BASE" ]; then
-    echo "Local repository is outdated. Pulling latest changes..."
-    git reset --hard origin/master
-    echo "Updating submodules..."
-    git submodule update --init --recursive
-else
-    echo "Local and remote branches have diverged. Forcing update..."
-    git reset --hard origin/master
-    echo "Updating submodules..."
-    git submodule update --init --recursive
-fi
+        echo "Local repository is outdated. Pulling latest changes..."
+        git reset --hard origin/master
+        git pull origin master
+        echo "Updating submodules..."
+        git submodule update --init --recursive
+    else
+        echo "Local and remote branches have diverged. Forcing update..."
+        git reset --hard origin/master
+        git pull origin master --force
+        echo "Updating submodules..."
+        git submodule update --init --recursive
+    fi
 else
     echo "Cloning repository..."
     git clone "$REPO_URL" "$INSTALL_DIR"
@@ -64,6 +66,10 @@ fi
 # Ensure virtual environment is activated
 echo "Activating virtual environment..."
 source venv/bin/activate || exit 1
+
+# Ensure dependencies are installed
+echo "Installing/updating dependencies..."
+pip install --upgrade -r requirements.txt
 
 # Check if config.json exists; if not, create from example
 if [ ! -f "config.json" ] && [ -f "config.json.example" ]; then
