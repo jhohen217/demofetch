@@ -234,17 +234,18 @@ async def handle_message(bot, message):
                 
             # Get download status from DemoDownloader
             download_stats = stop_processes.__globals__['download_stats']
-            if download_stats['is_complete']:
-                status_parts.append("\n🔴 Downloads are INACTIVE")
-                if download_stats['last_match_id']:
-                    status_parts.append(f"Last downloaded match: {download_stats['last_match_id']}")
-            else:
+            # Show downloads as active only if there are matches to process
+            if download_stats['total'] > 0 and not download_stats['is_complete']:
                 status_parts.append("\n🟢 Downloads are ACTIVE")
                 status_parts.append(f"Progress: {download_stats['successful']}/{download_stats['total']} matches")
                 status_parts.append(f"Failed: {download_stats['failed']}")
                 status_parts.append(f"Rejected: {download_stats['rejected']}")
                 if download_stats['last_match_id']:
                     status_parts.append(f"Current match: {download_stats['last_match_id']}")
+            else:
+                status_parts.append("\n🔴 Downloads are INACTIVE")
+                if download_stats['last_match_id']:
+                    status_parts.append(f"Last downloaded match: {download_stats['last_match_id']}")
             
             await bot.send_message(message.author, "\n".join(status_parts))
             return True
