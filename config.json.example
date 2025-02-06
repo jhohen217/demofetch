@@ -1,0 +1,31 @@
+{
+    "discord": {
+        "token": "YOUR_DISCORD_BOT_TOKEN_HERE",
+        "owner_id": 123456789
+    },
+    "faceit": {
+        "api_key": "YOUR_FACEIT_API_KEY_HERE"
+    },
+    "project": {
+        "directory": "C:\\path\\to\\project\\DiscordBot",
+        "public_demos_directory": "C:\\path\\to\\project\\public_demos",
+        "KillCollectionParse": "C:\\path\\to\\project\\DiscordBot\\parsed\\KillCollections",
+        "TickByTickParse": "C:\\path\\to\\project\\DiscordBot\\parsed\\TickByTick",
+        "EnvironmentCams": "C:\\path\\to\\project\\DiscordBot\\parsed\\env",
+        "KillCollectionMasterPath": "C:\\path\\to\\project\\DiscordBot\\parsed\\KillCollectionMaster.csv",
+        "POVCollections": {
+            "Aces": true,
+            "Quads": true,
+            "Triples": true,
+            "Multi": true,
+            "PadTicks": 256
+        }
+    },
+    "downloader": {
+        "batch_size": 100,
+        "fetch_delay": {
+            "min": 180,
+            "max": 300
+        }
+    }
+}
