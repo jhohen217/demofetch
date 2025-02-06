@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Directory where the bot should be installed
-INSTALL_DIR="/home/josh/demofetch/DiscordBot"
+INSTALL_DIR="/home/josh/demofetch"
 REPO_URL="https://github.com/jhohen217/demofetch.git"
 
 # Ensure the script is running in the correct directory
@@ -82,7 +82,7 @@ fi
 # Set PYTHONPATH to include the project directory
 export PYTHONPATH="$INSTALL_DIR:$PYTHONPATH"
 
-# Change to bot directory and start
+# Change to installation directory and start
 echo "Starting the bot..."
 cd "$INSTALL_DIR" || exit
 python3 DiscordBotStart.py

@@ -21,7 +21,7 @@ if str(current_dir) not in sys.path:
 logging.debug(f"Python path: {sys.path}")
 
 # Import after path setup
-from core.DiscordBot import DemoBot
+from DiscordBot.core.DiscordBot import DemoBot
 
 def main():
     logging.info("Starting DemoFetch application...")
@@ -29,7 +29,7 @@ def main():
     try:
         # Load configuration
         logging.info("Loading configuration...")
-        config_path = os.path.join(current_dir.parent, 'config.json')
+        config_path = os.path.join(current_dir, 'config.json')
         with open(config_path, 'r') as f:
             config = json.load(f)
         logging.info("Configuration loaded successfully")
