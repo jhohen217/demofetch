@@ -1,5 +1,6 @@
 import os
 import glob
+import json
 from typing import Dict
 
 def calculate_storage_cost() -> tuple:
@@ -10,7 +11,6 @@ def calculate_storage_cost() -> tuple:
 
     # Load config to get directory paths
     try:
-        import json
         core_dir = os.path.dirname(os.path.abspath(__file__))  # core directory
         project_dir = os.path.dirname(core_dir)  # DiscordBot directory
         config_path = os.path.join(os.path.dirname(project_dir), 'config.json')
@@ -61,7 +61,6 @@ def get_match_ids_count() -> int:
     """Get total count of match IDs across all months"""
     try:
         # Load config to get directory paths
-        import json
         core_dir = os.path.dirname(os.path.abspath(__file__))  # core directory
         project_dir = os.path.dirname(core_dir)  # DiscordBot directory
         config_path = os.path.join(os.path.dirname(project_dir), 'config.json')
@@ -86,7 +85,6 @@ def get_downloaded_match_ids_count() -> int:
     """Get count of downloaded match IDs across all months"""
     try:
         # Load config to get directory paths
-        import json
         core_dir = os.path.dirname(os.path.abspath(__file__))  # core directory
         project_dir = os.path.dirname(core_dir)  # DiscordBot directory
         config_path = os.path.join(os.path.dirname(project_dir), 'config.json')
@@ -111,7 +109,6 @@ def get_rejected_match_ids_count() -> int:
     """Get count of rejected match IDs across all months"""
     try:
         # Load config to get directory paths
-        import json
         core_dir = os.path.dirname(os.path.abspath(__file__))  # core directory
         project_dir = os.path.dirname(core_dir)  # DiscordBot directory
         config_path = os.path.join(os.path.dirname(project_dir), 'config.json')
@@ -144,7 +141,6 @@ def get_category_counts() -> Dict[str, int]:
     counts = {'ace': 0, 'quad': 0, 'unapproved': 0}
     
     # Load config to get directory paths
-    import json
     core_dir = os.path.dirname(os.path.abspath(__file__))  # core directory
     project_dir = os.path.dirname(core_dir)  # DiscordBot directory
     config_path = os.path.join(os.path.dirname(project_dir), 'config.json')
