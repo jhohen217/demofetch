@@ -43,8 +43,22 @@ def calculate_storage_cost() -> tuple:
 
     return size_gb, cost, file_count
 
+def _get_month_directories(textfiles_dir: str) -> list:
+    """Get list of month directories"""
+    return [d for d in os.listdir(textfiles_dir) 
+            if os.path.isdir(os.path.join(textfiles_dir, d)) 
+            and d not in ['undated', 'MergeMe']]
+
+def _count_lines_in_file(file_path: str) -> int:
+    """Count non-empty lines in a file"""
+    try:
+        with open(file_path, 'r') as f:
+            return sum(1 for line in f if line.strip())
+    except:
+        return 0
+
 def get_match_ids_count() -> int:
-    """Get total count of match IDs"""
+    """Get total count of match IDs across all months"""
     try:
         # Load config to get directory paths
         import json
@@ -55,13 +69,21 @@ def get_match_ids_count() -> int:
         with open(config_path, 'r') as f:
             config = json.load(f)
             textfiles_dir = config['project']['textfiles_directory']
-        with open(os.path.join(textfiles_dir, "match_ids.txt"), 'r') as f:
-            return sum(1 for line in f if line.strip())
+        
+        total = 0
+        # Check each month directory
+        for month in _get_month_directories(textfiles_dir):
+            month_dir = os.path.join(textfiles_dir, month)
+            month_lower = month.lower()
+            file_path = os.path.join(month_dir, f"match_ids_{month_lower}.txt")
+            total += _count_lines_in_file(file_path)
+        
+        return total
     except:
         return 0
 
 def get_downloaded_match_ids_count() -> int:
-    """Get count of downloaded match IDs"""
+    """Get count of downloaded match IDs across all months"""
     try:
         # Load config to get directory paths
         import json
@@ -72,13 +94,21 @@ def get_downloaded_match_ids_count() -> int:
         with open(config_path, 'r') as f:
             config = json.load(f)
             textfiles_dir = config['project']['textfiles_directory']
-        with open(os.path.join(textfiles_dir, "match_downloaded.txt"), 'r') as f:
-            return sum(1 for line in f if line.strip())
+        
+        total = 0
+        # Check each month directory
+        for month in _get_month_directories(textfiles_dir):
+            month_dir = os.path.join(textfiles_dir, month)
+            month_lower = month.lower()
+            file_path = os.path.join(month_dir, f"downloaded_{month_lower}.txt")
+            total += _count_lines_in_file(file_path)
+        
+        return total
     except:
         return 0
 
 def get_rejected_match_ids_count() -> int:
-    """Get count of rejected match IDs"""
+    """Get count of rejected match IDs across all months"""
     try:
         # Load config to get directory paths
         import json
@@ -89,8 +119,16 @@ def get_rejected_match_ids_count() -> int:
         with open(config_path, 'r') as f:
             config = json.load(f)
             textfiles_dir = config['project']['textfiles_directory']
-        with open(os.path.join(textfiles_dir, "match_rejected.txt"), 'r') as f:
-            return sum(1 for line in f if line.strip())
+        
+        total = 0
+        # Check each month directory
+        for month in _get_month_directories(textfiles_dir):
+            month_dir = os.path.join(textfiles_dir, month)
+            month_lower = month.lower()
+            file_path = os.path.join(month_dir, f"rejected_{month_lower}.txt")
+            total += _count_lines_in_file(file_path)
+        
+        return total
     except:
         return 0
 
@@ -102,7 +140,7 @@ def get_undownloaded_match_ids_count() -> int:
     return total - (downloaded + rejected)
 
 def get_category_counts() -> Dict[str, int]:
-    """Get counts for each category (ace, quad, unapproved)"""
+    """Get counts for each category (ace, quad, unapproved) across all months"""
     counts = {'ace': 0, 'quad': 0, 'unapproved': 0}
     
     # Load config to get directory paths
@@ -115,25 +153,21 @@ def get_category_counts() -> Dict[str, int]:
         config = json.load(f)
         textfiles_dir = config['project']['textfiles_directory']
 
-    # Count ace matches
-    try:
-        with open(os.path.join(textfiles_dir, "ace_matchids.txt"), 'r') as f:
-            counts['ace'] = sum(1 for line in f if line.strip())
-    except:
-        pass
-
-    # Count quad matches
-    try:
-        with open(os.path.join(textfiles_dir, "quad_matchids.txt"), 'r') as f:
-            counts['quad'] = sum(1 for line in f if line.strip())
-    except:
-        pass
-
-    # Count unapproved matches
-    try:
-        with open(os.path.join(textfiles_dir, "unapproved_matchids.txt"), 'r') as f:
-            counts['unapproved'] = sum(1 for line in f if line.strip())
-    except:
-        pass
+    # Check each month directory
+    for month in _get_month_directories(textfiles_dir):
+        month_dir = os.path.join(textfiles_dir, month)
+        month_lower = month.lower()
+        
+        # Count ace matches
+        ace_file = os.path.join(month_dir, f"ace_matchids_{month_lower}.txt")
+        counts['ace'] += _count_lines_in_file(ace_file)
+        
+        # Count quad matches
+        quad_file = os.path.join(month_dir, f"quad_matchids_{month_lower}.txt")
+        counts['quad'] += _count_lines_in_file(quad_file)
+        
+        # Count unapproved matches
+        unapproved_file = os.path.join(month_dir, f"unapproved_matchids_{month_lower}.txt")
+        counts['unapproved'] += _count_lines_in_file(unapproved_file)
 
     return counts
