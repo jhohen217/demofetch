@@ -1,12 +1,12 @@
 import os
 import glob
+import json
 import logging
 
 logger = logging.getLogger('discord_bot')
 
 def _count_parsed_matches():
     """Count total number of parsed matches by reading all .txt files in parsed directory"""
-    import json
     total_matches = 0
     
     # Get project directory from config
