@@ -470,7 +470,7 @@ class MatchProcessor:
                 self.stats['failed'] += 1
                 return match_id  # Return match_id to retry later
 
-            print_highlighted(f"Match stats: {match_stats}")
+            # print_highlighted(f"Match stats: {match_stats}")
 
             result = self.analyze_match(match_stats)
             result.match_id = match_id  # Set the match ID
