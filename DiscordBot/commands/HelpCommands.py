@@ -17,6 +17,7 @@ update - Update the bot (will restart the service)
 Match Scraping:
 start - Start fetching NA East match IDs (runs every 3-5 minutes)
 start datefetch - Start processing undated matches to categorize by month
+force - Immediately start a new match scraping cycle, bypassing the wait time
 status - Check the current status of scraping and downloading services
 stop [service] - Stop services (fetch/download/parse/datefetch or all if no service specified)
 

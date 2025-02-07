@@ -202,9 +202,7 @@ class DemoBot(nextcord.Client):
             except Exception as e:
                 logger.error(f"Error in module {module.__name__}: {str(e)}")
                 logger.exception("Full traceback:")
-                await self.send_message(message.author, f"Error processing command: {str(e)}")
                 command_handled = True  # Consider errored commands as handled
-                break
 
         # If no module handled the command, send unknown command message
         if not command_handled:

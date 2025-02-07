@@ -88,10 +88,9 @@ class MatchProcessor:
         self.quad_file = os.path.join(self.month_dir, f"quad_matchids_{month_lower}.txt")
 
         # API configuration
-        self.api_base_url = "https://www.faceit.com/api/match-history/v4/matches/{match_id}"
-        self.api_stats_url = "https://www.faceit.com/api/match-history/v4/matches/{match_id}/stats"
+        self.api_base_url = "https://open.faceit.com/data/v4/matches/{match_id}/stats"
         self.headers = {
-            "User-Agent": "Mozilla/5.0",
+            "Authorization": f"Bearer {self.api_key}",
             "Accept": "application/json"
         }
 
@@ -194,84 +193,70 @@ class MatchProcessor:
         Fetch both match details and stats for a given match_id.
         Returns a tuple of (match_details, match_stats), either can be None if fetch fails.
         """
-        match_url = self.api_base_url.format(match_id=match_id)
-        stats_url = self.api_stats_url.format(match_id=match_id)
+        url = self.api_base_url.format(match_id=match_id)
         retries = 0
-        
+
         async with semaphore:  # Limit concurrent requests
             while retries < self.max_retries:
                 try:
-                    # Fetch match details
-                    async with session.get(match_url, headers=self.headers) as response:
+                    async with session.get(url, headers=self.headers) as response:
                         if response.status == 200:
-                            match_details = await response.json()
+                            return await response.json(), None  # Return None for the second value
                         elif response.status == 429:
                             rate_limit_msg = f"[FILTER] Rate limited - Trying again in {self.rate_limit_cooldown} seconds..."
                             print_highlighted(rate_limit_msg)
-                            
+
                             # Send DM if bot instance is available
                             if self.bot and self.bot.owner:
                                 try:
                                     await self.bot.send_message(self.bot.owner, rate_limit_msg)
                                 except:
                                     pass  # Ignore DM sending failures
-                                    
-                            await asyncio.sleep(self.rate_limit_cooldown)
-                            retries += 1
-                            continue
-                        else:
-                            return None, None
-                    
-                    await asyncio.sleep(self.rate_limit_delay)
-                    
-                    # Fetch match stats
-                    async with session.get(stats_url, headers=self.headers) as response:
-                        if response.status == 200:
-                            match_stats = await response.json()
-                            return match_details, match_stats
-                        elif response.status == 429:
-                            print_highlighted(f"Rate limited. Cooling down for {self.rate_limit_cooldown} seconds...")
+
                             await asyncio.sleep(self.rate_limit_cooldown)
                             retries += 1
                             continue
                         else:
                             return None, None
                 except Exception as e:
-                    return None, None
-                
+                    print_highlighted(f"An error occurred: {e}")
+                    return None, None  # Ensure we return a tuple
+
                 await asyncio.sleep(self.rate_limit_delay)
-        
+
         return None, None
 
     def analyze_match(self, match_data: dict) -> MatchResult:
-        """
-        Analyze the match data and return a MatchResult object.
-        Looks at the "player_stats" field for "Penta Kills" and "Quadro Kills".
-        """
-        result = MatchResult(match_id=match_data.get("match_id", "unknown"), textfiles_dir=self.textfiles_dir)
-        
-        rounds = match_data.get("rounds", [])
-        for rnd in rounds:
-            teams = rnd.get("teams", [])
-            for team in teams:
-                players = team.get("players", [])
-                for player in players:
-                    player_stats = player.get("player_stats", {})
-                    nickname = player.get("nickname", "unknown")
+        """Analyze the match data and return a MatchResult object."""
+        result = MatchResult(match_id="unknown", textfiles_dir=self.textfiles_dir)
+        try:
+            result.match_id = match_data.get("match_id", "unknown") if match_data else "unknown"
 
-                    # Convert stats to integers, defaulting to 0 if missing
-                    penta = int(player_stats.get("Penta Kills", "0"))
-                    quadro = int(player_stats.get("Quadro Kills", "0"))
+            rounds = match_data.get("rounds", []) if match_data else []
+            for rnd in rounds:
+                teams = rnd.get("teams", []) if rnd else []
+                for team in teams:
+                    players = team.get("players", []) if team else []
+                    for player in players:
+                        player_stats = player.get("player_stats", {}) if player else {}
+                        nickname = player.get("nickname", "unknown") if player else "unknown"
 
-                    result.ace_count += penta
-                    result.quad_count += quadro
+                        # Convert stats to integers, defaulting to 0 if missing
+                        penta = int(player_stats.get("Penta Kills", "0")) if player_stats else 0
+                        quadro = int(player_stats.get("Quadro Kills", "0")) if player_stats else 0
 
-                    if penta > 0:
-                        result.has_ace = True
-                        result.ace_players.append(nickname)
-                    if quadro > 0:
-                        result.has_quad = True
-                        result.quad_players.append(nickname)
+                        result.ace_count += penta
+                        result.quad_count += quadro
+
+                        if penta > 0:
+                            result.has_ace = True
+                            result.ace_players.append(nickname)
+                        if quadro > 0:
+                            result.has_quad = True
+                            result.quad_players.append(nickname)
+        except Exception as e:
+            print_highlighted(f"Error analyzing match data: {e}, Data: {match_data}")
+            return MatchResult(match_id="error", textfiles_dir=self.textfiles_dir)
 
         return result
 
@@ -283,18 +268,22 @@ class MatchProcessor:
 
         try:
             # Fetch and analyze match
-            match_details, match_stats = await self.fetch_match_data(session, match_id, semaphore)
-            if match_details is None or match_stats is None:
+            match_stats, _ = await self.fetch_match_data(session, match_id, semaphore)
+            if match_stats is None:
                 self.stats['failed'] += 1
                 return match_id  # Return match_id to retry later
 
-            # Extract timestamp from match details
-            timestamp = match_details.get('started_at', match_details.get('finished_at'))
-            
+            # Extract timestamp from match details, if available (it might not be)
+            timestamp = match_stats.get('started_at', match_stats.get('finished_at'))
+            if timestamp:
+                try:
+                    # Faceit API returns timestamps in ISO 8601 format (UTC)
+                    result.match_date = datetime.fromisoformat(timestamp.replace("Z", "+00:00")).replace(tzinfo=None)
+                except Exception as e:
+                    print_highlighted(f"Error converting timestamp: {e}, Timestamp: {timestamp}")
+
             # Analyze match stats
             result = self.analyze_match(match_stats)
-            if timestamp:
-                result.match_date = datetime.fromtimestamp(timestamp)
             result.match_id = match_id
 
             # Update statistics
@@ -350,14 +339,14 @@ class MatchProcessor:
             filtered_matches = set()
             
             with open(self.match_ids_file, "r") as f:
-                all_matches = {line.strip() for line in f if line.strip()}
-                
+                all_matches = [line.strip().split(',') for line in f if line.strip()]  # Now a list of [match_id, timestamp]
+
             if os.path.exists(self.filtered_file):
                 with open(self.filtered_file, "r") as f:
                     filtered_matches = {line.strip() for line in f if line.strip()}
 
-            # Find unfiltered matches
-            unfiltered_matches = list(all_matches - filtered_matches)
+            # Find unfiltered matches (compare only match IDs)
+            unfiltered_matches = [m for m in all_matches if m[0] not in filtered_matches]
 
             if not unfiltered_matches:
                 return True
@@ -366,19 +355,18 @@ class MatchProcessor:
 
             # Create semaphore to limit concurrent requests
             semaphore = asyncio.Semaphore(self.max_concurrent_requests)
-            
-            # Process matches concurrently
+
+            # Process matches concurrently, passing match_id *and* timestamp
             async with aiohttp.ClientSession() as session:
-                tasks = [self.process_match(session, match_id, filtered_matches, semaphore) 
-                        for match_id in unfiltered_matches]
+                tasks = [self.process_match(session, match_id, timestamp, filtered_matches, semaphore)
+                         for match_id, timestamp in unfiltered_matches]
                 results = await asyncio.gather(*tasks)
 
-            # Collect matches that need to be retried
+            # Collect matches that need to be retried (only match_id is returned)
             new_filter_queue = [mid for mid in results if mid is not None]
 
-            # Update filter queue with remaining matches
+            # Update filter queue with remaining matches (only match_id, no timestamp)
             try:
-                # Write updated queue
                 with open(self.filter_queue_file, "w") as fq:
                     for mid in new_filter_queue:
                         fq.write(mid + "\n")
@@ -404,6 +392,133 @@ class MatchProcessor:
         except Exception as e:
             print_highlighted(f"Error during match filtering: {str(e)}")
             return False
+
+    async def process_match(self, session: aiohttp.ClientSession, match_id: str, 
+                          filtered_matches: Set[str], semaphore: asyncio.Semaphore) -> Optional[str]:
+        """Process a single match"""
+        if not match_id or match_id in filtered_matches:
+            return None
+
+        try:
+            # Fetch and analyze match
+            match_stats, _ = await self.fetch_match_data(session, match_id, semaphore)
+            if match_stats is None:
+                self.stats['failed'] += 1
+                return match_id  # Return match_id to retry later
+
+            # Extract timestamp from match details, if available (it might not be)
+            timestamp = match_stats.get('started_at', match_stats.get('finished_at'))
+            if timestamp:
+                try:
+                    # Faceit API returns timestamps in ISO 8601 format (UTC)
+                    result.match_date = datetime.fromisoformat(timestamp.replace("Z", "+00:00")).replace(tzinfo=None)
+                except Exception as e:
+                    print_highlighted(f"Error converting timestamp: {e}, Timestamp: {timestamp}")
+
+            # Analyze match stats
+            result = self.analyze_match(match_stats)
+            result.match_id = match_id
+
+            # Update statistics
+            if result.has_ace:
+                self.stats['ace'] += 1
+            if result.has_quad:
+                self.stats['quad'] += 1
+            if not (result.has_ace or result.has_quad):
+                self.stats['unapproved'] += 1
+
+            # Print match results in a highlighted format
+            output_lines = []
+            output_lines.append(f"Match {match_id}")
+            if result.quad_players:
+                output_lines.append(f"Found {result.quad_count} quad kills by {', '.join(result.quad_players)}")
+            if result.ace_players:
+                output_lines.append(f"Found {result.ace_count} ace kills by {', '.join(result.ace_players)}")
+            output_lines.append(f"Successfully wrote match to {os.path.basename(result.target_file)}")
+            
+            print_highlighted("\n".join(output_lines))
+
+            # Write result to appropriate files
+            if result.has_ace:  # Save to ace_matchids.txt if it has any ace kills
+                self.write_to_file_with_flush(result.target_file, result.formatted_match_id, formatted=True)
+            elif result.has_quad:  # Save to quad_matchids.txt if it has any quad kills
+                self.write_to_file_with_flush(result.target_file, result.formatted_match_id, formatted=True)
+            else:
+                self.write_to_file_with_flush(result.target_file, match_id)
+            
+            self.write_to_file_with_flush(self.filtered_file, match_id)
+            
+            # Remove from filter queue
+            return None
+
+        except Exception as e:
+            print_highlighted(f"Error processing match {match_id}: {str(e)}")
+            self.stats['failed'] += 1
+            return match_id  # Return match_id to retry later
+
+    async def process_match(self, session: aiohttp.ClientSession, match_id: str, timestamp: str,
+                          filtered_matches: Set[str], semaphore: asyncio.Semaphore) -> Optional[str]:
+        """Process a single match, now with timestamp."""
+        if not match_id or match_id in filtered_matches:
+            return None
+
+        try:
+            # Fetch and analyze match
+            match_stats, _ = await self.fetch_match_data(session, match_id, semaphore)
+
+            if match_stats is None:
+                self.stats['failed'] += 1
+                return match_id  # Return match_id to retry later
+
+            print_highlighted(f"Match stats: {match_stats}")
+
+            result = self.analyze_match(match_stats)
+            result.match_id = match_id  # Set the match ID
+
+            # Use provided timestamp
+            if timestamp:
+                try:
+                    result.match_date = datetime.fromisoformat(timestamp.replace("Z", "+00:00")).replace(tzinfo=None)
+                except Exception as e:
+                    print_highlighted(f"Error converting timestamp: {e}, Timestamp: {timestamp}")
+            else:
+                print_highlighted(f"Warning: No timestamp for match {match_id}")
+
+            # Update statistics
+            if result.has_ace:
+                self.stats['ace'] += 1
+            if result.has_quad:
+                self.stats['quad'] += 1
+            if not (result.has_ace or result.has_quad):
+                self.stats['unapproved'] += 1
+
+            # Print match results
+            output_lines = [
+                f"Match {match_id}",
+                f"  Date: {result.match_date.strftime('%Y-%m-%d %H:%M:%S') if result.match_date else 'No date'}",
+                f"  Ace Players: {', '.join(result.ace_players) if result.ace_players else 'None'}",
+                f"  Quad Players: {', '.join(result.quad_players) if result.quad_players else 'None'}",
+                f"  Target File: {os.path.basename(result.target_file)}",
+            ]
+            print_highlighted("\n".join(output_lines))
+
+
+            # Write result to appropriate files
+            if result.has_ace:
+                self.write_to_file_with_flush(result.target_file, result.formatted_match_id, formatted=True)
+            elif result.has_quad:
+                self.write_to_file_with_flush(result.target_file, result.formatted_match_id, formatted=True)
+            else:
+                self.write_to_file_with_flush(result.target_file, match_id)
+
+            self.write_to_file_with_flush(self.filtered_file, match_id)
+
+            return None  # Match processed (or skipped)
+
+        except Exception as e:
+            print_highlighted(f"Error processing match {match_id}: {str(e)}")
+            self.stats['failed'] += 1
+            return match_id  # Return match_id to retry later
 
 async def start_match_filtering(bot=None):
     """Entry point for match filtering"""

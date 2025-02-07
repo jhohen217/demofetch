@@ -61,6 +61,7 @@ def main():
         sys.exit(1)
     finally:
         logging.info("Bot shutdown complete")
+    input("Press Enter to exit...\n")
 
 if __name__ == "__main__":
     main()

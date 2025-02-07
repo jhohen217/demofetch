@@ -2,7 +2,7 @@ import json
 import os
 import asyncio
 import aiohttp
-from typing import List, Set, Optional
+from typing import List, Set, Optional, Tuple
 from datetime import datetime
 
 class MatchScraper:
@@ -107,13 +107,31 @@ class MatchScraper:
         print(f"Found {len(match_ids)} matches in response")
         return match_ids
 
+    def extract_match_data(self, data: dict) -> List[Tuple[str, str]]:
+        """Extract match ID and finishedAt timestamp from API response."""
+        match_data = []
+        if "payload" in data and isinstance(data["payload"], list):
+            for item in data["payload"]:
+                if isinstance(item, dict):
+                    match_id = item.get("matchId")
+                    finished_at = item.get("finishedAt")
+                    if match_id and finished_at:
+                        match_data.append((match_id, finished_at))
+                else:
+                    print("Warning: Payload item is not a dictionary.")
+        else:
+            print("Error: 'payload' not found or not a list.")
+
+        print(f"Found {len(match_data)} matches in response")
+        return match_data
+
     async def process_matches(self) -> bool:
         """Main processing function"""
         try:
             print("\n" + "="*50)
             print("Starting match scraping process...")
             print("="*50 + "\n")
-            
+
             # Fetch new matches
             data = await self.fetch_matches()
             if not data:
@@ -125,29 +143,28 @@ class MatchScraper:
                 json.dump(data, f, indent=4)
             print("Raw data written to output.json")
 
-            # Extract match IDs
-            match_ids = self.extract_match_ids(data)
-            if not match_ids:
+            # Extract match IDs and timestamps
+            match_data = self.extract_match_data(data)  # Now returns (match_id, finished_at) tuples
+            if not match_data:
                 print("No match IDs found in payload")
                 return False
 
             # Read existing matches
-            existing_matches = []
+            existing_matches = set()
             if os.path.exists(self.match_ids_file):
                 with open(self.match_ids_file, "r", encoding="utf-8") as f:
-                    existing_matches = [line.strip() for line in f if line.strip()]
+                    # Read only the match ID part
+                    existing_matches = {line.strip().split(',')[0] for line in f if line.strip()}
                 print(f"\nFound {len(existing_matches)} existing matches in match_ids.txt")
-
-            existing_set = set(existing_matches)
 
             # Process new matches
             new_matches = []
             consecutive_duplicates = 0
 
             print("\nChecking for new matches...")
-            for mid in match_ids:
-                if mid not in existing_set:
-                    new_matches.append(mid)
+            for match_id, finished_at in match_data:
+                if match_id not in existing_matches:
+                    new_matches.append((match_id, finished_at))
                     consecutive_duplicates = 0
                 else:
                     consecutive_duplicates += 1
@@ -158,12 +175,12 @@ class MatchScraper:
             # Report results
             if new_matches:
                 print(f"\nFound {len(new_matches)} new matches")
-                # Prepend new matches
-                updated_matches = new_matches + existing_matches
-                # Write updated list
+                # Prepend new matches (match_id, timestamp)
+                updated_matches = new_matches + [(mid, "") for mid in existing_matches] # Keep existing format
+                # Write updated list:  match_id,finished_at
                 with open(self.match_ids_file, "w", encoding="utf-8") as f:
-                    for mid in updated_matches:
-                        f.write(mid + "\n")
+                    for match_id, finished_at in updated_matches:
+                        f.write(f"{match_id},{finished_at}\n")
                 print(f"Successfully updated match_ids.txt (Total: {len(updated_matches)} matches)")
             else:
                 print("\nNo new matches found")
