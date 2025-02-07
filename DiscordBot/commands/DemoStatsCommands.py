@@ -34,7 +34,7 @@ def _count_parsed_matches():
 async def handle_message(bot, message):
     """Handle message-based commands for stats"""
     content = message.content.lower()
-    
+
     if content == 'info':
         try:
             from core import (
@@ -45,17 +45,17 @@ async def handle_message(bot, message):
                 get_undownloaded_match_ids_count,
                 get_category_counts
             )
-            
+
             size_gb, cost, file_count = calculate_storage_cost()
             total_matches = get_match_ids_count()
             downloaded_matches = get_downloaded_match_ids_count()
             rejected_matches = get_rejected_match_ids_count()
             undownloaded_matches = get_undownloaded_match_ids_count()
             parsed_matches = _count_parsed_matches()
-            
+
             # Get category counts
             category_counts = get_category_counts()
-            
+
             # Get textfiles directory from config
             core_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
             config_path = os.path.join(os.path.dirname(core_dir), 'config.json')
@@ -64,8 +64,8 @@ async def handle_message(bot, message):
                 textfiles_dir = config['project']['textfiles_directory']
 
             # Get list of month directories
-            month_dirs = [d for d in os.listdir(textfiles_dir) 
-                        if os.path.isdir(os.path.join(textfiles_dir, d)) 
+            month_dirs = [d for d in os.listdir(textfiles_dir)
+                        if os.path.isdir(os.path.join(textfiles_dir, d))
                         and d not in ['undated', 'MergeMe']]
             month_dirs.sort()  # Sort months alphabetically
 
@@ -92,28 +92,28 @@ async def handle_message(bot, message):
                 for month in month_dirs:
                     month_dir = os.path.join(textfiles_dir, month)
                     month_lower = month.lower()
-                    
+
                     # Count matches in each category for this month
                     ace_file = os.path.join(month_dir, f"ace_matchids_{month_lower}.txt")
                     quad_file = os.path.join(month_dir, f"quad_matchids_{month_lower}.txt")
                     match_file = os.path.join(month_dir, f"match_ids_{month_lower}.txt")
                     downloaded_file = os.path.join(month_dir, f"downloaded_{month_lower}.txt")
                     rejected_file = os.path.join(month_dir, f"rejected_{month_lower}.txt")
-                    
+
                     def count_lines(file_path):
                         try:
                             with open(file_path, 'r') as f:
                                 return sum(1 for line in f if line.strip())
                         except:
                             return 0
-                    
+
                     ace_count = count_lines(ace_file)
                     quad_count = count_lines(quad_file)
                     total_count = count_lines(match_file)
                     downloaded_count = count_lines(downloaded_file)
                     rejected_count = count_lines(rejected_file)
                     undownloaded = total_count - (downloaded_count + rejected_count)
-                    
+
                     status_parts.append(f"\n{month}:")
                     status_parts.append(f"  Ace: {ace_count}")
                     status_parts.append(f"  Quad: {quad_count}")
@@ -123,15 +123,12 @@ async def handle_message(bot, message):
                     status_parts.append(f"  Undownloaded: {undownloaded}")
 
             status_msg = "\n".join(status_parts)
-    
             await bot.send_message(message.author, status_msg)
-            return True
-                
         except Exception as e:
             error_msg = f"An error occurred: {str(e)}"
             await bot.send_message(message.author, error_msg)
-            return True
-            
+        return True
+
     return False
 
 def setup(bot):
