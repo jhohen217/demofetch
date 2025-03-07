@@ -6,7 +6,7 @@ from typing import List, Set, Optional, Tuple
 from datetime import datetime
 
 class HubScraper:
-    def __init__(self, bot=None):
+    def __init__(self, bot=None, hub_id=None, hub_name=None):
         # Discord bot instance
         self.bot = bot
         # Load configuration from project root
@@ -27,16 +27,17 @@ class HubScraper:
         month_lower = current_month.lower()
         os.makedirs(self.month_dir, exist_ok=True)
 
-        print("\n" + "="*50)
-        print("           FACEIT Hub Demo Manager")
-        print("="*50 + "\n")
-
         # File paths with month suffix - use the same files as the regular match scraper
         self.output_json = os.path.join(self.month_dir, f"hub_output_{month_lower}.json")
         self.match_ids_file = os.path.join(self.month_dir, f"match_ids_{month_lower}.txt")
 
-        # Hub ID from the URL
-        self.hub_id = "c7dc4af7-33ad-4973-90c2-5cce9376258b"
+        # Hub ID and name (either provided or default)
+        self.hub_id = hub_id or "c7dc4af7-33ad-4973-90c2-5cce9376258b"
+        self.hub_name = hub_name or "Default Hub"
+        
+        print("\n" + "="*50)
+        print(f"           FACEIT Hub Demo Manager - {self.hub_name}")
+        print("="*50 + "\n")
         
         # API configuration
         self.base_url = "https://open.faceit.com/data/v4"
@@ -119,7 +120,21 @@ class HubScraper:
                     match_id = item.get("match_id")
                     finished_at = item.get("finished_at")
                     if match_id and finished_at:
-                        match_data.append((match_id, str(finished_at)))
+                        # Convert Unix timestamp to ISO format if it's a number
+                        try:
+                            if isinstance(finished_at, (int, str)) and str(finished_at).isdigit():
+                                # Convert Unix timestamp (seconds since epoch) to ISO format
+                                from datetime import datetime
+                                dt = datetime.fromtimestamp(int(finished_at))
+                                iso_timestamp = dt.isoformat()
+                                match_data.append((match_id, iso_timestamp))
+                            else:
+                                # Already in ISO format or other format
+                                match_data.append((match_id, str(finished_at)))
+                        except Exception as e:
+                            print(f"Error converting timestamp for match {match_id}: {e}")
+                            # Still add the match with original timestamp
+                            match_data.append((match_id, str(finished_at)))
                 else:
                     print("Warning: Hub item is not a dictionary.")
         else:
@@ -196,7 +211,40 @@ class HubScraper:
                 with open(self.match_ids_file, "w", encoding="utf-8") as f:
                     for match_id, finished_at in updated_matches:
                         f.write(f"{match_id},{finished_at}\n")
-                print(f"Successfully updated match_ids.txt with hub matches (Total: {len(updated_matches)} matches)")
+                
+                # Count matches by category for summary
+                ace_count = 0
+                quad_count = 0
+                unapproved_count = 0
+                
+                # Get current month name
+                current_month = datetime.now().strftime("%B")  # e.g., "February"
+                month_dir = os.path.join(self.textfiles_dir, current_month)
+                month_lower = current_month.lower()
+                
+                # Check if category files exist and count matches
+                ace_file = os.path.join(month_dir, f"ace_matchids_{month_lower}.txt")
+                quad_file = os.path.join(month_dir, f"quad_matchids_{month_lower}.txt")
+                unapproved_file = os.path.join(month_dir, f"unapproved_matchids_{month_lower}.txt")
+                
+                if os.path.exists(ace_file):
+                    with open(ace_file, "r", encoding="utf-8") as f:
+                        ace_count = sum(1 for line in f if line.strip())
+                
+                if os.path.exists(quad_file):
+                    with open(quad_file, "r", encoding="utf-8") as f:
+                        quad_count = sum(1 for line in f if line.strip())
+                
+                if os.path.exists(unapproved_file):
+                    with open(unapproved_file, "r", encoding="utf-8") as f:
+                        unapproved_count = sum(1 for line in f if line.strip())
+                
+                # Print summary similar to regular match scraper
+                print(f"\nSuccessfully updated match_ids.txt with hub matches (Total: {len(updated_matches)} matches)")
+                print("\nHub Match Categories:")
+                print(f"Ace matches: {ace_count}")
+                print(f"Quad matches: {quad_count}")
+                print(f"Unapproved matches: {unapproved_count}")
             else:
                 print("\nNo new hub matches found")
 
@@ -209,10 +257,53 @@ class HubScraper:
             print(f"Error during hub match processing: {str(e)}")
             return False
 
-async def start_hub_scraping(bot=None):
+async def process_all_hubs(bot=None):
+    """Process all hubs defined in the config file"""
+    try:
+        # Load configuration
+        core_dir = os.path.dirname(os.path.abspath(__file__))  # core directory
+        project_dir = os.path.dirname(core_dir)  # DiscordBot directory
+        config_path = os.path.join(os.path.dirname(project_dir), 'config.json')
+        
+        with open(config_path, 'r') as f:
+            config = json.load(f)
+        
+        # Get hub list from config
+        hubs = config.get('faceit', {}).get('hubs', [])
+        
+        # If no hubs defined, use default
+        if not hubs:
+            print("No hubs defined in config, using default hub")
+            return await start_hub_scraping(bot)
+        
+        # Process each hub with a delay between them
+        overall_result = True
+        for i, hub in enumerate(hubs):
+            hub_id = hub.get('id')
+            hub_name = hub.get('name', f"Hub {i+1}")
+            
+            if not hub_id:
+                print(f"Skipping hub {hub_name} - no ID provided")
+                continue
+                
+            print(f"\nProcessing hub: {hub_name} ({hub_id})")
+            result = await start_hub_scraping(bot, hub_id, hub_name)
+            overall_result = overall_result and result
+            
+            # Wait between hubs (except after the last one)
+            if i < len(hubs) - 1:
+                print(f"Waiting 60 seconds before processing next hub...")
+                await asyncio.sleep(60)
+        
+        return overall_result
+    except Exception as e:
+        print(f"Error processing hubs: {str(e)}")
+        return False
+
+async def start_hub_scraping(bot=None, hub_id=None, hub_name=None):
     """Entry point for hub match scraping"""
     try:
-        scraper = HubScraper(bot)
+        scraper = HubScraper(bot, hub_id, hub_name)
         return await scraper.process_hub_matches()
     except Exception as e:
         print(f"Error during hub match scraping: {str(e)}")

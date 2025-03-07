@@ -6,7 +6,7 @@ import logging
 import nextcord
 from datetime import datetime, timedelta
 from core.FaceitMatchScraper import start_match_scraping
-from core.FaceitHubScraper import start_hub_scraping
+from core.FaceitHubScraper import process_all_hubs
 from core.MatchScoreFilter import start_match_filtering
 from core.DemoDownloader import stop_processes
 from DiscordBot.textfiles.undated.DateFetch import start_date_fetching
@@ -124,15 +124,15 @@ async def continuous_scraping(bot=None, immediate=False):
                 logger.info("Waiting 60 seconds before starting hub scraping...")
                 await asyncio.sleep(60)
                 
-                # Start hub scraping
-                logger.info("Starting hub match scraping...")
+                # Start hub scraping for all configured hubs
+                logger.info("Starting hub match scraping for all configured hubs...")
                 global hub_scraping_task
-                hub_scraping_task = asyncio.create_task(start_hub_scraping(bot))
+                hub_scraping_task = asyncio.create_task(process_all_hubs(bot))
                 hub_result = await hub_scraping_task
                 if hub_result:
-                    logger.info("Hub match scraping completed successfully")
+                    logger.info("Hub match scraping completed successfully for all hubs")
                 else:
-                    logger.error("Hub match scraping encountered an error")
+                    logger.error("Hub match scraping encountered an error with one or more hubs")
 
                 if not immediate:
                     # Calculate and display next scrape time
