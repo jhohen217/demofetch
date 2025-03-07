@@ -276,8 +276,11 @@ async def handle_message(bot, message):
             else:
                 status_parts.append("🔴 Match scraping is INACTIVE")
                 
-            # Check hub scraping status
-            if hub_scraping_task and not hub_scraping_task.done():
+            # Check hub scraping status - only show if match scraping is inactive
+            if scraping_task and not scraping_task.done():
+                # Hub scraping is part of the main match scraping process
+                status_parts.append("\n🟢 Hub match scraping is integrated with match scraping")
+            elif hub_scraping_task and not hub_scraping_task.done():
                 status_parts.append("\n🟢 Hub match scraping is ACTIVE")
             else:
                 status_parts.append("\n🔴 Hub match scraping is INACTIVE")
