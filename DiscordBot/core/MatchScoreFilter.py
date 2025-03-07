@@ -353,10 +353,24 @@ class MatchProcessor:
                 # Log detailed error information
                 if error_info:
                     error_type, error_details = error_info
-                    self.log_failed_match(match_id, error_type, error_details, retry_count + 1)
+                    
+                    # Check if this is a 404 error (resource not found)
+                    is_404_error = False
+                    if error_type == "api_error" and "404" in error_details:
+                        is_404_error = True
+                    
+                    # Log the error
+                    self.log_failed_match(match_id, error_type, error_details, 
+                                         self.max_retry_attempts if is_404_error else retry_count + 1)
                     
                     # Print more detailed error message
                     print_highlighted(f"Match {match_id} failed: {error_type} - {error_details}")
+                    
+                    # For 404 errors, immediately mark as permanent fail by returning with max retry count
+                    if is_404_error:
+                        print_highlighted(f"Match {match_id} returned 404 Not Found. Marking as permanent fail.")
+                        self.retry_counts[match_id] = self.max_retry_attempts
+                        return match_id  # Will be moved to permanent fails
                 else:
                     self.log_failed_match(match_id, "unknown_error", "No error details available", retry_count + 1)
                 
