@@ -87,15 +87,36 @@ async def continuous_scraping(bot=None, immediate=False):
                 # Start C# parser
                 global parsing_task
                 try:
-                    # Get path to StartCollectionsParse.py
+                    # Get path to StartCollectionsParse.py with platform-independent path handling
                     parser_script = os.path.join(
                         os.path.dirname(core_dir),
                         "CSharpParser", "demofile-net", "examples",
                         "DemoFile.Example.FastParser", "StartCollectionsParse.py"
                     )
+                    
+                    # Verify the parser script exists
+                    if not os.path.exists(parser_script):
+                        logger.error(f"Parser script not found at: {parser_script}")
+                        # Try to find the script in the current working directory
+                        cwd = os.getcwd()
+                        alt_parser_script = os.path.join(
+                            cwd,
+                            "CSharpParser", "demofile-net", "examples",
+                            "DemoFile.Example.FastParser", "StartCollectionsParse.py"
+                        )
+                        if os.path.exists(alt_parser_script):
+                            logger.info(f"Found parser script at alternate location: {alt_parser_script}")
+                            parser_script = alt_parser_script
+                        else:
+                            logger.error(f"Parser script not found at alternate location: {alt_parser_script}")
+                            logger.error("Skipping parsing step due to missing script")
+                            continue
 
                     # Get demos directory from config
                     demos_dir = config['project']['public_demos_directory']
+                    
+                    # Log the command we're about to run
+                    logger.info(f"Running parser with command: python {parser_script} {demos_dir}")
 
                     # Run the C# parser
                     parsing_task = asyncio.create_task(
