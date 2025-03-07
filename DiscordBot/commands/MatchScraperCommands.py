@@ -131,6 +131,22 @@ async def continuous_scraping(bot=None, immediate=False):
                 hub_result = await hub_scraping_task
                 if hub_result:
                     logger.info("Hub match scraping completed successfully for all hubs")
+                    
+                    # Add a delay to ensure match IDs are written before filtering
+                    logger.info("Waiting 2 seconds before filtering hub matches...")
+                    await asyncio.sleep(2)
+                    
+                    # Run filtering again to process hub matches
+                    logger.info("Starting match filtering for hub matches...")
+                    try:
+                        # Run filtering
+                        filter_result = await start_match_filtering(bot)
+                        if filter_result:
+                            logger.info("Hub match filtering completed successfully")
+                        else:
+                            logger.error("Hub match filtering failed")
+                    except Exception as filter_error:
+                        logger.error(f"Error in hub filtering task: {str(filter_error)}")
                 else:
                     logger.error("Hub match scraping encountered an error with one or more hubs")
 
