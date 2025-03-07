@@ -210,9 +210,15 @@ class MatchProcessor:
         try:
             # Create or load existing log
             failed_log = {}
-            if os.path.exists(self.failed_matches_log):
-                with open(self.failed_matches_log, 'r') as f:
-                    failed_log = json.load(f)
+            if os.path.exists(self.failed_matches_log) and os.path.getsize(self.failed_matches_log) > 0:
+                try:
+                    with open(self.failed_matches_log, 'r') as f:
+                        content = f.read().strip()
+                        if content:  # Only try to parse if there's content
+                            failed_log = json.loads(content)
+                except json.JSONDecodeError:
+                    print_highlighted(f"Invalid JSON in failed_matches_log, creating new file")
+                    failed_log = {}
             
             # Add or update entry
             timestamp = datetime.now().isoformat()
