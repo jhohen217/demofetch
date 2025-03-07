@@ -121,8 +121,8 @@ async def handle_message(bot, message):
                         return 0
                 
                 # Create a compact table header
-                status_parts.append("\nMonth      | Ace    | Quad   | Total  | DL     | Rej    | Undl   ")
-                status_parts.append("-----------|--------|--------|--------|--------|--------|--------")
+                status_parts.append("\nMonth      | Ace    | Quad   | Total  | DL     | Rej    | Undl   | Size(GB) | Cost($) ")
+                status_parts.append("-----------|--------|--------|--------|--------|--------|--------|----------|----------")
                 
                 for month in month_dirs:
                     month_dir = os.path.join(textfiles_dir, month)
@@ -143,6 +143,11 @@ async def handle_message(bot, message):
                     rejected_count = count_lines(rejected_file)
                     undownloaded = total_count - (downloaded_count + rejected_count)
 
+                    # Calculate estimated size in GB (257MB per demo)
+                    estimated_size_gb = downloaded_count * 257 / 1024
+                    # Calculate estimated cost ($0.03 per GB)
+                    estimated_cost = estimated_size_gb * 0.03
+
                     # Format as a table row with fixed width columns
                     status_parts.append(
                         f"{month_abbr.ljust(10)} | "
@@ -151,7 +156,9 @@ async def handle_message(bot, message):
                         f"{str(total_count).ljust(6)} | "
                         f"{str(downloaded_count).ljust(6)} | "
                         f"{str(rejected_count).ljust(6)} | "
-                        f"{str(undownloaded).ljust(6)}"
+                        f"{str(undownloaded).ljust(6)} | "
+                        f"{estimated_size_gb:.2f}".ljust(8) + " | "
+                        f"${estimated_cost:.2f}".ljust(8)
                     )
 
             status_msg = "\n".join(status_parts)
