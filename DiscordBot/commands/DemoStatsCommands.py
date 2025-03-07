@@ -78,9 +78,22 @@ async def handle_message(bot, message):
             # Sort months chronologically (oldest to newest)
             month_dirs.sort(key=lambda x: month_order.get(x, 13))  # Unknown months at the end
 
+            # Get version information from git
+            try:
+                import subprocess
+                git_version = subprocess.check_output(["git", "describe", "--always"], cwd=core_dir).decode().strip()
+                git_branch = subprocess.check_output(["git", "rev-parse", "--abbrev-ref", "HEAD"], cwd=core_dir).decode().strip()
+                git_commit = subprocess.check_output(["git", "rev-parse", "--short", "HEAD"], cwd=core_dir).decode().strip()
+                git_date = subprocess.check_output(["git", "log", "-1", "--format=%cd", "--date=short"], cwd=core_dir).decode().strip()
+                version_info = f"Version: {git_branch} {git_commit} ({git_date})"
+            except Exception as e:
+                logger.error(f"Error getting version info: {str(e)}")
+                version_info = "Version: Unknown"
+
             # Build status message
             status_parts = []
-            status_parts.append("Storage Information:")
+            status_parts.append(f"DemoFetch {version_info}")
+            status_parts.append("\nStorage Information:")
             status_parts.append(f"Total Size: {size_gb:.2f} GB")
             status_parts.append(f"Total Files: {file_count} demos")
             status_parts.append(f"Estimated Cost: ${cost:.2f}")
