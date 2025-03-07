@@ -4,7 +4,18 @@
         "owner_id": 123456789
     },
     "faceit": {
-        "api_key": "YOUR_FACEIT_API_KEY_HERE"
+        "api_key": "YOUR_FACEIT_API_KEY_HERE",
+        "hubs": [
+            {
+                "id": "c7dc4af7-33ad-4973-90c2-5cce9376258b",
+                "name": "Cache NA Challenge"
+            },
+            {
+                "id": "55f14f39-24a0-4be6-a37f-0e558e5e2950",
+                "name": "Cache EU Challenge"
+            }
+            // Add more hubs as needed
+        ]
     },
     "project": {
         "directory": "/path/to/project/DiscordBot",
