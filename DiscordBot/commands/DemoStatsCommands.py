@@ -143,8 +143,8 @@ async def handle_message(bot, message):
                     rejected_count = count_lines(rejected_file)
                     undownloaded = total_count - (downloaded_count + rejected_count)
 
-                    # Calculate estimated size in GB (257MB per demo)
-                    estimated_size_gb = downloaded_count * 257 / 1024
+                    # Calculate estimated size in GB (257MB per demo) based on ACE count
+                    estimated_size_gb = ace_count * 257 / 1024
                     # Calculate estimated cost ($0.03 per GB)
                     estimated_cost = estimated_size_gb * 0.03
 
