@@ -6,6 +6,7 @@ import logging
 import nextcord
 from datetime import datetime, timedelta
 from core.FaceitMatchScraper import start_match_scraping
+from core.FaceitHubScraper import start_hub_scraping
 from core.MatchScoreFilter import start_match_filtering
 from core.DemoDownloader import stop_processes
 from DiscordBot.textfiles.undated.DateFetch import start_date_fetching
@@ -17,6 +18,7 @@ logger = logging.getLogger('discord_bot')
 
 # Global tasks
 scraping_task = None
+hub_scraping_task = None
 filtering_task = None
 parsing_task = None
 datefetch_task = None
@@ -118,6 +120,20 @@ async def continuous_scraping(bot=None, immediate=False):
 
                 logger.info("All processing completed")
 
+                # Start hub scraping after a delay
+                logger.info("Waiting 60 seconds before starting hub scraping...")
+                await asyncio.sleep(60)
+                
+                # Start hub scraping
+                logger.info("Starting hub match scraping...")
+                global hub_scraping_task
+                hub_scraping_task = asyncio.create_task(start_hub_scraping(bot))
+                hub_result = await hub_scraping_task
+                if hub_result:
+                    logger.info("Hub match scraping completed successfully")
+                else:
+                    logger.error("Hub match scraping encountered an error")
+
                 if not immediate:
                     # Calculate and display next scrape time
                     next_scrape = datetime.now() + timedelta(seconds=wait_time)
@@ -152,7 +168,7 @@ async def continuous_scraping(bot=None, immediate=False):
 async def handle_message(bot, message):
     """Handle message-based scraper commands"""
     content = message.content.lower().strip()
-    global scraping_task, filtering_task, parsing_task, datefetch_task
+    global scraping_task, hub_scraping_task, filtering_task, parsing_task, datefetch_task
 
     if content == "start datefetch":
         try:
@@ -253,12 +269,18 @@ async def handle_message(bot, message):
                 frame = scraping_task.get_coro().cr_frame
                 if frame and 'wait_time' in frame.f_locals:
                     wait_time = frame.f_locals['wait_time']
-                    elapsed = frame.f_locals.get('_time', 0)
+                    elapsed = frame.f_locals.get('_time', 0)  # Time elapsed in sleep
                     remaining = max(0, wait_time - elapsed)
                     next_scrape = datetime.now() + timedelta(seconds=remaining)
                     status_parts.append(f"Next scrape at: {next_scrape.strftime('%H:%M:%S')}")
             else:
                 status_parts.append("🔴 Match scraping is INACTIVE")
+                
+            # Check hub scraping status
+            if hub_scraping_task and not hub_scraping_task.done():
+                status_parts.append("\n🟢 Hub match scraping is ACTIVE")
+            else:
+                status_parts.append("\n🔴 Hub match scraping is INACTIVE")
 
             # Check date fetching status
             if datefetch_task and not datefetch_task.done():
@@ -310,6 +332,16 @@ async def handle_message(bot, message):
                     message_parts.append("Match scraping stopped")
                 else:
                     message_parts.append("Fetch service wasn't running")
+                    
+                # Also stop hub scraping if it exists
+                if hub_scraping_task and not hub_scraping_task.done():
+                    hub_scraping_task.cancel()
+                    try:
+                        await hub_scraping_task
+                    except asyncio.CancelledError:
+                        pass
+                    hub_scraping_task = None
+                    message_parts.append("Hub match scraping stopped")
 
             elif service == "download":
                 result = stop_processes()
@@ -354,6 +386,16 @@ async def handle_message(bot, message):
                     bot.is_service_running = False
                     await bot.update_status()
                     message_parts.append("Match scraping stopped")
+                    
+                # Stop hub scraping task
+                if hub_scraping_task and not hub_scraping_task.done():
+                    hub_scraping_task.cancel()
+                    try:
+                        await hub_scraping_task
+                    except asyncio.CancelledError:
+                        pass
+                    hub_scraping_task = None
+                    message_parts.append("Hub match scraping stopped")
 
                 # Stop filtering task
                 if filtering_task and not filtering_task.done():
@@ -398,7 +440,7 @@ async def handle_message(bot, message):
                 )
                 return True
 
-            await bot.send_message(message.author, "\n".join(status_parts))
+            await bot.send_message(message.author, "\n".join(message_parts))
             return True
         except Exception as e:
             await bot.send_message(message.author, f"Error: {str(e)}")
