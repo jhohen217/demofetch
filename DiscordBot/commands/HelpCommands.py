@@ -39,12 +39,6 @@ download <category> <month> <number> [loop] - Download demos from a specific mon
   Loop: Optional 'loop' parameter to continuously download in batches (automatically starts parser if not running)
 dlstats - Get download statistics
 
-File Organization:
-merge - Merge files from textfiles/MergeMe into their respective month folders
-  - Files in MergeMe should match the naming pattern of their destination
-  - Example: ace_matchids.txt in MergeMe will merge with ace_matchids_february.txt
-  - Files are automatically deleted from MergeMe after successful merge
-
 User Operations:
 fetch <username> - Fetch matches for a user
 getdemos <username> - Download demos for a user""",
