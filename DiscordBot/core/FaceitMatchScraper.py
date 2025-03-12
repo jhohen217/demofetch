@@ -34,7 +34,11 @@ class MatchScraper:
         # File paths with month suffix
         self.output_json = os.path.join(self.month_dir, f"output_{month_lower}.json")
         self.match_ids_file = os.path.join(self.month_dir, f"match_ids_{month_lower}.txt")
-
+        self.permanent_fail_file = os.path.join(self.month_dir, f"permanent_fails_{month_lower}.txt")
+        
+        # Load permanent fails
+        self.permanent_fails = self.load_permanent_fails()
+        
         # API configuration
         self.url = "https://www.faceit.com/api/match-history/v4/matches/competition"
         self.headers = {
@@ -52,6 +56,50 @@ class MatchScraper:
         self.rate_limit_delay = 0.2  # 200ms between requests
         self.max_retries = 3
         self.rate_limit_cooldown = 60  # 1 minute cooldown if rate limited
+        
+    def load_permanent_fails(self) -> Set[str]:
+        """Load the list of permanently failed match IDs"""
+        permanent_fails = set()
+        if os.path.exists(self.permanent_fail_file):
+            try:
+                with open(self.permanent_fail_file, "r", encoding="utf-8") as f:
+                    permanent_fails = {line.strip() for line in f if line.strip()}
+                print(f"Loaded {len(permanent_fails)} permanently failed matches")
+            except Exception as e:
+                print(f"Error loading permanent fails: {str(e)}")
+        return permanent_fails
+        
+    def cleanup_match_ids(self) -> bool:
+        """Remove permanently failed matches from match_ids file"""
+        try:
+            if not os.path.exists(self.match_ids_file) or not self.permanent_fails:
+                return True
+                
+            # Read existing matches
+            existing_matches = []
+            with open(self.match_ids_file, "r", encoding="utf-8") as f:
+                for line in f:
+                    if line.strip():
+                        parts = line.strip().split(',')
+                        match_id = parts[0]
+                        timestamp = parts[1] if len(parts) > 1 else ""
+                        existing_matches.append((match_id, timestamp))
+            
+            # Filter out permanent fails
+            filtered_matches = [(mid, ts) for mid, ts in existing_matches if mid not in self.permanent_fails]
+            removed_count = len(existing_matches) - len(filtered_matches)
+            
+            if removed_count > 0:
+                # Write filtered matches back to file
+                with open(self.match_ids_file, "w", encoding="utf-8") as f:
+                    for match_id, timestamp in filtered_matches:
+                        f.write(f"{match_id},{timestamp}\n")
+                print(f"Removed {removed_count} permanently failed matches from match_ids file")
+            
+            return True
+        except Exception as e:
+            print(f"Error cleaning up match IDs: {str(e)}")
+            return False
 
     async def fetch_matches(self) -> Optional[dict]:
         """Fetch match data from FACEIT API"""
@@ -107,16 +155,17 @@ class MatchScraper:
         print(f"Found {len(match_ids)} matches in response")
         return match_ids
 
-    def extract_match_data(self, data: dict) -> List[Tuple[str, str]]:
-        """Extract match ID and finishedAt timestamp from API response."""
+    def extract_match_data(self, data: dict) -> List[Tuple[str, str, str]]:
+        """Extract match ID, finishedAt timestamp, and status from API response."""
         match_data = []
         if "payload" in data and isinstance(data["payload"], list):
             for item in data["payload"]:
                 if isinstance(item, dict):
                     match_id = item.get("matchId")
                     finished_at = item.get("finishedAt")
+                    status = item.get("status", "")  # Get status if available
                     if match_id and finished_at:
-                        match_data.append((match_id, finished_at))
+                        match_data.append((match_id, finished_at, status))
                 else:
                     print("Warning: Payload item is not a dictionary.")
         else:
@@ -131,6 +180,10 @@ class MatchScraper:
             print("\n" + "="*50)
             print("Starting match scraping process...")
             print("="*50 + "\n")
+            
+            # First, clean up any permanent fails from the match_ids file
+            print("Cleaning up permanent fails from match_ids file...")
+            self.cleanup_match_ids()
 
             # Fetch new matches
             data = await self.fetch_matches()
@@ -160,9 +213,22 @@ class MatchScraper:
             # Process new matches
             new_matches = []
             consecutive_duplicates = 0
+            skipped_permanent_fails = 0
+            skipped_cancelled_matches = 0
 
             print("\nChecking for new matches...")
-            for match_id, finished_at in match_data:
+            for match_id, finished_at, status in match_data:
+                # Skip if match is in permanent fails list
+                if match_id in self.permanent_fails:
+                    skipped_permanent_fails += 1
+                    continue
+                
+                # Skip if match is cancelled
+                if status and status.upper() == "CANCELLED":
+                    skipped_cancelled_matches += 1
+                    print(f"Skipping cancelled match: {match_id}")
+                    continue
+                    
                 if match_id not in existing_matches:
                     new_matches.append((match_id, finished_at))
                     consecutive_duplicates = 0
@@ -171,6 +237,12 @@ class MatchScraper:
                     if consecutive_duplicates > 5:
                         print("\nMore than 5 consecutive duplicates found. Stopping.")
                         break
+            
+            if skipped_permanent_fails > 0:
+                print(f"\nSkipped {skipped_permanent_fails} matches that were in permanent fails list")
+                
+            if skipped_cancelled_matches > 0:
+                print(f"\nSkipped {skipped_cancelled_matches} cancelled matches")
 
             # Report results
             if new_matches:

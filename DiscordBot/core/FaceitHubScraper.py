@@ -30,10 +30,14 @@ class HubScraper:
         # File paths with month suffix - use the same files as the regular match scraper
         self.output_json = os.path.join(self.month_dir, f"hub_output_{month_lower}.json")
         self.match_ids_file = os.path.join(self.month_dir, f"match_ids_{month_lower}.txt")
+        self.permanent_fail_file = os.path.join(self.month_dir, f"permanent_fails_{month_lower}.txt")
 
         # Hub ID and name (either provided or default)
         self.hub_id = hub_id or "c7dc4af7-33ad-4973-90c2-5cce9376258b"
         self.hub_name = hub_name or "Default Hub"
+        
+        # Load permanent fails
+        self.permanent_fails = self.load_permanent_fails()
         
         print("\n" + "="*50)
         print(f"           FACEIT Hub Demo Manager - {self.hub_name}")
@@ -56,6 +60,50 @@ class HubScraper:
         self.rate_limit_delay = 0.2  # 200ms between requests
         self.max_retries = 3
         self.rate_limit_cooldown = 60  # 1 minute cooldown if rate limited
+        
+    def load_permanent_fails(self) -> Set[str]:
+        """Load the list of permanently failed match IDs"""
+        permanent_fails = set()
+        if os.path.exists(self.permanent_fail_file):
+            try:
+                with open(self.permanent_fail_file, "r", encoding="utf-8") as f:
+                    permanent_fails = {line.strip() for line in f if line.strip()}
+                print(f"Loaded {len(permanent_fails)} permanently failed matches")
+            except Exception as e:
+                print(f"Error loading permanent fails: {str(e)}")
+        return permanent_fails
+        
+    def cleanup_match_ids(self) -> bool:
+        """Remove permanently failed matches from match_ids file"""
+        try:
+            if not os.path.exists(self.match_ids_file) or not self.permanent_fails:
+                return True
+                
+            # Read existing matches
+            existing_matches = []
+            with open(self.match_ids_file, "r", encoding="utf-8") as f:
+                for line in f:
+                    if line.strip():
+                        parts = line.strip().split(',')
+                        match_id = parts[0]
+                        timestamp = parts[1] if len(parts) > 1 else ""
+                        existing_matches.append((match_id, timestamp))
+            
+            # Filter out permanent fails
+            filtered_matches = [(mid, ts) for mid, ts in existing_matches if mid not in self.permanent_fails]
+            removed_count = len(existing_matches) - len(filtered_matches)
+            
+            if removed_count > 0:
+                # Write filtered matches back to file
+                with open(self.match_ids_file, "w", encoding="utf-8") as f:
+                    for match_id, timestamp in filtered_matches:
+                        f.write(f"{match_id},{timestamp}\n")
+                print(f"Removed {removed_count} permanently failed matches from match_ids file")
+            
+            return True
+        except Exception as e:
+            print(f"Error cleaning up match IDs: {str(e)}")
+            return False
 
     async def fetch_hub_matches(self) -> Optional[dict]:
         """Fetch match data from FACEIT Hub API"""
@@ -149,6 +197,10 @@ class HubScraper:
             print("\n" + "="*50)
             print("Starting hub match scraping process...")
             print("="*50 + "\n")
+            
+            # First, clean up any permanent fails from the match_ids file
+            print("Cleaning up permanent fails from match_ids file...")
+            self.cleanup_match_ids()
 
             # Fetch new matches
             data = await self.fetch_hub_matches()
@@ -178,17 +230,59 @@ class HubScraper:
             # Process new matches
             new_matches = []
             consecutive_duplicates = 0
+            skipped_permanent_fails = 0
+            skipped_cancelled_matches = 0
 
             print("\nChecking for new hub matches...")
-            for match_id, finished_at in match_data:
+            for item in data.get("items", []):
+                if not isinstance(item, dict):
+                    continue
+                    
+                match_id = item.get("match_id")
+                finished_at = item.get("finished_at")
+                status = item.get("status")
+                
+                if not match_id or not finished_at:
+                    continue
+                
+                # Convert Unix timestamp to ISO format if it's a number
+                try:
+                    if isinstance(finished_at, (int, str)) and str(finished_at).isdigit():
+                        # Convert Unix timestamp (seconds since epoch) to ISO format
+                        dt = datetime.fromtimestamp(int(finished_at))
+                        iso_timestamp = dt.isoformat()
+                    else:
+                        # Already in ISO format or other format
+                        iso_timestamp = str(finished_at)
+                except Exception as e:
+                    print(f"Error converting timestamp for match {match_id}: {e}")
+                    iso_timestamp = str(finished_at)
+                
+                # Skip if match is in permanent fails list
+                if match_id in self.permanent_fails:
+                    skipped_permanent_fails += 1
+                    continue
+                
+                # Skip if match is cancelled
+                if status == "CANCELLED":
+                    skipped_cancelled_matches += 1
+                    print(f"Skipping cancelled match: {match_id}")
+                    continue
+                    
                 if match_id not in existing_matches:
-                    new_matches.append((match_id, finished_at))
+                    new_matches.append((match_id, iso_timestamp))
                     consecutive_duplicates = 0
                 else:
                     consecutive_duplicates += 1
                     if consecutive_duplicates > 5:
                         print("\nMore than 5 consecutive duplicates found in hub matches. Stopping.")
                         break
+            
+            if skipped_permanent_fails > 0:
+                print(f"\nSkipped {skipped_permanent_fails} matches that were in permanent fails list")
+                
+            if skipped_cancelled_matches > 0:
+                print(f"\nSkipped {skipped_cancelled_matches} cancelled matches")
 
             # Report results
             if new_matches:
