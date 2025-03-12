@@ -12,16 +12,20 @@ logging.basicConfig(
     force=True  # Force reconfiguration of the logger
 )
 
-# Add only the project root to Python path
+# Add project root and DiscordBot directory to Python path
 current_dir = Path(__file__).parent.absolute()
+discord_bot_dir = os.path.join(current_dir, 'DiscordBot')
 if str(current_dir) not in sys.path:
     sys.path.insert(0, str(current_dir))
     logging.debug(f"Added {current_dir} to Python path")
+if str(discord_bot_dir) not in sys.path:
+    sys.path.insert(0, str(discord_bot_dir))
+    logging.debug(f"Added {discord_bot_dir} to Python path")
 
 logging.debug(f"Python path: {sys.path}")
 
 # Import after path setup
-from DiscordBot.core.DiscordBot import DemoBot
+from core.DiscordBot import DemoBot
 
 def main():
     logging.info("Starting DemoFetch application...")
