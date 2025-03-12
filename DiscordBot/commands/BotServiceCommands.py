@@ -2,7 +2,7 @@ import logging
 import asyncio
 import sys
 import nextcord
-from textfiles.MergeMe.migrate_matches import migrate_matches
+# Removed import from deleted textfiles folder
 from core.FaceitMatchScraper import start_match_scraping
 from core.MatchScoreFilter import start_match_filtering
 from commands.parser import get_parser_stats
@@ -108,15 +108,12 @@ async def handle_message(bot, message):
 
     elif command == 'prefix':
         try:
-            # Run match migration to update prefixes
-            logger.debug("Starting match prefix migration")
-            await bot.send_message(message.author, "Starting match prefix migration...")
-            await migrate_matches()
-            logger.debug("Match prefix migration completed")
-            await bot.send_message(message.author, "Match prefix migration completed!")
+            # Prefix migration functionality removed (was using deleted textfiles folder)
+            logger.debug("Prefix migration command received")
+            await bot.send_message(message.author, "Prefix migration functionality is currently unavailable.")
             return True
         except Exception as e:
-            error_msg = f"Error during prefix migration: {str(e)}"
+            error_msg = f"Error handling prefix command: {str(e)}"
             logger.error(error_msg)
             await bot.send_message(message.author, error_msg)
             return True
