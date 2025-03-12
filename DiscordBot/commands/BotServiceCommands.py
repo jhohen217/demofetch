@@ -2,9 +2,10 @@ import logging
 import asyncio
 import sys
 import nextcord
-from core.migrate_matches import migrate_matches
+from textfiles.MergeMe.migrate_matches import migrate_matches
 from core.FaceitMatchScraper import start_match_scraping
 from core.MatchScoreFilter import start_match_filtering
+from commands.parser import get_parser_stats
 
 logger = logging.getLogger('discord_bot')
 
@@ -74,17 +75,29 @@ async def handle_message(bot, message):
 
     elif command == 'stop':
         try:
+            services_stopped = False
+            
             # Stop match fetching service if running
-            if 'match_scraping' in background_tasks:
+            if 'match_scraping' in background_tasks and not background_tasks['match_scraping'].done():
                 logger.debug("Stopping match fetching service")
                 background_tasks['match_scraping'].cancel()
                 # Update service status and bot presence
                 bot.is_service_running = False
                 await bot.update_status()
                 await bot.send_message(message.author, "Match fetching service stopped.")
-            else:
+                services_stopped = True
+            
+            # Check if parser service is running (handled by commands.parser)
+            if hasattr(bot, 'is_parser_running') and bot.is_parser_running:
+                # The actual stopping is handled by commands.parser
+                # We just need to update the status here
+                logger.debug("Parser service will be stopped by commands.parser")
+                services_stopped = True
+            
+            if not services_stopped:
                 logger.debug("No services are currently running")
                 await bot.send_message(message.author, "No services are currently running.")
+            
             return True
 
         except Exception as e:
@@ -108,6 +121,48 @@ async def handle_message(bot, message):
             await bot.send_message(message.author, error_msg)
             return True
 
+    elif command == 'status':
+        try:
+            status_lines = ["Service Status:"]
+            
+            # Match fetching service status
+            match_status = "Running" if ('match_scraping' in background_tasks and 
+                                         not background_tasks['match_scraping'].done()) else "Stopped"
+            status_lines.append(f"Match Fetching: {match_status}")
+            
+            # Parser service status
+            if hasattr(bot, 'is_parser_running'):
+                parser_status = "Running" if bot.is_parser_running else "Stopped"
+                parser_stats = get_parser_stats()
+                
+                status_lines.append(f"Parser Service: {parser_status}")
+                
+                if bot.is_parser_running:
+                    status_lines.append(f"  - Total Processed: {parser_stats['total_processed']}")
+                    status_lines.append(f"  - Successful: {parser_stats['successful']}")
+                    status_lines.append(f"  - Failed: {parser_stats['failed']}")
+                    status_lines.append(f"  - Kill Collections: {parser_stats['kill_collections']}")
+                    status_lines.append(f"  - Tick-by-Tick Files: {parser_stats['tickbytick_files']}")
+                    
+                    if parser_stats['processing_time'] > 0:
+                        from commands.parser import format_time_duration
+                        status_lines.append(f"  - Total Processing Time: {format_time_duration(parser_stats['processing_time'])}")
+                    
+                    if parser_stats['current_month']:
+                        status_lines.append(f"  - Current Month: {parser_stats['current_month']}")
+                    
+                    if parser_stats['last_check_time']:
+                        status_lines.append(f"  - Last Check: {parser_stats['last_check_time']}")
+            
+            await bot.send_message(message.author, "\n".join(status_lines))
+            return True
+            
+        except Exception as e:
+            error_msg = f"Error getting service status: {str(e)}"
+            logger.error(error_msg)
+            await bot.send_message(message.author, error_msg)
+            return True
+    
     elif command == 'update':
         try:
             logger.info("Update command received")

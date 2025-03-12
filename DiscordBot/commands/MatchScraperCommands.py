@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 from core.FaceitMatchScraper import start_match_scraping
 from core.FaceitHubScraper import process_all_hubs
 from core.MatchScoreFilter import start_match_filtering
-from core.DemoDownloader import stop_processes
+from core.AsyncDemoDownloader import stop_processes
 from DiscordBot.textfiles.undated.DateFetch import start_date_fetching
 import subprocess
 import os

@@ -160,9 +160,11 @@ class MatchProcessor:
             # Add new match_id
             existing_lines.append(match_id)
             
-            # Sort if this is the ace_file or quad_file (formatted IDs)
-            if formatted and (filepath == self.ace_file or filepath == self.quad_file):
+            # Always sort ace_file and quad_file (formatted IDs)
+            # This ensures the files are always in chronological order
+            if filepath == self.ace_file or filepath == self.quad_file:
                 existing_lines.sort()  # Simple alphabetical sort
+                print_highlighted(f"Sorted {os.path.basename(filepath)} in chronological order")
             
             # Write back all content
             with open(filepath, "w") as f:
