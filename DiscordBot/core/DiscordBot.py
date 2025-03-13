@@ -133,11 +133,27 @@ class DemoBot(nextcord.Client):
             logger.exception("Full traceback:")
 
     async def start_background_tasks(self):
-        """Start background tasks like match filtering"""
+        """Start background tasks like match filtering and match scraping"""
         try:
             # Start periodic match filtering
             self.loop.create_task(self.periodic_match_filtering())
             logger.info("Started periodic match filtering task")
+            
+            # Start match scraping using MatchScraperCommands
+            try:
+                from commands import MatchScraperCommands
+                logger.info("Starting match scraping service using MatchScraperCommands...")
+                
+                # Set service as running
+                self.is_service_running = True
+                await self.update_status()
+                
+                # Create and start the continuous scraping task
+                scraping_task = self.loop.create_task(MatchScraperCommands.continuous_scraping(self))
+                logger.info("Match scraping service started successfully")
+            except Exception as scraper_error:
+                logger.error(f"Error starting match scraping service: {str(scraper_error)}")
+                logger.exception("Full traceback:")
         except Exception as e:
             logger.error(f"Error starting background tasks: {str(e)}")
             logger.exception("Full traceback:")
