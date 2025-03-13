@@ -9,9 +9,24 @@ from core.FaceitMatchScraper import start_match_scraping
 from core.FaceitHubScraper import process_all_hubs
 from core.MatchScoreFilter import start_match_filtering
 from core.AsyncDemoDownloader import stop_processes
-from DiscordBot.textfiles.undated.DateFetch import start_date_fetching
 import subprocess
 import os
+
+# Try to import DateFetch, but don't fail if it's not available
+try:
+    from DiscordBot.textfiles.undated.DateFetch import start_date_fetching
+    date_fetch_available = True
+except ImportError:
+    logger = logging.getLogger('discord_bot')
+    logger.warning("DateFetch module not found. Date fetching functionality will be disabled.")
+    date_fetch_available = False
+    
+    # Define a dummy function to avoid errors
+    async def start_date_fetching(bot=None):
+        logger.error("Date fetching is not available. The required module is missing.")
+        if bot and bot.owner:
+            await bot.send_message(bot.owner, "Date fetching is not available. The required module is missing.")
+        return False
 
 # Set up logging
 logger = logging.getLogger('discord_bot')
