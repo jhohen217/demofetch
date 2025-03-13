@@ -56,19 +56,8 @@ async def handle_message(bot, message):
             # Start a new scraping task immediately, bypassing the wait
             await bot.send_message(message.author, "Forcing immediate match scraping...")
             
-            # Check if month parameter is provided
-            month = None
-            if len(args) > 1:
-                month = args[1].capitalize()
-                if month.lower() not in [
-                    'january', 'february', 'march', 'april', 'may', 'june',
-                    'july', 'august', 'september', 'october', 'november', 'december'
-                ]:
-                    await bot.send_message(message.author, f"Invalid month: {month}. Using current month.")
-                    month = None
-            
             # Start scraping
-            scraping_task = asyncio.create_task(start_match_scraping(bot, month))
+            scraping_task = asyncio.create_task(start_match_scraping(bot))
             result = await scraping_task
             
             if result:
@@ -82,7 +71,7 @@ async def handle_message(bot, message):
                 hub_start_msg = "Starting hub match scraping for all configured hubs..."
                 await bot.send_message(message.author, hub_start_msg)
                 
-                hub_scraping_task = asyncio.create_task(process_all_hubs(bot, month))
+                hub_scraping_task = asyncio.create_task(process_all_hubs(bot))
                 hub_result = await hub_scraping_task
                 
                 if hub_result:
@@ -96,60 +85,6 @@ async def handle_message(bot, message):
         except Exception as e:
             await bot.send_message(message.author, f"Error forcing scrape: {str(e)}")
             return True
-
-    elif command == "start" and len(args) > 1 and args[1] == "scraper":
-        try:
-            if scraping_task and not scraping_task.done():
-                await bot.send_message(message.author, "Match scraping is already running")
-                return True
-
-            # Check if month parameter is provided
-            month = None
-            if len(args) > 2:
-                month = args[2].capitalize()
-                if month.lower() not in [
-                    'january', 'february', 'march', 'april', 'may', 'june',
-                    'july', 'august', 'september', 'october', 'november', 'december'
-                ]:
-                    await bot.send_message(message.author, f"Invalid month: {month}. Using current month.")
-                    month = None
-            
-            # Check if delay parameters are provided
-            min_delay = DEFAULT_MIN_DELAY
-            max_delay = DEFAULT_MAX_DELAY
-            
-            if len(args) > 3:
-                try:
-                    min_delay = int(args[3])
-                    if min_delay < 60:  # Minimum 1 minute
-                        await bot.send_message(message.author, f"Minimum delay must be at least 60 seconds (1 minute). Using {DEFAULT_MIN_DELAY} seconds.")
-                        min_delay = DEFAULT_MIN_DELAY
-                except ValueError:
-                    await bot.send_message(message.author, f"Invalid minimum delay. Using default of {DEFAULT_MIN_DELAY} seconds.")
-            
-            if len(args) > 4:
-                try:
-                    max_delay = int(args[4])
-                    if max_delay < min_delay:
-                        await bot.send_message(message.author, f"Maximum delay must be greater than minimum delay. Using {min_delay + 120} seconds.")
-                        max_delay = min_delay + 120
-                except ValueError:
-                    await bot.send_message(message.author, f"Invalid maximum delay. Using default of {DEFAULT_MAX_DELAY} seconds.")
-            
-            # Create and start the continuous scraping task
-            await bot.send_message(message.author, f"Started fetching Match IDs for {month or 'current month'} with delay range {min_delay}-{max_delay} seconds")
-            
-            # Update service status and bot presence
-            bot.is_service_running = True
-            await bot.update_status()
-            
-            # Start scraping
-            scraping_task = asyncio.create_task(continuous_scraping(bot, month, min_delay, max_delay))
-            
-            return True
-        except Exception as e:
-            await bot.send_message(message.author, f"Error: {str(e)}")
-            return True
     
     elif command == "hub" and len(args) > 1:
         try:
@@ -162,25 +97,14 @@ async def handle_message(bot, message):
                 if len(args) > 3:
                     hub_name = args[3]
             
-            # Check if month parameter is provided
-            month = None
-            if len(args) > 4:
-                month = args[4].capitalize()
-                if month.lower() not in [
-                    'january', 'february', 'march', 'april', 'may', 'june',
-                    'july', 'august', 'september', 'october', 'november', 'december'
-                ]:
-                    await bot.send_message(message.author, f"Invalid month: {month}. Using current month.")
-                    month = None
-            
             # Start hub scraping
             if args[1] == "scrape":
                 await bot.send_message(message.author, f"Starting hub scraping for {hub_name or hub_id or 'default hub'}")
                 
                 if hub_id:
-                    result = await start_hub_scraping(bot, hub_id, hub_name, month)
+                    result = await start_hub_scraping(bot, hub_id, hub_name)
                 else:
-                    result = await process_all_hubs(bot, month)
+                    result = await process_all_hubs(bot)
                 
                 if result:
                     await bot.send_message(message.author, "Hub scraping completed successfully")
@@ -245,22 +169,24 @@ async def handle_message(bot, message):
     
     return False
 
-async def continuous_scraping(bot=None, month=None, min_delay=DEFAULT_MIN_DELAY, max_delay=DEFAULT_MAX_DELAY):
+async def continuous_scraping(bot=None):
     """
     Continuously scrape matches with random intervals.
     
     Args:
         bot: Discord bot instance
-        month: Month to scrape (e.g., "February")
-        min_delay: Minimum delay between scrapes in seconds
-        max_delay: Maximum delay between scrapes in seconds
     """
-    logger.info(f"continuous_scraping called for {month or 'current month'} with delay range {min_delay}-{max_delay} seconds")
+    # Get configuration
+    config = get_config()
+    fetch_delay_min = config.get('downloader', {}).get('fetch_delay', {}).get('min', DEFAULT_MIN_DELAY)
+    fetch_delay_max = config.get('downloader', {}).get('fetch_delay', {}).get('max', DEFAULT_MAX_DELAY)
+    
+    logger.info(f"continuous_scraping called with delay range {fetch_delay_min}-{fetch_delay_max} seconds")
     
     while True:
         try:
             # Wait for configured interval before starting
-            wait_time = random.randint(min_delay, max_delay)
+            wait_time = random.randint(fetch_delay_min, fetch_delay_max)
             logger.info(f"Waiting {wait_time} seconds before next scrape...")
             
             # Calculate and display next scrape time
@@ -280,7 +206,7 @@ async def continuous_scraping(bot=None, month=None, min_delay=DEFAULT_MIN_DELAY,
             await asyncio.sleep(wait_time)
             
             # Start scraping
-            result = await start_match_scraping(bot, month)
+            result = await start_match_scraping(bot)
             
             if result:
                 logger.info("Match scraping completed successfully")
@@ -302,7 +228,7 @@ async def continuous_scraping(bot=None, month=None, min_delay=DEFAULT_MIN_DELAY,
                 
                 logger.info("Starting hub match scraping for all configured hubs")
                 global hub_scraping_task
-                hub_scraping_task = asyncio.create_task(process_all_hubs(bot, month))
+                hub_scraping_task = asyncio.create_task(process_all_hubs(bot))
                 hub_result = await hub_scraping_task
                 
                 if hub_result:

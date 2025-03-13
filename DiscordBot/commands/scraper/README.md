@@ -24,34 +24,19 @@ The scraper module is responsible for:
 
 ### Start Scraper
 
-Starts the continuous scraping process with configurable intervals.
-
-```
-start scraper [month] [min_delay] [max_delay]
-```
-
-- `month` (optional) - Month to scrape (e.g., "February"). Defaults to current month.
-- `min_delay` (optional) - Minimum delay between scrapes in seconds. Defaults to 180 (3 minutes).
-- `max_delay` (optional) - Maximum delay between scrapes in seconds. Defaults to 300 (5 minutes).
-
-Example:
-```
-start scraper March 180 300
-```
+The main command to start scraping is simply `start`, which is handled by the MatchScraperCommands module. This command starts the continuous scraping process using the configured intervals from config.json.
 
 ### Force Scrape
 
 Forces an immediate scrape, bypassing the wait.
 
 ```
-force [month]
+force
 ```
-
-- `month` (optional) - Month to scrape (e.g., "February"). Defaults to current month.
 
 Example:
 ```
-force March
+force
 ```
 
 ### Hub Commands
@@ -61,16 +46,15 @@ force March
 Scrapes matches from a specific hub or all configured hubs.
 
 ```
-hub scrape [hub_id] [hub_name] [month]
+hub scrape [hub_id] [hub_name]
 ```
 
 - `hub_id` (optional) - Hub ID to scrape. If not provided, all configured hubs will be scraped.
 - `hub_name` (optional) - Hub name for display.
-- `month` (optional) - Month to scrape (e.g., "February"). Defaults to current month.
 
 Example:
 ```
-hub scrape c7dc4af7-33ad-4973-90c2-5cce9376258b "My Hub" March
+hub scrape c7dc4af7-33ad-4973-90c2-5cce9376258b "My Hub"
 ```
 
 #### List Hubs
@@ -110,7 +94,7 @@ The scraper module uses the following configuration settings from `config.json`:
 ## Recent Changes
 
 - Refactored scraping functionality into a modular structure
+- Simplified command structure - only `start` is needed to begin scraping
 - Added validation to ensure reasonable scraping intervals (minimum 1 minute)
 - Improved error handling and logging
-- Added ability to configure scraping intervals via command parameters
 - Fixed issue with scraping happening too frequently

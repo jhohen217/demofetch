@@ -19,7 +19,7 @@ The match scraping and filtering functionality has been refactored into separate
 2. **Improved Configuration**: Better handling of configuration with reasonable defaults
 3. **Enhanced Error Handling**: More robust error handling and logging
 4. **Rate Limiting Protection**: Better protection against API rate limiting
-5. **Configurable Intervals**: Scraping and filtering intervals can now be configured via commands
+5. **Simplified Commands**: Streamlined command structure for easier use
 
 ### Scraper Module
 
@@ -27,6 +27,7 @@ The scraper module handles fetching match data from the FACEIT API and FACEIT Hu
 
 Key improvements:
 - Maintained original scraping interval of 3-5 minutes by default
+- Simplified command structure - only `start` is needed to begin scraping
 - Added validation to ensure reasonable scraping intervals (minimum 1 minute)
 - Improved error handling and logging
 - Fixed issue with scraping happening too frequently
@@ -43,24 +44,24 @@ Key improvements:
 
 ## Usage
 
-The refactored modules maintain backward compatibility with existing commands, but also add new functionality. Here are some examples:
+The refactored modules maintain backward compatibility with existing commands. Here are some examples:
 
 ### Scraping Commands
 
 ```
-start scraper [month] [min_delay] [max_delay]  # Start continuous scraping
-force [month]                                  # Force immediate scrape
-hub scrape [hub_id] [hub_name] [month]         # Scrape hub matches
-hub list                                       # List configured hubs
-stop scraper                                   # Stop scraping
+start                                         # Start continuous scraping
+force                                         # Force immediate scrape
+hub scrape [hub_id] [hub_name]                # Scrape hub matches
+hub list                                      # List configured hubs
+stop scraper                                  # Stop scraping
 ```
 
 ### Filtering Commands
 
 ```
-filter [month]                                 # Filter matches
-start filter [month]                           # Start continuous filtering
-stop filter                                    # Stop filtering
+filter [month]                                # Filter matches
+start filter [month]                          # Start continuous filtering
+stop filter                                   # Stop filtering
 ```
 
 ## Legacy Commands
