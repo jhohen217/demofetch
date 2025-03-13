@@ -5,12 +5,13 @@ import json
 import logging
 import nextcord
 from datetime import datetime, timedelta
-from core.FaceitMatchScraper import start_match_scraping
-from core.FaceitHubScraper import process_all_hubs
-from core.MatchScoreFilter import start_match_filtering
+
+# Import the new modules
+from commands.scraper.commands import handle_message as scraper_handle_message
+from commands.scraper.commands import continuous_scraping
+from commands.filter.commands import handle_message as filter_handle_message
 from core.AsyncDemoDownloader import stop_processes
 import subprocess
-import os
 
 # Set up logging first so we can use it in the module
 logger = logging.getLogger('discord_bot')
@@ -51,236 +52,20 @@ with open(config_path, 'r') as f:
 fetch_delay_min = config.get('downloader', {}).get('fetch_delay', {}).get('min', 180)
 fetch_delay_max = config.get('downloader', {}).get('fetch_delay', {}).get('max', 300)
 
-async def continuous_scraping(bot=None, immediate=False):
-    """Continuously scrape matches with random intervals, or immediately if immediate=True."""
-    logger.info(f"continuous_scraping called with immediate={immediate}")
-    global last_new_match_time, no_matches_notification_sent
-    while True:
-        try:
-            if not immediate:
-                # Wait for configured interval before starting
-                wait_time = random.randint(fetch_delay_min, fetch_delay_max)
-                logger.info(f"Waiting {wait_time} seconds before next scrape...")
-                await asyncio.sleep(wait_time)
-
-            # Get textfiles directory and current month from config
-            textfiles_dir = config['project']['textfiles_directory']
-            current_month = datetime.now().strftime("%B")  # e.g., "February"
-            month_dir = os.path.join(textfiles_dir, current_month)
-            month_lower = current_month.lower()
-            match_ids_path = os.path.join(month_dir, f"match_ids_{month_lower}.txt")
-
-            # Get count before scraping
-            match_count_before = 0
-            if os.path.exists(match_ids_path):
-                with open(match_ids_path, 'r') as f:
-                    match_count_before = sum(1 for line in f if line.strip())
-            else:
-                # Create month directory if it doesn't exist
-                os.makedirs(month_dir, exist_ok=True)
-
-            # Start scraping
-            result = await start_match_scraping(bot)
-            if result:
-                logger.info("Match scraping completed successfully")
-                
-                # Check if new matches were found by comparing counts
-                match_count_after = 0
-                if os.path.exists(match_ids_path):
-                    with open(match_ids_path, 'r') as f:
-                        match_count_after = sum(1 for line in f if line.strip())
-                
-                # If new matches were found, update the timestamp
-                if match_count_after > match_count_before:
-                    logger.info(f"Found {match_count_after - match_count_before} new matches")
-                    last_new_match_time = datetime.now()
-                    no_matches_notification_sent = False
-                else:
-                    logger.info("No new matches found in this scraping cycle")
-                    
-                    # Check if it's been more than an hour since last new match
-                    if last_new_match_time is not None:
-                        time_since_last_match = datetime.now() - last_new_match_time
-                        if time_since_last_match > timedelta(hours=1) and not no_matches_notification_sent:
-                            # Send notification to bot owner
-                            if bot and bot.owner:
-                                try:
-                                    hours = int(time_since_last_match.total_seconds() / 3600)
-                                    minutes = int((time_since_last_match.total_seconds() % 3600) / 60)
-                                    
-                                    notification_msg = (
-                                        f"⚠️ **Match Scraping Alert** ⚠️\n"
-                                        f"No new matches have been found for {hours} hours and {minutes} minutes.\n"
-                                        f"Last successful match found at: {last_new_match_time.strftime('%Y-%m-%d %H:%M:%S')}\n"
-                                        f"The service is still running, but you may want to check if everything is working correctly."
-                                    )
-                                    
-                                    await bot.send_message(bot.owner, notification_msg)
-                                    logger.warning(f"Sent no-matches alert: No new matches for {hours}h {minutes}m")
-                                    no_matches_notification_sent = True
-                                except Exception as e:
-                                    logger.error(f"Failed to send no-matches notification: {str(e)}")
-                    else:
-                        # Initialize the timestamp if it's the first run
-                        last_new_match_time = datetime.now()
-
-                # Always run filtering to catch any unfiltered matches
-                logger.info("Starting match filtering...")
-
-                # Add a delay to ensure match IDs are written before filtering
-                await asyncio.sleep(2)
-
-                # Start filtering task
-                global filtering_task
-                try:
-                    # Run filtering
-                    filter_result = await start_match_filtering(bot)
-                    if filter_result:
-                        logger.info("Match filtering completed successfully")
-                    else:
-                        logger.error("Match filtering failed")
-                except Exception as filter_error:
-                    logger.error(f"Error in filtering task: {str(filter_error)}")
-
-                # Start C# parser
-                global parsing_task
-                try:
-                    # Get path to StartCollectionsParse.py with platform-independent path handling
-                    parser_script = os.path.join(
-                        os.path.dirname(core_dir),
-                        "CSharpParser", "demofile-net", "examples",
-                        "DemoFile.Example.FastParser", "StartCollectionsParse.py"
-                    )
-                    
-                    # Verify the parser script exists
-                    if not os.path.exists(parser_script):
-                        logger.error(f"Parser script not found at: {parser_script}")
-                        # Try to find the script in the current working directory
-                        cwd = os.getcwd()
-                        alt_parser_script = os.path.join(
-                            cwd,
-                            "CSharpParser", "demofile-net", "examples",
-                            "DemoFile.Example.FastParser", "StartCollectionsParse.py"
-                        )
-                        if os.path.exists(alt_parser_script):
-                            logger.info(f"Found parser script at alternate location: {alt_parser_script}")
-                            parser_script = alt_parser_script
-                        else:
-                            logger.error(f"Parser script not found at alternate location: {alt_parser_script}")
-                            logger.error("Skipping parsing step due to missing script")
-                            continue
-
-                    # Get demos directory from config
-                    demos_dir = config['project']['public_demos_directory']
-                    
-                    # Log the command we're about to run
-                    logger.info(f"Running parser with command: python {parser_script} {demos_dir}")
-
-                    # Run the C# parser
-                    parsing_task = asyncio.create_task(
-                        asyncio.to_thread(
-                            subprocess.run,
-                            ["python", parser_script, demos_dir],
-                            capture_output=True,
-                            text=True
-                        )
-                    )
-                    result = await parsing_task
-
-                    if result.returncode == 0:
-                        logger.info("Match parsing completed successfully")
-                        if result.stdout:
-                            logger.info(f"Parser output: {result.stdout}")
-                    else:
-                        logger.error(f"Parser error: {result.stderr}")
-
-                except Exception as parse_error:
-                    logger.error(f"Error in parsing task: {str(parse_error)}")
-
-                logger.info("All processing completed")
-
-                # Start hub scraping after a delay - make this message more visible
-                hub_wait_msg = "Waiting 60 seconds before starting hub scraping..."
-                print(f"\n{'*'*50}\n{hub_wait_msg}\n{'*'*50}")  # Print directly to terminal for visibility
-                logger.info(hub_wait_msg)
-                await asyncio.sleep(60)
-                
-                # Start hub scraping for all configured hubs - make this message more visible
-                hub_start_msg = "Starting hub match scraping for all configured hubs..."
-                print(f"\n{'*'*50}\n{hub_start_msg}\n{'*'*50}")  # Print directly to terminal for visibility
-                logger.info(hub_start_msg)
-                global hub_scraping_task
-                hub_scraping_task = asyncio.create_task(process_all_hubs(bot))
-                hub_result = await hub_scraping_task
-                if hub_result:
-                    logger.info("Hub match scraping completed successfully for all hubs")
-                    
-                    # Check if new matches were found in hub scraping
-                    match_count_after_hub = 0
-                    if os.path.exists(match_ids_path):
-                        with open(match_ids_path, 'r') as f:
-                            match_count_after_hub = sum(1 for line in f if line.strip())
-                    
-                    # If new matches were found in hub scraping, update the timestamp
-                    if match_count_after_hub > match_count_after:
-                        logger.info(f"Found {match_count_after_hub - match_count_after} new matches from hub scraping")
-                        last_new_match_time = datetime.now()
-                        no_matches_notification_sent = False
-                    
-                    # Add a delay to ensure match IDs are written before filtering
-                    logger.info("Waiting 2 seconds before filtering hub matches...")
-                    await asyncio.sleep(2)
-                    
-                    # Run filtering again to process hub matches
-                    logger.info("Starting match filtering for hub matches...")
-                    try:
-                        # Run filtering
-                        filter_result = await start_match_filtering(bot)
-                        if filter_result:
-                            logger.info("Hub match filtering completed successfully")
-                        else:
-                            logger.error("Hub match filtering failed")
-                    except Exception as filter_error:
-                        logger.error(f"Error in hub filtering task: {str(filter_error)}")
-                else:
-                    logger.error("Hub match scraping encountered an error with one or more hubs")
-
-                if not immediate:
-                    # Calculate and display next scrape time
-                    next_scrape = datetime.now() + timedelta(seconds=wait_time)
-                    logger.info("=" * 50)
-                    logger.info(f"Next scrape scheduled for: {next_scrape.strftime('%H:%M:%S')}")
-                    logger.info("=" * 50)
-                else:
-                    logger.info("=" * 50)
-                    logger.info("Immediate scrape complete")
-                    logger.info("=" * 50)
-
-            else:
-                logger.error("Match scraping encountered an error")
-                if not immediate:
-                  # Even on error, show next scrape time
-                  next_scrape = datetime.now() + timedelta(seconds=wait_time)
-                  logger.info("=" * 50)
-                  logger.info(f"Next scrape scheduled for: {next_scrape.strftime('%H:%M:%S')}")
-                  logger.info("=" * 50)
-
-            if immediate:
-                return  # Exit after immediate scrape
-
-        except asyncio.CancelledError:
-            logger.info("Scraping task cancelled")
-            break
-        except Exception as e:
-            logger.error(f"Error in continuous scraping: {str(e)}")
-            # Wait before retrying on error
-            await asyncio.sleep(60)
-
 async def handle_message(bot, message):
     """Handle message-based scraper commands"""
     content = message.content.lower().strip()
     global scraping_task, hub_scraping_task, filtering_task, parsing_task, datefetch_task
-
+    
+    # First, try to handle with the new scraper module
+    if await scraper_handle_message(bot, message):
+        return True
+    
+    # Then, try to handle with the new filter module
+    if await filter_handle_message(bot, message):
+        return True
+    
+    # Handle legacy commands that haven't been migrated yet
     if content == "start datefetch":
         try:
             if datefetch_task and not datefetch_task.done():
@@ -292,44 +77,6 @@ async def handle_message(bot, message):
             datefetch_task = asyncio.create_task(start_date_fetching(bot))
             return True
             
-        except Exception as e:
-            await bot.send_message(message.author, f"Error: {str(e)}")
-            return True
-
-    elif content == "force":
-        logger.info("Force command received")
-        try:
-            # Cancel any existing scraping task
-            if scraping_task and not scraping_task.done():
-                scraping_task.cancel()
-                try:
-                    await scraping_task  # Wait for cancellation to complete
-                except asyncio.CancelledError:
-                    pass
-                logger.info("Existing scraping task cancelled")
-
-            # Start a new scraping task immediately, bypassing the wait
-            await bot.send_message(message.author, "Forcing immediate match scraping...")
-            scraping_task = asyncio.create_task(continuous_scraping(bot, immediate=True))
-            return True
-        except Exception as e:
-            await bot.send_message(message.author, f"Error forcing scrape: {str(e)}")
-            return True
-
-    elif content == "start":
-        try:
-            if scraping_task and not scraping_task.done():
-                await bot.send_message(message.author, "Match scraping is already running")
-                return True
-
-            # Create and start the continuous scraping task, waiting as normal
-            await bot.send_message(message.author, "Started fetching NA East Match IDs")
-            # Update service status and bot presence
-            bot.is_service_running = True
-            await bot.update_status()
-            scraping_task = asyncio.create_task(continuous_scraping(bot))  # immediate=False is implicit
-            return True
-
         except Exception as e:
             await bot.send_message(message.author, f"Error: {str(e)}")
             return True
@@ -595,4 +342,12 @@ async def handle_message(bot, message):
 def setup(bot):
     """Required setup function for the extension"""
     logger.info("MatchScraperCommands module setup complete")
+    
+    # Set up the scraper and filter modules
+    from commands.scraper.commands import setup as setup_scraper
+    from commands.filter.commands import setup as setup_filter
+    
+    setup_scraper(bot)
+    setup_filter(bot)
+    
     return True
