@@ -23,6 +23,10 @@ filtering_task = None
 parsing_task = None
 datefetch_task = None
 
+# Match monitoring variables
+last_new_match_time = None
+no_matches_notification_sent = False
+
 # Load configuration from project root
 core_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # DiscordBot directory
 config_path = os.path.join(os.path.dirname(core_dir), 'config.json')
@@ -37,6 +41,7 @@ fetch_delay_max = config.get('downloader', {}).get('fetch_delay', {}).get('max',
 async def continuous_scraping(bot=None, immediate=False):
     """Continuously scrape matches with random intervals, or immediately if immediate=True."""
     logger.info(f"continuous_scraping called with immediate={immediate}")
+    global last_new_match_time, no_matches_notification_sent
     while True:
         try:
             if not immediate:
@@ -65,6 +70,46 @@ async def continuous_scraping(bot=None, immediate=False):
             result = await start_match_scraping(bot)
             if result:
                 logger.info("Match scraping completed successfully")
+                
+                # Check if new matches were found by comparing counts
+                match_count_after = 0
+                if os.path.exists(match_ids_path):
+                    with open(match_ids_path, 'r') as f:
+                        match_count_after = sum(1 for line in f if line.strip())
+                
+                # If new matches were found, update the timestamp
+                if match_count_after > match_count_before:
+                    logger.info(f"Found {match_count_after - match_count_before} new matches")
+                    last_new_match_time = datetime.now()
+                    no_matches_notification_sent = False
+                else:
+                    logger.info("No new matches found in this scraping cycle")
+                    
+                    # Check if it's been more than an hour since last new match
+                    if last_new_match_time is not None:
+                        time_since_last_match = datetime.now() - last_new_match_time
+                        if time_since_last_match > timedelta(hours=1) and not no_matches_notification_sent:
+                            # Send notification to bot owner
+                            if bot and bot.owner:
+                                try:
+                                    hours = int(time_since_last_match.total_seconds() / 3600)
+                                    minutes = int((time_since_last_match.total_seconds() % 3600) / 60)
+                                    
+                                    notification_msg = (
+                                        f"⚠️ **Match Scraping Alert** ⚠️\n"
+                                        f"No new matches have been found for {hours} hours and {minutes} minutes.\n"
+                                        f"Last successful match found at: {last_new_match_time.strftime('%Y-%m-%d %H:%M:%S')}\n"
+                                        f"The service is still running, but you may want to check if everything is working correctly."
+                                    )
+                                    
+                                    await bot.send_message(bot.owner, notification_msg)
+                                    logger.warning(f"Sent no-matches alert: No new matches for {hours}h {minutes}m")
+                                    no_matches_notification_sent = True
+                                except Exception as e:
+                                    logger.error(f"Failed to send no-matches notification: {str(e)}")
+                    else:
+                        # Initialize the timestamp if it's the first run
+                        last_new_match_time = datetime.now()
 
                 # Always run filtering to catch any unfiltered matches
                 logger.info("Starting match filtering...")
@@ -152,6 +197,18 @@ async def continuous_scraping(bot=None, immediate=False):
                 hub_result = await hub_scraping_task
                 if hub_result:
                     logger.info("Hub match scraping completed successfully for all hubs")
+                    
+                    # Check if new matches were found in hub scraping
+                    match_count_after_hub = 0
+                    if os.path.exists(match_ids_path):
+                        with open(match_ids_path, 'r') as f:
+                            match_count_after_hub = sum(1 for line in f if line.strip())
+                    
+                    # If new matches were found in hub scraping, update the timestamp
+                    if match_count_after_hub > match_count_after:
+                        logger.info(f"Found {match_count_after_hub - match_count_after} new matches from hub scraping")
+                        last_new_match_time = datetime.now()
+                        no_matches_notification_sent = False
                     
                     # Add a delay to ensure match IDs are written before filtering
                     logger.info("Waiting 2 seconds before filtering hub matches...")
@@ -260,6 +317,21 @@ async def handle_message(bot, message):
             await bot.send_message(message.author, f"Error: {str(e)}")
             return True
 
+    elif content == "reset":
+        try:
+            global last_new_match_time, no_matches_notification_sent
+            
+            # Reset the notification timer
+            last_new_match_time = datetime.now()
+            no_matches_notification_sent = False
+            
+            await bot.send_message(message.author, "Match notification timer has been reset. The system will now use the current time as the last successful match time.")
+            return True
+            
+        except Exception as e:
+            await bot.send_message(message.author, f"Error resetting notification timer: {str(e)}")
+            return True
+            
     elif content == "next":
         try:
             if not scraping_task or scraping_task.done():
@@ -310,6 +382,21 @@ async def handle_message(bot, message):
                     remaining = max(0, wait_time - elapsed)
                     next_scrape = datetime.now() + timedelta(seconds=remaining)
                     status_parts.append(f"Next scrape at: {next_scrape.strftime('%H:%M:%S')}")
+                
+                # Add information about last successful match
+                if last_new_match_time:
+                    time_since_last_match = datetime.now() - last_new_match_time
+                    hours = int(time_since_last_match.total_seconds() / 3600)
+                    minutes = int((time_since_last_match.total_seconds() % 3600) / 60)
+                    
+                    if hours > 0:
+                        status_parts.append(f"Last new match: {hours}h {minutes}m ago ({last_new_match_time.strftime('%Y-%m-%d %H:%M:%S')})")
+                    else:
+                        status_parts.append(f"Last new match: {minutes}m ago ({last_new_match_time.strftime('%Y-%m-%d %H:%M:%S')})")
+                    
+                    # Add warning indicator if approaching the 1-hour threshold
+                    if time_since_last_match > timedelta(minutes=45):
+                        status_parts.append("⚠️ No new matches in a while")
             else:
                 status_parts.append("🔴 Match scraping is INACTIVE")
                 

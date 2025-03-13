@@ -2,8 +2,12 @@ import json
 import os
 import asyncio
 import aiohttp
+import logging
 from typing import List, Set, Optional, Tuple
 from datetime import datetime
+
+# Set up logging
+logger = logging.getLogger('discord_bot')
 
 class HubScraper:
     def __init__(self, bot=None, hub_id=None, hub_name=None):
@@ -39,9 +43,9 @@ class HubScraper:
         # Load permanent fails
         self.permanent_fails = self.load_permanent_fails()
         
-        print("\n" + "="*50)
-        print(f"           FACEIT Hub Demo Manager - {self.hub_name}")
-        print("="*50 + "\n")
+        logger.info("\n" + "="*50)
+        logger.info(f"           FACEIT Hub Demo Manager - {self.hub_name}")
+        logger.info("="*50 + "\n")
         
         # API configuration
         self.base_url = "https://open.faceit.com/data/v4"
@@ -68,9 +72,9 @@ class HubScraper:
             try:
                 with open(self.permanent_fail_file, "r", encoding="utf-8") as f:
                     permanent_fails = {line.strip() for line in f if line.strip()}
-                print(f"Loaded {len(permanent_fails)} permanently failed matches")
+                logger.info(f"Loaded {len(permanent_fails)} permanently failed matches")
             except Exception as e:
-                print(f"Error loading permanent fails: {str(e)}")
+                logger.error(f"Error loading permanent fails: {str(e)}")
         return permanent_fails
         
     def cleanup_match_ids(self) -> bool:
@@ -98,11 +102,11 @@ class HubScraper:
                 with open(self.match_ids_file, "w", encoding="utf-8") as f:
                     for match_id, timestamp in filtered_matches:
                         f.write(f"{match_id},{timestamp}\n")
-                print(f"Removed {removed_count} permanently failed matches from match_ids file")
+                logger.info(f"Removed {removed_count} permanently failed matches from match_ids file")
             
             return True
         except Exception as e:
-            print(f"Error cleaning up match IDs: {str(e)}")
+            logger.error(f"Error cleaning up match IDs: {str(e)}")
             return False
 
     async def fetch_hub_matches(self) -> Optional[dict]:
@@ -111,14 +115,14 @@ class HubScraper:
         async with aiohttp.ClientSession() as session:
             while retries < self.max_retries:
                 try:
-                    print("\nFetching matches from FACEIT Hub API...")
+                    logger.info("\nFetching matches from FACEIT Hub API...")
                     async with session.get(self.url, headers=self.headers, params=self.params) as response:
                         if response.status == 200:
-                            print("Successfully received response from Hub API")
+                            logger.info("Successfully received response from Hub API")
                             return await response.json()
                         elif response.status == 429:  # Rate limited
                             rate_limit_msg = f"[HUB SCRAPER] Rate limited - Trying again in {self.rate_limit_cooldown} seconds..."
-                            print(rate_limit_msg)
+                            logger.warning(rate_limit_msg)
                             
                             # Send DM if bot instance is available
                             if self.bot and self.bot.owner:
@@ -131,15 +135,15 @@ class HubScraper:
                             retries += 1
                             continue
                         else:
-                            print(f"Error fetching hub data: HTTP {response.status}")
+                            logger.error(f"Error fetching hub data: HTTP {response.status}")
                             return None
                 except Exception as e:
-                    print(f"Network error in hub scraper: {str(e)}")
+                    logger.error(f"Network error in hub scraper: {str(e)}")
                     return None
                 
                 await asyncio.sleep(self.rate_limit_delay)
         
-        print("Max retries reached in hub scraper")
+        logger.error("Max retries reached in hub scraper")
         return None
 
     def extract_match_ids(self, data: dict) -> List[str]:
@@ -152,11 +156,11 @@ class HubScraper:
                     if match_id:
                         match_ids.append(match_id)
                 else:
-                    print("Warning: Hub item is not a dictionary.")
+                    logger.warning("Hub item is not a dictionary.")
         else:
-            print("Error: 'items' not found or not a list in hub response.")
+            logger.error("'items' not found or not a list in hub response.")
         
-        print(f"Found {len(match_ids)} matches in hub response")
+        logger.info(f"Found {len(match_ids)} matches in hub response")
         return match_ids
 
     def extract_match_data(self, data: dict) -> List[Tuple[str, str]]:
@@ -180,43 +184,43 @@ class HubScraper:
                                 # Already in ISO format or other format
                                 match_data.append((match_id, str(finished_at)))
                         except Exception as e:
-                            print(f"Error converting timestamp for match {match_id}: {e}")
+                            logger.error(f"Error converting timestamp for match {match_id}: {e}")
                             # Still add the match with original timestamp
                             match_data.append((match_id, str(finished_at)))
                 else:
-                    print("Warning: Hub item is not a dictionary.")
+                    logger.warning("Hub item is not a dictionary.")
         else:
-            print("Error: 'items' not found or not a list in hub response.")
+            logger.error("'items' not found or not a list in hub response.")
 
-        print(f"Found {len(match_data)} matches in hub response")
+        logger.info(f"Found {len(match_data)} matches in hub response")
         return match_data
 
     async def process_hub_matches(self) -> bool:
         """Main processing function for hub matches"""
         try:
-            print("\n" + "="*50)
-            print("Starting hub match scraping process...")
-            print("="*50 + "\n")
+            logger.info("\n" + "="*50)
+            logger.info("Starting hub match scraping process...")
+            logger.info("="*50 + "\n")
             
             # First, clean up any permanent fails from the match_ids file
-            print("Cleaning up permanent fails from match_ids file...")
+            logger.info("Cleaning up permanent fails from match_ids file...")
             self.cleanup_match_ids()
 
             # Fetch new matches
             data = await self.fetch_hub_matches()
             if not data:
-                print("Failed to fetch hub match data")
+                logger.error("Failed to fetch hub match data")
                 return False
 
             # Save raw data
             with open(self.output_json, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=4)
-            print("Raw hub data written to hub_output.json")
+            logger.info("Raw hub data written to hub_output.json")
 
             # Extract match IDs and timestamps
             match_data = self.extract_match_data(data)  # Returns (match_id, finished_at) tuples
             if not match_data:
-                print("No match IDs found in hub payload")
+                logger.warning("No match IDs found in hub payload")
                 return False
 
             # Read existing matches
@@ -225,7 +229,7 @@ class HubScraper:
                 with open(self.match_ids_file, "r", encoding="utf-8") as f:
                     # Read only the match ID part
                     existing_matches = {line.strip().split(',')[0] for line in f if line.strip()}
-                print(f"\nFound {len(existing_matches)} existing matches in match_ids.txt")
+                logger.info(f"\nFound {len(existing_matches)} existing matches in match_ids.txt")
 
             # Process new matches
             new_matches = []
@@ -233,7 +237,7 @@ class HubScraper:
             skipped_permanent_fails = 0
             skipped_cancelled_matches = 0
 
-            print("\nChecking for new hub matches...")
+            logger.info("\nChecking for new hub matches...")
             for item in data.get("items", []):
                 if not isinstance(item, dict):
                     continue
@@ -255,7 +259,7 @@ class HubScraper:
                         # Already in ISO format or other format
                         iso_timestamp = str(finished_at)
                 except Exception as e:
-                    print(f"Error converting timestamp for match {match_id}: {e}")
+                    logger.error(f"Error converting timestamp for match {match_id}: {e}")
                     iso_timestamp = str(finished_at)
                 
                 # Skip if match is in permanent fails list
@@ -266,7 +270,7 @@ class HubScraper:
                 # Skip if match is cancelled
                 if status == "CANCELLED":
                     skipped_cancelled_matches += 1
-                    print(f"Skipping cancelled match: {match_id}")
+                    logger.info(f"Skipping cancelled match: {match_id}")
                     continue
                     
                 if match_id not in existing_matches:
@@ -275,18 +279,18 @@ class HubScraper:
                 else:
                     consecutive_duplicates += 1
                     if consecutive_duplicates > 5:
-                        print("\nMore than 5 consecutive duplicates found in hub matches. Stopping.")
+                        logger.info("\nMore than 5 consecutive duplicates found in hub matches. Stopping.")
                         break
             
             if skipped_permanent_fails > 0:
-                print(f"\nSkipped {skipped_permanent_fails} matches that were in permanent fails list")
+                logger.info(f"\nSkipped {skipped_permanent_fails} matches that were in permanent fails list")
                 
             if skipped_cancelled_matches > 0:
-                print(f"\nSkipped {skipped_cancelled_matches} cancelled matches")
+                logger.info(f"\nSkipped {skipped_cancelled_matches} cancelled matches")
 
             # Report results
             if new_matches:
-                print(f"\nFound {len(new_matches)} new hub matches")
+                logger.info(f"\nFound {len(new_matches)} new hub matches")
                 # Read all existing matches to preserve them
                 existing_match_data = []
                 if os.path.exists(self.match_ids_file):
@@ -334,21 +338,21 @@ class HubScraper:
                         unapproved_count = sum(1 for line in f if line.strip())
                 
                 # Print summary similar to regular match scraper
-                print(f"\nSuccessfully updated match_ids.txt with hub matches (Total: {len(updated_matches)} matches)")
-                print("\nHub Match Categories:")
-                print(f"Ace matches: {ace_count}")
-                print(f"Quad matches: {quad_count}")
-                print(f"Unapproved matches: {unapproved_count}")
+                logger.info(f"\nSuccessfully updated match_ids.txt with hub matches (Total: {len(updated_matches)} matches)")
+                logger.info("\nHub Match Categories:")
+                logger.info(f"Ace matches: {ace_count}")
+                logger.info(f"Quad matches: {quad_count}")
+                logger.info(f"Unapproved matches: {unapproved_count}")
             else:
-                print("\nNo new hub matches found")
+                logger.info("\nNo new hub matches found")
 
-            print("\n" + "="*50)
-            print("Hub match scraping process complete")
-            print("="*50 + "\n")
+            logger.info("\n" + "="*50)
+            logger.info("Hub match scraping process complete")
+            logger.info("="*50 + "\n")
             return True
 
         except Exception as e:
-            print(f"Error during hub match processing: {str(e)}")
+            logger.error(f"Error during hub match processing: {str(e)}")
             return False
 
 async def process_all_hubs(bot=None):
@@ -367,7 +371,7 @@ async def process_all_hubs(bot=None):
         
         # If no hubs defined, use default
         if not hubs:
-            print("No hubs defined in config, using default hub")
+            logger.info("No hubs defined in config, using default hub")
             return await start_hub_scraping(bot)
         
         # Process each hub with a delay between them
@@ -377,21 +381,21 @@ async def process_all_hubs(bot=None):
             hub_name = hub.get('name', f"Hub {i+1}")
             
             if not hub_id:
-                print(f"Skipping hub {hub_name} - no ID provided")
+                logger.warning(f"Skipping hub {hub_name} - no ID provided")
                 continue
                 
-            print(f"\nProcessing hub: {hub_name} ({hub_id})")
+            logger.info(f"\nProcessing hub: {hub_name} ({hub_id})")
             result = await start_hub_scraping(bot, hub_id, hub_name)
             overall_result = overall_result and result
             
             # Wait between hubs (except after the last one)
             if i < len(hubs) - 1:
-                print(f"Waiting 60 seconds before processing next hub...")
+                logger.info(f"Waiting 60 seconds before processing next hub...")
                 await asyncio.sleep(60)
         
         return overall_result
     except Exception as e:
-        print(f"Error processing hubs: {str(e)}")
+        logger.error(f"Error processing hubs: {str(e)}")
         return False
 
 async def start_hub_scraping(bot=None, hub_id=None, hub_name=None):
@@ -400,7 +404,7 @@ async def start_hub_scraping(bot=None, hub_id=None, hub_name=None):
         scraper = HubScraper(bot, hub_id, hub_name)
         return await scraper.process_hub_matches()
     except Exception as e:
-        print(f"Error during hub match scraping: {str(e)}")
+        logger.error(f"Error during hub match scraping: {str(e)}")
         return False
 
 if __name__ == "__main__":

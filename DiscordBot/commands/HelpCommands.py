@@ -22,7 +22,10 @@ start parser - Start the continuous demo parser service (automatically scans for
 start datefetch - Start processing undated matches to categorize by month
 force - Immediately start a new match scraping cycle, bypassing the wait time
 status - Check the current status of all services (match fetching, parser, etc.)
-stop [service] - Stop services (fetch/parser/datefetch or all if no service specified)""",
+reset - Reset the match notification timer (clears the no-matches alert state)
+stop [service] - Stop services (fetch/parser/datefetch or all if no service specified)
+
+Note: The system will automatically send an alert if no new matches are found for over an hour.""",
 
             """Available commands (Part 2/3):
 
