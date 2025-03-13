@@ -66,7 +66,25 @@ async def handle_message(bot, message):
         return True
     
     # Handle legacy commands that haven't been migrated yet
-    if content == "start datefetch":
+    if content == "start":
+        try:
+            if scraping_task and not scraping_task.done():
+                await bot.send_message(message.author, "Match scraping is already running")
+                return True
+
+            # Create and start the continuous scraping task, waiting as normal
+            await bot.send_message(message.author, "Started fetching NA East Match IDs")
+            # Update service status and bot presence
+            bot.is_service_running = True
+            await bot.update_status()
+            scraping_task = asyncio.create_task(continuous_scraping(bot))  # immediate=False is implicit
+            return True
+
+        except Exception as e:
+            await bot.send_message(message.author, f"Error: {str(e)}")
+            return True
+    
+    elif content == "start datefetch":
         try:
             if datefetch_task and not datefetch_task.done():
                 await bot.send_message(message.author, "Date fetching is already running")
