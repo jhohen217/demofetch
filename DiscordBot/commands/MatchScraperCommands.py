@@ -12,24 +12,22 @@ from core.AsyncDemoDownloader import stop_processes
 import subprocess
 import os
 
-# Try to import DateFetch, but don't fail if it's not available
-try:
-    from DiscordBot.textfiles.undated.DateFetch import start_date_fetching
-    date_fetch_available = True
-except ImportError:
-    logger = logging.getLogger('discord_bot')
-    logger.warning("DateFetch module not found. Date fetching functionality will be disabled.")
-    date_fetch_available = False
-    
-    # Define a dummy function to avoid errors
-    async def start_date_fetching(bot=None):
-        logger.error("Date fetching is not available. The required module is missing.")
-        if bot and bot.owner:
-            await bot.send_message(bot.owner, "Date fetching is not available. The required module is missing.")
-        return False
-
-# Set up logging
+# Set up logging first so we can use it in the module
 logger = logging.getLogger('discord_bot')
+
+# Flag to track if date fetching is available
+date_fetch_available = False
+
+# Define a dummy function to use if the real one isn't available
+async def start_date_fetching(bot=None):
+    logger.error("Date fetching is not available. The required module is missing.")
+    if bot and bot.owner:
+        await bot.send_message(bot.owner, "Date fetching is not available. The required module is missing.")
+    return False
+
+# We'll try to import the real function later when it's actually needed
+
+# Global variables
 
 # Global tasks
 scraping_task = None
