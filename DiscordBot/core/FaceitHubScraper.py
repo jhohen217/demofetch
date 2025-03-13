@@ -366,11 +366,22 @@ async def process_all_hubs(bot=None):
         project_dir = os.path.dirname(core_dir)  # DiscordBot directory
         config_path = os.path.join(os.path.dirname(project_dir), 'config.json')
         
+        # Print debug information
+        print(f"\n{'*'*50}")
+        print(f"DEBUG: Loading config from: {config_path}")
+        print(f"DEBUG: Config file exists: {os.path.exists(config_path)}")
+        print(f"{'*'*50}\n")
+        
         with open(config_path, 'r') as f:
             config = json.load(f)
         
         # Get hub list from config
         hubs = config.get('faceit', {}).get('hubs', [])
+        print(f"\n{'*'*50}")
+        print(f"DEBUG: Found {len(hubs)} hubs in config")
+        for i, hub in enumerate(hubs):
+            print(f"DEBUG: Hub {i+1}: {hub.get('name', 'Unknown')} (ID: {hub.get('id', 'Unknown')})")
+        print(f"{'*'*50}\n")
         
         # If no hubs defined, use default
         if not hubs:
