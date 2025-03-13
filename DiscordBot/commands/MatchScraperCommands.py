@@ -186,12 +186,16 @@ async def continuous_scraping(bot=None, immediate=False):
 
                 logger.info("All processing completed")
 
-                # Start hub scraping after a delay
-                logger.info("Waiting 60 seconds before starting hub scraping...")
+                # Start hub scraping after a delay - make this message more visible
+                hub_wait_msg = "Waiting 60 seconds before starting hub scraping..."
+                print(f"\n{'*'*50}\n{hub_wait_msg}\n{'*'*50}")  # Print directly to terminal for visibility
+                logger.info(hub_wait_msg)
                 await asyncio.sleep(60)
                 
-                # Start hub scraping for all configured hubs
-                logger.info("Starting hub match scraping for all configured hubs...")
+                # Start hub scraping for all configured hubs - make this message more visible
+                hub_start_msg = "Starting hub match scraping for all configured hubs..."
+                print(f"\n{'*'*50}\n{hub_start_msg}\n{'*'*50}")  # Print directly to terminal for visibility
+                logger.info(hub_start_msg)
                 global hub_scraping_task
                 hub_scraping_task = asyncio.create_task(process_all_hubs(bot))
                 hub_result = await hub_scraping_task

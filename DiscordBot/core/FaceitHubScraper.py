@@ -43,9 +43,10 @@ class HubScraper:
         # Load permanent fails
         self.permanent_fails = self.load_permanent_fails()
         
-        logger.info("\n" + "="*50)
-        logger.info(f"           FACEIT Hub Demo Manager - {self.hub_name}")
-        logger.info("="*50 + "\n")
+        # Use distinctive formatting for hub scraping messages
+        hub_header = f"\n{'='*50}\n           FACEIT Hub Demo Manager - {self.hub_name}\n{'='*50}\n"
+        print(hub_header)  # Print directly to terminal for visibility
+        logger.info(hub_header)  # Also log it
         
         # API configuration
         self.base_url = "https://open.faceit.com/data/v4"
@@ -198,9 +199,10 @@ class HubScraper:
     async def process_hub_matches(self) -> bool:
         """Main processing function for hub matches"""
         try:
-            logger.info("\n" + "="*50)
-            logger.info("Starting hub match scraping process...")
-            logger.info("="*50 + "\n")
+            # Use distinctive formatting for hub scraping start message
+            hub_start_msg = f"\n{'='*50}\nStarting hub match scraping process...\n{'='*50}\n"
+            print(hub_start_msg)  # Print directly to terminal for visibility
+            logger.info(hub_start_msg)  # Also log it
             
             # First, clean up any permanent fails from the match_ids file
             logger.info("Cleaning up permanent fails from match_ids file...")
@@ -346,9 +348,10 @@ class HubScraper:
             else:
                 logger.info("\nNo new hub matches found")
 
-            logger.info("\n" + "="*50)
-            logger.info("Hub match scraping process complete")
-            logger.info("="*50 + "\n")
+            # Use distinctive formatting for hub scraping completion message
+            hub_complete_msg = f"\n{'='*50}\nHub match scraping process complete\n{'='*50}\n"
+            print(hub_complete_msg)  # Print directly to terminal for visibility
+            logger.info(hub_complete_msg)  # Also log it
             return True
 
         except Exception as e:
@@ -384,13 +387,18 @@ async def process_all_hubs(bot=None):
                 logger.warning(f"Skipping hub {hub_name} - no ID provided")
                 continue
                 
-            logger.info(f"\nProcessing hub: {hub_name} ({hub_id})")
+            # Make hub processing message more visible
+            hub_process_msg = f"\n{'*'*50}\nProcessing hub: {hub_name} ({hub_id})\n{'*'*50}"
+            print(hub_process_msg)  # Print directly to terminal
+            logger.info(hub_process_msg)  # Also log it
             result = await start_hub_scraping(bot, hub_id, hub_name)
             overall_result = overall_result and result
             
             # Wait between hubs (except after the last one)
             if i < len(hubs) - 1:
-                logger.info(f"Waiting 60 seconds before processing next hub...")
+                wait_msg = f"Waiting 60 seconds before processing next hub..."
+                print(wait_msg)  # Print directly to terminal
+                logger.info(wait_msg)  # Also log it
                 await asyncio.sleep(60)
         
         return overall_result
