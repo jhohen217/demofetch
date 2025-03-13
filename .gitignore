@@ -56,3 +56,4 @@ CS2RemoteConsole-V2/
 CSharpParser/
 DiscordBot/old/
 *.txt
+!requirements.txt
