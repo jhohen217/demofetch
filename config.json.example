@@ -38,6 +38,7 @@
         "fetch_delay": {
             "min": 180,
             "max": 300
-        }
+        },
+        "auto_start_scraping": false
     }
 }
