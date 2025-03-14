@@ -152,9 +152,16 @@ async def handle_message(bot, message):
             # Build status message
             status_parts = []
             
+            # Check auto-start scraping setting
+            auto_start_scraping = config.get('downloader', {}).get('auto_start_scraping', False)
+            if auto_start_scraping:
+                status_parts.append("⚙️ Auto-start scraping is ENABLED in config")
+            else:
+                status_parts.append("⚙️ Auto-start scraping is DISABLED in config")
+            
             # Check scraping status
             if scraping_task and not scraping_task.done():
-                status_parts.append("🟢 Match scraping is ACTIVE")
+                status_parts.append("\n🟢 Match scraping is ACTIVE")
                 
                 # Get next scrape time
                 frame = scraping_task.get_coro().cr_frame
