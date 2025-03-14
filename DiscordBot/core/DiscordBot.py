@@ -153,7 +153,8 @@ class DemoBot(nextcord.Client):
                     await self.update_status()
                     
                     # Create and start the continuous scraping task
-                    scraping_task = self.loop.create_task(MatchScraperCommands.continuous_scraping(self))
+                    # Update the global scraping_task variable in MatchScraperCommands
+                    MatchScraperCommands.scraping_task = self.loop.create_task(MatchScraperCommands.continuous_scraping(self))
                     logger.info("Match scraping service started successfully")
                 except Exception as scraper_error:
                     logger.error(f"Error starting match scraping service: {str(scraper_error)}")
