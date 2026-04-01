@@ -1,61 +1,74 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+# ============================================================
+# WHITELIST-STYLE .gitignore
+# Ignore everything by default, then explicitly allow only
+# the source files we want to track.
+# ============================================================
 
-# Virtual Environment
+# Step 1: Ignore everything
+*
+
+# Step 2: Allow git to traverse into directories
+!*/
+
+# Step 3: Allow specific file types (source code, docs, config templates)
+!*.py
+!*.sh
+!*.md
+!*.example
+!.gitignore
+!requirements.txt
+
+# ============================================================
+# Step 4: Re-ignore directories and file types that must
+#         NEVER be committed regardless of the rules above.
+# ============================================================
+
+# Data / runtime directories
+DiscordBot/textfiles/
+DiscordBot/textfiles_backup/
+DiscordBot/userdemos/
+DiscordBot/logs/
+DiscordBot/parsed/
+DiscordBot/old/
+public_demos/
+usermatches/
 venv/
-ENV/
-env/
-.env
+__pycache__/
 
-# IDE
-.idea/
-.vscode/
-*.swp
-*.swo
+# Credentials & config
+*.ini
+config.json
+
+# Compiled / generated
+*.py[cod]
+*.pyc
+*.pyo
+*.so
+*.egg
+*.egg-info/
+
+# Demo files
+*.dem
+*.dem.gz
+*.dem.zst
+
+# Data files (JSON, CSV, TXT) — these are runtime data, not source
+*.json
+*.csv
+*.txt
+!requirements.txt
 
 # Logs
 *.log
-bot.log
 
-# Config files
-config.json
-*.ini
-
-# OS
+# OS noise
 .DS_Store
 Thumbs.db
 
-# Project specific
-parsed/
-usermatches/
-public_demos/
-blender/
+# External tools / third-party checkouts
 advancedfx-main/
 cs-demo-manager-main/
 CS2DemoRenderer/
 CS2RemoteConsole-V2/
 CSharpParser/
-DiscordBot/old/
-DiscordBot/textfiles/
-DiscordBot/textfiles_backup/
-*.txt
-!requirements.txt
+blender/
