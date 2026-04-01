@@ -112,12 +112,14 @@ class MatchProcessor:
         
         # Initialize retry counts from failed_matches_log if it exists
         self.retry_counts = {}
-        if os.path.exists(self.failed_matches_log):
+        if os.path.exists(self.failed_matches_log) and os.path.getsize(self.failed_matches_log) > 0:
             try:
                 with open(self.failed_matches_log, 'r') as f:
-                    failed_log = json.load(f)
-                    for match_id, data in failed_log.items():
-                        self.retry_counts[match_id] = data.get('retry_count', 0)
+                    content = f.read().strip()
+                    if content:
+                        failed_log = json.loads(content)
+                        for match_id, data in failed_log.items():
+                            self.retry_counts[match_id] = data.get('retry_count', 0)
             except Exception as e:
                 print_highlighted(f"Error loading retry counts: {e}")
 

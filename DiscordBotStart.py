@@ -82,6 +82,7 @@ def main():
         
         os.makedirs(os.path.join(project_dir, "textfiles"), exist_ok=True)
         os.makedirs(os.path.join(project_dir, "parsed"), exist_ok=True)
+        os.makedirs(os.path.join(project_dir, "parsed", "KillCollectionMaster"), exist_ok=True)
         os.makedirs(os.path.join(project_dir, "usermatches"), exist_ok=True)
         os.makedirs(os.path.join(project_dir, "userdemos"), exist_ok=True)
         logging.info("Required directories created/verified")
