@@ -373,21 +373,50 @@ async def handle_message(bot, message):
                         )
 
             status_msg = "\n".join(status_parts)
-            # Discord has a 2000 character limit per message — split if needed
-            chunk_size = 1900  # Leave some margin
-            if len(status_msg) <= chunk_size:
-                await bot.send_message(message.author, status_msg)
-            else:
-                lines = status_msg.split("\n")
-                chunk = ""
-                for line in lines:
-                    if len(chunk) + len(line) + 1 > chunk_size:
-                        await bot.send_message(message.author, chunk)
-                        chunk = line
+            # Discord has a 2000 character limit per message.
+            # Split into chunks, keeping code blocks intact by closing/reopening
+            # the ``` fence at every chunk boundary.
+            chunk_size = 1900
+            lines = status_msg.split("\n")
+            messages_out = []
+            chunk = ""
+            in_code_block = False
+
+            for line in lines:
+                is_fence = line.strip() == "```"
+
+                if is_fence:
+                    if not in_code_block:
+                        # Opening fence — flush chunk first if it would overflow
+                        in_code_block = True
+                        if chunk and len(chunk) + len(line) + 1 > chunk_size:
+                            messages_out.append(chunk)
+                            chunk = line
+                        else:
+                            chunk = chunk + "\n" + line if chunk else line
                     else:
+                        # Closing fence — just append
+                        in_code_block = False
                         chunk = chunk + "\n" + line if chunk else line
-                if chunk:
-                    await bot.send_message(message.author, chunk)
+                else:
+                    candidate = chunk + "\n" + line if chunk else line
+                    if len(candidate) > chunk_size:
+                        # Need to split here
+                        if in_code_block:
+                            # Close the block in the current chunk, reopen in next
+                            messages_out.append(chunk + "\n```")
+                            chunk = "```\n" + line
+                        else:
+                            messages_out.append(chunk)
+                            chunk = line
+                    else:
+                        chunk = candidate
+
+            if chunk:
+                messages_out.append(chunk)
+
+            for msg in messages_out:
+                await bot.send_message(message.author, msg)
         except Exception as e:
             error_msg = f"An error occurred: {str(e)}"
             await bot.send_message(message.author, error_msg)
