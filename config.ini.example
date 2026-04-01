@@ -4,18 +4,20 @@ faceit_api_key = YOUR_FACEIT_API_KEY_HERE
 users = 123456789
 
 [Paths]
-hlae = C:/path/to/hlae/HLAE.exe
-cs2 = C:/Program Files (x86)/Steam/steamapps/common/Counter-Strike Global Offensive/game/bin/win64/cs2.exe
-project_directory = C:/path/to/DiscordBot
-public_demos_directory = C:/path/to/public_demos
-textfiles_directory = C:/path/to/DiscordBot/textfiles
-ParserOutput = C:/path/to/DiscordBot/parsed
-CS2RenderCfg = C:/path/to/DiscordBot/parsed/cfg
-CS2RenderPOV = C:/path/to/DiscordBot/parsed/POV
-CS2RenderENV = C:/path/to/DiscordBot/parsed/ENV
-parser_tick_dragdrop_path = C:/path/to/CSharpParser/demoparser-main/examples/demoparse_full/Tick_DragDrop.py
-parser_discord_interface_path = C:/path/to/CSharpParser/demoparser-main/examples/demoparse_full/discord_interface.py
-parser_status_directory = C:/path/to/DiscordBot/parsed/status
+; --- Linux / Raspberry Pi defaults (adjust if your install path differs) ---
+hlae = /home/josh/demofetch/hlae/HLAE.exe
+cs2 = /home/josh/demofetch/cs2/cs2
+project_directory = /home/josh/demofetch/DiscordBot
+public_demos_directory = /home/josh/demofetch/public_demos
+textfiles_directory = /home/josh/demofetch/DiscordBot/textfiles
+ParserOutput = /home/josh/demofetch/DiscordBot/parsed
+KillCollectionMasterPath = /home/josh/demofetch/DiscordBot/parsed/KillCollectionMaster
+CS2RenderCfg = /home/josh/demofetch/DiscordBot/parsed/cfg
+CS2RenderPOV = /home/josh/demofetch/DiscordBot/parsed/POV
+CS2RenderENV = /home/josh/demofetch/DiscordBot/parsed/ENV
+parser_tick_dragdrop_path = /home/josh/demofetch/CSharpParser/demoparser-main/examples/demoparse_full/Tick_DragDrop.py
+parser_discord_interface_path = /home/josh/demofetch/CSharpParser/demoparser-main/examples/demoparse_full/discord_interface.py
+parser_status_directory = /home/josh/demofetch/DiscordBot/parsed/status
 
 [Faceit]
 hub_0_id = c7dc4af7-33ad-4973-90c2-5cce9376258b
@@ -28,13 +30,21 @@ launch_options = -novid -nojoy -high
 environment_AFX_GRAPHICS_SETTINGS = 0
 environment_AFX_GRAPHICS_SETTINGS_OVERRIDE = 0
 
-[TickByTick]
-Mode = 0
+[Parser]
+# Controls the processing flow:
+# 0 = Process either Demos -> KillCollections OR KillCollections -> TickByTick (one step at a time)
+# 1 = Process Demos -> KillCollections -> TickByTick (full chain)
+# Note: When set to 1, demo files are kept until all processing is complete
+csv_mode=1
+# Number of ticks to pad before and after the collection
 PadTicks = 256
+# Whether to track all players (1) or just the killer and victim (0)
 TrackAllPlayers = 0
+# Enable/disable specific collection types for TickByTick processing
+# Set to true to process this collection type, false to skip it
 Aces = true
 Quads = true
-Triples = false
+Triples = true
 Multi = true
 Singles = true
 Doubles = true

@@ -27,6 +27,41 @@ logging.debug(f"Python path: {sys.path}")
 # Import after path setup
 from core.DiscordBot import DemoBot
 
+def _check_config(config):
+    """
+    Validate that config.ini has been filled in and is not still using
+    placeholder values from config.ini.example.
+    Raises ValueError with a descriptive message if placeholders are found.
+    """
+    placeholder_markers = [
+        'YOUR_DISCORD_BOT_TOKEN_HERE',
+        'YOUR_FACEIT_API_KEY_HERE',
+        '/path/to/',
+        'C:/path/',
+        'C:\\path\\',
+    ]
+    checks = [
+        ('Keys', 'discord_token'),
+        ('Keys', 'faceit_api_key'),
+        ('Paths', 'project_directory'),
+        ('Paths', 'textfiles_directory'),
+    ]
+    for section, key in checks:
+        try:
+            value = config.get(section, key)
+            for marker in placeholder_markers:
+                if marker.lower() in value.lower():
+                    raise ValueError(
+                        f"config.ini still contains a placeholder value for [{section}] {key}.\n"
+                        f"  Value: {value}\n"
+                        f"Please edit /home/josh/demofetch/config.ini with your real settings before starting."
+                    )
+        except configparser.NoSectionError:
+            raise ValueError(f"config.ini is missing the [{section}] section.")
+        except configparser.NoOptionError:
+            raise ValueError(f"config.ini is missing the key '{key}' under [{section}].")
+
+
 def main():
     logging.info("Starting DemoFetch application...")
     
@@ -37,6 +72,9 @@ def main():
         config = configparser.ConfigParser()
         config.read(config_path)
         logging.info("Configuration loaded successfully")
+
+        # Refuse to start if config still has placeholder / example values
+        _check_config(config)
         
         # Create essential directories
         project_dir = config.get('Paths', 'project_directory')
