@@ -257,9 +257,10 @@ async def handle_message(bot, message):
                     except:
                         return 0
                 
-                # Create a compact table header with the new order (Size at the end)
-                status_parts.append("\nMonth      | Ace    | Quad   | DL     | Undl   | Parsed | Unparsed| Rej    | Cost($) | Size(GB) ")
-                status_parts.append("-----------|--------|--------|--------|--------|--------|---------|--------|----------|----------")
+                # Mobile-friendly table: Month | Ace | Quad | Undl | Cost | Size
+                table_lines = []
+                table_lines.append("Month   | Ace   | Quad  | Undl  | Cost   | Size(GB)")
+                table_lines.append("--------|-------|-------|-------|--------|--------")
                 
                 for month in month_dirs:
                     month_dir = os.path.join(textfiles_dir, month)
@@ -293,38 +294,27 @@ async def handle_message(bot, message):
                     rejected_count = count_lines(rejected_file)
                     # Ensure undownloaded is never negative
                     undownloaded = max(0, total_count - (downloaded_count + rejected_count))
-                    
-                    # If undownloaded is 0 but we have downloads, it means the match_ids file is incomplete
-                    # In this case, set total_count to at least the sum of downloaded and rejected
                     if undownloaded == 0 and (downloaded_count > 0 or rejected_count > 0):
                         if total_count < downloaded_count + rejected_count:
                             total_count = downloaded_count + rejected_count
 
                     # Calculate estimated size in GB (257MB per demo) based on ACE count
                     estimated_size_gb = ace_count * 257 / 1024
-                    # Calculate estimated cost ($0.03 per GB)
                     estimated_cost = estimated_size_gb * 0.03
 
-                    # Get parsed count for this month
-                    parsed_file = os.path.join(month_dir, f"parsed_{month_lower}.txt")
-                    parsed_count = count_lines(parsed_file)
-                    
-                    # Calculate unparsed count (downloaded but not parsed)
-                    unparsed_count = max(0, downloaded_count - parsed_count)
-                    
-                    # Format as a table row with fixed width columns in the new order (Size at the end)
-                    status_parts.append(
-                        f"{month_abbr.ljust(10)} | "
-                        f"{str(ace_count).ljust(6)} | "
-                        f"{str(quad_count).ljust(6)} | "
-                        f"{str(downloaded_count).ljust(6)} | "
-                        f"{str(undownloaded).ljust(6)} | "
-                        f"{str(parsed_count).ljust(6)} | "
-                        f"{str(unparsed_count).ljust(7)} | "
-                        f"{str(rejected_count).ljust(6)} | "
-                        f"${estimated_cost:.2f}".ljust(8) + " | "
-                        f"{estimated_size_gb:.2f}".ljust(8)
+                    table_lines.append(
+                        f"{month_abbr.ljust(7)} | "
+                        f"{str(ace_count).ljust(5)} | "
+                        f"{str(quad_count).ljust(5)} | "
+                        f"{str(undownloaded).ljust(5)} | "
+                        f"${estimated_cost:.2f}".ljust(6) + " | "
+                        f"{estimated_size_gb:.2f}"
                     )
+                
+                # Wrap table in a code block for monospace alignment on mobile
+                status_parts.append("```")
+                status_parts.extend(table_lines)
+                status_parts.append("```")
                 
                 # Add parsing stats by month if available
                 if master_stats['by_month']:
