@@ -49,15 +49,20 @@ class MatchResult:
     def target_file(self) -> str:
         """
         Get the target file path for this match result.
-        
+
+        Uses the match's actual date to determine the correct month folder so
+        that a March match filtered in April still lands in March26, not April26.
+        Falls back to datetime.now() only when no match date is available.
+
         Returns:
             str: Path to the target file
         """
-        # Get current month directory and name
-        current_month = datetime.now().strftime("%B%y")  # e.g., "February26"
+        # Use match date if available, otherwise fall back to today
+        ref_date = self.match_date if self.match_date else datetime.now()
+        current_month = ref_date.strftime("%B%y")  # e.g., "March26"
         month_dir = os.path.join(self.textfiles_dir, current_month)
         month_lower = current_month.lower()
-        
+
         if self.has_ace:  # Save to ace_matchids.txt if it has any ace kills
             return os.path.join(month_dir, f"ace_matchids_{month_lower}.txt")
         elif self.has_quad:  # Save to quad_matchids.txt if it has any quad kills
