@@ -55,5 +55,7 @@ CS2DemoRenderer/
 CS2RemoteConsole-V2/
 CSharpParser/
 DiscordBot/old/
+DiscordBot/textfiles/
+DiscordBot/textfiles_backup/
 *.txt
 !requirements.txt
