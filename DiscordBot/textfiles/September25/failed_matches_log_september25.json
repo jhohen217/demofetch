@@ -1,0 +1,2015 @@
+{
+  "1-58e90c09-8224-432c-a00b-629e72984415": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-09-01T09:13:06.547937",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-01T09:18:09.478701"
+  },
+  "1-cb650da7-f182-4fe0-9ad8-f39dea6939c3": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-09-01T13:38:53.700131",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-8cce0e55-31bc-4fd6-b411-7ed2a96d1ecf": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-09-01T16:50:31.435835",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-01T16:55:59.062643"
+  },
+  "1-6f12ff16-df35-45b7-bf45-062c462d4609": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-09-01T16:50:31.443419",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-01T16:55:58.992400"
+  },
+  "1-5a8fca5f-d3e3-4aea-85dd-4b16dc1fede3": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-09-01T16:50:31.448252",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-01T16:55:59.146659"
+  },
+  "1-5826ae64-b552-483a-ba42-57b10d68fb15": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-09-01T16:50:31.453484",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-01T16:55:59.202972"
+  },
+  "1-0a3fd699-bfba-4457-b2d5-084c4e0e71bd": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-09-01T16:50:31.458752",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-01T16:55:59.275523"
+  },
+  "1-b5368666-0fe4-4f21-890c-84c27377622f": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-09-01T16:50:55.734221",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-01T16:55:59.420350"
+  },
+  "1-f53ae8e7-6b8d-4580-b7e9-149b83cf4e9d": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-09-01T16:50:55.746827",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-01T16:55:59.365807"
+  },
+  "1-cb7f9e8f-b81b-4f6f-b8da-355481ef9828": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-09-01T16:50:55.755332",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-01T16:55:59.500313"
+  },
+  "1-cc0db1ef-ba31-4575-a9a1-507a5eb7be86": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-09-01T16:50:55.762594",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-01T16:55:59.611795"
+  },
+  "1-2b8ac695-1d7e-4b52-b17d-56806864bcc6": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-09-01T16:50:55.768852",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-01T16:55:59.559906"
+  },
+  "1-62a40301-e197-411d-9a62-5e1ec6236d18": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-09-02T10:46:47.915722",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-6a0d40db-92a7-498d-8fff-cde1a49583c7": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-09-03T10:07:15.945391",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-03T10:12:16.809773"
+  },
+  "1-35fd0c4e-2b55-4063-8a38-e9df7b337cad": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 520, Body: <!DOCTYPE html>\n\n<html class=\"no-js\" lang=\"en\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n  <meta charset=\"utf-8\">\n  \n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=ed",
+    "last_retry": "2025-09-04T00:00:42.143379",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-04T00:05:46.830151"
+  },
+  "1-0aaba9fe-71a5-4b8b-b7eb-ca49e8c89049": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-09-04T15:22:51.865460",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-5b605418-f7d6-4037-8540-5341d548fb52": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-09-04T21:43:06.368636",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-1970a781-01a6-44ce-a570-789cbdf92921": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-09-05T15:39:07.411713",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-cd58f6d5-ecfe-48e7-aaee-76b4758b9666": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-09-05T16:19:45.910766",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-46928edb-5bc4-44fd-98c1-f9035964dbc7": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-09-06T17:07:21.496417",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-17a0f555-f55f-4ad1-952a-63f047b8f376": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 502, Body: <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-",
+    "last_retry": "2025-09-07T12:02:17.382071",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-07T12:07:23.205465"
+  },
+  "1-3cda8051-a71f-4dc6-9446-7b99fcd855ee": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-09-08T13:46:26.739100",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-c7a3a266-7152-4502-806b-8f32ef60d147": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-09-09T02:53:52.122683",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-5093ef83-8091-4512-b219-4e338d7a536f": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-09-10T16:02:00.850081",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-c6a45169-0417-4719-b254-e41db06484f9": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-09-10T17:09:50.515800",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-64146dd5-e704-4d42-b14c-eb41f5122402": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-09-10T17:52:10.449224",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-4f3e7a20-af81-4e83-adc8-90bd80f623b2": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-09-10T18:07:58.108537",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-388f874e-8281-47fd-ac55-5e88049c3001": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-09-11T16:38:23.047077",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-0eb88c75-ac3d-4ef1-91fa-639c0d71c97c": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-09-11T20:42:14.607080",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-b5614a2a-8b01-4b62-88e6-7cf263149692": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-09-12T15:18:00.724590",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-12T15:18:01.998723"
+  },
+  "1-1608b8e7-f2af-475f-b3ca-5bddda046999": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-09-12T15:18:00.734904",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-12T15:18:02.808146"
+  },
+  "1-2d4b6143-025c-4e52-8a62-d5d83b777e16": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-09-12T15:18:00.746395",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-12T15:18:04.586118"
+  },
+  "1-ccb8fbd6-1ce5-4aa5-9fb0-d54cf12d3804": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-09-12T15:18:00.757558",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-12T15:18:04.075761"
+  },
+  "1-c3d6e490-2100-4792-bbb8-215ccb0c6019": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-09-12T15:18:00.770653",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-12T15:18:03.257644"
+  },
+  "1-e142b6ae-2dcc-4e30-9e3c-505fbf817569": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 104] Connection reset by peer",
+    "last_retry": "2025-09-12T18:28:11.400804",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-12T18:28:14.908403"
+  },
+  "1-614ac823-ae4b-44d4-ac32-b18921a4d3f5": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 104] Connection reset by peer",
+    "last_retry": "2025-09-12T18:28:11.411605",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-12T18:28:14.165412"
+  },
+  "1-fb8ac283-9073-4a80-9567-21cf72d539f0": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 104] Connection reset by peer",
+    "last_retry": "2025-09-12T18:28:11.424086",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-12T18:28:16.095274"
+  },
+  "1-922157fb-9931-4f71-ae01-90bb30f6e2b4": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 104] Connection reset by peer",
+    "last_retry": "2025-09-12T18:28:11.434235",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-12T18:28:15.679589"
+  },
+  "1-5fbffc2c-5467-495d-95df-eb89cf81669e": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 104] Connection reset by peer",
+    "last_retry": "2025-09-12T18:28:11.476204",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-12T18:28:16.556181"
+  },
+  "1-080b474a-ea62-4b05-9d24-69f490ee51c3": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-09-14T14:41:31.024493",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-3c152e73-4ff4-4698-90c2-2b06087c35cf": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-09-14T14:52:21.318660",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-bd901787-f5a3-46f0-b0ef-cc7444688032": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-09-14T17:24:05.149658",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-3500a794-d586-46c4-812e-5367358554bb": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-09-15T05:15:57.207059",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-15T05:21:05.574062"
+  },
+  "1-366651fa-2503-43a2-8eda-c973b671ab06": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-09-15T05:15:57.164449",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-15T05:15:59.142572"
+  },
+  "1-0ff4b829-d9d6-479e-b5e2-6b054309685e": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-09-15T05:15:57.189609",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-b5c64085-7439-4120-b882-5e618b74d92b": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-09-18T14:31:49.280929",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-fc0fc6d7-81ec-482f-89d8-3f71363f131e": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-18T16:08:29.498191",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-b4567e06-7ad4-4656-916e-ec51d57bfd4a": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 520, Body: <!DOCTYPE html>\n\n<html class=\"no-js\" lang=\"en\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n  <meta charset=\"utf-8\">\n  \n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=ed",
+    "last_retry": "2025-09-19T01:22:27.091355",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d2d47f09-e213-4ed6-b830-c8070708d484": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 520, Body: <!DOCTYPE html>\n\n<html class=\"no-js\" lang=\"en\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n  <meta charset=\"utf-8\">\n  \n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=ed",
+    "last_retry": "2025-09-19T01:51:30.571894",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-b4717d4e-af1f-4eba-aab7-3d20f8795f05": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-09-19T15:47:33.390358",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-cf48afb6-d920-4528-b4e7-7d698129a20f": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-09-20T18:30:08.698156",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-0c326905-0ec6-42a4-9ef9-95e53879e9d5": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-21T15:30:05.722998",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c9d669d2-13b2-4c63-8d40-9c6ca0f3b630": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-09-21T17:48:11.749235",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-254e9374-515c-429d-965f-003ed63e0ddf": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-09-23T05:06:01.739495",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-23T05:06:15.494106"
+  },
+  "1-330822d7-365b-4a11-8472-b854446ac8fc": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-09-23T05:06:18.029896",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2025-09-23T05:11:35.286526"
+  },
+  "1-4b4f4618-0863-40c1-baad-77d378f18415": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-09-23T05:06:01.900029",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-23T05:06:13.823852"
+  },
+  "1-0dd5ce9e-f266-4b96-8573-486581a660c1": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-09-23T05:06:01.917001",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-23T05:06:16.943362"
+  },
+  "1-62e1a75b-c43b-4d61-97c7-a1deb48a8eb2": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-09-23T05:06:01.936535",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-23T05:06:18.010934"
+  },
+  "1-c8b438b7-e96d-45af-8a91-c0a43fd8ed2f": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-09-23T05:06:02.820836",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-09-23T05:06:14.699364"
+  },
+  "1-c5e71ee3-4f2d-4fb0-9893-ece530f93d9a": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-09-23T18:06:26.374285",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-564a860a-d8d8-4262-ba1f-66a83e3717df": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500",
+    "last_retry": "2025-09-24T00:21:15.130657",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-cd1de25f-faae-4eb5-bacc-2b9b0a43744a": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 504",
+    "last_retry": "2025-09-24T00:21:31.605198",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-17436b4b-24fa-43d4-ac27-0aa3ad24b763": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-24T16:42:48.806074",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-dce672b1-6770-4651-91cb-3f65a137f2e7": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-24T16:42:48.825841",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a6b364d0-39dd-41ea-b22e-06f51c08125d": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-24T16:42:48.842393",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d5c9db17-010c-4be1-a4fd-68796209610a": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-24T16:42:48.862195",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-4b088c22-f4fd-469c-8926-1ddfa105a268": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-25T02:20:16.048911",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-2bedb470-b975-4b48-9885-2f6762230d50": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-25T22:15:21.628336",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-638a45c7-46ce-46bc-9832-947fb053fe1c": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-25T22:27:36.577982",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-8cdf8a52-b0a2-4a5b-9668-cbe5577de515": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-26T04:31:32.349727",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-e6dcdb2d-19ab-404b-8f44-1b7e937be0b6": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-26T04:31:32.367628",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c3e6e4ea-6414-464c-9831-e23b3b2f784d": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-26T04:31:32.386777",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-5540598c-c6b1-470b-92c7-3e8442353060": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-26T04:31:32.402269",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-10105983-d42e-4d1a-8d9b-7526b13cf6ef": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-26T13:32:43.031587",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-47d2eccd-5345-4b7b-85ed-24ff5373230e": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-26T13:54:26.422417",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-11df1025-55e4-4f37-9ef5-437ccdda8f49": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-26T15:34:14.225401",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-e6f16e11-30ca-4087-bfce-d2e3f1d1da00": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-26T16:24:39.968916",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-4d318129-e276-4ad9-ae07-3061843c92fe": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-26T18:30:15.857289",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-41619251-e432-43d9-bce6-108f7e7fb22b": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-26T18:30:15.876633",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-0779d91f-bf09-4e23-a29f-ffd2f5bad44f": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-26T18:30:15.896183",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-54ddfb50-4091-417b-9ef8-9563d0ff2a86": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-26T18:30:15.913059",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-3fe37965-f44d-49cc-b6ec-0fa082a83e70": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-26T20:45:32.291114",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-1cf18e5b-876c-4169-bf88-8a77879dac98": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-26T20:51:30.395698",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-35c0e282-49f5-4901-b65a-fdb7d2df45c7": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-26T21:09:29.942589",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c7962d75-881e-4f5c-9364-6180a83f5f1d": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-26T22:36:46.520869",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f75c829b-46f1-4cbe-ab64-d8d0f39733d1": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-26T22:36:46.540930",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-aba9f32f-ac94-41df-96c0-956b250afb76": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-26T22:36:46.558384",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d1e87b97-e17f-4e96-b887-7b0eed234661": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-26T22:36:46.576160",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-0330a19e-1e93-4db8-ae16-3a3d01841fe0": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-26T23:24:18.743225",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-47206476-139e-404e-b79f-6ddbeb5b18fc": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-26T23:48:29.469195",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-052374fa-31e4-4e5a-955c-81ab9d6448dc": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-27T00:41:20.288813",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-ec941058-c182-4efe-b0dc-e8cc26dd045a": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-27T00:41:20.308282",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-605c3cd2-b17a-4d97-b423-367a08233d43": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-27T02:00:31.643013",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-24cf54e3-ad7a-4ed1-9138-35815a5dc4a8": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-27T02:06:28.179453",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-096492da-921b-43b6-a659-0b5967374b81": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-27T03:56:33.165944",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-925c1c8b-40a4-412d-953e-563360cedcb2": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-27T03:56:33.183732",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-b3f375ae-c54e-4fd7-ac8a-1f7d8b15b37a": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-27T05:30:50.851313",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-cad8de0a-5004-4656-8c82-2d50d25eab20": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-27T15:44:19.406949",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-7e80c343-5ea8-423e-9d33-703f13e0a849": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-27T16:41:15.601966",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-994628c1-295a-4963-b861-ccb35e75546f": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-27T16:53:05.913668",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-dee173b8-0b82-408e-a6a0-9a7a6263d512": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-27T17:45:44.646291",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-55d9cacc-030c-414b-b137-7c42aab2746f": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-27T18:03:42.359601",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-0f74c1b4-3655-4e41-aeb4-4557aee8cac7": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-27T19:14:36.903117",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-92df1111-9438-4f57-8ba6-070edcb6cd6e": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-27T19:38:36.398255",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-1bec6cfa-07a5-4542-aa7c-b39ccb038783": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-27T20:49:50.867036",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-e376f87f-b5b5-4daf-8281-a2056e8a3709": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-27T21:23:53.394798",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-5739a352-2439-4724-ba71-4801430944bc": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-27T22:51:51.038345",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-4f38dcf1-b23c-4156-8790-7ab045dbc365": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-27T23:21:20.046861",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-43caa77a-eb55-48a0-ae8f-95279ef08db8": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-27T23:21:20.069111",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-6c1132a5-3c70-49d4-8058-493b955935b4": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-27T23:21:20.089715",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-8e9f2001-dd5f-4f94-acdd-193e02d6dce9": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-27T23:21:20.113582",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a8719569-441d-496d-8929-91f4e21623c4": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T00:06:31.490474",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-5f0672f6-f1f5-4915-98b2-d87df1c219c7": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T00:12:24.798979",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-8bab5ef5-259f-43ec-be6b-908fd2495466": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-28T01:06:40.849512",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-275d1298-d342-40db-9246-d6a4bc48cceb": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-28T01:06:40.874891",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-43161410-c8ae-41aa-965b-5f6e6a399fb6": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-28T01:06:40.899920",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-e3c6fdff-cd92-4458-9963-df6ef9810127": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T01:06:40.921867",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-fb05b188-0d58-4096-ac8d-ae3484a283b3": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T01:13:02.892254",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-df9d8d49-0c5f-44f5-9840-2b1bb8339c5f": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T01:19:27.718108",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-514be66b-cc51-47ef-a3f7-162259dc48cb": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-28T01:19:36.870265",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-1dd14b15-6dfb-4181-a693-0158f627e617": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-28T01:19:36.894114",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f593b47f-7fe1-4d1d-ba07-f691becb71ee": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-28T01:19:36.916893",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-11e5dc98-30be-47ce-a8a1-62e2c7449b84": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T01:37:10.953100",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-0867dfe0-dbe8-420f-9291-6010ef666845": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T02:11:59.707564",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-45c672a7-9a0d-4f79-b5b2-14a0905d439e": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T02:17:55.985103",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a4652d06-8ea6-4e1d-9172-2deebdb17533": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T02:30:16.223965",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a7d12c46-b090-480f-b932-e41886eee7ed": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-28T02:54:01.163492",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-2b35a6f5-186b-4354-b0ae-28b4f80f6b83": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T02:54:01.191603",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-41d9589d-b231-4b54-909e-cc9db62dbb09": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T02:54:01.225547",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f6ed1457-c54f-483f-bb60-9b2cecf3e590": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T02:54:01.249449",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-067ef62f-88c0-486c-84b8-e9702a4e02b3": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T02:59:49.052644",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-79ffcc94-c589-4a1a-8745-dc3f8a4d90bf": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T03:11:17.776871",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-4dc9ba48-dc8a-468d-8ab0-451f604bfa95": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-28T03:22:54.087171",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-39d9354b-d975-49e8-a67d-03e1b09b50cc": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-28T03:22:54.114594",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-00e756b3-722d-4f61-8271-2e5fb3ae19a6": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-28T03:22:54.140998",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a84c4d75-b65a-461c-b189-2a7518a5245d": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T03:22:54.165035",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-bec95b07-1b32-4175-81c7-350f7f5a8c3c": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T03:40:42.045036",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-5f618c8c-ac8c-42e5-b275-4e623058420e": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-28T04:49:36.367939",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-461c721b-8e75-4f69-aedc-74ba4e41ca69": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-28T13:04:58.697554",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-70579d33-05c0-4845-9e8f-355018120cfa": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T13:21:47.599738",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-5d343cea-7049-41bd-ae88-c41cefc4206b": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-28T14:52:14.272506",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-5db682c0-8f66-4c60-b008-17ff360e83db": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T15:20:55.658033",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-00750a50-378c-4ad7-a4ed-b604ff604b95": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T15:38:26.827731",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a037802c-9e36-4e6a-bdd4-7d37b672dbc3": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-28T15:49:36.959526",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-276c090b-0229-4f4e-bc71-492b4b94b4fb": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T16:07:18.165933",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-ae86afbb-46ef-42cc-8003-0de3377adef0": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T17:30:45.209703",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-933ad15b-6f5f-46c4-af97-a07997afc83e": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-28T17:37:22.125601",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-04457108-80c1-4fb2-bef4-59c3f7dbb74b": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T17:37:22.153867",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-852cc03a-159d-40e9-9458-86ab54ec283a": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T17:55:08.034685",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-8e1b38fb-bb6b-402e-a1cd-575e2b5797ce": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T18:19:15.221821",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-bbc5ffa6-8c97-4ea8-a58d-f9fa92ed386b": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T19:01:13.619515",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-2d92b1f8-3ed0-4e5d-8c48-fc3822890d8a": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T19:19:09.436781",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-0bfcb64a-cf8d-46b8-bcdb-8223a5a9c014": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T19:24:53.787633",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-b8726833-f537-43fc-9165-09befcfbeff4": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T19:42:26.363725",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-aad93cb2-98c3-4a21-b1e5-d58624537e58": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T19:59:43.129238",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-10c47403-22b0-4ba4-8305-f97191e2ad7d": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T20:17:12.052769",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-491cb013-73d3-493b-b9e6-5a4d9410bd2e": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T20:46:03.318989",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-3b8c7935-2c87-4aa6-83d6-0b4ef2674702": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-28T22:35:53.948604",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-94cc1b02-a6fa-4a34-a702-488bf96ab656": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T00:42:19.938264",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-7c9e25fc-e1ee-4833-90e2-bfe5a4ebe95b": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T00:54:41.998095",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-dccc8753-2018-4108-8b80-4b93a3c4fe6c": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T01:07:13.864483",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-76b97962-2d19-4fc7-9682-b172cdf14f44": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-29T01:25:25.536566",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-66a3272b-6888-4315-83bb-a95ed1ee3fb6": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-29T01:25:25.568195",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-885ab38d-711c-4ce7-b924-8dcf60d910f1": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-29T01:25:25.599012",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-2a960659-295c-49e3-bc94-8cc7c44fc56c": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T01:25:25.627263",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-7acab978-9e2f-440a-88db-638d33ff8f88": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T01:54:33.495909",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-6ad1291e-13bb-41cb-8d44-f633b948eac8": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T02:17:46.866668",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-8f4dc005-8898-4ee4-928f-1d52a5d5b603": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T02:23:43.690301",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-e47983a8-0314-4a5f-91b7-252a2e3be900": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T02:35:22.095919",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-ef06e131-be69-4ccc-877a-1577a0f2f413": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T03:15:30.411933",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-9ef7c4a8-fcd3-4bea-b132-c5d8f8522636": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-29T03:54:56.667051",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-954122ab-62ea-4cb9-8ced-2adf4914158d": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-29T03:54:56.699170",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-dcec718e-93e8-4a0d-94b0-32ff8fa688cc": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-29T03:54:56.729773",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-743953df-d1f2-45df-9754-8c6437bee2cc": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T03:54:56.759849",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-5a40a44c-50a8-4b11-861e-f997ad9e0b20": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T04:23:19.076015",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a178a4da-d8e1-4334-a624-a8c8c01a28e0": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-29T04:39:29.829518",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-5368e685-730c-48ed-b22a-0f75ec81d721": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-29T15:07:12.776080",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c8bf99e7-ca54-48ee-9006-1a6ae504943f": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-29T15:07:12.810183",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-1f2096c9-f1d2-47d1-a780-6725dc9fa613": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-29T15:07:12.841547",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-6fa9293d-87fc-421a-abda-fc945bc7cfc2": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T15:07:12.872780",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-4bbf6037-0c10-4eab-a5aa-caa9322716d4": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T17:11:59.277418",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-06f586ae-9601-4636-92bf-851f0831afdb": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T17:23:41.591971",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-1410e6af-541d-4fda-abd4-638ae09872d9": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T17:40:55.525677",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-318c6098-c69e-492d-9ad0-90f002d95d1c": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T18:27:57.228524",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f4f6bb10-2c46-4f79-bbcd-7c834fbf5445": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T18:45:34.611718",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-82dc3b4c-c6d9-4a5e-9805-7785a0e03bed": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-29T19:40:34.916333",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-b5070732-890a-4f7d-b25f-340c5369b998": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T20:04:09.905622",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f67165cf-92d9-4c22-801c-170990bb85da": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T20:09:59.314905",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-9166e475-9471-42c7-ad0b-4c9f080235b1": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T20:15:57.027647",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-e0872c5e-1db4-4ecf-bae5-c47fbb7ceb2c": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-29T20:34:12.484117",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-0bbea2bf-9cdc-4e3d-90ce-00eaab138999": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T20:46:42.414346",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-98ae56d9-1b6e-45f2-8f5e-ec209ed456f0": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T20:52:31.181584",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-6e09b4bc-4d5b-40a2-8037-c8cf2ff5cb3d": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T21:49:28.141176",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-6d173ec4-3bbc-408e-b282-d9e1372685fe": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T21:55:25.303809",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-5d50a04e-f547-496c-b453-66206cfefda1": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T22:01:16.207755",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-5e63d8e5-ce73-4d57-8576-c862fa9b10e1": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T22:07:06.823322",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-06d52882-124a-412c-909e-81932c57be9c": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T22:12:57.869349",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-354eaf60-9c06-40ab-903e-e1f39e60570b": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T22:24:33.354993",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-6865fc09-d95a-42c6-9986-2fc0baf1c57f": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T22:30:25.285296",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-992ef0f5-bc89-47db-9a54-cb10bdb4e8a7": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T22:54:23.727720",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-bde19d84-796f-404b-84e3-9f8fdd65f4c1": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-29T23:19:12.559817",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-9ce07746-4d78-46df-99c5-0f1ea4765346": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-29T23:44:39.474354",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-b16f86ef-7601-471c-b863-dd3963e0666a": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-29T23:51:04.844225",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f58951d9-d73a-4056-bd17-dd413fb786b9": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T00:08:16.543589",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-300ee723-b05b-4797-b382-f133f3575a3f": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T00:20:49.855560",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-1ce713eb-83cd-42b2-b56f-014dc90538d5": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T00:20:49.899662",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-dbcd68b1-c750-49e0-8b58-07328f7e57e7": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T00:20:49.941136",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-5450f09f-3788-4e05-a63b-bf1783f8463b": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T00:20:49.973915",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-22b6f645-daa5-4b66-979c-3ad860f010d2": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T00:32:21.304668",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-e1a50455-74d3-4d7f-9c8d-06884010cc70": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T00:33:14.871775",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-82eec8c7-506f-4896-8004-ea9ee2e965d7": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T01:14:17.627948",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-739dc897-2834-4f99-82b3-17cf4497bbd0": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T01:14:17.666862",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-ec7eac54-e0cb-4ced-8db4-78907556f0e2": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T01:14:17.702487",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d83c0858-fbf6-4a5e-ac2b-0590d916faff": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T01:14:17.736172",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-400be8c5-7cfd-491b-9c29-0c3a5187afc5": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T01:38:33.607815",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-101cbc8d-a6f6-4b7f-8fa8-19d55e41a0a3": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T02:02:36.775682",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d8ddd476-83c7-4d97-919e-3a90c8105e7e": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T02:14:41.920852",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-cdc76947-a0c6-4984-a38d-62d96dfecc70": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T02:14:48.245439",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-4881920e-56e8-4d06-ac17-f076a5442b83": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T02:14:48.282505",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f2bcf67b-64f5-4567-a607-94a46722f380": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T02:14:48.315565",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-b4c62ce8-d3f3-472c-b168-664cdab8ca73": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T02:14:48.354375",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-97e7e72a-fb9e-4ca5-aa25-bcf509ee262a": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T02:55:42.837073",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-5eba861b-d881-4652-bf89-1215f45114be": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T03:01:40.763206",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-cef5eeb5-a3aa-4e93-a1df-00414532bc5a": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T03:07:45.122980",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-4b717e8f-0288-4ec3-801b-d140ac2281d3": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T03:47:36.833905",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-3dff2c77-5be6-424b-8d2e-4272b8ce18e2": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T04:04:30.661862",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f2eb83a8-6f1d-45cf-86c0-bee5a9022b03": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T04:43:11.099650",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-594be64c-9a10-405d-a3bb-2d5fd9beaf48": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-09-30T05:21:22.236215",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-2f184249-27c5-40f7-a4ba-f4dfb9c2f190": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T05:42:56.548518",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-86192ed7-31f4-4e86-b83d-8f786cf770d0": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T05:42:56.590589",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-58428f40-98a0-4c87-a568-749c29974d03": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T05:42:56.627939",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-322d5a37-7808-4c8d-9196-cde8be9e49f4": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T05:42:56.663160",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a1f0acfb-5541-4227-97cf-37f4659366de": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T13:11:44.901647",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-b76e9621-cac2-4394-ae3a-d6799f0a83e0": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T14:39:33.315418",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-06fcf0d6-400a-4e19-975a-c0d93a4a3a20": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T14:50:40.314070",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-4318cdd1-b9bf-457b-99a4-9916c6a51326": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T15:41:55.145057",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-7c213ed5-1032-40ef-9a47-0ee858458a75": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T15:47:47.581042",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-0d3f36d6-8248-47ea-8015-b525818c7e06": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T16:39:10.318270",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-583112b9-f253-441a-9f40-71ad517d600a": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T17:07:56.672372",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a0ca97c9-6c33-45f0-a2e9-e7b474136061": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T17:19:30.853980",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-791555e5-7a29-4282-bcf0-cf65c58cf780": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T17:19:30.898002",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-2867eeb8-5d98-4d86-89fa-f8885d2d31c9": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T17:19:30.942594",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-01a23b34-0015-41df-adcc-875628b779eb": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T17:19:30.984127",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-8d7e01bb-7fba-4416-a1ac-9c82a3574046": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T17:25:20.553131",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-5fe1cabb-475a-49a3-b38a-eb3f2b466dac": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T17:31:13.788707",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a56fdcef-7163-4610-8f1f-22e00e20853f": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T18:11:32.964769",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-645658a4-afbe-4123-8e62-1376910d6e2d": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T18:17:33.746351",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-eefb0c87-4835-4c99-b512-3a6fbb3d15b0": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T18:17:33.786078",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-6349e5a9-d381-4c70-8940-08e85f6f8f9a": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T18:17:33.826762",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-0c7f93ef-a7ff-474d-b4d0-59100bfcf62f": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T18:17:33.872675",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-76cc0733-4835-4ac1-8a07-295f7a0a19c2": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T18:59:14.445688",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a2817bd4-21ce-403c-a9a6-352132d9e74a": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T18:59:14.491652",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-ba2da17b-2c77-4194-9859-4b14baab198a": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T19:16:47.642457",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-4d51fb25-af5b-40f3-8a05-114218ba54f7": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T19:22:46.618155",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-3e597f96-9c64-4618-8bcc-5c81eea7a837": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T19:29:02.908097",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c8d2acb5-7748-4fe7-a223-0ed8b14d2475": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T19:29:02.951048",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-b7619881-9ccd-47be-81d3-704eea9f6bda": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T19:29:02.989893",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-914d5748-98ad-4bea-9984-a361b5696090": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T19:47:14.080840",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-e363794a-01e2-4405-a3ad-7f05df46c0f3": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T19:53:24.231146",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-cd616704-d96d-4d31-beb9-d1d89b898091": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T19:53:24.276883",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a54387f6-984c-4503-8793-319836ba0419": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T19:53:24.329341",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-391c5e4b-1f06-4b40-9e9e-2a429904e0d5": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T19:53:24.369332",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-8fb0098a-c448-4ae3-be76-484e54f07fe4": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T20:05:11.689398",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-582bacc0-88c1-46a8-863a-b85dc772f418": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T20:11:17.326453",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-26354408-4602-4aaf-8560-065027b3db8e": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T20:23:42.214441",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-ec555334-f78d-405a-84b2-9389d6b521ac": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T20:35:34.328357",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-0eb405f3-77a3-41ed-8362-316abb1a8cd1": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T20:47:25.365112",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-322a17f1-4ab8-4c50-8973-2564f2ed5ac6": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T20:53:42.922999",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-982b1f03-4391-405c-b3ed-11375c637206": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T21:16:44.797628",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-576869fa-5e53-4bde-af0f-8a18b22506bd": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T21:28:54.037162",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-3c156469-d5d6-48e9-9fc0-b21c575b5b9d": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T21:34:44.192462",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-b132a103-0980-4159-a8b6-a4af25e9f24f": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-09-30T21:40:08.498578",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-888c78ed-6db3-451d-a121-1ebcb64bb437": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T21:46:31.811969",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-4d7009e0-2561-4ed1-8e97-79381554b062": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T21:58:33.666792",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-fba562b1-4046-4463-8353-5ab6faec8e3d": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T22:10:52.536761",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-2c569b89-3450-4e77-9edc-514bd4426d8b": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-09-30T22:22:38.355426",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f8955dbb-c62d-46a7-929c-b3bba207464f": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T22:28:46.840780",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-38ff7957-dffd-42bc-b8a5-024031d0ecc6": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T22:34:37.954622",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c5c1f1fd-5e31-4159-9ef8-d145fa0ccd58": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T22:40:27.396286",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f3c8733c-3f8c-427c-ad43-26316cfdb22a": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T22:46:28.243612",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-00d7399b-469a-4c05-940a-ff0acc8751a8": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T22:52:40.220839",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-dcf484cf-3348-41e9-a072-3c870dcf7d33": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T23:45:42.627143",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-cb104383-a5e4-46bc-be18-04f1410271e2": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-09-30T23:58:12.144656",
+    "retry_count": 1,
+    "status": "pending"
+  }
+}

@@ -1,0 +1,46 @@
+[Keys]
+discord_token = YOUR_DISCORD_BOT_TOKEN_HERE
+faceit_api_key = YOUR_FACEIT_API_KEY_HERE
+users = 123456789
+
+[Paths]
+hlae = C:/path/to/hlae/HLAE.exe
+cs2 = C:/Program Files (x86)/Steam/steamapps/common/Counter-Strike Global Offensive/game/bin/win64/cs2.exe
+project_directory = C:/path/to/DiscordBot
+public_demos_directory = C:/path/to/public_demos
+textfiles_directory = C:/path/to/DiscordBot/textfiles
+ParserOutput = C:/path/to/DiscordBot/parsed
+CS2RenderCfg = C:/path/to/DiscordBot/parsed/cfg
+CS2RenderPOV = C:/path/to/DiscordBot/parsed/POV
+CS2RenderENV = C:/path/to/DiscordBot/parsed/ENV
+parser_tick_dragdrop_path = C:/path/to/CSharpParser/demoparser-main/examples/demoparse_full/Tick_DragDrop.py
+parser_discord_interface_path = C:/path/to/CSharpParser/demoparser-main/examples/demoparse_full/discord_interface.py
+parser_status_directory = C:/path/to/DiscordBot/parsed/status
+
+[Faceit]
+hub_0_id = c7dc4af7-33ad-4973-90c2-5cce9376258b
+hub_0_name = Cache NA Challenge
+hub_1_id = 55f14f39-24a0-4be6-a37f-0e558e5e2950
+hub_1_name = Cache EU Challenge
+
+[HLAE]
+launch_options = -novid -nojoy -high
+environment_AFX_GRAPHICS_SETTINGS = 0
+environment_AFX_GRAPHICS_SETTINGS_OVERRIDE = 0
+
+[TickByTick]
+Mode = 0
+PadTicks = 256
+TrackAllPlayers = 0
+Aces = true
+Quads = true
+Triples = false
+Multi = true
+Singles = true
+Doubles = true
+
+[Downloader]
+batch_size = 100
+min_fetch_delay = 180
+max_fetch_delay = 300
+auto_start_scraping = false

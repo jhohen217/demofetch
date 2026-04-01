@@ -1,0 +1,4995 @@
+{
+  "1-9aa130c0-de3f-41ee-9283-b13d84180423": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-01T09:53:10.611054",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-01T09:58:11.240179"
+  },
+  "1-a648d14c-76a2-4703-870c-e01ad4ffb14a": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-01T09:53:10.615676",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-01T09:58:11.186033"
+  },
+  "1-f7d92366-ea1f-4699-8f6d-f550934aa3d1": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-01T09:53:10.620307",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-01T09:58:11.077775"
+  },
+  "1-f17014b5-2b31-4df9-9878-4cb50f068552": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-11-01T17:14:40.598541",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-f582d356-00c9-4ba6-b39f-05476089cca5": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-11-01T17:59:52.878144",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-4627cfa3-2b80-4ec2-819a-e1c9bab10170": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-11-02T18:08:30.495140",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-642dc68a-a8b6-4c2f-b3b1-0c96f371f4b6": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-11-04T08:22:00.171367",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-04T08:27:01.917353"
+  },
+  "1-eb0a8169-ef1d-47b5-bc8d-d602d1a141dc": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-06T11:54:10.582978",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-06T11:59:13.394845"
+  },
+  "1-0744df70-884e-4f69-a85e-2b3c89521794": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-06T11:54:10.589418",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-06T11:59:13.703632"
+  },
+  "1-812c3aef-2ea4-4614-8827-ebe3b344d56b": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-06T11:54:10.595264",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-06T11:59:13.898640"
+  },
+  "1-bd9960cf-e25d-4c10-b42c-714b71e8c218": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-11-06T16:22:07.155885",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-e339d381-1fe3-426f-97ac-b512c7f5d098": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-11-06T19:50:45.050672",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-06T19:55:58.980568"
+  },
+  "1-bf7c5032-a5d6-4db2-a4e8-fa6cf786bd7b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-11-06T19:50:45.223808",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-06T19:55:59.731140"
+  },
+  "1-3517703c-f0f7-4ac7-abce-aae26c7abf6f": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-11-06T19:50:46.149687",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-06T19:56:00.118824"
+  },
+  "1-7cfdb24b-782b-410d-8357-79b6684aec63": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-11-06T19:50:46.222464",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-06T19:55:58.761610"
+  },
+  "1-ae5fe4da-b92e-4a71-929e-12618ec90242": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-11-06T19:50:46.543494",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-06T19:55:59.525833"
+  },
+  "1-09a8c91e-c0a9-43d2-bac4-8c91b15a68a3": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-11-06T19:50:47.147031",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-06T19:55:59.322678"
+  },
+  "1-8b091bab-226e-4528-8319-0d1d371d2d3d": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-11-06T19:50:47.405195",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-06T19:56:00.453149"
+  },
+  "1-1f320bb9-9057-4fcd-9458-ba2e9afd2b77": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-11-06T19:50:47.452321",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-06T19:56:01.018601"
+  },
+  "1-7e12aeb5-3ee2-4858-8b5c-f3d6677e91b7": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-11-06T19:50:48.433503",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-06T19:56:02.127795"
+  },
+  "1-681510b3-6d57-444f-a7d6-3423cb1367ab": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-11-06T19:50:48.440301",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-06T19:56:00.829260"
+  },
+  "1-9f0064ba-7fb5-4fa3-9b7e-dc195c1ff9a5": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-11-06T19:50:48.687235",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-06T19:56:02.448843"
+  },
+  "1-2968652d-b9cf-456b-8e68-67404bacb44e": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-11-06T19:50:48.705193",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-06T19:56:01.397627"
+  },
+  "1-22afb42d-8ee7-4272-a5de-616da9aaa654": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-11-06T19:50:48.867079",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-06T19:56:02.991220"
+  },
+  "1-dd41274f-441b-49dc-9532-5062e2d10bff": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-11-06T19:50:49.219970",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-06T19:56:03.772918"
+  },
+  "1-ca4781d3-e90a-4f41-ba94-ac289459e579": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-11-06T19:50:49.545536",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-06T19:56:02.785509"
+  },
+  "1-6da5486a-c1f8-4d4b-8b2a-9dd308f84249": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-11-06T19:50:50.293663",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-06T19:56:01.733973"
+  },
+  "1-a016912f-f3f2-40ba-a8f6-d9132c868941": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-11-06T19:50:50.999381",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-06T19:56:03.259952"
+  },
+  "1-43e87d50-8584-47cb-8bf4-6b0ac2f3b492": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-11-06T19:50:51.192934",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-06T19:56:03.583825"
+  },
+  "1-969e19ce-bedc-4de0-829d-b5c1eb8ec541": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-11-07T15:01:25.697538",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-2705c9f9-10b9-48e1-92e6-75ac5f600690": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500",
+    "last_retry": "2025-11-10T04:23:32.577786",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-10T04:28:40.532676"
+  },
+  "1-1dbfc3fa-b407-48ea-88d6-f30059da9e56": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500",
+    "last_retry": "2025-11-10T04:23:32.587643",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-10T04:28:39.018977"
+  },
+  "1-cf98b1b4-0215-4505-a74a-6bdb3dc0e6bd": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500",
+    "last_retry": "2025-11-10T04:23:32.628660",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-10T04:28:41.047300"
+  },
+  "1-863de238-0898-49a1-9f89-6121af8de3ef": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500",
+    "last_retry": "2025-11-10T04:23:32.646643",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-10T04:28:40.028142"
+  },
+  "1-b40b1ee4-8923-41d4-83c4-f8095f62e8b7": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500",
+    "last_retry": "2025-11-10T04:23:33.703598",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-10T04:28:41.558176"
+  },
+  "1-e4831a8d-5415-4a16-8116-b326a852ca4d": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-10T15:53:04.324499",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-10T15:58:39.207730"
+  },
+  "1-f47e168f-6ab5-4c9c-af70-c6f0d94d0e0c": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-10T15:53:04.340448",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-10T15:58:38.062914"
+  },
+  "1-e30c14d1-4bcf-4f08-ab5d-5a08dd61cb55": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-10T15:53:04.353390",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-10T15:58:38.634052"
+  },
+  "1-824e60fd-8b0f-4875-8614-1c7915eaebc6": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-10T15:53:04.366495",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-10T15:58:40.369904"
+  },
+  "1-c9804bf6-9d17-4cb5-a187-55ea93531b92": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-10T15:53:04.379912",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-10T15:58:39.795877"
+  },
+  "1-8fae4dd1-8e0d-48a6-8cf8-12da4f7cef9c": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-10T15:53:31.684520",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-10T15:58:40.909743"
+  },
+  "1-d3a50358-8d5d-4097-b05e-2dccfc4f6dd5": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-10T15:53:31.698769",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-10T15:58:41.779260"
+  },
+  "1-e6b2d4ad-760c-4611-885a-04b5f5533751": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-10T15:53:31.712554",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-10T15:58:41.483376"
+  },
+  "1-4794b734-a331-4c90-ab9f-4c1cf2d199c4": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-11-12T18:44:55.977875",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-47bca69b-fb02-478d-9fc3-0d4f85cf93c0": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-11-14T13:26:13.435945",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-8a2a8775-0b67-4ef2-89aa-212e5c92c8fd": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-11-14T14:22:31.974940",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-c9b5f41c-f500-4dc6-8d90-059154184367": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-11-14T14:32:45.013032",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-5568e63c-fa56-4cd2-badc-c732a64bcda2": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-11-15T16:34:01.019303",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-d05ebd9b-c2c3-45f4-bea8-2f734a523eae": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-16T03:30:14.058466",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-16T03:35:39.002794"
+  },
+  "1-b00f1282-18cb-4f3e-8906-7f49071d222a": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-16T03:30:14.077028",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-16T03:35:38.531598"
+  },
+  "1-e0692c38-b3bf-416d-90b2-124ba4fc0eab": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-16T03:30:14.092949",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-16T03:35:40.791007"
+  },
+  "1-e71a5bd8-26e1-4ec4-bb0e-d7d30c667deb": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-16T03:30:14.108764",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-16T03:35:41.606283"
+  },
+  "1-bad5f6c3-6bb1-4aef-8785-5f88d11f997d": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-16T03:30:14.127965",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-16T03:35:42.426558"
+  },
+  "1-9660e5ae-a9ca-454f-ab3a-89a4ebc28ab5": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500",
+    "last_retry": "2025-11-18T21:30:09.094058",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-18T21:30:22.885945"
+  },
+  "1-6dcacd05-1359-490b-b00d-a3b0036efa76": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500",
+    "last_retry": "2025-11-18T21:30:11.210140",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-18T21:30:23.359249"
+  },
+  "1-112b21a5-b24b-4166-9a1c-c01e8012cb5d": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500",
+    "last_retry": "2025-11-18T21:30:11.650666",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c691b500-0770-4226-8079-6152e6a142b2": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500",
+    "last_retry": "2025-11-18T21:30:11.792636",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d4e8c6ef-dc3c-4f6c-96c1-b11485b9d11f": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500",
+    "last_retry": "2025-11-18T21:30:11.806458",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-18T21:30:12.749913"
+  },
+  "1-5a382fcf-4af4-4557-b6b7-dd783c45fe6b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500",
+    "last_retry": "2025-11-18T21:30:18.100082",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-522961c4-8cb5-4a5d-b4a4-968fc8b6b15a": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-19T16:28:15.245462",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-523fe481-3d14-4fec-994d-35dcc2c220d0": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-11-19T16:39:35.658449",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-744b5a34-4821-4eaa-9058-e36f6db9333e": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-19T16:39:29.359151",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-dfe430e6-758b-459a-8247-1ef683d04a3e": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-19T17:06:20.386616",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-8d6f9cd4-6abe-483c-a2fb-9fb4f6bcf62f": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-19T17:06:20.401042",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a190420e-51d3-4961-9302-17840e8bbb0c": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-19T17:06:20.413689",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-e3c33d79-6226-4399-a03d-a376cf09d08d": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-19T17:06:20.426297",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-be8f0353-16fd-408c-a096-9f884c45cea3": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-19T17:12:05.962374",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a831856d-bfc8-4138-a431-3020effc582a": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-19T17:12:05.975541",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-2beb9b60-9437-4a11-b9cf-8a0aacfe8b41": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-19T17:12:05.988698",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d5730d70-364e-4225-8148-57471d269b4e": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-19T17:12:06.084810",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-021a9f6a-128d-4f7e-9d42-e1efab92736c": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-19T17:17:40.728030",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-fec70274-72f6-40d8-8c91-8f8493bd9050": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-19T20:57:32.761612",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-e7ca2a85-6500-41ce-9619-2ab052ede650": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-19T21:09:17.277005",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-80629465-ab41-4f9c-a58d-45ac093823f2": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-19T21:09:17.291136",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-9d6c6b6d-47d6-46a5-8306-843881d43200": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-19T21:09:17.308973",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-8d054290-43ea-4178-b874-031ee14a3f34": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-19T21:09:17.323261",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f0f90447-d2a8-4d70-ad2c-0fe66544ac3b": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T01:11:40.645331",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-830b3982-8ab8-4b21-990e-0809f7a38881": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T01:11:40.665868",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-2ff4168c-1667-4185-b32d-c9c43a16f814": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T01:11:40.684080",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-3d468b38-e9cf-49d2-b9ac-8b60943b32eb": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T01:11:40.699623",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-803b1d3a-3cdd-4667-9cc3-a0286b287480": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T02:55:19.790579",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-3d7b86f1-d829-4845-9e2d-04d3cf93fed9": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T02:55:19.805547",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c0997901-a53a-4db9-9dc3-66aa948dbcb6": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T02:55:19.820451",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-09923adb-8a0e-4a1a-8fd2-32adfe8396ac": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T02:55:19.835532",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-2a18cba1-3e18-4ba1-a530-4eac05b3747a": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T03:13:43.833084",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f59a851c-a5b5-4543-929a-28b5b52eba0a": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T03:13:43.848846",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-927a9d51-5b39-44a8-99d4-759ad950c4e7": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T03:13:45.380072",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-89e95640-c204-41dc-b43f-6efd4f8152d1": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T03:13:45.492869",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-1f49499e-1abf-46ce-a33b-9c851e60802e": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-20T03:30:48.594092",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T03:32:17.683740"
+  },
+  "1-2ab50e9a-156a-4de3-93d7-85b2b2298aa5": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-20T03:30:48.613709",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T03:32:18.238980"
+  },
+  "1-45e54c26-0b70-4fef-a808-94a476a63000": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-20T03:30:48.632782",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T03:32:18.861152"
+  },
+  "1-0f528dfb-aff5-46b1-8fa5-19b401ca4df9": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-20T03:30:48.650524",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T03:32:19.865967"
+  },
+  "1-221119ff-63a9-4ede-b453-52a3cd98adaa": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-20T03:30:48.668178",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T03:32:20.440820"
+  },
+  "1-fdab6916-cf1d-4e03-8aa5-8c4a18c9e53f": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-20T03:30:53.628989",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T03:31:38.057122"
+  },
+  "1-1fde44e1-d1c8-422f-bca0-8106903915f4": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-20T03:30:53.656935",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T03:31:37.017309"
+  },
+  "1-a23a8e8b-7ad0-400f-b123-5f0644ef6a44": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-20T03:30:53.682381",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T03:31:33.831363"
+  },
+  "1-24defc91-77d6-4d36-ae16-5c1bebf91483": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-20T03:30:53.708002",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T03:31:36.500723"
+  },
+  "1-5acd31ec-f8c9-4830-93af-c3b9ae5d2e79": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-20T03:30:53.731906",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T03:31:37.535642"
+  },
+  "1-28814e97-21a1-4a12-a9ca-cc4036bf805d": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-20T03:30:55.340956",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T03:31:40.170517"
+  },
+  "1-da0e48c6-b832-46a3-97d3-66206326b6e6": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Connect call failed ('104.17.159.184', 443)]",
+    "last_retry": "2025-11-20T03:31:12.395941",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T03:31:40.687850"
+  },
+  "1-ebcc3d84-b787-45d5-87ad-2302a5f9ce87": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T04:08:32.876355",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-956f169c-07fc-4f93-9a57-7172339f891d": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T04:08:32.894894",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f2713415-42e8-4071-b850-5fb3f683547b": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T04:08:32.912939",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-7fb891de-fc20-4c76-8d3e-86672ab3f616": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T04:08:32.931469",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-3809ff16-cc0c-4ed8-a53a-e25b1989c0d3": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-20T04:37:03.522598",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T04:37:15.797940"
+  },
+  "1-c730e726-221b-4a85-8418-060bdd2a4095": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T05:26:34.047386",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-8d6b044a-2c4a-4247-94de-deb67a2b2552": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T05:26:34.089148",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-8d1034c1-c1fd-45c0-9814-9a1cc6101279": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T05:26:34.108190",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-90c7d32b-3b69-4564-85f2-034af1643d62": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T05:26:34.464036",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-1fa9c176-5a8f-4f5e-ab13-9e511ec435b6": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-20T05:26:34.482898",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-2f79090a-cecd-446b-b138-2a8b6de88dad": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T05:48:01.486041",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c1335991-32a0-4461-a4b0-dc0c8e04461d": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T05:48:01.505769",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-77b0d971-1c89-4ee9-bfd9-8ea061561d7f": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T05:48:01.525108",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-efced71e-9a57-4c9f-8d2d-a505b39bd402": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-20T05:48:01.547800",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-860c63d0-7d79-49b9-938b-ce4246dfcd91": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T11:53:07.365430",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T11:53:14.964480"
+  },
+  "1-7171091f-d04f-4de1-87f1-9a8775c52e54": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-20T11:53:07.419189",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T11:53:15.542507"
+  },
+  "1-a1c4d009-c817-4a5a-880c-2a4a5790e9a3": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T12:48:01.429399",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-9dc65e2c-6a67-4fce-9c45-d56c4813ddab": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T12:48:08.480954",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-0436586c-d5bd-4fe4-8b15-27806f0ff52a": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T12:48:08.501207",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-3e511ff9-5b4e-4377-980c-1915e1ac3078": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T12:48:08.524060",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-42bd6a38-f16f-4c77-95d0-13c521078955": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T12:48:08.544279",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-cae01025-fdb8-4e74-978f-24bad77c5355": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-20T12:53:50.442242",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c03cbbda-280c-49b5-b65e-49e7f84c9476": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T13:10:51.292334",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-126285fb-f9a1-4e37-b306-7b0dae1305cf": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T13:10:51.681508",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-660c8fe3-7a42-435b-b44b-3b73dff56a46": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T13:10:51.702942",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-3ebeb2c0-d3bd-4215-9ef7-b6482a4580ca": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T13:10:51.724527",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-6523c606-77a6-4167-9232-5faca217600e": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-20T13:10:51.831488",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d027200b-1dd0-4e25-b51d-1c9dd9c0c0c6": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T13:33:49.206249",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-78970d20-2866-4c75-958a-5878f8663fd0": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T13:33:49.160940",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-0490b2c3-75b5-4507-b3b6-32bb16b8f5af": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T13:33:49.274463",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d19e51b5-83ac-45c6-b43c-47c0bb13cbb2": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T13:33:49.252399",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-91546171-0737-43c3-902a-0a932f5371bc": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T13:51:09.205337",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-6ea673cd-9108-4488-960b-badad303395d": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T13:51:12.398283",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-9ded049e-dcb0-43aa-90e1-bcfac5ddb045": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T13:51:12.420513",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-6f60989f-04f4-42e9-9fd2-c935c0e522d5": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T13:51:12.443283",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-4e6b5b4d-df66-483b-bbb6-d06af7664e3a": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T13:51:12.465716",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-df54dfd5-8ff1-4552-b515-f800a6843787": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T13:56:58.595482",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-9250d66e-1632-4bd4-85b2-0eddbb9db613": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T13:56:59.573304",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-9d3cd25b-158c-4d12-a3be-118c852339f8": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T13:56:59.596480",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f45896f9-71d2-4b4a-94db-48cadc9c117e": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T13:56:59.619681",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-8f9a5f7e-0020-48a9-bb70-e584d5d9666a": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T13:56:59.645061",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c2d25c15-c4e1-4207-a60b-83ded9b32d92": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-20T14:02:42.358474",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-3481d32d-f219-4577-b8bc-b3e811dbcb11": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T14:02:42.572404",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-6cfc6f64-c6af-4585-bbe9-1990ddf19909": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T14:02:42.595986",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-b707eb6e-dce0-43f7-a568-c530a7dad014": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T14:02:42.621631",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-024bb315-db7a-4cc5-819d-afdda779dec3": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T14:02:42.645650",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-01344472-3e30-405c-b81b-4175d002931a": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T15:14:52.225763",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-03f653a7-4336-411a-97eb-9ec703da7863": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T15:14:52.249723",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-17538fb7-ffbb-4981-9bb9-835c91ef9bb2": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T15:14:52.273374",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d4ca8e87-07d8-4680-a25a-f2295b7afa8c": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T15:14:52.297245",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-8e6ee044-d9aa-446b-b4c5-1204b85cdd6b": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T15:31:18.908514",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-28f16008-079f-499a-a1a4-1a5ab6cbea6a": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T15:31:18.933394",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-e2bb9f6f-9284-4c35-ba0c-4730a30703a9": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T15:31:18.957719",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-4d15c4f7-83eb-44e2-b6db-a00a9d6133c6": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T15:31:18.983201",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-309d7d50-2e05-436c-82d8-fb7555bb502d": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T15:37:23.819321",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-5c62583b-d43e-464c-8430-767d732ab3ab": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-20T15:43:17.974261",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-27d00796-be35-4cc3-9dac-41febd36f038": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T15:49:22.009763",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-0e4257d7-db6b-4155-8a33-ed9bc53f21a1": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T15:49:22.034773",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-24016e2a-c854-4629-a553-c360dd0a46f6": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T15:49:22.062258",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-72fce572-28e9-43d8-b50f-dbeacd1a727a": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T15:49:22.087458",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-3083323e-1265-4b08-97bd-3688b648e397": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T15:55:30.545161",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-bb0466a7-1f6d-4b90-88e7-4c300c124c70": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T16:01:23.036642",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a0a1c4f3-027b-46db-bc3f-0680524c7ab3": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T16:01:23.062835",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f40dd676-f41c-46ef-9a42-a288f521fe81": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T16:01:23.090591",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-ee38a7b8-ece0-4069-83ad-632b57450c20": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T16:01:23.116477",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-e37a4759-ea51-44cc-b86b-bcb7d8e873da": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T16:07:24.807212",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-4b9aeb7e-81fd-40d1-ba01-47009e819430": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T16:07:29.010471",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-2c797b8e-6a4a-4978-b06a-74e15b622609": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T16:07:29.037229",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-050ef83f-caf5-46bc-9567-eb1c35bb838e": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T16:07:29.065656",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-faf30eb4-4374-450a-9500-ee24f49ba7fa": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T16:07:29.092602",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-30b2ea2d-1da7-4c05-9ab0-225ba2b3e8cf": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T16:38:26.362629",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a671fbd0-0539-4af3-8195-d3c4a87bb550": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T16:38:26.389233",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-5999e5bf-430d-4dad-a18f-f896101df212": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T16:38:26.417375",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-bd13b015-b200-4873-8222-bf9f816de5a9": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T16:38:26.444778",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-7009951e-e7c3-40e1-8044-2733aa6afc6b": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-20T17:23:42.490149",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-02c2e193-97e7-43b1-a8e9-635b7daf2916": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T17:40:04.522057",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T17:40:09.250579"
+  },
+  "1-825f5fd6-b74c-4f07-9eb3-329d60d0493c": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T17:40:04.549417",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T17:40:06.756454"
+  },
+  "1-fc7d4726-38e5-4a46-8f3f-b571942c88d6": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T17:40:04.578280",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T17:40:05.911581"
+  },
+  "1-739db66d-9780-4538-846a-f210f9ae794c": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T17:40:04.607364",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T17:40:08.712442"
+  },
+  "1-d36cf314-67d5-4a2b-ace4-c5f1e9edca4d": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-20T17:40:04.723411",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T17:40:10.310450"
+  },
+  "1-67e60dfe-be11-4a12-bc64-290a2acd5be5": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T17:46:19.745692",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d9fe2dbe-fdd9-4f4f-9708-e01ff06c8faf": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-20T17:46:21.004980",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-0dd3700d-fce3-41a4-9c28-e78cdfa1c529": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T17:46:20.722131",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-33d34faa-ec57-4979-9491-99995e19c686": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T17:46:20.692410",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-b330e5c3-647c-407d-8c75-273bf8401c0f": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T17:46:20.751852",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-9a137a9b-f137-40b4-8081-2cbfcb499a03": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-11-20T18:58:51.986655",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-bc09df0d-e63d-4234-8cd3-b0d01b2c46cb": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T19:34:39.688578",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-801ae306-7dca-451d-aa04-c23b26c41e50": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T19:34:39.569333",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-feb6363e-dba1-466f-a5cd-31fe77e49862": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T19:34:39.658107",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-ee2b8918-ea5b-49d8-a434-0eb5700810c4": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T19:34:39.628887",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d9387401-10f2-4ddc-a896-7add2c541b59": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-20T19:35:44.064626",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-3741f78c-d518-4bd8-b70c-9ed150d11d15": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T19:35:45.124173",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-68d3170c-c67c-46d6-8162-f33c5c811201": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T19:35:45.094123",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-dcc121a3-878f-4a49-8b86-ab38c94468a3": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T19:35:45.063546",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-ec643f0f-564c-484f-89fd-74672f059d5f": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T19:41:48.262994",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-e7c159b7-637f-4a3e-8099-2728423557d4": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T19:41:48.292621",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-73c4ef49-b1e4-4b73-bcba-246b27fa4047": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T19:41:48.323689",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-ff4ed55a-6b83-4b4c-a200-eee37d992a90": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T19:41:48.354069",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d39452ca-62a6-40d8-a4b7-6571331094d9": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T19:42:53.241366",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a5b192e8-e20a-419f-ba89-018f73f8d990": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T19:42:53.272043",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-acbac8cb-1dae-4af4-8dcf-cdc73ae57001": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T19:42:53.304307",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-7db076c5-090b-4792-94b2-66f1c29bca6e": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T19:56:49.579049",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-3246c76e-5453-49cc-8818-1eef47554984": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T19:56:49.611198",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d4aa2fa3-f848-4810-931d-26abb92e06fd": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T19:56:49.642794",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-445de136-3b9f-4798-bda8-f61dc8aa788f": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T19:56:49.673608",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-2df51b99-a0f1-4814-9e77-877c6ab73816": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T20:03:45.184819",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c796a26d-5b2d-46cf-965f-f9adc8f2fe2e": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T20:04:09.833805",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-5b72f328-33b2-4c83-b401-54963f072d3b": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T20:04:09.867188",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-e71da8ff-6805-4109-ac06-8111e74f076d": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T20:04:09.899656",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a4fe0142-9e0d-4b55-98bc-a9d9835f1ad6": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T20:04:09.936806",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-005722f0-c5f9-4f44-90d2-81f5aa78dd17": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T20:11:04.699655",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c27d7b5f-9b13-432e-9c1e-bc52e75b6af7": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T20:11:04.733168",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-126dc211-a842-4d17-95b7-ecd9bed7a8da": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T20:11:04.770514",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-0b62906e-1eef-4fed-ba1f-b34e0f7c99bb": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T20:11:04.804777",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-93854dd9-d46e-41bd-ba2c-0926f11772f4": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T20:12:44.599300",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-9bceb6fe-acb5-4feb-aec5-e75c69f34832": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T20:12:48.649882",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-761aa8fe-13d0-4e62-93fe-2d9e4f99e9ce": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T20:12:48.688360",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-0a055056-cab2-4174-9861-4e6786183d2e": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T20:12:48.723603",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-190647c0-374c-45a3-b5a0-bc41191ef073": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T20:44:09.843357",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d013e990-5b03-4d92-bfcc-89ce3c693009": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T20:44:09.915514",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T20:52:13.976176"
+  },
+  "1-780edb73-a982-4055-9030-4d499f8f296c": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T20:50:58.742891",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-98bea69d-afa9-4dfb-8fad-24ddd7a35866": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T20:50:58.776609",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-1340de0f-5859-412b-b4a1-b7ccf92ce22b": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T20:50:58.810954",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-86d982be-5033-437c-8e6e-63d78e712e5f": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T20:50:58.844565",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-fd6a8dff-6e70-4fb9-a138-27b6f528a62b": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T20:52:02.530214",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T20:52:07.561221"
+  },
+  "1-52e05b02-cb77-4849-ae13-7a96d80e5e35": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T21:36:41.725350",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T21:36:51.883488"
+  },
+  "1-4f9fb3d1-8c96-49ae-96a8-02e4ccf5da2b": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T21:36:38.869482",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T21:36:41.397265"
+  },
+  "1-6f2d4b01-e0f5-480d-b8e1-7032b21889c2": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T21:36:38.834968",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T21:36:40.787155"
+  },
+  "1-810d9b3e-faca-47f7-95f9-3e0850a3f0be": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T21:36:38.903669",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T21:36:41.117968"
+  },
+  "1-224ea95c-19f7-45b0-9686-cfb1655685d4": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T21:36:39.042695",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T21:36:49.888563"
+  },
+  "1-cc26178b-a203-4646-9289-af54700fb351": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T21:37:24.676054",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-198f6d13-6254-4584-8e1b-877fe653345f": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T21:37:04.571632",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-9c7f1bbf-2ce5-4a61-aa1a-4d077c5a40c6": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T21:37:04.642511",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T21:37:29.049136"
+  },
+  "1-2fa736e5-5c9c-4042-a44c-f63bf02b1e65": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T21:37:24.604717",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T21:37:30.127287"
+  },
+  "1-7a247f94-6b52-424d-b9b4-2d909a9a7160": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T21:37:24.640507",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T21:37:32.827158"
+  },
+  "1-b215766c-dd95-4207-a503-698938f43869": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T21:37:54.145472",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-969a4693-33b3-4f62-8dc7-e32c28989e09": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T21:37:54.183455",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T21:37:59.028415"
+  },
+  "1-0bc7d6b3-6cb6-4de0-bfca-0b25b272a9c5": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T21:37:54.221067",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a2342bf7-362c-4b23-8dbb-2305477077f7": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T21:44:04.451907",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-ebd9487a-2cce-4233-a197-92b7d4e6c747": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T21:44:04.305154",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-2524ebbb-68c9-46e3-9ffb-a7c2a07dbe04": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T21:44:04.488831",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-397a46ad-61be-4abe-bb8f-4e6099c52600": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T21:44:04.415091",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-ce317bfa-a04b-4e2b-b320-21b5cc0c1407": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T22:00:34.915806",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-153cfbff-7138-429a-88a2-f04bca5aa70b": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T22:00:49.956716",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-6a17cda1-9fb3-49a9-9708-4562f46aa635": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T22:00:49.995672",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d64ee900-0306-4036-aa82-9db736099dae": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T22:00:50.033385",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a9b6c362-5e21-4357-89c2-b3a2310fe05f": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T22:00:50.071008",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-6ae23e1f-1fae-49fc-a4f2-4355e48e9ada": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T22:16:20.931760",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T22:16:30.232951"
+  },
+  "1-574e6ebb-c1d5-41d2-b980-e9db2fd90e2c": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T22:16:20.818780",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T22:16:25.933650"
+  },
+  "1-02af984c-2c7b-4cce-a992-628527d202c5": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T22:16:21.007198",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T22:16:23.107736"
+  },
+  "1-fae2dc63-45cf-4458-9454-891db37df7d4": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T22:16:20.969499",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T22:16:24.512960"
+  },
+  "1-fb9ac08a-4592-47ab-b43f-fb705a9aa059": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T22:16:20.743081",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T22:16:36.225423"
+  },
+  "1-56054e24-862f-4e44-9476-a0c203a2cde5": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T22:24:11.228962",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-57f2ddc6-7155-4c67-a73a-ef56247babcd": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T22:24:11.348455",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-bb30ae55-6cc9-41ca-93f6-ecc8908db2a7": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T22:24:11.309139",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f56c1e7f-3a29-4f6e-a90a-61c30a778f76": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T22:24:11.268504",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-89b92a00-3fb1-4997-b5d2-29857874e110": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T22:23:29.078134",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d5350b13-c762-4747-b573-2e3a4af823f3": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T22:24:36.622603",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T22:24:54.535687"
+  },
+  "1-79c53d66-930c-4b95-a620-82bff82f1ff5": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T22:24:36.699368",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T22:24:47.460075"
+  },
+  "1-6d7391bf-f3dd-4178-8031-58e39344dc91": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T22:32:44.519491",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-e4d7295a-8095-4cc7-82c8-ee4ee664c068": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T22:33:02.618819",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-7f3ef079-3ec0-4e98-9822-7e28a67a6441": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T22:33:02.662698",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-e8708339-3c3b-446f-b005-147882fdefcc": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T22:33:02.705206",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d57f0a16-0942-444c-aca9-2d8a04504762": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T22:33:02.746846",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-9532bbea-9129-46dd-9195-dd1353c2d9e6": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T22:33:50.660939",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T22:34:05.242599"
+  },
+  "1-d721abdb-ee3f-4a67-b5c0-864bd376deac": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T22:33:49.523081",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T22:33:58.599121"
+  },
+  "1-db0e4e2a-d0bd-4470-8e14-8c9f8209dcd2": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T22:33:50.701149",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T22:34:03.530348"
+  },
+  "1-89200515-152c-4a5a-a078-e83cdef7241c": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T22:33:50.743648",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T22:34:02.723776"
+  },
+  "1-3f40e1e0-134f-43b9-bda6-16fdc70f2220": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T22:41:10.479396",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T22:41:23.264345"
+  },
+  "1-821c41f8-7b96-43c6-ab35-4ad8f8b7baed": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T22:41:10.519439",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T22:41:43.019862"
+  },
+  "1-844c4dbe-0692-4005-8bb0-c6f55cd3b324": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T22:41:10.559790",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T22:42:16.536617"
+  },
+  "1-39f27c8d-2bdc-4f81-ab93-7652d54c5174": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T22:41:10.599819",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T22:41:32.057927"
+  },
+  "1-db5f6d0a-94f7-491e-93b3-c33c73ffa69a": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-11-20T22:46:21.582709",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-4bdd4acb-3bea-4ae4-baae-614372202fb7": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T22:49:00.224857",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c19fbe34-618c-4a4d-a161-a76635e1f5ca": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T22:49:00.430162",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-38f45e20-e1da-403a-b93f-a93b0d9c3cf2": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T22:49:00.183353",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-67e9b51c-2f50-4fa1-9413-2de406db5efc": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T22:49:00.389236",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-606dbc27-88db-4be3-a48d-92ccf7a90e40": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T22:58:25.040097",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-e5a0cd25-6ed2-49d6-9037-3e132e344ed4": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T22:58:29.022904",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T22:58:48.639750"
+  },
+  "1-77d33ef2-21f5-406b-92d9-2300240db59f": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-20T22:58:38.627175",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T22:58:54.092035"
+  },
+  "1-7ef5b92a-8614-477c-8829-9da024666ddb": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:05:50.570266",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-28904d42-c93d-4c10-b99b-4f9f4fd5a244": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:05:50.230615",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-966c1157-6e52-4eee-a2bf-6b7d38d0eb0a": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:05:50.485153",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-32287528-da9d-44e9-81de-01522a5d0941": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:05:50.527452",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-4a444667-3654-4220-b6ad-3a49b916a41f": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T23:08:26.555792",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-4e897ded-adaf-4b20-86e7-d9fe57bdbfcf": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T23:08:41.899329",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-1e09867e-c734-4992-8885-510fd324855a": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T23:08:42.026881",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-9b4af84e-2448-4266-afe1-b79dc5d694f5": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T23:08:42.601497",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-ba644d2e-6eb0-4519-9c01-de0fdd06ca2b": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:24:21.816664",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f5c510b3-038e-4c2c-88fc-cf7b6a4a0937": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T23:25:10.063294",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a5595281-7b03-4654-b4a6-27c528f149c3": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T23:25:10.107685",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-b0056594-a1bd-465d-9092-9a8ef092ae9a": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T23:25:10.152769",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f2cf6e4d-5ac4-431a-b2e5-b22119b035f8": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T23:25:10.197127",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d6c0d5fb-632e-4401-926a-eddd321fdcdd": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T23:27:53.812771",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c9d0eda5-78ee-432f-bbd2-ddc764c0639d": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T23:27:53.903914",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-cc0dba34-cdc6-49f6-b57d-f27b8d967512": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T23:27:53.858312",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-4609573a-44aa-48df-a132-b16e7773562d": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T23:27:32.840851",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T23:28:31.700624"
+  },
+  "1-432ebddb-792b-4f12-85c9-2835adcfcf42": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T23:27:13.030061",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T23:28:27.458154"
+  },
+  "1-e726c9e8-b5a1-45e1-92f9-19dc1ec79caa": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T23:27:13.074960",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T23:28:32.528870"
+  },
+  "1-fe742713-800d-4eaf-a6f7-21ca143e65a8": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T23:27:27.609795",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-3c4256d3-8eff-4507-8299-982d923f3d69": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T23:27:48.285860",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a9ef1991-8355-47d8-87b4-8b74d80e237f": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:28:03.502784",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T23:28:39.042767"
+  },
+  "1-63128f1b-87c3-4cdf-ad8f-f06efa895533": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:28:03.413334",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T23:28:43.115907"
+  },
+  "1-1fc24d9e-a225-4d2c-9a05-2c787700b3ac": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:28:03.547556",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T23:28:44.794851"
+  },
+  "1-4218f200-ea25-4614-ad85-e571c9710211": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:28:03.592347",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T23:28:36.617928"
+  },
+  "1-f65a0307-d9f0-4979-8fac-1b26f4bd5c87": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:28:03.637354",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T23:28:35.251534"
+  },
+  "1-0c4b93d3-5e22-44cb-82f3-ebc1941e1570": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:28:22.463766",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-0dc39763-e465-4c28-8249-1bac44381132": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:28:24.154653",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T23:28:37.918896"
+  },
+  "1-28f8fd6d-b134-403f-a673-3e5d8680dd74": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:39:54.386560",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T23:40:10.917758"
+  },
+  "1-0b1bb9b0-bb3b-4b66-94de-5bd578ab376e": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:40:10.394963",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T23:40:20.831352"
+  },
+  "1-951f7802-7613-4db3-ae77-3ce2aeec6f75": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:40:10.348253",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T23:40:27.102669"
+  },
+  "1-215b0f9e-ddc6-4f12-9d59-20ceadafbc83": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:40:06.169642",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T23:40:26.279033"
+  },
+  "1-5284997b-66b0-4e3b-a93b-80fd4fa7cbc6": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:40:10.487038",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T23:40:22.465969"
+  },
+  "1-b7045916-b48b-4d19-9251-f3200fd86b0b": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:40:10.532904",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T23:40:46.837276"
+  },
+  "1-03a8902e-f9ff-4d17-bbae-d7e382f616c7": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:41:11.301206",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c891fa77-47aa-42f2-806b-3268c0607bc4": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:41:11.253426",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d6d1be26-d2b1-4d31-88ed-0ff7f5ba7863": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:41:11.157544",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f5daacea-ffab-49ac-845b-d3c115b2167d": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:41:11.349838",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-9300f186-e898-45f5-86d4-8e0e6a29521e": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:41:10.803534",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T23:41:16.364069"
+  },
+  "1-c83c5e4b-25f7-42e1-9ddc-0c92374c9fde": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:41:10.851291",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T23:41:16.948186"
+  },
+  "1-c4cee3ae-4f92-4f31-a156-af8e718f3a88": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:41:10.898512",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T23:41:20.088390"
+  },
+  "1-bbf24afd-48ed-4d68-b397-c0923e52c4bd": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:41:11.109759",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T23:41:17.529077"
+  },
+  "1-2ad5cc25-d112-4ffc-928a-67463cc2edb7": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:48:38.738916",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T23:49:13.284466"
+  },
+  "1-b5ebd520-089a-486a-b1f6-1f4b2c6099ac": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:48:38.691392",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T23:49:14.837400"
+  },
+  "1-1a459f34-e9bc-47f4-a122-e958359d7fff": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:48:38.642511",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T23:49:14.530947"
+  },
+  "1-96fc6709-8b89-40f8-8077-7a70a97a8ce7": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:48:38.786240",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T23:49:13.858842"
+  },
+  "1-e3eeab25-bde2-4c10-9c15-76d5eafea88e": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:56:34.303397",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c0fce163-e6ee-43d2-bb77-831153bfbbec": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:56:30.545825",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-9a7a7a5f-dca1-480f-bedf-36d5e9c8eb15": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:56:34.105595",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-9c35b618-17f8-4821-a85a-5bf44b9d2b6c": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:56:34.254593",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-04873887-b263-4d52-aafc-73d24a02aa76": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:56:34.204826",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-eac65dfc-f312-4f4b-9a61-c246acd74544": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:10:48.183913",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:13:01.806987"
+  },
+  "1-f2de71e4-3736-45dd-8565-a6d2bf44733e": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T23:58:29.987975",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:00:00.762651"
+  },
+  "1-4add3e54-f183-491d-975d-697df0cec8b0": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T23:58:30.043529",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-20T23:59:58.380570"
+  },
+  "1-21b26883-9d27-4934-8435-a6e8fa21b26d": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:10:47.530699",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:13:16.134123"
+  },
+  "1-cf9f656a-ff5a-40f8-ac7d-16c6a794970e": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:10:47.766983",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:13:14.513762"
+  },
+  "1-95a20c45-89f8-4c64-b8d8-168a7d60c1af": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:10:47.471765",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:13:19.853824"
+  },
+  "1-d25561d4-d223-4749-8126-65d820e69afe": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T23:58:30.547515",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:13:09.221186"
+  },
+  "1-924fcf53-3086-41c1-837b-54b44b7b60e1": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T23:58:30.599049",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:00:04.257912"
+  },
+  "1-28831917-0178-450d-9bcd-da62fd0c03d8": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T23:58:30.652513",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:00:01.364777"
+  },
+  "1-797cd9b5-07d1-4426-b738-7cddc83c734d": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-20T23:58:30.705811",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:00:02.230956"
+  },
+  "1-2d574df4-b7ae-4c7a-acb5-29aa98e4614f": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:12:10.517063",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:13:44.122312"
+  },
+  "1-9a90bd32-aa54-42cd-8b7b-fe2795e80861": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:12:10.400887",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:13:24.981979"
+  },
+  "1-ee655848-8d86-4f28-947d-d93ba03f62a7": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:11:53.999559",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:13:42.725283"
+  },
+  "1-ae0f40ba-7b99-41bc-a7f7-b505a5d52ee4": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:11:53.941353",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:13:33.008237"
+  },
+  "1-ee594338-67a2-4c6f-a14d-d93f637983d4": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:11:53.882780",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:13:29.100954"
+  },
+  "1-64025f33-69df-4cd6-98bf-08c552ed1752": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:59:47.442084",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:00:04.846687"
+  },
+  "1-8ee539e8-c226-4c6d-a597-03b1dd43850d": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:59:47.494846",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:00:05.490010"
+  },
+  "1-c34387b3-a1c6-4bd4-8dba-f6d5d892b7f7": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-20T23:59:47.546545",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:00:05.138583"
+  },
+  "1-09d68650-b04e-49e7-af51-21b9a8afb3c2": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:05:44.515579",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-b6bf10dc-4f61-49ed-9720-eee1fe92af77": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T00:06:12.211035",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f5fd85ff-7860-42ae-ab82-c5edfc8fdcc3": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T00:06:12.158257",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-5a87f38a-8f09-4a09-8ca1-2755aa56627f": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T00:06:12.317474",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-3b499162-1c8a-4c88-867f-35232922ed52": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T00:06:12.263384",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-51d79341-f9b0-4bb0-ae15-9e9fac72007c": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:07:00.615164",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-45dfe9db-d09d-4170-8c14-28c33e175be6": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T00:07:27.779804",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:14:16.283761"
+  },
+  "1-e87f02db-8d1d-4109-970a-c02d04dc1512": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T00:07:27.833702",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:14:18.007058"
+  },
+  "1-7a697a11-b60c-44ec-9fa6-36b2bc865c20": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T00:07:27.505126",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:14:19.941118"
+  },
+  "1-1b84754a-9918-47ce-93bc-504ef00c7d97": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T00:07:44.494750",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-1ddd7544-b376-46d3-b382-ef48cd99fe13": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T00:07:27.616353",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:14:18.739898"
+  },
+  "1-7d096feb-7120-406f-826c-be20c573c76a": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:09:20.553695",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a7135e13-2d76-45e8-87c8-f09671396195": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:10:21.918007",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-e1075617-68fe-4985-adaa-358b9821b3fe": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:10:14.376917",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f11d3afd-21a3-4fad-b8a9-62b48fa87edc": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:09:56.998605",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-e55b7e5d-0419-4f68-ba12-45b8f6c827c3": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T00:07:44.671830",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-13bcfae6-712a-472b-ab84-e2c8da4dfaee": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T00:07:11.683802",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:14:15.039283"
+  },
+  "1-94edab18-70c5-4477-84f5-635507157fb1": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:09:25.966712",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-0737bcc1-6386-40e0-9cc2-4eceae42c3e2": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T00:07:33.258331",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-11eaf32d-8945-4b7b-adce-f2017fbba464": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T00:08:30.106289",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:14:21.417641"
+  },
+  "1-adc2d252-b667-4271-a662-bba422d4ec30": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:10:51.803239",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:11:17.621675"
+  },
+  "1-6917f2da-f672-474a-a373-2284d9f34e7a": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:10:22.095418",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-78943296-413f-42ed-a940-73b1b66a50fa": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:10:03.542037",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:12:23.534922"
+  },
+  "1-5f7addc8-5670-46da-b896-04c056689ebc": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:10:22.036183",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:12:00.532352"
+  },
+  "1-523187a4-aaae-4689-aa36-f4146c9884ef": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:08:40.880017",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:15:37.145353"
+  },
+  "1-83aeed8f-2be0-4e80-a59d-73b4fe113828": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:08:40.701074",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:15:37.497401"
+  },
+  "1-30371b38-891d-4768-8a0d-f94262d547c5": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:10:22.213872",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-0fa5f014-e86b-4c9d-ac29-1133c2fc140f": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:08:40.755034",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:14:22.632737"
+  },
+  "1-bd5b46b5-cfaa-4d6b-8f4b-39a19d767be9": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:08:40.824753",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:15:38.108865"
+  },
+  "1-f1237ae8-3fbf-40cc-a72f-dac6a905eeef": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:08:38.797479",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:11:17.020439"
+  },
+  "1-b2c091ee-2c3b-4eea-864b-33edddca3c2c": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:12:10.810042",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-475fd905-6991-4c52-a4a5-1d95e0e7d998": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:12:11.042749",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-bb4b8935-2642-4b31-8a6b-524167f4879b": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:10:52.040207",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d3d49f6b-e67e-4f20-8fc9-40d49ccbdc45": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:10:47.649043",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:11:05.307950"
+  },
+  "1-53f38d01-267f-4c7f-8039-51167af15a01": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:09:13.577063",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:15:38.720053"
+  },
+  "1-ae5575e9-cb89-4323-83f6-3989e69f32cc": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:10:22.332712",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:11:45.688101"
+  },
+  "1-e1c7aec3-c944-470f-8b54-71e941999ce2": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:12:10.984524",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c7276f74-f064-4177-9dfc-a70897dbefa5": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:09:26.024416",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:15:44.357716"
+  },
+  "1-296fb816-67b3-4781-83da-26db4c9c987d": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:09:25.851000",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:15:42.334604"
+  },
+  "1-d47badf0-5ab5-4f0f-b8d8-cd15dc9d4c88": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:10:22.273577",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:12:06.520474"
+  },
+  "1-86abece5-1e75-4e49-af2c-bf17c0ac8336": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:09:57.175766",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:12:19.552190"
+  },
+  "1-14d94337-c698-47ef-8684-7182f94f1124": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:09:20.324359",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:11:44.779544"
+  },
+  "1-23ba85da-05a2-4c55-9f64-9077777805a7": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:09:20.668168",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:11:48.329997"
+  },
+  "1-b521159a-68c7-4f0b-91ee-0b8197f02c28": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:10:47.589952",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-232223db-4788-4217-923e-822ee1952aca": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:12:10.226670",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c768ab0d-103b-4b91-8e33-51f477db2ee9": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:10:03.483491",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:12:33.306370"
+  },
+  "1-856f0fa2-98e3-42bc-851f-06bd3485f040": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:13:44.481542",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-991ccbd8-b667-47cc-9a2d-df3a1cf61cd8": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:13:45.705483",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-5cc0b2c4-c14b-4a0a-a9a4-e36b9d41944a": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:10:03.334157",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:12:32.271296"
+  },
+  "1-15bc4dc7-4ffe-42c0-b940-718ea2277b4f": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:13:44.725602",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-5b948be8-cf60-44be-bedc-fdc30463d9b1": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:10:16.366109",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:12:02.306512"
+  },
+  "1-21f26673-9b85-4bd3-9385-bb94c1871250": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:13:09.281653",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-0db68443-6f3c-4982-ba4c-644d4db5277d": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:10:47.944618",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:13:05.298861"
+  },
+  "1-dc3266a4-e43c-4f33-816d-bb559d74da2f": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:13:44.540756",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-908362dc-856d-4548-b519-e64eb48914d1": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:29:35.638977",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:29:44.103331"
+  },
+  "1-bdf0e5d7-b6fa-47f2-a7a3-1865e9d13d9a": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:29:35.418804",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:29:43.450707"
+  },
+  "1-ba74b402-5a6a-4bd0-90d2-f89ff49fa9bc": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:29:35.698284",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:29:42.653738"
+  },
+  "1-0d718fea-979b-4e4e-a8f1-be5c8280d834": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-21T00:29:35.478965",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:29:43.753900"
+  },
+  "1-5fdcf9f9-8fc0-46ec-8222-2e22b69a1977": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-21T00:29:33.822203",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:29:38.229592"
+  },
+  "1-af2c4183-e809-4da6-9412-b1b5a47757d8": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:41:56.472345",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:42:06.331846"
+  },
+  "1-fd33fb13-aa79-440e-a252-d0a485c58700": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:41:56.771313",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:42:06.919595"
+  },
+  "1-1d00a385-6d36-4698-bc50-0a61c9ce5fdf": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:41:56.831747",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:42:07.526583"
+  },
+  "1-859d3ac5-4909-44e9-9cd1-1d8caf1cda98": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:41:56.710888",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:42:05.984696"
+  },
+  "1-c394212b-c9b0-4c4f-acd6-cfc4b168aa52": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:41:56.892380",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-6e6a47ac-2c42-446c-add8-14912704ce66": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:45:59.897391",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-010b8413-26de-40a1-ba63-668560f55bce": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:46:00.079456",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-34413bf9-b8cc-4d4d-9a30-0dbbada21cd0": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:46:00.019410",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f048de74-6c41-4a8e-83af-d32fe382e198": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:46:00.200897",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-0b6d1a1a-f600-47d0-a44c-dc0024745a00": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T00:48:26.482823",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-8a955756-cf6e-42a5-8167-5f1d83984134": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T00:48:26.607318",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c1096d64-f76e-4202-8ca2-6636cbdcdecd": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:48:55.994655",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c3dfb268-e8c9-4fe3-b795-e982932787d6": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T00:54:30.387537",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-ba9392e1-79bd-4230-af8b-6ecfe7854426": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:56:41.310662",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d10c718d-d4d2-471e-ab4e-3e066abab636": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:56:46.260435",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-4de34fd2-b9c7-4c7f-abc1-8084d77e12e4": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:55:20.952036",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:55:26.496269"
+  },
+  "1-dd6c4a3b-cb0f-4b52-8fd2-2375b00720fe": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:55:21.016190",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-8ef7816a-e82e-43ae-9c6b-72b1f2d95a8a": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:55:20.644504",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:55:30.072312"
+  },
+  "1-b7b8ff70-1750-4f62-a17a-804b681f66ab": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:55:20.767551",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:55:25.589229"
+  },
+  "1-84019148-66d5-433a-b4ae-1f0770981491": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:56:46.196667",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d50227b0-0cf5-46c8-9fa9-29f0cf537873": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:56:45.623308",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d461523c-e6ff-47cd-bd36-3bdbd86511cf": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:55:23.117068",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:55:51.110163"
+  },
+  "1-c08d6814-7a70-4821-b119-2341a4fa9eb1": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T00:56:18.254350",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-98959e1c-56d4-48da-aaa9-036104af4d78": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:56:47.462443",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-91f11d04-fdf3-416b-9bbf-26c70256a75f": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:56:47.334981",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-60c91070-10ec-46e0-a3c4-38be5349b00a": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:56:45.318856",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-42f6b95e-ebe8-47f6-a47b-b9be2df47bcf": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:56:42.377178",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d0fbab49-b9a7-4844-9d2f-806f8fde845e": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:56:47.271545",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:57:02.228681"
+  },
+  "1-b618c588-9b35-4f1b-a4b1-6ac6f2793bd5": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T00:56:47.398589",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T00:57:03.092855"
+  },
+  "1-4698c4af-453b-4c34-b1ad-ebfb8db64df3": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:04:18.102865",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:05:10.934562"
+  },
+  "1-602a61de-c657-4e2a-aea2-ad6d58ad38da": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:04:18.168380",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:05:09.399937"
+  },
+  "1-3ed033f0-76dc-4bf5-8fca-8b562f210943": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:04:18.232446",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:05:10.619157"
+  },
+  "1-5a0fae10-f21b-4650-a3d7-ecdeeef41bdc": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:04:18.362687",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:05:10.014522"
+  },
+  "1-8887f6f5-725f-419e-b14b-9b7e38be4b9c": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:07:49.190180",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-9bde19fc-bb4e-4d2e-bfe1-13d07e23696a": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T01:06:41.436950",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c8847513-b95f-487e-b122-77f0e13b1e06": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T01:06:26.038407",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-df2e28a6-fb8a-4d04-9a01-04d4c51dc607": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T01:06:41.305499",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f2b0ae24-8f4e-42d9-927e-30f4b18b46aa": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T01:06:41.502914",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-61833b75-3253-465e-b5f3-b61e5d3d8e65": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T01:06:26.815312",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-bd141b77-7a2c-410e-b63e-aa032efb38d1": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T01:06:41.239826",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d788d878-ee1f-4404-935b-4c8206227b3d": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:07:38.362603",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c158375e-dc8c-49aa-ad3d-286cb68b310e": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:07:41.741383",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:08:39.140103"
+  },
+  "1-167d7697-dc1f-400e-b23d-1dd0610c3419": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:07:49.055130",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-6bba9215-6656-413d-8ae5-2d1b230c72ba": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:07:41.141813",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-7ffaa358-c874-4990-854f-d1a6a20cbb30": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:07:38.627048",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:09:35.670800"
+  },
+  "1-55ccf390-4d93-4863-a256-f8d070fcc6dc": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:07:52.494641",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:09:09.124357"
+  },
+  "1-6e9aafbd-7788-495a-a0ea-06f79f2e16e4": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:08:01.708421",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-5160a2cc-1cef-43d3-9160-5d40d01de04c": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:07:41.876531",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:08:53.735919"
+  },
+  "1-7f3a631b-93aa-44c2-a78d-993571b13ba7": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:07:50.699808",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:08:48.379639"
+  },
+  "1-4bbde811-fd40-4f30-a055-fb29a296f6eb": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:07:41.209239",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:08:18.554192"
+  },
+  "1-b2d9d229-9d07-499b-a92d-8b39276dd7ff": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:07:42.355578",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:09:01.157020"
+  },
+  "1-ffa5e802-c890-4475-aecd-ad4a1d4e7b08": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:07:50.633423",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:09:18.528261"
+  },
+  "1-a333b60c-7f2c-4471-ac03-84cae027b047": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:09:17.658221",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-69efb4f2-c42b-4d2e-bbd1-d78f0991b60b": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:07:41.410332",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:08:40.930046"
+  },
+  "1-896884a8-2377-487a-a5f7-01270d16f04e": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:07:52.560987",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:09:25.919985"
+  },
+  "1-cc703ce7-bdfb-4e40-a790-4ca310551349": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:09:43.203173",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-73ac43dd-9ce3-4062-9565-83e00eb47e39": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:16:52.589784",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-158769cb-8839-47ee-a33a-770612bec53e": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:16:52.521703",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-df03bb28-b7a7-44d2-a84b-5ca8074cb1e5": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:16:51.908035",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-eebf53ae-dbe8-4c9f-9a0f-2427fd445e03": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:16:52.316328",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-fa5782c5-34f9-43d7-a3d9-113fc8f265bf": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:17:08.107488",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:18:05.630056"
+  },
+  "1-86eabc68-7cf5-4311-b720-1d8c1519d6ef": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:17:07.638695",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-df4a7e35-8388-47a6-9b54-2a52598235c8": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:17:08.179938",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:17:44.710767"
+  },
+  "1-fe01925a-0504-45cb-9891-c6b30688711a": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:17:08.249158",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:18:05.991267"
+  },
+  "1-dc5ac531-fd37-4730-8185-f4031504b62e": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T01:25:34.178586",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:26:00.397247"
+  },
+  "1-c0cee9ce-a99a-4fd8-98f9-488b9b978911": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:26:12.143131",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f30b2055-cd32-491b-b9df-9f390a5b75b0": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:32:31.530803",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d56b63c0-020f-4832-87f4-928e57932fb6": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:32:31.599060",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-9f0ebe5b-257a-48e5-832d-8d7768864014": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:32:31.462501",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c615cefa-3ca9-48e7-9055-502709033546": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:32:31.737752",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-9a02fee1-01aa-4389-8320-9154b9ddbec1": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:32:31.667093",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-14e9f56b-b299-4438-82cc-14a92c1b7593": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:33:47.502190",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-8bccdace-301d-4b26-a367-5b6928de7afe": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:33:47.641404",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-497ad35e-e331-495f-a354-d7c3723e3b36": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:33:47.571904",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-65a46beb-0ee7-4f22-b7f5-7162f2c9036d": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:33:47.292409",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-cefaa8da-a73f-4380-8cbb-a1b322a645d6": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:33:47.723230",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-790a72b4-ac16-405e-a747-d2301e7c9f0f": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:34:03.094703",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-460e5e9c-6b55-43ac-8de8-ea05832d44b3": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:34:02.883358",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:34:58.650516"
+  },
+  "1-34cae4b9-874d-4b36-bc91-934652c04150": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:34:03.024410",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d4c6e4ac-0d86-451e-86cc-685bb5ae8b34": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:34:03.165220",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-2230a65c-c4e8-4f51-8a64-4b52fb56ba54": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:34:03.235874",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-10342111-c3d9-4753-9a61-c675ae1a9e0a": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:35:08.865911",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-ddef675e-d0c5-467c-9ce3-e2cad0557b01": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:35:08.938119",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-36ab2601-6c4c-4ef7-8d89-95bdd1124183": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:35:09.009336",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-7b4988ab-156a-49c4-9d27-9ba49c4f5b01": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:35:09.508458",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-fa9e14bb-9e0d-43c6-9469-20cbb4913d7c": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:35:09.153356",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-8d569d0d-4b0c-44ef-aa25-59dbcda87f8b": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:35:10.204179",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-6ce3db83-83b4-4313-80c8-b74bdd138af8": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:35:10.131960",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-0797e45b-e79a-434c-9a38-85935861c1b1": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:35:09.654777",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-67b04869-5319-4dd8-9b93-0a8459bf83cc": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T01:43:42.442464",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a301cf97-cc6a-41de-a4d6-6d2eb732b3c7": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T01:43:42.369797",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-2d49e4f6-792f-4318-a879-763a5702ac02": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T01:43:42.515143",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-17808d8d-b511-4ad3-9437-5b7fdb087e02": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T01:43:42.295355",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f5a8eb41-76dc-4a23-968c-9a584fe7a0a0": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T01:43:38.851504",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a9ee64e2-673f-4a9d-9e87-02ca75f8ae29": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:44:02.899305",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:44:18.693396"
+  },
+  "1-09664243-73f2-4fe2-bfac-158bcfe645df": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:44:06.498124",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:44:19.307647"
+  },
+  "1-56160016-1fc4-4e28-aec8-82f0ce6c2732": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:44:06.354715",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:44:25.827435"
+  },
+  "1-a3b6cc17-413d-4b53-989b-51c472ad4fc3": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:44:06.569983",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:44:19.914373"
+  },
+  "1-ae3b233d-3777-49ca-a9fa-edb9e9c1f8cd": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:44:27.330103",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d0be53af-14fd-4011-a22c-fc5a33cfd380": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-21T01:44:28.944831",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:44:31.029029"
+  },
+  "1-a37f882d-72da-475a-8423-db0ef0693e15": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:44:28.672057",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:44:32.793720"
+  },
+  "1-75dca365-cdd5-496e-a505-263e94f2e43f": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:44:28.745820",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:44:32.187083"
+  },
+  "1-5866d803-6d22-4ad1-8c2a-f079ba428565": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:44:28.818545",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:44:30.664168"
+  },
+  "1-cc823888-7894-47bf-b2e0-1ec5405bf940": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T01:51:21.515387",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:51:43.140234"
+  },
+  "1-f9297b12-d892-41c9-bf05-5370be543200": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:51:56.696266",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-772744f9-a28a-45cd-90b7-88d8418d2370": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:51:56.770871",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-cc2acb4f-02ee-45fc-92de-c9ca7aec1409": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:51:56.995454",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c84585fe-6717-4198-a388-034b15551363": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:51:56.920376",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-1d041c6b-e9bd-4033-b9a2-352a15aa91c8": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:51:59.449313",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:52:06.294153"
+  },
+  "1-5ea3a6a6-552b-46cd-9ec7-dc30c0c6745a": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:52:08.723143",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T01:52:16.397902"
+  },
+  "1-83a0acb1-708d-4c94-bb0e-83e70fadca83": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:59:40.049559",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-2d3911e1-f964-411f-9065-66c6c6a094d7": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:59:44.634542",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-e17e565d-ab8c-4194-8948-d39cbea7f030": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:59:50.563208",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T02:00:21.950785"
+  },
+  "1-e7020cb9-828e-4e09-b349-1d5fc101045d": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:59:50.488165",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-491ae000-ecf4-401a-aad2-6d20a298ed87": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:59:50.638772",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f0ad540b-43c2-4931-ba19-98607d412a79": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-21T01:59:53.689919",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T02:00:44.909736"
+  },
+  "1-6aa48355-f10e-4f62-98f4-a5d094ce8e40": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T01:59:50.715005",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-fdb3cc0d-84d6-43cf-b664-f7718cf1da5d": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-21T01:59:53.614354",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T02:02:10.018256"
+  },
+  "1-a7c9bb64-5c10-4b50-a954-0d7bcdc63824": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:02:18.322877",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-ac2988d2-2d84-41e1-b4ba-c17c94642335": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-21T01:59:53.841317",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T02:02:16.442125"
+  },
+  "1-d03a4982-af93-4ce1-a89a-34af9027a0ac": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:01:57.691411",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-64bedec5-808b-460b-a9cc-210deb0423fb": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:01:57.460191",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T02:02:11.991785"
+  },
+  "1-cdb0c1ec-7e0b-4161-9308-aa178e4ef7d5": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:01:57.153429",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T02:02:12.659921"
+  },
+  "1-33535734-b5d0-4ffc-98e9-19f49eb46919": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:01:57.536795",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T02:02:08.791682"
+  },
+  "1-77c4202f-3448-46af-a91f-3bd4295329bc": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:01:57.383262",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T02:02:08.177117"
+  },
+  "1-447bea98-a13d-4e39-b2df-62ccc1a98917": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:01:57.614413",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T02:02:09.402739"
+  },
+  "1-96a4a1ac-0431-4103-a102-b2f2bf728deb": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:05:45.335931",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a8725c3b-3396-4693-9840-5c6cf9b35b78": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:05:45.411595",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-8e7d42ef-7bbe-42dd-8637-f30ef76d781c": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:05:45.487452",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-8734cf2f-dc5d-4d6d-9da3-a9c092b92384": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:05:45.563715",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-9dc803ab-ef2f-4b75-83a8-58e0693cd523": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T02:42:50.128350",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-12c51281-d654-4dcb-bd05-29a6a3750b63": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T02:43:11.421485",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-ca0c3574-02c6-4119-9bef-48ce34efca71": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T02:43:11.499887",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-8e63604e-bd4a-481f-84a7-1e2b7f451ef0": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T02:43:11.730478",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-9497a288-4e3c-4cfc-9928-edd32f38a3c0": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T02:43:11.653237",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-925bc8bb-c1e3-41b3-b2c0-2aa2a8867a65": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:44:05.853787",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-70fe47fa-8d6f-4a5b-b485-dcf597583b24": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T02:44:15.686015",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-8b9c52dd-5fa3-4e37-af7d-b4b3d062a951": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T02:44:15.524021",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-fce0347a-ea33-476a-94df-05381fe047f4": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T02:44:15.605449",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c9bf75e1-27b4-4656-a73e-99f722135f83": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T02:44:15.765569",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-618f744d-dc98-4739-96a8-d89078d71ef5": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:44:05.774112",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T02:44:45.537535"
+  },
+  "1-9b265794-76a6-4b78-8d06-1dc429774652": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:44:11.135815",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T02:44:37.667669"
+  },
+  "1-d0726992-469c-4be7-a1af-ddaa1038f4e0": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:44:38.889363",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-7113a62b-ed3a-480e-a349-24d84dd2a077": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:44:38.809798",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-abeeceac-a1c1-4f7b-a7a0-615f7d93384d": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:44:38.968993",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-15b0b3a0-2054-44dd-bceb-851545dcdf70": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:44:39.076337",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-5324c531-91b1-4599-9b31-0faed04e87db": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:44:39.916013",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T02:44:47.084195"
+  },
+  "1-92026b7b-c266-4fd6-b709-27f9857eab26": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:44:39.994475",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T02:44:40.767169"
+  },
+  "1-8680a778-46ba-4962-8409-5af430c72594": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:44:40.072816",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T02:44:46.149027"
+  },
+  "1-1d40d168-2222-4d1b-9c25-42d7d1dce8fd": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:44:40.151956",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T02:44:46.759845"
+  },
+  "1-806fc7ab-1200-46a5-8efa-b19417ba1450": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:52:37.206079",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c81fa2a9-0bc0-492a-96b6-693272dee543": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:52:37.450308",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-cec0f1e7-a9c0-407b-bf6e-04e6063eb1f3": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:52:37.530872",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-3039f9cc-85d5-4363-9e0c-04aa1be0a1d7": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:52:37.369261",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T02:52:54.622786"
+  },
+  "1-3b9e00c3-0daf-4d43-a06e-73736acc9d8e": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:54:19.574651",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T02:55:14.758985"
+  },
+  "1-b15054a4-ea38-4be8-a07a-c5de0e3c11d9": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:54:56.992674",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-6f704a04-1f56-4d7c-88b5-08e3597cd741": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:54:55.816066",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-56361078-901c-4a39-a105-ddf11f700770": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:54:56.746682",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-7e1fa7b1-702b-4ae1-8c12-1b4e7e9b6846": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:54:57.402172",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T02:55:26.684781"
+  },
+  "1-8d7e9b2a-4f9c-4a9d-b89b-1c8342a64768": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T02:54:57.483722",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T02:55:29.875933"
+  },
+  "1-371cd804-0d7f-45ae-9d36-53214a4aa580": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T03:07:21.632210",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-3fa32206-b9f1-42a8-953e-1518e48bd6a8": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T03:07:23.217325",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-cc6b3f2e-aba8-42cc-96a5-43ab8a86c6af": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T03:07:23.691066",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d00bad2d-24c6-493c-93fd-0ba69a359954": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T03:07:23.941486",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a1ac51f5-5b59-4297-a595-81feebdf6b0b": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T03:07:23.568949",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-6913adb3-04e1-40bb-a89e-82b3efc1e63e": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T03:07:24.024491",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T03:07:36.762613"
+  },
+  "1-242f59d7-06f1-4cd9-ac04-d4cf9db841b0": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T03:07:23.859409",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T03:07:39.873907"
+  },
+  "1-af2345d2-ed08-4a70-a357-d800ade7bcad": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T03:14:12.888046",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-504b216f-e372-4229-b4c0-6fcd18c5a967": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T03:14:12.254312",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T03:14:16.218804"
+  },
+  "1-7bdcf3d8-f1e3-4ffa-8c1f-079e6e9047fd": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T03:14:12.804670",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T03:14:17.460897"
+  },
+  "1-077c459f-a512-47e4-b8b4-c859dee0bf02": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T03:14:12.674022",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T03:14:14.979556"
+  },
+  "1-04148e16-bffe-41f8-bfe5-bbf4b84d81d7": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T03:14:12.506026",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T03:14:19.386111"
+  },
+  "1-6276d624-5c47-466c-ad14-a554703d7865": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:14:44.703407",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-b9c3e78f-7d08-49fc-8709-abdd4bcf81b5": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:14:44.373146",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-b2c21bff-c2fe-4ef6-9494-cd07dbfe6f62": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:14:44.455763",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-04785588-fcaf-406b-9961-f94136eba167": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:14:44.879059",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a7c47fed-5b75-4376-8415-02a50d8ee9f7": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:17:15.200868",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-483037f9-e408-45ec-bcde-e6ee0a1da661": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:17:15.617033",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-1af10b93-8391-4d94-8296-36b7f76278b6": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:17:15.368227",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-6c003cc2-614c-4c7a-8c04-690282d378f8": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:17:15.534103",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-7619329c-b6f2-49df-a3a7-ea34e4fdb6aa": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:21:45.437329",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-690f936a-b22c-48a8-b296-12880e143dc1": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:21:45.098136",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-ff09ea97-c72d-49d9-9552-049a918b6f45": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:21:45.604015",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-bc7591e2-9c70-4f88-96aa-beb276b01490": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:21:45.353982",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-e859e4b6-0ac8-4c12-b98a-a188ad451610": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T03:31:21.010639",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T03:32:13.385485"
+  },
+  "1-65cf8135-4c9f-4373-a78b-ee3226b99f10": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T03:31:21.269993",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T03:31:45.128464"
+  },
+  "1-ac717620-70d8-4674-a6c9-40d72536eb1c": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:32:10.802664",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-edfc8b9c-8744-4ab5-ad7a-32202d75ccb3": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:30:44.083826",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-578b712f-2781-4296-88ba-ec8a73319486": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:32:16.088646",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d7dc4964-eae7-4a1d-bac1-d76cf0cfda09": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:32:20.513194",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-39a748ee-b20c-4a4e-b427-ff39349509e1": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:32:20.248831",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a537d439-50fb-433d-bb88-3a8a323e2c70": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:32:12.164686",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T03:32:29.153980"
+  },
+  "1-50050e67-0b7a-4835-a90b-30f52da5823c": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:32:16.834826",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-29b33977-749e-4fb8-86c5-fc91f438d90c": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:32:20.425041",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-9954c4c0-62f3-41a0-bc86-7b78f233a56d": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:32:19.043787",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-280a792a-5c6c-4c7c-9a9f-de677a7d2d80": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:32:16.000894",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T03:32:33.611989"
+  },
+  "1-7ce6bb81-c1d7-404a-902e-b0d609ab090d": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:32:15.564508",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T03:32:32.976845"
+  },
+  "1-932640ac-20df-4555-bb9e-eb071848b330": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:32:17.754769",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T03:32:31.709957"
+  },
+  "1-92cfc529-6413-47dc-9b8f-c7feee1d409d": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:52:53.446443",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-6e7faef7-9159-401b-8e43-7b4449f838a4": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:52:53.533401",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-1ad5ea66-ab23-44ab-88ea-4a6576ca32e1": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:52:53.358034",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-0f465967-6943-413b-a1b9-9eb2250601a9": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-21T03:52:53.620468",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-411fcaf0-4896-41a9-ac86-0c30fc014d31": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:52:51.683255",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-02bdbea5-5fb6-440f-ba21-edd228b21969": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:58:01.480398",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-9ba2dd5e-e18b-481d-ae3d-88a424fa1879": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T03:58:24.786628",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-abbe5a2a-842a-4383-9c70-d6cf30a2b41e": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T04:17:49.905424",
+    "retry_count": 2,
+    "status": "pending"
+  },
+  "1-751888ab-00da-4c89-abad-fba552a9d89a": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T04:17:49.814813",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T04:17:56.394511"
+  },
+  "1-e63ff6df-96be-4a9f-8975-6dcc26c694a3": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T04:17:49.263013",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T04:17:57.944479"
+  },
+  "1-02cd12ef-ad78-46fa-8379-f12c40e2af77": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T04:17:49.995899",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T04:17:55.766895"
+  },
+  "1-4853b77c-4b76-4a67-850a-acbaf8e5c6b6": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T04:17:49.533948",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T04:17:58.570703"
+  },
+  "1-80c6083e-c19c-48cc-8c3e-7c2b6e5ba47c": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T04:18:36.896360",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T04:18:46.075534"
+  },
+  "1-fce126df-c1ab-43c6-a8d9-f35327880cbd": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T04:18:39.965608",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T04:18:45.450154"
+  },
+  "1-39ef8a5d-e37b-4cfd-9a1c-1db841b0c1c7": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T04:18:40.054542",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T04:18:44.190942"
+  },
+  "1-49dd3bb9-1d15-4d02-bcb9-110752d28cc5": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T04:25:29.371482",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T04:27:10.072650"
+  },
+  "1-e072010b-3480-4d81-a38a-4782d93e1270": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T04:34:22.675988",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T04:35:17.929514"
+  },
+  "1-e8600419-7a5e-4122-af92-aa7c5ad120b5": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T04:34:39.426896",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-29d51b59-73ea-492d-9f04-02792ee36bef": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T04:34:39.335573",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-80181bad-5525-40c3-b4bf-ce826dd0efb0": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T04:34:39.519820",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-781dab5b-58bd-4b4a-ad6a-8224f71d846e": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T04:34:39.611346",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-ea576f9d-48f4-48b5-a2e3-b6d081212acc": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T04:34:22.944939",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T04:35:55.896133"
+  },
+  "1-30571daf-d23b-4e26-b26f-d37773b6e021": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T04:34:34.947024",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T04:36:08.962967"
+  },
+  "1-b6bf5fd6-3f35-435a-a4cb-520433e3b693": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [None]",
+    "last_retry": "2025-11-21T04:34:35.182507",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T04:36:06.393389"
+  },
+  "1-ffb9c725-1a3a-4d65-bab2-746f4f908b79": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T04:44:00.493547",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T04:44:26.378946"
+  },
+  "1-2cb655ca-e775-4b89-9610-cd05855d1cb8": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T04:44:00.402936",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T04:44:25.739997"
+  },
+  "1-0eb718f1-b62b-427b-94ce-02b20996e976": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T04:44:00.583893",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T04:44:30.283097"
+  },
+  "1-d174ceb5-6c99-4451-a7b8-9115864953bc": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T04:44:00.674421",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T04:44:27.035005"
+  },
+  "1-b7d429a8-7768-42f2-9787-d905990058a0": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-21T04:43:49.056272",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-21T04:44:22.683890"
+  },
+  "1-e0d22045-1615-4825-b49d-d676c42f5364": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-11-21T17:46:08.968254",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-241db482-66e8-4ab8-95cf-2685421cfec5": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-23T17:07:09.553648",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-23T17:13:03.056743"
+  },
+  "1-44b4a028-7a89-48a6-81c7-75c99ef5d659": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-23T17:07:09.658259",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-23T17:13:05.159127"
+  },
+  "1-2a513ea3-b6f4-4ee2-acd0-c940c5db4597": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-23T17:07:09.747229",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-23T17:13:05.928956"
+  },
+  "1-5bee7218-1e9f-47b0-813f-9a1787c618cf": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-23T17:07:09.836257",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-23T17:13:03.837231"
+  },
+  "1-936339c8-ef1e-43e9-9bf4-836b7a4405a0": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-23T17:07:09.925369",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-23T17:13:07.290595"
+  },
+  "1-8174e864-1292-4a85-b1f3-a1d8b8ebc007": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-11-23T18:44:33.794665",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-dfa01773-c918-4ffa-9de8-afaa8cd3aba7": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-26T20:44:21.115441",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-26T20:44:49.520087"
+  },
+  "1-c3c0155a-39cd-49c4-b607-276b45f67296": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-26T20:44:21.210819",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-26T20:44:51.808338"
+  },
+  "1-7ab7feda-0c61-4725-852c-881c3275cdae": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-26T20:44:21.302472",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-26T20:44:55.590112"
+  },
+  "1-b62c4d98-bccf-4d8d-ac76-798215bfc276": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-26T20:44:21.394155",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-26T20:44:52.718210"
+  },
+  "1-75cb3829-8f15-43a6-b054-d7d4d3a6ee82": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-26T20:44:21.485831",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-26T20:44:54.171895"
+  },
+  "1-73ddb3ff-f1c9-47de-b6b0-ad770fbb0da0": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-11-29T15:45:53.389000",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-80a986aa-e75a-48cc-a5ba-2c6a43b211d8": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-30T03:20:27.133038",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-58eefc75-9729-4480-9e7d-c1a1efa74920": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-30T13:16:06.691486",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-30T13:17:47.613985"
+  },
+  "1-ee2ccfd1-43ca-47b5-af40-d3cbfafb2a92": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-30T13:16:06.807675",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-30T13:17:49.228417"
+  },
+  "1-7f5d14c2-3684-4d94-83e9-6c1b4f4c43cb": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-30T13:16:06.899977",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-30T13:17:45.021760"
+  },
+  "1-33c39547-d113-4324-a32d-85cfce08079c": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-30T13:16:06.992762",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-30T13:17:50.254856"
+  },
+  "1-629baeaa-31b6-4644-bd27-43ba678f5c3b": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-30T13:16:07.085610",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-30T13:17:46.657798"
+  },
+  "1-bcb64bf4-01b4-413d-be5d-e5a762371337": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-30T13:16:42.237130",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-30T13:17:51.184138"
+  },
+  "1-53fdab2d-6dab-467d-951a-499b7a213bb1": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-30T13:16:42.351420",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-30T13:17:53.839613"
+  },
+  "1-0f129a63-d392-494c-bfdf-5a67ea880b22": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-30T13:16:42.444947",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-30T13:17:52.834610"
+  },
+  "1-93fd3187-2bac-41aa-b37a-5a58dce90165": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-30T13:16:42.537814",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-30T13:17:55.458424"
+  },
+  "1-d77a1a86-cdbc-4fd6-adfd-102b40ec32b5": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-30T13:16:42.630326",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-11-30T13:17:57.080293"
+  },
+  "1-a716a689-9849-4786-bcd8-f7d73c27dde2": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-30T17:05:25.516243",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d3bf961e-d19e-4618-b84f-8bd6c1f3b6f1": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-30T17:51:43.544614",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-788aa6f2-adac-43a2-9a6e-27fa548947b5": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-30T17:51:43.638620",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a1bbed83-5502-4e73-aea0-114d53a8bbbc": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-30T17:51:43.732702",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a92452bd-f74e-4d53-b112-5d69ba2e2641": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-30T17:51:43.826156",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-102c86a1-f73a-4a84-9e9b-c7eabd02b075": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-30T21:15:27.749550",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-25e1aaca-edad-4646-93c3-d3999938bf40": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-30T22:23:16.170512",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-645b3e71-9968-41d7-bf4e-ed672dbbe0f7": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-30T22:35:25.097929",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-477c069f-c2e0-4edf-b745-012bf56741ca": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-11-30T22:41:50.507092",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-9e36d087-104e-4e70-b9f7-cf07098c2ee9": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-30T23:12:11.052567",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-86716e7b-33d8-4516-b6eb-74a968e026db": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-30T23:12:11.149123",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-7c3efdfd-74bc-4eec-9946-7bc3fc3c8428": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-30T23:12:11.244043",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-3de49017-489a-4ee5-9736-1c84d606ed76": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-30T23:12:11.387138",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-dd65ca57-ee8e-4df5-8e92-8770da3a9278": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-11-30T23:12:11.481597",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-e96cbf72-adc0-4dd6-82cd-03e3090b8935": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-11-30T23:55:01.973973",
+    "retry_count": 1,
+    "status": "pending"
+  }
+}

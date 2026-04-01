@@ -1,0 +1,893 @@
+{
+  "1-e02ceaac-c702-4e59-a1f8-a853e98013f5": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-06-01T07:32:05.859976",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-01T07:37:07.632287"
+  },
+  "1-9ecbbaf2-fb0f-42e0-ae25-5871d4133b6d": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-06-01T07:32:05.865584",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-01T07:37:07.676746"
+  },
+  "1-34b6887a-f2a8-46ca-9d46-9c01af91ab6f": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-06-01T07:32:05.870601",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-01T07:37:07.897876"
+  },
+  "1-9488d9d9-e61d-411c-b3c9-6e6dff562f79": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-06-01T07:32:05.875552",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-01T07:37:08.145002"
+  },
+  "1-b851d4d6-4082-4853-bc0f-64b452789649": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-06-01T07:32:05.880777",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-01T07:37:08.206308"
+  },
+  "1-2aa3f501-ce34-417e-9236-0884389220c6": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-06-02T20:03:48.792736",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-9ac6058b-03c7-4001-bf9c-8d11e86df982": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-06-04T03:46:21.197860",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-04T03:51:33.684327"
+  },
+  "1-adc2d43b-5da3-43c8-8ef8-b8aa1644a0fc": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-06-04T03:46:21.206871",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-04T03:51:33.996136"
+  },
+  "1-7f482b59-012f-442f-baed-2e5e3a8f0cc8": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-06-04T03:46:21.213763",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-04T03:51:34.068070"
+  },
+  "1-685e9a55-71f5-4119-a0a2-a7caad348229": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-06-04T03:46:21.221357",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-04T03:51:34.504548"
+  },
+  "1-0b397055-5124-4b83-aecb-5c69264a0bfa": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-06-04T03:46:21.228320",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-04T03:51:34.638432"
+  },
+  "1-8fc2f1c9-1747-4daf-9b72-5e99c28de656": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 520, Body: <!DOCTYPE html>\n\n<html class=\"no-js\" lang=\"en\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n  <meta charset=\"utf-8\">\n  \n  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=ed",
+    "last_retry": "2025-06-04T21:25:52.828474",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-23ba306f-29e8-4cc0-92ee-f39be7ed07c4": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-06-05T13:50:03.316065",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-e7a01ed0-e217-4b3a-85d5-4fa0e55367ad": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-06-05T17:10:03.068733",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-411f43e5-7f6d-4e82-9e59-a2cc8930a875": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-06-05T23:09:08.504853",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a52730f8-e5c2-4761-9055-a8b6c97dafb4": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-06-06T05:55:04.440406",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-06T05:55:06.227328"
+  },
+  "1-a05bf44c-ad61-4db5-8d7d-d055550f1029": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-06-06T06:40:50.307849",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-06T06:40:52.801602"
+  },
+  "1-d84c021a-503b-48c2-96e6-85ea4be6e1d2": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 502, Body: <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-",
+    "last_retry": "2025-06-06T12:05:53.313387",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-dc5a42ef-28aa-4340-9e27-7209dcb6e58d": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 504",
+    "last_retry": "2025-06-07T23:06:11.788136",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-07T23:06:14.644833"
+  },
+  "1-362a2c3d-670a-4424-ab0c-ef7d137b61f5": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-06-08T20:31:41.253597",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-6cce33e4-7748-4b96-8b45-4eeaf526e607": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-06-09T10:18:35.940319",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-17a4a5fd-b5bd-402c-a572-fbde1f8b138c": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-06-10T05:33:28.401215",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-86dfaa92-03c4-42d5-9b37-72bca5458eee": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-06-11T19:19:21.064807",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-68fdcbba-436c-4799-ae24-5200ac082a4e": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 504",
+    "last_retry": "2025-06-11T22:26:50.856890",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-51ade242-d1ec-4771-8913-3790fcb0b896": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 504",
+    "last_retry": "2025-06-12T00:40:00.350909",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-12T00:40:01.244717"
+  },
+  "1-b44f1789-767b-4a81-b3d0-087e09fb6f3f": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 504",
+    "last_retry": "2025-06-12T00:40:00.359723",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-12T00:40:02.023531"
+  },
+  "1-1ca27188-b0e9-4e5f-97fd-ad36d36cba97": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 504",
+    "last_retry": "2025-06-12T00:40:00.767174",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-12T00:40:02.792809"
+  },
+  "1-2271089e-c13a-4a9c-953a-91bf85669bf7": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 504",
+    "last_retry": "2025-06-12T00:40:00.798561",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-12T00:40:03.602328"
+  },
+  "1-ee5d3e58-1c34-40a3-a1c2-d5280fb5a5da": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-06-12T15:07:12.592148",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-5271694a-d861-4799-875e-cc9763b18e91": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-06-13T00:01:30.595979",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-b6f2c509-97d3-4d23-80ac-e5ee22f34d8a": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-06-15T22:58:19.267673",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-5a67bcaf-9fda-4976-9d98-3c49a2bb8e77": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-06-16T22:42:38.548645",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-37baae66-9925-47f2-a613-98c9cf140e50": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-06-17T16:56:22.679319",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-7e252d0f-b55f-4c0b-bdcd-6b262048e683": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 104] Connection reset by peer",
+    "last_retry": "2025-06-18T17:23:57.930465",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-18T17:29:55.051096"
+  },
+  "1-d53d26c6-8d6b-4c5b-be09-600efef7ba1f": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 104] Connection reset by peer",
+    "last_retry": "2025-06-18T17:23:57.956296",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-18T17:29:57.595269"
+  },
+  "1-6ad42130-f2bb-4d8d-89e4-4245785dadb0": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 104] Connection reset by peer",
+    "last_retry": "2025-06-18T17:23:57.965046",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-18T17:29:59.555134"
+  },
+  "1-57580361-56dd-4d5c-885c-b54f6e3e8336": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 104] Connection reset by peer",
+    "last_retry": "2025-06-18T17:23:57.938832",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f683e085-d684-4013-90fe-ac31b5cf5a1f": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 104] Connection reset by peer",
+    "last_retry": "2025-06-18T17:23:57.947440",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-192ea41a-9029-4b46-94d1-0872968d9bbf": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 104] Connection reset by peer",
+    "last_retry": "2025-06-18T17:23:57.984340",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-18T17:24:02.600097"
+  },
+  "1-ec58245e-6192-4a52-831d-430549af821e": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 104] Connection reset by peer",
+    "last_retry": "2025-06-18T17:23:57.998920",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-18T17:24:00.005949"
+  },
+  "1-2fd61668-4ab8-47ab-9374-5fd08e24c196": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-06-19T15:44:39.038184",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-23d41723-3810-4029-a822-95b510d53fe1": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-06-21T17:29:51.835856",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-97b4ec50-2f70-43a5-a72e-fda8bc57d794": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-06-22T02:49:23.812430",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-3f75b32d-e922-447e-9884-1ce5695fb329": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-06-22T15:24:23.137574",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-ea56b86d-ef82-40f7-8ead-ca59cbfc9b31": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 504",
+    "last_retry": "2025-06-23T03:47:53.046072",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-23T03:47:53.977351"
+  },
+  "1-02f1bb44-ea41-4667-b6af-01c1d9d87345": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-06-23T18:51:32.719916",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-79d1dde6-1da5-4bb4-9b4b-86a9e874a4b4": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-06-24T15:11:37.316643",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-4fc5e354-6b3e-4d39-8807-e86600666e5a": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-06-24T15:35:20.958696",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-d0344118-919d-48d2-97e8-05dd15d19256": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-06-24T16:52:07.067969",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-8aba9113-4a02-4c0a-b5c9-9b93dc1613ed": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-06-24T17:15:41.159724",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-8be3cb24-ae7b-42f2-936e-734eed88d395": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-06-24T22:23:56.123535",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-ed7b5617-96ea-40dd-b3c8-0d57bbc8475a": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-06-24T22:59:54.046774",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-188422d0-53b9-46d3-9a2c-ee9f8d1ad9f7": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-24T23:06:30.767901",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-330f8d88-01dc-4f3c-ae11-956a00cfe0b2": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-24T23:06:30.779075",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-80c7b242-1127-4dd5-a457-b44ce533b5d2": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-24T23:06:30.789927",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-79365b7f-70dd-4cf9-9ce8-e29a7e224687": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-06-24T23:06:30.802692",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-e8176466-a308-4e69-bcf3-787d2fe11dac": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-06-24T23:30:45.303240",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-de8de4ca-d594-4d7e-b09e-ac24b65c3e30": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-06-25T00:22:26.103860",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-27f48366-7684-43a1-bbc3-9bf3d74579dd": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-06-25T02:11:29.435429",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-29982790-ee62-44fd-980c-61a7e8a24454": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-06-25T02:28:57.728279",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-964203e2-5d3c-4316-9c61-20af9569b2c5": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-06-25T08:44:57.312496",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-25T08:50:18.013228"
+  },
+  "1-401dfed4-b009-4bed-a21b-f95fe4aca492": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-06-25T17:51:37.084285",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-4d38f51e-bb8a-451e-9554-294b54450a05": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-06-25T20:08:13.905981",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-49e40596-a113-4fa7-be2b-5ce4441d1343": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T20:08:13.963465",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a4198d31-e0a1-4406-88b1-c316ec5cf3f0": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T20:08:13.976188",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-5ddff210-2ae8-4d36-a096-71e9afa1d943": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T20:08:13.989460",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f0198189-8332-4886-b9d9-f6181cdb8bd3": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-06-25T20:08:14.005172",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-cb69541a-1e60-4504-afa9-d6f13a83eaaf": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-06-25T20:09:25.601371",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-06c51c28-938b-46c0-83be-5eb4fc232c0f": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T20:09:26.037949",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-59c30331-1fd3-4ecc-bc82-4510bfac2093": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T20:09:26.052192",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-1d947857-e003-4f12-8787-dbdd7cc46158": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T20:09:26.065207",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-0b6446be-1909-4530-b965-5262e4543b05": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-06-25T20:09:26.078739",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f7afa7d4-f12b-462a-9b92-a6f05add812c": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T20:15:27.816572",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-e89a95b3-bc0c-49c7-a5a6-f38840eb153f": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T20:15:42.370783",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-b670816b-3c56-44cb-a740-d3abba8d0876": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T20:15:42.384669",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-5f07f1cd-d33a-4c52-8193-eb901ced810f": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T20:15:42.398781",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c7116f5b-e20f-425d-9e6b-f03a0c5687b4": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-06-25T20:15:42.412898",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-246a4611-7ac9-4d5a-9517-1dc0f67818e8": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T20:16:32.270874",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-76683021-5ff7-45b2-bd3d-7a8002025beb": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T20:16:32.284903",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-351a975f-c18d-4413-8dfb-14130d78a9dc": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T20:16:32.302073",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-4e383dad-cd86-48d8-9051-e548ffe9c360": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-06-25T20:16:32.320175",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-680dfb53-e1fe-47ca-bc89-e2fbf92aa9af": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-06-25T20:22:37.245271",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-22f4fa11-1e27-4c55-80ba-dd4f04d8b204": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T20:22:51.156412",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-6c7719e7-5ff6-4af1-9bfe-5237582bc20f": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T20:22:51.171298",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-6531d194-021d-40d9-8ec8-3b82d1283f87": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T20:22:51.186287",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-150f2edb-32f3-4fb7-806a-763981b6892a": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T20:22:51.201125",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-140591de-1fed-4c81-9cec-8456c26ea595": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T20:23:52.998220",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-572253c2-f0a2-495b-b114-af9ff60c6b49": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T20:24:07.349679",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-37d44e2c-2ea3-47ac-b70e-c9a219d79ff5": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T20:24:07.365234",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a60f5552-3e72-4d1c-9b36-17837e6e58d9": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T20:24:07.381233",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-d1531e34-e5a1-440d-ad2d-e0004e282293": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T20:24:07.400798",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-1c889c65-67e1-4dd8-863a-049bd499c2e0": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T20:53:18.575424",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-25T20:53:40.598523"
+  },
+  "1-6ef667c2-06e9-4cd9-b54d-a4a648750aa8": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T20:53:18.593251",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-25T20:54:25.776018"
+  },
+  "1-91c94cce-2914-4053-857f-70d4be439c6b": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T20:53:18.611034",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-25T20:54:24.087434"
+  },
+  "1-957554c0-0d8d-44de-9660-20ee65072daf": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T20:53:18.627221",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-25T20:54:23.158013"
+  },
+  "1-c3690eb1-0f9f-42bc-9456-27c05907ccef": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-06-25T20:53:18.647602",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-25T20:54:27.482708"
+  },
+  "1-0bd45825-b0de-4924-b18e-6046f418e82f": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T21:00:17.172492",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-57f7a3fb-86ce-4129-9b1d-97a0c9a5e2b1": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T21:00:27.704363",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-f040fd1f-baba-431f-b6b5-cd2d8f47e5cb": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T21:00:27.721393",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-a9f4bdee-a890-4a98-a8ba-de9562f23108": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T21:00:27.739900",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-3479e604-f67b-44b0-a965-4f722ada688a": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T21:00:27.756719",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-6e2e0cf2-c2ba-42ea-b77b-eeb47f34f2be": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T21:09:33.947752",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-490ce58c-3a13-4713-ab56-48cac78830e8": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T21:09:33.966236",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-7644fcf8-e492-44e1-9fdb-1c332aaae8ec": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T21:09:33.983541",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-949b788d-e1ee-4d64-93a2-03a08953c6eb": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T21:09:34.003935",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-5181cf6f-2ea9-406a-9096-681363b3c5ab": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T21:10:06.671628",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-25T21:10:12.275854"
+  },
+  "1-a8491c1e-18ee-47cf-81cc-51abdd267608": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T21:10:06.689704",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-9101d0fd-72d6-4a53-b13a-8df83ee6f2f0": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T21:10:08.800075",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-9d178aeb-2bf7-46bc-82da-bfeedf775c35": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T21:10:08.740058",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-74ab57ff-0779-494c-9649-bd8b3d5a92c2": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T21:10:06.746916",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-6e7f65a0-4e7c-440a-8cda-fe73cff6e4aa": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T21:10:08.759425",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-9e1d7528-83b2-44bf-9367-ef965c6db03a": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T21:10:08.778213",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-25T21:10:09.731399"
+  },
+  "1-564bbd86-5f10-40da-b17c-4f4af38058a1": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T21:10:08.818748",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-25T21:10:19.415994"
+  },
+  "1-deba94a2-8cc4-459b-9981-82433ee341bf": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T21:10:08.837460",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-c6fe0e65-9b3b-4196-a939-af48f1273d07": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2025-06-25T21:17:39.105874",
+    "retry_count": 1,
+    "status": "pending"
+  },
+  "1-7bff9950-da85-484a-9fda-d96f08e294e7": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 104] Connection reset by peer",
+    "last_retry": "2025-06-26T00:25:21.630889",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-26T00:31:01.636698"
+  },
+  "1-ba010e8c-4bd8-42d7-9a0f-b4303b730ea1": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 104] Connection reset by peer",
+    "last_retry": "2025-06-26T00:25:21.650328",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-26T00:31:02.744003"
+  },
+  "1-6769afb0-ca21-400a-9020-d67593a77349": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 104] Connection reset by peer",
+    "last_retry": "2025-06-26T00:25:21.669746",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-26T00:31:03.707397"
+  },
+  "1-58542c1d-ab87-4ff0-a6d0-49cb415653b3": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 104] Connection reset by peer",
+    "last_retry": "2025-06-26T00:25:21.689005",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-26T00:31:05.471517"
+  },
+  "1-866bb3d0-9539-4fb7-b6ed-bda51e9fac28": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-06-26T18:11:21.701057",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-b1fefcef-c248-4900-8e91-48fa2ba95fb0": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-06-28T08:11:18.236617",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-06-28T08:16:33.241037"
+  },
+  "1-ca890c2d-d891-43a2-aec6-37d3a0d51375": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-06-29T17:53:19.655005",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  }
+}

@@ -1,0 +1,3851 @@
+{
+  "1-cdb0b82d-a683-4c95-85fc-04df2bfb906b": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:23.973562",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-0ad82465-b06f-4fdb-802e-4c8a1a9aaca3": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.013724",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-c6c054e5-09c9-43fe-b24f-5422e6618ba0": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.025352",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-cc850398-43f6-477b-b1ef-78d622ce0d79": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.036988",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-65bda363-3c77-4a70-b506-5a9631b4460c": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:23.984253",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-b79f4ae6-aa59-482b-b6d3-da1984e28d9e": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.052419",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-c82b7c38-3121-4927-b2be-c41f71ebf7bc": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:23.954499",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-6414cef2-ae74-4007-8058-0b5b0f758734": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.073404",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-54dd32f5-24ca-4b73-9968-fce4c95dbaa9": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.083749",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-5ff33014-560a-42bd-8abc-ae2a003c74f1": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.062653",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-df61cc95-b6ed-436e-83a1-27a1e5f67ac6": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.095332",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-df4a0e00-4ef0-4053-8dc5-553d313dea46": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.107133",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-4fb87ef2-26ee-453a-aa75-238eafad46a6": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.143442",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-67bfc29d-48ba-49b7-aba2-2e57e9ae7e4c": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.165229",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-660856fc-0822-4e1c-ad98-bda4cb665973": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.132649",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-b67b382a-83e0-4acc-83c8-e3831a32ed7e": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.122565",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-2bb62e50-10ec-43a6-ac46-b386666e112f": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.176790",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-d92242ef-febc-4071-bcda-7b897c5b6a1f": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.153717",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-37b7e312-54a8-46cf-8162-bafe0a3a769d": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.192247",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-afe15511-6370-4526-b4e6-e092111b7231": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.213424",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-28b36fc7-9923-4770-8180-2ebd282f7abc": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.236928",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-f8e01bc9-13fc-443b-a461-7d15ecf3af94": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.248612",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-3d05aeb8-92d4-4972-ae21-8be4990cd065": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.202414",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-28de398d-e0f6-4cc9-a006-1191af5e7ab2": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.225819",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-ed10a432-e673-4b8a-938e-bb805c90d7da": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.264850",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-d5ca633e-aeb5-478b-821f-d51bb1ace2a3": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.295967",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-44e2d2bb-bd82-48f9-aa8f-5aa297406623": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.285626",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-8d5c9237-82ed-49a9-9ad8-42acf60d07a4": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.319471",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-54449f0b-a16e-4085-92d4-52283185cda1": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.274946",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-1298f927-99ad-4e76-9b7d-3b59d26cc741": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.307773",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-3862dcea-567f-4a29-9349-0c45ba508141": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.355862",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-caf908b4-9b44-4352-9066-b5a2094b9b10": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.334852",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-b5190e42-41a6-4da2-af1d-ef7d08018113": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.345243",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-521522f8-5f17-419a-97e3-aa2943edda01": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.377914",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-223e776b-11a6-4aa6-8a68-d0da9f3058a7": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.389540",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-ae0cf65e-6cc8-40c4-a6f9-d42a5a3aeb3d": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.366247",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-751b2fc0-3cc8-43d5-be0e-ffb5606259c6": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.405695",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-a89767fd-417b-4391-8d87-df598a209a07": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.415883",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-b2d481bf-5030-4a35-9240-3d7395506afa": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.437290",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-2b03d805-aa9e-4917-bbfd-3dc1c6ae536f": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.426865",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-983913c3-809f-4565-b38b-3f83e92f48fd": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.476276",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-883bea2c-2d7e-4680-8f71-7eb8c293909b": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.448973",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-3321dcb8-9837-4e56-9665-1046f4869403": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.460617",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-f31fe17f-5a17-49e4-985d-b341adf06a86": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.499103",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-7f4b7678-6115-4f32-93b0-949c10364f5d": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.509680",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-5a0f353d-e3d6-402f-a6e9-e999bbbf4ef9": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.533186",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-1838f559-5a44-48fc-9a4a-03d8284bab36": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.559557",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-9f962af3-43b7-4a75-a11a-d63d84fb969e": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.521437",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-f433e7b2-28be-496f-be2c-9b6cb63a8c40": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.570434",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-0e78c4b8-742f-45e4-b7ff-0dee13f436e2": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.549390",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-9e75d7d5-fcfd-4044-a2e2-ae13e1c146cb": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.580797",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-eaacf34f-0e36-4737-a37e-2e24e1914c68": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.604110",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-17319067-e336-49f3-b589-9f5206d6da21": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.592465",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-a7fd74bb-ce96-4d4a-ac2b-ca7dcf62b3de": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.619456",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-548e7751-aa48-45b7-849a-6332d6c3cd45": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.640406",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-cad3cdf0-52bd-4c32-8b72-520ea142569f": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.629606",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-18f8281b-a88c-4f52-8c23-f32f3f2f49a7": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.674179",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-71864182-a274-438f-abb1-fae36bd0a77c": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.662539",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-45fbebd9-eb01-4022-b8a4-f27a10b717df": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.689462",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-37be864c-3c15-4d74-a953-27e905da6dc7": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.699574",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-80f4ce9f-bfd0-41ca-bc7b-87ada5986aa6": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.488655",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-e86380ff-9f72-41c3-a4bf-ba4584dfc679": {
+    "error_type": "max_retries_exceeded",
+    "error_details": "Exceeded maximum retry attempts (5)",
+    "last_retry": "2025-03-12T20:29:24.650866",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-ed4220dd-eec5-4b5a-bf7d-184ae43a3d68": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 104] Connection reset by peer",
+    "last_retry": "2025-03-14T03:36:23.468509",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-03-14T03:41:37.592835"
+  },
+  "1-73fe52f2-273d-40a7-9436-b95b47265ce8": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-03-15T01:16:57.683714",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-a264b176-01a5-4493-b6ea-81c2bc63a150": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-03-16T03:16:43.557394",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-fd8c2a25-aaab-48bd-97a0-bd5ea5e1a6d4": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-03-18T15:01:12.573954",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-1958e6ee-a37c-4911-85fb-619e13dfe75b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 502, Body: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>cloudflare</center>\r\n</body>\r\n</html>\r\n",
+    "last_retry": "2025-03-21T17:22:30.201860",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-03-21T17:27:59.599907"
+  },
+  "1-f012ed3d-e51c-44fc-88a0-e5318cb077b0": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-03-22T17:04:44.157637",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-ddc617ec-b9c3-4573-9c7b-8bf467768ee9": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-03-25T15:41:59.917386",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-0f89e336-ae82-4d26-bb67-011389daf1ba": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-03-25T15:53:01.942100",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-a2b9903c-a101-48d3-b7fc-6692df85a80d": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-03-25T16:03:41.770307",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-117c9789-437d-4d32-9305-cd14f83b2b7b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-03-25T16:14:13.518997",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-1a3a85f0-d1bf-428f-9bd4-93cc8dee055b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-03-25T16:24:32.162200",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-367927d3-468e-4a0e-8988-255f3f6007b0": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-03-25T16:24:47.490693",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-7f95b50e-9ff0-4af3-a0bd-3de959f4328d": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-03-25T16:24:50.215223",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-830a6ad2-26ae-46a0-9240-8f31f6c4357d": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-03-25T16:30:12.481136",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-c9d03474-a75e-4fb6-af67-6b3d8de2d4f1": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-03-25T16:56:50.935673",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-d9100f3b-781e-4937-8fd3-19dbcfacbb2e": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-03-25T22:53:11.657603",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-03-25T22:58:56.461267"
+  },
+  "1-ff0153a4-076c-4e17-9780-2ab20542cae2": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-03-27T16:48:33.070274",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-03-27T16:54:06.612528"
+  },
+  "1-e0f7c0f0-8bea-413f-9acf-a1d3d60fbc04": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-03-27T20:47:11.016729",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-b68bd10e-7215-4c19-8720-9cfafda84384": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-03-29T16:39:24.564123",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-c93260c9-c256-4f59-80ce-a66eb575b7f4": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-03-30T10:05:07.289356",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-03-30T10:10:12.819134"
+  },
+  "1-054d0224-aedd-410c-b419-ae10853b0d8a": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-03-30T10:05:07.366506",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-03-30T10:10:17.677906"
+  },
+  "1-78d81305-5fb0-41c9-8453-e586a383e26d": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-03-30T10:05:07.386231",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-03-30T10:10:19.207250"
+  },
+  "1-8934fc27-a220-4768-8662-c920a378ba72": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-03-30T10:05:07.404404",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-03-30T10:10:20.109418"
+  },
+  "1-61a4e87a-c8a0-47ce-b458-9d179bf0b3a1": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T05:42:16.280713",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-d53f01d9-77b7-4742-a85f-813012d37b96": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T14:40:35.901302",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-01T14:46:18.318280"
+  },
+  "1-f3389ba1-dbad-4f92-9c08-4728f1e7f421": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T14:40:35.057078",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-01T14:46:16.566216"
+  },
+  "1-e3ef1a18-c3c9-4399-9196-6510ec655fa8": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T14:40:35.479368",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-01T14:46:14.820663"
+  },
+  "1-8802103e-5e89-450d-a031-7d443941d736": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T14:40:35.173140",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-01T14:46:19.400670"
+  },
+  "1-ded65830-a580-405a-ae25-b9084f00865e": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T14:40:38.023358",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-01T14:46:23.984502"
+  },
+  "1-8b39de8c-8d01-4387-9119-4b25b7d9d094": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T14:40:35.398778",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-01T14:46:20.430352"
+  },
+  "1-0630b31e-9691-41f1-a1fb-29404a4bd934": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T14:40:38.044542",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-01T14:46:27.465435"
+  },
+  "1-9712a103-3469-4bbe-8300-b7d9ad391c5f": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T14:40:35.993042",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-01T14:46:25.725455"
+  },
+  "1-bcc222cd-5916-4311-993b-33ce134e58b4": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T14:40:36.122349",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-01T14:46:22.193040"
+  },
+  "1-4e7fa761-de74-4526-a83b-9c6f4de6edbb": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T14:40:37.986944",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-01T14:46:36.509601"
+  },
+  "1-04bae1c4-6178-4d93-9d85-f1f6c19f78d9": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T14:35:28.912152",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-01T14:40:37.961589"
+  },
+  "1-1d949aaa-3bf8-413f-833c-37e9972eb5d5": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T14:40:38.005248",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-01T14:46:33.022787"
+  },
+  "1-c73c7154-09fb-4a08-9e27-3465a1dc8ae8": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T14:40:38.176852",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-01T14:46:38.249439"
+  },
+  "1-e5ce52ba-4277-489e-88d2-2feada3bfe4b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T14:40:38.121906",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-01T14:46:34.766076"
+  },
+  "1-be6b7d3d-65e0-4afc-bd1b-d4fa5cfd9d71": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T14:40:36.207431",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-01T14:46:30.295355"
+  },
+  "1-2f903900-b6a4-4da6-8a8b-f2e988442043": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T14:40:38.325194",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-01T14:46:40.003499"
+  },
+  "1-e3f3c25d-19aa-40b8-990b-86b55cecf3a4": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T14:40:38.197412",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-01T14:46:40.991959"
+  },
+  "1-3631d8a1-001c-4877-b975-9719471e9b72": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T14:40:36.241324",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-01T14:46:31.239972"
+  },
+  "1-9d605616-63e0-4c52-849a-edd594a7b969": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T14:40:35.865824",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-01T14:46:28.549066"
+  },
+  "1-76b874eb-46b3-4aa2-8c49-928402c1a063": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T14:40:38.215495",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-01T14:46:42.736066"
+  },
+  "1-8564247e-110e-4151-af46-1d1951a75ea8": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T14:51:54.159410",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-a3017f38-e47d-457b-9216-46ce6fea0cc9": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T14:57:37.569841",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-750c0290-1dd7-45c4-b365-0a2266e4efe7": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T15:08:28.165912",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-d77e8a49-98c0-4b4a-bbd1-fa7c683d732b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T15:08:31.477488",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-9c7f0e4c-785b-42d1-a32d-b87231a1ad3b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T15:08:39.056333",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-429c972c-2c98-46ee-9a20-3f6b91abd665": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T15:08:43.931649",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-dde8f3d8-17db-40ba-a9dc-26f9cd1d8fa2": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T15:14:02.891316",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-215c532a-cf0f-4b38-9cf0-52d8e7ac6ad5": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T15:14:10.511008",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-5cdc0e90-cec7-49ea-a306-bf4e1b607ea5": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-01T17:15:44.787705",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-b138cc91-76db-4ea4-b0c1-02b64847cef8": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-02T14:41:40.669913",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-02T14:47:30.411628"
+  },
+  "1-660ef6f6-6200-4743-b3de-f1cf8840ae5b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-02T14:41:40.697782",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-02T14:47:36.183511"
+  },
+  "1-94c47fb7-51a6-4baa-8c32-3113136f3ebd": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-02T14:41:44.029952",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-02T14:47:31.550956"
+  },
+  "1-924c7a52-ed7a-41b2-8f7d-cc10cbe8f454": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-02T14:36:28.259851",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-02T14:41:45.730380"
+  },
+  "1-975e4fb9-31c4-4689-acb3-832202d8cb30": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-02T14:41:42.965505",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-02T14:47:35.196251"
+  },
+  "1-cc577b86-ff34-455c-8acc-8136a7b1f045": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-02T14:41:47.526524",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-02T14:47:33.354963"
+  },
+  "1-bc04efd9-a2f1-465e-8b7d-42857d4bd5b7": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-02T14:36:29.194034",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-02T14:41:44.006675"
+  },
+  "1-6fe7decf-a692-4301-a415-a2d6c1cda80e": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-02T14:36:29.317569",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-02T14:41:47.448202"
+  },
+  "1-9cdc6b0c-cd6f-4922-b133-5ba76624d3d4": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-02T14:41:47.479903",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-02T14:47:38.028974"
+  },
+  "1-2053546b-14a0-4029-a32f-debd143de237": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-02T14:36:29.536573",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-02T14:41:49.215622"
+  },
+  "1-4df51165-5e93-40bb-92d6-46562b06e37f": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-02T14:41:47.503397",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-02T14:47:39.025635"
+  },
+  "1-ada86435-be73-473d-aa61-81043421f5e7": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-02T14:36:30.724473",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-02T14:41:50.937633"
+  },
+  "1-fd50d4a8-0dd7-4bd7-9a7a-add43e8d1f87": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-02T14:41:52.650880",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-02T14:47:40.814365"
+  },
+  "1-4fa5d994-8f77-45de-bce3-5ba0a8f9b955": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-02T14:36:33.524700",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-02T14:41:52.627727"
+  },
+  "1-917034db-0b77-4028-bab2-459d281a17a7": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-02T14:41:39.974474",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-02T14:47:15.869081"
+  },
+  "1-bf6351c6-d540-4448-bba6-4b4d48a919cf": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-02T14:41:40.120284",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-02T14:47:26.181052"
+  },
+  "1-8df83bf1-2231-4676-92d8-e82e3a6d7d14": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-02T14:41:40.159907",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-02T14:47:22.657360"
+  },
+  "1-de464573-5c23-4ff4-9e10-35333ecc865b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-02T14:41:40.323923",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-02T14:47:24.503686"
+  },
+  "1-3c882011-5f98-436b-bbf9-5812e5fa6cf8": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-02T14:41:40.510933",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-02T14:47:27.872737"
+  },
+  "1-8f1a2b77-8f36-4c72-87bd-92facdf3c787": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-02T14:41:40.545082",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-02T14:47:19.242479"
+  },
+  "1-66c21a86-038c-4928-bc31-b436f9335ef4": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-02T14:41:40.602848",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-02T14:47:20.959677"
+  },
+  "1-93f56d8c-c948-41a4-be15-261fd7889adb": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-02T14:41:41.123267",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-02T14:47:17.554406"
+  },
+  "1-d9a0a753-60a5-461b-8528-f2148a6238f8": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-02T15:24:57.172210",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-f03c1800-b205-46fa-9c30-8c805a24c207": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-02T15:30:05.655447",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-4e9b5d83-0f4a-4d2e-bf62-721544dfb19d": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-02T15:30:12.856041",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-50b989d5-ce84-48bf-a1d2-6cc6f396b754": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-03T19:28:35.622010",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-4e82284c-6182-482e-a9e5-be40946dbb3b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-03T20:30:00.533303",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-8afb8640-e733-47f1-9325-3b94775c0056": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-04T16:48:27.066328",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-826c1ee4-94a3-4c18-bd36-61ea7b465b43": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2026-03-04T17:16:06.203303",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-04T17:21:53.779439"
+  },
+  "1-02590578-2855-4ff9-93a4-1dd6ad472818": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2026-03-04T17:16:06.241456",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-04T17:21:57.566204"
+  },
+  "1-45ccb89b-cb91-486c-85bc-a4065ff32a29": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2026-03-04T17:16:06.276579",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-04T17:21:55.747217"
+  },
+  "1-aea04149-b5ac-4eda-8a15-0f409b3ed053": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2026-03-04T17:16:06.301226",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-04T17:21:58.554314"
+  },
+  "1-0cae1ec9-80e8-4fd2-b2b7-155d8cb414c4": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2026-03-04T17:16:06.325920",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-04T17:22:00.376722"
+  },
+  "1-6572e832-75df-4845-81a0-82be11685f2b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-04T18:16:51.464596",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-1f162df3-2ea4-49e5-b423-69f77af20804": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-05T15:12:31.563885",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-05T15:18:08.738809"
+  },
+  "1-da5453a0-fa48-40c4-81c8-cecd064d7d68": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-05T15:12:35.735787",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-05T15:18:10.735219"
+  },
+  "1-b8240523-1829-42a0-a367-20b54c2d7a36": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-05T15:07:11.032150",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-05T15:12:35.224231"
+  },
+  "1-b532657e-7871-4bff-b0b6-ebbde50ee356": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-05T15:12:37.079063",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-05T15:18:13.003381"
+  },
+  "1-661daf6a-8417-488f-97e1-3e9c809593c0": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-05T15:07:13.541962",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-05T15:12:36.998360"
+  },
+  "1-c8efd1b8-0e1b-422a-80b8-daf6ecbd2e0e": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-05T15:12:37.052065",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-05T15:18:11.784923"
+  },
+  "1-3ccd2269-e6a4-4bf6-b126-42f1f65b301c": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-05T15:12:37.105915",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-05T15:18:14.969332"
+  },
+  "1-9f728e4b-cafc-4c41-ad42-8afe8a439fce": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-05T15:12:20.631991",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-05T15:17:59.356613"
+  },
+  "1-6d32309f-737e-4d6e-85c0-ccf3745bf257": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-05T15:12:20.751620",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-05T15:17:55.435196"
+  },
+  "1-6b1d7716-59e9-4961-aaa0-40f26e5c8176": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-05T15:12:20.864346",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-05T15:18:01.546977"
+  },
+  "1-80945331-70d9-435b-8463-21a3cab92ade": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-05T15:12:22.759156",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-05T15:17:57.335958"
+  },
+  "1-07e9faaa-e297-4abe-8721-0fde2dc88462": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-05T15:12:22.786123",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-05T15:18:02.735940"
+  },
+  "1-3ddd8821-b3f1-4ef9-a471-e6423d09cf63": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-05T15:12:25.732154",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-05T15:18:04.746243"
+  },
+  "1-43197f31-e276-4056-ada7-77b53058d81f": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-05T15:12:25.845248",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-05T15:18:06.718679"
+  },
+  "1-c5abf417-8aa5-4808-8eb0-398d112f9e12": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-05T15:50:35.705749",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-8fc066ae-119a-4379-b024-5dae849b27d0": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-05T16:12:11.739719",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-07843d58-11c8-4207-a3f2-d53793e3142b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-06T04:28:34.164596",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-de17d2f8-cfec-49d6-9c30-3dfa44cb7fed": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 503, Body: upstream connect error or disconnect/reset before headers. reset reason: overflow",
+    "last_retry": "2026-03-06T14:27:18.183242",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-06T14:32:53.979002"
+  },
+  "1-dbcde4de-44b6-4735-b65c-8d93daa9edd0": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-06T15:47:58.735082",
+    "retry_count": 3,
+    "status": "resolved",
+    "resolved_at": "2026-03-06T15:53:43.043431"
+  },
+  "1-14a04379-44dd-4600-9bef-e6a0aedcdd18": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-06T15:37:26.596789",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-06T15:42:49.295179"
+  },
+  "1-ee5a769a-fbd6-4348-bd42-ef3555dbc992": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-06T15:47:58.936967",
+    "retry_count": 3,
+    "status": "resolved",
+    "resolved_at": "2026-03-06T15:53:41.780338"
+  },
+  "1-6c85b8e0-a074-4fe1-928a-63ed25adaa5c": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-06T15:37:29.417129",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-06T15:42:44.369304"
+  },
+  "1-993c1974-814e-43b4-8b61-6f11d8189ac8": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-06T15:37:32.666111",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-06T15:42:47.397497"
+  },
+  "1-5b979591-3388-475f-9fa7-6387a9354a48": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-06T15:37:32.796594",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-06T15:42:46.260943"
+  },
+  "1-276ca178-3af8-4332-9015-2c5d11c068d3": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-06T15:47:54.668547",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-06T15:53:30.034346"
+  },
+  "1-77dd4cd5-a8f6-4ad1-9280-8ee792c90a8f": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-06T15:47:54.767731",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-06T15:53:26.755442"
+  },
+  "1-f52f241a-3829-4f6b-b74a-4c371d1f0979": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-06T15:47:54.828582",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-06T15:53:25.609940"
+  },
+  "1-385efd88-6d7a-43fd-bfee-b76874dec520": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-06T15:47:54.864306",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-06T15:53:37.647049"
+  },
+  "1-2e84a5db-47cd-4513-a8ab-8187378338e7": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-06T15:47:54.916337",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-06T15:53:32.180536"
+  },
+  "1-1b759544-e14b-4122-87f3-01cc4743c988": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-06T15:47:54.952987",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-06T15:53:36.532519"
+  },
+  "1-24b117f7-1a7d-4af2-bec3-aac78939b4b2": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-06T15:47:54.988500",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-06T15:53:34.510133"
+  },
+  "1-ae2804fc-c872-4ecb-b226-ed12decdd11a": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-06T15:47:58.637861",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-06T15:53:39.743838"
+  },
+  "1-07533e30-5192-45f7-ad83-a0baff3ad5a9": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-06T15:47:58.668427",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-06T15:53:45.077616"
+  },
+  "1-ffeb6e92-6b68-4eb1-9758-6dc543855a2c": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-06T15:47:58.699292",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-06T15:53:33.340504"
+  },
+  "1-f5bd6f04-df9e-4bfd-bc37-fb6b32d9bf98": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-06T16:15:11.149859",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-904ed9a6-8e75-4a67-80c0-ba21bd2f8136": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-06T16:31:41.792951",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-1eac7d18-5b8f-4e96-8dec-c1a61cc5d90f": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-06T16:31:46.950054",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-6fb9e57c-1c76-4af0-b59f-53f61daf8a01": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-06T16:32:06.560793",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-88bc95c3-42f1-400d-b707-5e897b2c731d": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-07T16:07:41.043616",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-07T16:13:30.849887"
+  },
+  "1-f6faff14-b33c-4d4f-a50b-d252c723bef3": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-07T16:07:40.999979",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-07T16:13:34.747576"
+  },
+  "1-42817920-adfe-4c65-bf02-08b39d19e60a": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-07T16:07:42.012895",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-07T16:13:46.896431"
+  },
+  "1-8209a566-fcbf-42a2-8004-357f6cc30e6a": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-07T16:02:21.607278",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-07T16:07:43.788288"
+  },
+  "1-1a0adc12-1e3a-4491-a5f1-88be72743f71": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-07T16:07:40.887094",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-07T16:13:37.319880"
+  },
+  "1-489111c9-6075-4eb2-849d-bd6e55606a06": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-07T16:07:41.589779",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-07T16:13:39.807457"
+  },
+  "1-cceb1ca6-24bb-4177-9551-38d7de5a31e7": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-07T16:07:41.179601",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-07T16:13:41.324054"
+  },
+  "1-4bcd8695-99b4-4beb-af7a-52efb74901ac": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-07T16:07:43.823757",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-07T16:13:49.465503"
+  },
+  "1-965fde3d-d446-4350-b349-6398f42cb38d": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-07T16:07:41.817087",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-07T16:13:55.013915"
+  },
+  "1-271d2c17-e743-4a0e-93d0-54b6cd53c7c2": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-07T16:07:42.109467",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-07T16:13:43.834236"
+  },
+  "1-c39e723e-6bac-4cbe-bd66-922f78aa8ef6": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-07T16:07:42.187649",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-07T16:13:57.527406"
+  },
+  "1-30985e24-3120-443e-93dd-14a47776a201": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-07T16:07:43.856893",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-07T16:13:52.492245"
+  },
+  "1-e047a45b-390a-469f-800b-27a28abffaf8": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-07T16:07:42.054852",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-07T16:13:50.964287"
+  },
+  "1-594158da-5ec6-4865-a63a-e6e7df9b029f": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 503, Body: upstream connect error or disconnect/reset before headers. reset reason: overflow",
+    "last_retry": "2026-03-07T16:31:01.047031",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-07T16:37:10.028189"
+  },
+  "1-d0b035f0-c9e3-4600-afd8-5ce55ba29eed": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-07T16:36:38.319801",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-cd7b81b5-343a-42f8-9512-dea780d77e73": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-07T16:37:10.077645",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-8f699d3c-7a8c-4e3c-8577-ee75792147fe": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-07T16:42:55.888756",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-549aba95-8acf-4fec-bc3d-b3fb99570ede": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-07T17:29:31.715913",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-c54e1220-5a17-4a16-9e87-a5aa7a19d36a": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-08T13:56:33.784363",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-08T14:02:35.241299"
+  },
+  "1-28854ad0-3566-4405-baaa-2d39f5dcfca4": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-08T13:56:37.468940",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-08T14:02:34.139328"
+  },
+  "1-79ced1f3-e3b4-46bd-bdff-d6521119026b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-08T13:56:41.909774",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-08T14:02:37.232801"
+  },
+  "1-ed4815c7-5e99-444e-a5b5-fac29ca72155": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-08T13:56:37.518054",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-08T14:02:32.944633"
+  },
+  "1-bdd89ad3-4185-46ea-90b2-bfe0dc09ef46": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-08T13:51:17.376907",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-08T13:56:39.672823"
+  },
+  "1-d1a0a68b-09d3-4d8f-9a37-c332d86c88cc": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-08T13:56:41.873379",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-08T14:02:41.236959"
+  },
+  "1-4bcba6ff-f65c-4b0e-9261-3225bc0c70ae": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-08T13:51:22.457215",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-08T13:56:41.836812"
+  },
+  "1-a975bc20-59b3-4e35-8374-6b52eb87eedc": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-08T13:56:42.000718",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-08T14:02:39.236502"
+  },
+  "1-970c10a8-e4dd-4be0-a6ba-68609490e676": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-08T13:56:32.440792",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-08T14:02:16.870154"
+  },
+  "1-343b6f77-9b8a-4f2c-b827-82e6aeb31a6e": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-08T13:56:32.542567",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-08T14:02:11.683698"
+  },
+  "1-e9e4764d-77fb-4003-9282-99f9b71f83f6": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-08T13:56:32.583193",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-08T14:02:12.829079"
+  },
+  "1-6322335b-52df-4ed6-a319-d6688ec395f8": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-08T13:56:32.625977",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-08T14:02:14.851551"
+  },
+  "1-4f2b739c-67d9-4b6a-8885-47d9a2a97e11": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-08T13:56:32.710569",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-08T14:02:18.870069"
+  },
+  "1-900f397a-8cf5-4211-9fcf-6d0c8705d92a": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-08T13:56:32.810018",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-08T14:02:26.862740"
+  },
+  "1-7fc361d9-42d3-4686-81ce-9b4eae76164b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-08T13:56:32.878283",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-08T14:02:24.865929"
+  },
+  "1-01e5c2b2-847b-4e7c-a95d-cada56d4d269": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-08T13:56:33.016023",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-08T14:02:28.082152"
+  },
+  "1-4c6b265f-b824-495b-b3da-bddd855625d3": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-08T13:56:33.630330",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-08T14:02:31.839975"
+  },
+  "1-532cea0c-bcb2-4580-9d1f-bddc0d9f31c4": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-08T13:56:35.234871",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-08T14:02:22.889647"
+  },
+  "1-b5cbd391-8225-4feb-aa94-6d955b22f36f": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-08T13:56:37.431891",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-08T14:02:20.878550"
+  },
+  "1-bbcb022f-0e19-45a7-ac4f-4a8e4d4e12bf": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-08T14:01:47.792213",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-08T14:07:47.976602"
+  },
+  "1-8fb9a0e5-7665-4ec7-b49d-cea4575acaf7": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-08T14:40:57.324480",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-50b5ad2a-15db-4283-8dc1-74be7b8e97bb": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-08T14:41:04.520675",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-c39016e4-d8d6-4cd0-99e5-65cf2c45168c": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-08T14:46:33.423819",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-1cfe9f33-224d-42da-8c42-9e39aa2d8e4c": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-08T18:20:01.764259",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-12deea00-5f00-4ade-bc33-1ebb33bc575f": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-11T14:54:56.310244",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-11T15:00:30.176210"
+  },
+  "1-b32152b2-9739-4864-bb22-71f788cbe0fc": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-11T14:54:56.355666",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-11T15:00:34.667654"
+  },
+  "1-22d11563-8032-499d-9a25-13338d74b6c9": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-11T15:00:32.468280",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-11T15:06:11.070387"
+  },
+  "1-d1b927f5-76a6-467c-8796-14f647852373": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-11T14:54:57.518102",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-11T15:00:38.999243"
+  },
+  "1-01b12e52-d709-46d5-b96c-d3f57922be97": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-11T14:54:57.557855",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-11T15:00:41.145132"
+  },
+  "1-1a82d2b0-a8cd-4848-8ef7-80d20af40c65": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-11T15:00:43.420651",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-11T15:06:16.619246"
+  },
+  "1-6365b3b3-5876-4b78-9c9f-e4d328adfa39": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-11T14:54:57.652236",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-11T15:00:43.335209"
+  },
+  "1-91b5b900-1c24-443c-97e0-28e1fdfaff6b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-11T15:00:43.475665",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-11T15:06:20.249339"
+  },
+  "1-df27aebf-2c51-45c9-b2f9-6724f9516082": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-11T15:00:43.377621",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-11T15:06:21.564337"
+  },
+  "1-33d12406-eedc-4150-8d64-45a648423b83": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-11T15:00:47.913709",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-11T15:06:23.747323"
+  },
+  "1-deea0858-e7ff-4572-856a-cde450018e8e": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-11T14:54:58.784139",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-11T15:00:45.676651"
+  },
+  "1-ee78f7b9-29ac-4876-8c1b-2877acecaeb0": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-11T14:54:59.473827",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-11T15:00:47.872409"
+  },
+  "1-7e6dd667-044e-4fa1-8f81-d15397764a21": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-11T15:00:06.264651",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-11T15:05:56.360666"
+  },
+  "1-e5604c7b-eb83-40fd-9511-cfe5002fb27f": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-11T15:00:09.341326",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-11T15:06:03.024714"
+  },
+  "1-6195bf51-7f7c-41bd-ad3c-6e8b700c0784": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-11T15:00:09.383615",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-11T15:05:58.663975"
+  },
+  "1-8bfc6482-cff3-4776-9474-275c9fb71f1f": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 503, Body: upstream connect error or disconnect/reset before headers. reset reason: overflow",
+    "last_retry": "2026-03-11T15:00:16.388471",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-11T15:06:00.857372"
+  },
+  "1-9df7b1bc-af67-4488-a540-c3300ac7c832": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-11T15:00:16.429420",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-11T15:06:13.253884"
+  },
+  "1-2c83d718-8fd6-4cf8-af64-aade31f97cc4": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-11T15:00:16.475483",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-11T15:06:07.479284"
+  },
+  "1-071064ed-a660-4123-97e3-b9fff3c93a85": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-11T15:00:16.526892",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-11T15:06:05.205436"
+  },
+  "1-6e5fb1ef-4e46-4e33-b497-652e9e08cbff": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 503, Body: upstream connect error or disconnect/reset before headers. retried and the latest reset reason: overflow",
+    "last_retry": "2026-03-11T15:00:27.803085",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-11T15:06:08.857029"
+  },
+  "1-5320bc7a-bdeb-49e8-833c-d81994fc9173": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 503, Body: upstream connect error or disconnect/reset before headers. reset reason: overflow",
+    "last_retry": "2026-03-11T15:00:28.025449",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-11T15:06:14.430465"
+  },
+  "1-aa807e8c-dd33-406c-b3b7-bf5b5f11ea67": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-11T15:17:02.452269",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-b85ef043-291f-4633-8020-fbe75cb84932": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-11T15:27:50.483878",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-63072966-f7fb-4a68-b63f-89b6c27af5a0": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-11T15:33:07.156232",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-74c48e6f-9e91-417c-90a4-3b9f2cb97429": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-11T15:33:18.674278",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-6797538e-8bca-4a71-8686-1623fe298053": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-11T15:38:40.703612",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-7ad85b8b-6153-4eab-936b-8a25266d1488": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-11T15:44:04.233720",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-b6e775b4-5572-46c2-8a22-ebb85af1c6ff": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-11T15:49:34.960118",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-16c26828-52ae-43d4-96ae-190b22c31c15": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-11T16:00:09.031601",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-ef95d4c0-e776-46fc-b571-c5f6b8edcf4c": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-11T19:49:46.226213",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-94935ef1-f6c8-4e13-8c38-057cd70bea76": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2026-03-12T02:46:47.123115",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-12T02:52:30.862161"
+  },
+  "1-0f5b378e-a0c6-4224-9f54-32ed56c750cf": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-14T17:08:25.397567",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-14T17:14:26.342804"
+  },
+  "1-0f373e8a-ec21-41b6-89a1-20209401a83a": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-14T17:08:25.709367",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-14T17:14:23.846176"
+  },
+  "1-fcc3d189-3b3a-4efe-804d-03a888441a02": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-14T17:08:25.195422",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-14T17:14:18.391817"
+  },
+  "1-e2875681-c5f4-4db1-8098-759fb8ec15d8": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-14T17:08:26.439310",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-14T17:14:22.487102"
+  },
+  "1-cdae109a-788f-4286-b364-7ef94cdcd800": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-14T17:08:26.358131",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-14T17:14:27.924572"
+  },
+  "1-c8a90f8b-8ef8-476f-b0a6-394d12a37915": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-14T17:08:25.489306",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-14T17:14:33.544437"
+  },
+  "1-1653cd18-e305-4f8e-a46e-ae467908c310": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-14T17:08:26.522277",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-14T17:14:29.409024"
+  },
+  "1-0662b436-84ea-4691-92b5-9bb4317361ff": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-14T17:08:25.648758",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-14T17:14:31.924848"
+  },
+  "1-e102aaf2-e723-4096-a83d-fb6b2d762c6f": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 503, Body: upstream connect error or disconnect/reset before headers. reset reason: overflow",
+    "last_retry": "2026-03-14T17:03:10.246574",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-14T17:08:29.099454"
+  },
+  "1-62b08790-8964-4a95-bbbc-87d07a4af5db": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-14T17:08:29.201691",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-14T17:14:36.099871"
+  },
+  "1-1df9e7a2-c586-4e53-97ae-6476869730d3": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-14T17:08:29.247165",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-14T17:14:38.651886"
+  },
+  "1-bbd0bc6b-14b6-4f91-9436-bd9f9cf142ab": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-14T17:08:29.292428",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-14T17:14:41.166427"
+  },
+  "1-9b9859d5-5c74-4a28-85a3-db8d63e3842d": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 503, Body: upstream connect error or disconnect/reset before headers. reset reason: overflow",
+    "last_retry": "2026-03-14T17:08:25.299613",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-14T17:14:19.950710"
+  },
+  "1-1006c0cf-3982-4110-9f1b-7524e24176b1": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-14T17:08:26.691053",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-14T17:14:47.722713"
+  },
+  "1-95f75536-3bbb-4903-a945-d19f37ea43b7": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-14T17:08:29.151778",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-14T17:14:46.237422"
+  },
+  "1-6449dc2f-1b64-44f1-8b94-706511f23887": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-14T17:08:29.339241",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-14T17:14:43.732340"
+  },
+  "1-2c873223-a11e-4a09-99cf-8550d95c381b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-14T17:13:54.375670",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-fa9f52dd-f6be-479e-9f61-50239276cf56": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-14T17:25:37.105029",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-ee8482c0-209b-48a6-beab-20ce2caf6197": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-14T17:31:32.232340",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-a4b28624-c110-47c9-b60e-2c3861434adc": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-14T17:31:52.629624",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-1ccef942-13f0-4930-a9ff-30d3e1a5dbaf": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-14T17:37:21.742712",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-1f50170e-b8f9-434f-a50f-555cf1eab643": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-14T17:37:32.886592",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-4a8ba137-e99a-476e-992f-7391ff04cdc3": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-14T17:37:41.530318",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-9262be64-1a38-471f-880c-729e5145cb78": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-15T16:02:04.178001",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-15T16:08:10.738850"
+  },
+  "1-6833a3e7-c328-4985-8c9a-71766a7e59d4": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-15T15:56:44.059921",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-15T16:02:07.413626"
+  },
+  "1-4d7626ec-6489-4265-b37c-bcd77b01a3bf": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-15T16:02:04.287419",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-15T16:08:13.851694"
+  },
+  "1-5b9de83b-1991-4582-820c-2c2b59d2622b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-15T16:02:04.233702",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-15T16:08:08.833498"
+  },
+  "1-60c8c2b3-847d-4828-a3fb-dc98161a5ff0": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-15T16:02:04.341134",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-15T16:08:22.127721"
+  },
+  "1-763eff51-b1bd-4e86-b065-a0e8e9ac29a2": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-15T16:02:04.105125",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-15T16:08:17.320276"
+  },
+  "1-85c66707-f8ad-4013-a3bd-91ce87f06db6": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-15T16:02:05.231526",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-15T16:08:19.195584"
+  },
+  "1-675416cd-204c-4aee-a916-9b4251b8f685": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-15T16:02:04.640056",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-15T16:08:33.736992"
+  },
+  "1-708db2c1-f9d2-4565-93c4-471d0d52bfae": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-15T16:02:07.464847",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-15T16:08:28.328795"
+  },
+  "1-2df70092-2b24-4404-b4bc-25f24e674405": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-15T16:02:04.567312",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-15T16:08:25.284717"
+  },
+  "1-db04edbb-9100-436e-87e1-d43dc9197511": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-15T16:02:04.707061",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-15T16:08:31.807794"
+  },
+  "1-ecccba52-ecc6-48ec-b9da-6bcc9852a338": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-15T16:02:04.864700",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-15T16:08:40.114501"
+  },
+  "1-8b4b701b-8918-49fc-9f7a-cc603908db68": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-15T16:02:07.513815",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-15T16:08:36.826510"
+  },
+  "1-33b2f391-9b30-469a-b595-09f7f6b14ee4": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-15T16:02:05.065100",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-15T16:08:46.320913"
+  },
+  "1-e9bde560-88d9-4ce5-9c08-921a02b120d1": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-15T16:02:05.281911",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-15T16:08:43.289696"
+  },
+  "1-6b413f06-14ab-4bab-900e-69fee9e8d715": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-15T16:20:13.635637",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-50b9531c-6644-49ab-ad2d-696f940b5968": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-15T16:26:23.897502",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-15520f38-a1df-4b17-b7a2-0708e30a774f": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-15T16:32:32.666324",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-ae796840-92c1-4449-9039-966a2c3fa381": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-15T16:32:32.766788",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-f3ec8e03-d24a-4acd-8f50-2d64c8dde764": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-15T17:36:42.293252",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-5af6568f-992a-4b07-a004-4191ec047a55": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-16T14:52:12.885580",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-16T14:57:47.620115"
+  },
+  "1-93bc3ec7-77da-43a6-a58d-1e67d186b562": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-16T14:57:47.903613",
+    "retry_count": 3,
+    "status": "resolved",
+    "resolved_at": "2026-03-16T15:03:58.757802"
+  },
+  "1-a74fb7cc-b7e5-4fa6-8104-d9c9684b23f2": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-16T14:57:47.681029",
+    "retry_count": 3,
+    "status": "resolved",
+    "resolved_at": "2026-03-16T15:03:54.665686"
+  },
+  "1-e034fa83-72b0-4697-b677-6f5a78c3e421": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-16T14:57:48.232245",
+    "retry_count": 3,
+    "status": "resolved",
+    "resolved_at": "2026-03-16T15:03:57.290898"
+  },
+  "1-19a78347-bd7f-4c5a-bd72-f14e4870d317": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-16T14:46:52.167592",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-16T14:52:12.833026"
+  },
+  "1-3f346ba2-94de-4452-858f-b76de837ef0b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-16T14:57:37.423380",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-16T15:03:39.884657"
+  },
+  "1-9a08b1b9-de69-4fb8-a119-64c542d0f88d": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-16T14:57:37.476604",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-16T15:03:42.531050"
+  },
+  "1-812890a8-6d91-4597-9a23-afbea0bd978a": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-16T14:57:37.659020",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-16T15:03:46.762311"
+  },
+  "1-1aca462e-2bad-4bdd-8567-8793d3e5c024": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-16T14:57:37.716463",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-16T15:03:45.224759"
+  },
+  "1-9a113175-353e-452d-b597-a62b2d8c607d": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-16T14:57:37.600532",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-16T15:03:49.373876"
+  },
+  "1-e48909d9-b716-44a8-b15a-70a67f29d9a8": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-16T14:57:37.774867",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-16T15:03:52.023311"
+  },
+  "1-926ba399-b9ad-4635-806b-423d5e70227b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-16T14:52:09.405879",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-16T14:57:46.136330"
+  },
+  "1-f0dc033c-470c-43f1-ae8f-c38a96f82f06": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-16T14:52:09.457590",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-16T14:57:43.322782"
+  },
+  "1-0fc121e8-2a82-4a55-a210-9b0084f9ddb3": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-16T14:57:37.040414",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-16T15:03:23.462506"
+  },
+  "1-2925f6c7-dd43-4cf3-9fae-e9cc48747381": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-16T14:57:37.093175",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-16T15:03:29.267876"
+  },
+  "1-287f8178-f181-47ef-9a93-c9e885836812": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-16T14:57:37.145572",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-16T15:03:37.201535"
+  },
+  "1-d90e78ab-f1de-455f-8deb-b9dac8239c75": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-16T14:57:37.197969",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-16T15:03:26.656247"
+  },
+  "1-cc691b01-0279-4a56-a362-5b2a09d9da35": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-16T14:57:37.266203",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-16T15:03:31.895358"
+  },
+  "1-6d889204-2dcb-427a-a964-7f4fd6607780": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-16T14:57:37.364397",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-16T15:03:34.586021"
+  },
+  "1-8028446e-0d9f-4511-a3ec-af5112fae210": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-16T15:36:47.729955",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-027af512-de0c-4e8e-a366-a0079eb79739": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-16T15:37:08.537618",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-d9e0adf7-5900-446f-b9a8-e6a54e4874d3": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-18T18:05:09.936771",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-72bb2513-722a-433a-a06f-ba44d6b2e857": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 403, Details: {\"errors\": [{\"message\": \"You are not authorized to perform this action.\", \"code\": \"err_f0\", \"http_status\": 403, \"parameters\": []}]}",
+    "last_retry": "2026-03-19T13:07:14.990326",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-19T13:12:52.727735"
+  },
+  "1-ad72b4e1-5528-41e3-af43-e05a1f011dc8": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 403, Details: {\"errors\": [{\"message\": \"You are not authorized to perform this action.\", \"code\": \"err_f0\", \"http_status\": 403, \"parameters\": []}]}",
+    "last_retry": "2026-03-19T13:07:15.052194",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-19T13:12:48.669293"
+  },
+  "1-012ac877-0ad4-4bbc-8f14-1ed6619f2866": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 403, Details: {\"errors\": [{\"message\": \"You are not authorized to perform this action.\", \"code\": \"err_f0\", \"http_status\": 403, \"parameters\": []}]}",
+    "last_retry": "2026-03-19T13:07:15.157544",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-19T13:12:51.306457"
+  },
+  "1-ca00a460-8712-47c7-a221-96b07f050a3b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 403, Details: {\"errors\": [{\"message\": \"You are not authorized to perform this action.\", \"code\": \"err_f0\", \"http_status\": 403, \"parameters\": []}]}",
+    "last_retry": "2026-03-19T13:07:15.318189",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-19T13:12:55.759758"
+  },
+  "1-c61cfc67-0537-4ba9-9acf-5c7e0d7328a6": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 504",
+    "last_retry": "2026-03-19T13:07:15.831969",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-19T13:12:38.115415"
+  },
+  "1-7f092871-4f7d-4d0c-abd9-dee62069887d": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 504",
+    "last_retry": "2026-03-19T13:07:15.902252",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-19T13:12:40.746624"
+  },
+  "1-2bfab729-9ee9-4c9c-9d67-75f0fe3a899c": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 504",
+    "last_retry": "2026-03-19T13:07:15.984452",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-19T13:12:54.207199"
+  },
+  "1-97970d34-5f6d-4dfa-8759-ee8b03c7c8d2": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 504",
+    "last_retry": "2026-03-19T13:07:16.314715",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-19T13:12:58.641598"
+  },
+  "1-537a70c1-f62c-457c-aa09-2d92baaf51c3": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 504",
+    "last_retry": "2026-03-19T13:07:16.436960",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-19T13:13:03.160545"
+  },
+  "1-b92e16d4-5ba1-4858-8e86-c2ab3b955986": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 504",
+    "last_retry": "2026-03-19T13:07:17.015401",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-19T13:13:00.387729"
+  },
+  "1-8bc8f7a8-3521-409b-b1ae-e68f7d463c53": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 504",
+    "last_retry": "2026-03-19T13:55:45.008487",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-19T14:00:56.719610"
+  },
+  "1-e8331161-cf6c-41da-ad62-f71326b6be95": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 504",
+    "last_retry": "2026-03-19T13:55:45.135359",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-19T14:01:00.984869"
+  },
+  "1-53ca5c64-c18a-4d32-b6a4-4b15f771798e": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 504",
+    "last_retry": "2026-03-19T13:55:45.196928",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-19T14:01:03.612436"
+  },
+  "1-49be6dff-1f01-4f0e-95d5-629f5d3abb27": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 504",
+    "last_retry": "2026-03-19T13:55:45.255299",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-19T14:00:58.352460"
+  },
+  "1-5ec31dbf-2fb1-4538-95ef-3b97aec9cca0": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 504",
+    "last_retry": "2026-03-19T13:55:45.313650",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-19T14:01:06.227608"
+  },
+  "1-69b7c42b-d1d3-4f43-903b-346e4ba51db5": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 504",
+    "last_retry": "2026-03-19T13:55:46.219426",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-19T14:01:07.696867"
+  },
+  "1-b10b431f-24b2-4dbf-954e-0b3a7d2d1a49": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 504",
+    "last_retry": "2026-03-19T13:55:46.290793",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-19T14:01:09.288774"
+  },
+  "1-1bbff57c-8ede-44eb-aeaf-6456271db306": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 504",
+    "last_retry": "2026-03-19T14:27:08.377957",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-19T14:32:27.286173"
+  },
+  "1-1e6bcedd-23bc-40b3-a712-41aca54cce10": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 504",
+    "last_retry": "2026-03-19T14:27:08.304921",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-19T14:32:21.645725"
+  },
+  "1-b315d5f6-36d1-4d91-acab-86aa678d551b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 504",
+    "last_retry": "2026-03-19T14:27:08.435351",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-19T14:32:18.838645"
+  },
+  "1-476d45d3-6eb3-4116-9741-a38c310d0264": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 504",
+    "last_retry": "2026-03-19T14:27:08.150116",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-19T14:32:24.461764"
+  },
+  "1-17ab88e4-1c1b-41ec-a3a3-b96e446bac41": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-21T19:13:30.634209",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-b2e09217-53b5-4df6-bf33-1d2b69d4284d": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-22T14:54:14.906511",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-48ae8ba8-0ebf-4211-9b6d-acff669eaddb": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2026-03-26T22:58:17.147340",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-26T23:04:34.725885"
+  },
+  "1-702c9398-c2fa-45eb-9820-34dbea83d441": {
+    "error_type": "network_error",
+    "error_details": "Network error: [Errno 32] Broken pipe",
+    "last_retry": "2026-03-26T23:48:27.448876",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-26T23:54:34.111541"
+  },
+  "1-3af609d4-d219-4f36-8366-6fbb11dd12c1": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:23:52.994672",
+    "retry_count": 3,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:30:51.824985"
+  },
+  "1-ea8ab3dd-076e-4567-8fa2-1e2a010d8be3": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:12:46.563207",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:18:02.022050"
+  },
+  "1-5a8d93fa-f34a-411c-9be3-bcd3b171a60c": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:12:47.371973",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:18:08.074105"
+  },
+  "1-58042c1f-5928-4449-9fba-5bd9acb7cdb3": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:12:47.437981",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:18:05.088906"
+  },
+  "1-228c056d-73a7-4a17-bf93-7257ae9630ce": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:23:53.935793",
+    "retry_count": 3,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:30:40.283334"
+  },
+  "1-645ae8da-b5e2-446c-80c1-5f0a4d03a5c3": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:12:49.913341",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:18:11.150558"
+  },
+  "1-03cbfcc5-0626-4c95-8b1c-66121ce52eb4": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:12:49.970904",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:18:21.806881"
+  },
+  "1-d401ab87-cc72-4245-8a43-bfa1158b5fd5": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:12:50.028761",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:18:17.177379"
+  },
+  "1-71367e71-72bb-4784-8c6d-68e26fbc9efe": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:12:50.086751",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:18:18.806760"
+  },
+  "1-ded99a28-90d9-447c-ad3c-12ecd62815d8": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:12:50.158767",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:18:14.170508"
+  },
+  "1-378033ef-a10a-4a2b-8f91-93641977c865": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:12:50.248790",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:18:26.561270"
+  },
+  "1-7807a6df-e7d5-451e-b744-02945fecbe8b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:12:50.312652",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:18:23.466770"
+  },
+  "1-93bf703e-e43b-44f5-b412-67024548a41b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:23:53.228352",
+    "retry_count": 3,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:30:53.814995"
+  },
+  "1-aec742fc-32df-46b8-b7d0-d46f157b35f7": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:12:50.479627",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:18:34.469948"
+  },
+  "1-0a761bb4-b6d2-499c-b2f9-2eb646521801": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:12:50.568704",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:18:39.303621"
+  },
+  "1-b3fcff58-d0bd-46ff-b73b-3b23f51ab1e0": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:12:51.244317",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:18:28.203803"
+  },
+  "1-58158091-7351-4139-b451-cac716b83a5b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:12:51.435909",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:18:31.207871"
+  },
+  "1-d4217d65-50e1-4f4a-b464-982e1c8ca2bc": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:12:51.568326",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:18:36.277946"
+  },
+  "1-90ae21fb-9206-4cbc-95b5-0543a2790eb0": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:23:47.934396",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:30:07.009902"
+  },
+  "1-79b8e6b4-be06-43c2-a834-90e4755e22e3": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:23:48.003793",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:30:03.961268"
+  },
+  "1-cbbade65-8a11-429b-8791-88e6bf730904": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:23:48.064544",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:30:08.659989"
+  },
+  "1-5e4361f0-1239-48b4-a071-9a40767148d2": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:23:48.169941",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:30:10.705055"
+  },
+  "1-8b63af82-5b3b-455b-87d5-cfd5721b5d99": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:23:48.237575",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:30:21.473871"
+  },
+  "1-f64ba5db-b63f-410f-9c20-2aecedd55d8e": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:23:48.362571",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:30:13.761488"
+  },
+  "1-25312402-a7d9-4783-85ee-b141912cd4a9": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:23:48.507994",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:30:19.823824"
+  },
+  "1-30915e6a-4211-461b-9a01-2c98a4d5d130": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:23:48.574009",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:30:16.797474"
+  },
+  "1-bd8c1d0f-03bb-463f-8884-a1c4e3dace74": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:23:48.710038",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:30:24.556451"
+  },
+  "1-7d448102-82fc-4c81-89de-e84f2e8cc3e3": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:23:48.777905",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:30:00.932731"
+  },
+  "1-b089a566-a3d6-4ecf-a5ea-9a9d0b71e26a": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:23:52.360041",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:30:27.597612"
+  },
+  "1-6c56d4c3-9f77-4c5f-9f4f-4e801e2e81d0": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:23:52.423670",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:29:59.093810"
+  },
+  "1-e84e5a57-0ddd-43f5-b222-94a9d477f288": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:23:52.534035",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:30:30.634658"
+  },
+  "1-fbe5b61e-97d9-4e64-ac62-ed0ed9aeacde": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:23:52.595765",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:30:33.663121"
+  },
+  "1-05518f71-6546-4d2a-a397-b97871b1c12c": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:23:52.761262",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:30:38.505633"
+  },
+  "1-28021355-be32-4083-ab3d-a453f78257e9": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:23:52.828046",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:30:45.268566"
+  },
+  "1-021536f9-205a-4a57-a0a0-a320f906a626": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:23:53.493146",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:30:36.721453"
+  },
+  "1-041c22e0-ce8c-4b0c-8bbb-d47509f5bd21": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:23:53.745212",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:30:48.525858"
+  },
+  "1-8dc817ca-d432-4e6f-922e-f763a65a0307": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:23:53.824925",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-27T17:30:43.528298"
+  },
+  "1-24d806d4-97d3-4611-b7a0-4c34b009d9df": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:36:49.552250",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-a11b980b-ff31-440f-bb77-78367137b7de": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:42:20.466098",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-c7f06f02-597a-4cf1-ac4c-52f5e300d515": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:48:13.509642",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-e4451576-49dc-42eb-bcc9-5adfbfd65679": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:48:34.725636",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-9d38d809-754b-40d6-af80-0d3e93ac0ed7": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:54:38.077425",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-bac2a7d4-091d-4b85-917d-e2b2af2ea5f1": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T17:54:49.560007",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-946700dd-f7cf-49f8-b652-0f23995af82c": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-27T18:00:31.938020",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-20f9362d-b9df-4029-bdb8-33819b280c44": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-28T16:03:37.722852",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-94dbd269-c43f-4bf9-bbd5-56af3ab6a1aa": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-28T16:57:36.617409",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-230b49f7-b773-4d10-b91a-8da3cc28ae80": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-28T16:57:49.204787",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-a4e6e83b-d787-4774-ae83-7d726107c532": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-28T17:22:08.257499",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-35d4e7ef-f011-4c2f-8263-c607adedad02": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-28T18:39:56.823909",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-3b6213a2-8106-4634-ada9-a1d2b4015466": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 503, Body: upstream connect error or disconnect/reset before headers. reset reason: overflow",
+    "last_retry": "2026-03-29T14:23:59.876891",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:29:50.242991"
+  },
+  "1-f4c0c6e7-66a9-45ca-ab02-6544c4d5d305": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:24:00.068120",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:29:53.412940"
+  },
+  "1-6b9c00d2-3b05-4348-a8eb-8158c2b139d4": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:29:59.760523",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:35:50.564492"
+  },
+  "1-d5bb051c-9cba-4066-9dfc-84d719cc82f0": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:43.711604",
+    "retry_count": 3,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:43:12.540063"
+  },
+  "1-3f228a7c-9855-43b6-80b1-82935900ced9": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:24:00.725419",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:30:13.221571"
+  },
+  "1-ea45f81d-35cd-4686-8571-37e70c3d89fa": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:24:00.891709",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:29:59.549467"
+  },
+  "1-2fc1c942-dd34-4bf4-9388-f31a6c27c3db": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:46.915067",
+    "retry_count": 3,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:43:19.278264"
+  },
+  "1-86ad5d80-f7ad-4036-ba64-4944a6938a70": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:24:01.265391",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:30:05.327575"
+  },
+  "1-5b6cd523-bd80-48ac-8de6-4a52fcab6ac7": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:24:01.510795",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:29:56.504837"
+  },
+  "1-a268c2cc-bdf6-4af1-bf2e-7f322166ae3d": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:24:04.895703",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:30:02.232747"
+  },
+  "1-db83a19d-7b31-4047-886c-226b4a48348b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:43.632967",
+    "retry_count": 3,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:43:15.964339"
+  },
+  "1-08fe6d95-2418-42ec-bc0e-b10517f5ec8e": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:24:10.430928",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:30:11.545334"
+  },
+  "1-7fd29e0b-4c3d-426c-9472-35ffd60b83d8": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 503, Body: upstream connect error or disconnect/reset before headers. reset reason: overflow",
+    "last_retry": "2026-03-29T14:24:10.536798",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:30:21.544777"
+  },
+  "1-c0fbdc2e-f4a5-4f82-8eb1-bd2e07403023": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:50.635228",
+    "retry_count": 3,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:43:21.344468"
+  },
+  "1-c9df81f9-d00c-48d6-af5d-d85ecb066be3": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:24:10.672518",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:30:18.467011"
+  },
+  "1-34dd9ae7-e684-4845-8457-ff3393a2d2f2": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:24:13.938152",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:30:08.421579"
+  },
+  "1-2f06d7ec-65ac-47f7-a95a-dbe092a2c1e5": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:41.984889",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:42:49.234973"
+  },
+  "1-e9005d84-4e00-4d80-b131-208f360aa325": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:37.715073",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:42:47.524985"
+  },
+  "1-4e03cd1c-c82e-4322-8c5a-51879780dd86": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:29:42.091235",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:35:40.176651"
+  },
+  "1-e40c1779-6c83-459e-b66a-13a4b3d8d3a8": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:43.327020",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:42:59.070915"
+  },
+  "1-eb0e7c4f-90c7-4951-ab0d-ea003bd45913": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:42.255073",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:43:02.497452"
+  },
+  "1-3255cd1c-ef56-4ac9-aeea-52f912a74869": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:40.255478",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:42:55.734780"
+  },
+  "1-930a18ef-e386-4698-af7d-0e883ac60d6b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:42.056293",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:42:52.380475"
+  },
+  "1-dc2696ad-ea3d-4b4a-92f7-db58d1c22fe3": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:43.435302",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:43:05.802571"
+  },
+  "1-890dbbc9-b26f-4e83-83b0-d1c21ec94c8f": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:29:46.144552",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:35:48.821863"
+  },
+  "1-150946ed-bbe6-4cfa-9ab3-ba6b02be9f7e": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:29:46.212052",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:35:46.838684"
+  },
+  "1-2af3ce68-f02f-40ba-adfe-14fada3e052b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:42.356969",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:43:09.163473"
+  },
+  "1-d971c583-ccc7-4549-804a-4bc9199ca3ef": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:32.980793",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:41:51.679549"
+  },
+  "1-f93094c4-fd2b-40f8-b828-78629a22e176": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:33.055887",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:42:07.271260"
+  },
+  "1-0a41db39-bcb4-4fa6-9704-afef538ad0db": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:42:10.456299",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-2d4c0477-8ad0-4a36-8921-bc87653c397b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:34.630330",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:42:04.141621"
+  },
+  "1-7baadd61-d509-44ce-8b5c-f4fe95ab589e": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:34.699028",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:42:13.541826"
+  },
+  "1-ba3d4431-86ad-446d-86e2-607554ddcc3f": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:34.781324",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:41:57.996766"
+  },
+  "1-1871d1a4-2703-4c25-aa2b-8f03f3c9ea9a": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:34.855489",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:42:10.385088"
+  },
+  "1-5149e096-485f-421f-aaa3-6c709a5c7d9b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:34.930547",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:42:16.664886"
+  },
+  "1-612ae7a6-d097-4c75-b9fd-298740f49539": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:35.000179",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:42:22.882467"
+  },
+  "1-f9b366ce-5c7f-4be9-84af-8b69d9379cc0": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:35.077823",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:42:19.759182"
+  },
+  "1-7a2cc353-9d52-45c6-8c1a-9aae80f3992a": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:35.183761",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:42:28.050221"
+  },
+  "1-a42ead7d-8e8e-42c9-8e99-e4bb9798e019": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:35.273250",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:42:38.119486"
+  },
+  "1-fac7f073-3398-4edf-bdc4-0933db3e4b92": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:37.252076",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:42:24.600888"
+  },
+  "1-4818493d-1d79-48f2-a21f-34c7dddba509": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:37.323902",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:42:35.006738"
+  },
+  "1-14d83520-30e3-458f-9b33-88260da03cad": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:37.394216",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:42:26.320195"
+  },
+  "1-ffea8b60-14e3-4523-866f-4447412a5a74": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:37.464516",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:42:31.874800"
+  },
+  "1-e5cac6a9-ead9-4847-adde-b1d538313fc2": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 503, Body: upstream connect error or disconnect/reset before headers. reset reason: overflow",
+    "last_retry": "2026-03-29T14:35:37.619737",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:42:44.417816"
+  },
+  "1-1af14e14-0e0f-479c-adbe-2869e515a2fc": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:35:38.276204",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-29T14:42:41.211270"
+  },
+  "1-fec90b03-e2d1-44c4-a52d-3044ed276fe3": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:48:34.057315",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-54c87de2-f262-45b8-931b-a274363c9c9e": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T14:49:14.971200",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-79aa43a9-6ae0-40c4-bb0c-f86cbd9f2360": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T15:00:40.369160",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-2bf4ab18-929c-4804-9f71-0d71bd1dc774": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T15:00:40.443111",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-35142b5f-ecf6-42cf-8c6a-c642de180147": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T15:07:19.771968",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-294be00c-f291-49be-99d3-26a1bc9e4478": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T15:07:21.513507",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-55f77c86-5231-4f61-9a29-31ba6e550a71": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-29T15:18:30.267830",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-ba76297f-e37e-45cd-aca5-67fd9afda5bd": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 504",
+    "last_retry": "2026-03-30T13:47:37.324888",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-30T13:53:44.058742"
+  },
+  "1-969492e2-ccf2-4e68-b06f-f24db1b604d7": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-30T14:49:20.122859",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-30T14:54:55.790301"
+  },
+  "1-9a76ae1d-bd6c-4393-89ee-8bb4cf73f914": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-30T14:49:20.198129",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-30T14:54:57.560807"
+  },
+  "1-488dd434-e3f0-4cb9-a7ca-c27c4a0554a2": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-30T15:00:28.123068",
+    "retry_count": 3,
+    "status": "resolved",
+    "resolved_at": "2026-03-30T15:06:23.805840"
+  },
+  "1-2a79e892-def0-49a5-bdbf-f45047dc1a3f": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-30T14:49:28.949384",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-30T14:55:00.900967"
+  },
+  "1-213d6f99-c7d8-422a-99db-e9854d66c997": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-30T14:49:29.022795",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-30T14:55:04.125048"
+  },
+  "1-728d6cd9-11d2-4d5a-9afa-c21644202a33": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-30T15:00:28.042026",
+    "retry_count": 3,
+    "status": "resolved",
+    "resolved_at": "2026-03-30T15:06:20.366745"
+  },
+  "1-8fa9ba82-f277-45d9-b547-5de803587779": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-30T14:49:29.175115",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-30T14:55:06.065583"
+  },
+  "1-5446f387-de02-458b-936c-d2738b47150b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-30T15:00:28.201234",
+    "retry_count": 3,
+    "status": "resolved",
+    "resolved_at": "2026-03-30T15:06:27.093993"
+  },
+  "1-b7d48290-b643-4f55-a76d-5b194959d1fa": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-30T15:00:22.071116",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-30T15:06:18.297532"
+  },
+  "1-026c9159-c409-4e8a-850f-46fb711ebf13": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-30T15:00:27.867251",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-30T15:06:12.428165"
+  },
+  "1-35d87757-722d-42da-8bed-439f86a5d341": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 504, Body: upstream request timeout",
+    "last_retry": "2026-03-30T15:00:27.943653",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-30T15:06:14.352659"
+  },
+  "1-65f4443f-9acb-4497-9c96-b45621f669b7": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 503, Body: upstream connect error or disconnect/reset before headers. retried and the latest reset reason: overflow",
+    "last_retry": "2026-03-30T14:54:43.797927",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-30T15:00:26.028156"
+  },
+  "1-ab4a70f8-f40c-4410-9400-4108a14a270a": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-30T15:00:15.399196",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-30T15:05:49.146294"
+  },
+  "1-e5fd5ccd-8b8d-472d-8f3b-6c6cc108cdb6": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-30T15:00:15.482528",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-30T15:05:45.718192"
+  },
+  "1-4d39dfec-dde1-4309-8105-e4961cdc4c89": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-30T15:00:15.565156",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-30T15:05:52.623752"
+  },
+  "1-88b87fa9-c750-4e15-acd4-5d66e2e34c81": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-30T15:00:15.648560",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-30T15:05:42.297314"
+  },
+  "1-b8b0f157-b96c-4f8e-84c9-233281a4c2ae": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-30T15:00:15.906076",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-30T15:06:05.169666"
+  },
+  "1-c10a21ff-8ec2-4624-8a4c-46863141785b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-30T15:00:16.390908",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-30T15:05:40.351975"
+  },
+  "1-5336293d-58a7-4e42-9dcb-5cc35d03409a": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-30T15:00:16.763036",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-30T15:05:56.068813"
+  },
+  "1-d96a550e-b66c-43e0-a9d5-495ea8bae849": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-30T15:00:19.991291",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-30T15:06:01.727403"
+  },
+  "1-03ac67b9-e353-4bcd-a91e-5a856ffa88f1": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-30T15:00:20.068049",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-30T15:05:59.500467"
+  },
+  "1-a715bee8-2a14-4adc-8aba-5fd57b5b57b2": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-30T15:00:21.815354",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-30T15:06:07.072511"
+  },
+  "1-ed1a8d08-50bb-4c0f-85e2-45dc6abb4e2c": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-30T15:00:21.928810",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-30T15:06:08.991041"
+  },
+  "1-f537f5a0-6f61-415b-b5c2-b0775f93cb8f": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-30T15:00:26.108446",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-30T15:06:16.254970"
+  },
+  "1-4cf93486-1c8e-4174-a9d3-422305dee95c": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-30T15:29:18.309380",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-5656ad21-d364-43e9-9ff0-4a678217650e": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-30T15:40:25.865111",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-52f30952-8242-46ad-a81f-bfc636c47bd8": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-30T15:40:57.087571",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-df3919c8-99f8-4538-8864-15d9f4e02aa0": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-31T04:03:16.643348",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-def9dafc-9df7-4700-b2c9-0f7db39982c5": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-31T04:14:19.326837",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-43a07326-5ad1-4c8f-9c2c-18215004bd8c": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-31T14:23:27.764462",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-31T14:29:05.557724"
+  },
+  "1-22e99fd9-6c75-430e-a948-e8f02ea9713b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-31T14:29:02.342434",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-31T14:35:33.912088"
+  },
+  "1-a2d05be0-864a-4abf-ac8c-08738e6e8157": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-31T14:23:31.582087",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-31T14:29:10.754839"
+  },
+  "1-f2160635-fb41-4cb7-b5a6-d41db27124dc": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 503, Body: upstream connect error or disconnect/reset before headers. retried and the latest reset reason: overflow",
+    "last_retry": "2026-03-31T14:23:40.795590",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-31T14:29:07.508812"
+  },
+  "1-e09e4b04-ab9c-4b3a-a417-e8185fc7eafe": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-31T14:29:10.844401",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-31T14:35:37.201977"
+  },
+  "1-a84acd0c-fdac-423f-b44e-944322c13978": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-31T14:29:10.941764",
+    "retry_count": 2,
+    "status": "resolved",
+    "resolved_at": "2026-03-31T14:35:40.404324"
+  },
+  "1-a9b31fbb-89a3-48ef-a674-810514beb5f9": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-31T14:28:58.436259",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-31T14:35:15.237297"
+  },
+  "1-dfea90b3-d005-43c9-b990-5d5cd30ad645": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 503, Body: upstream connect error or disconnect/reset before headers. reset reason: overflow",
+    "last_retry": "2026-03-31T14:28:58.536902",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-31T14:35:17.059674"
+  },
+  "1-2aeea615-7ad6-445b-9bd9-af2eb2dde93e": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-31T14:28:58.670352",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-31T14:35:11.770448"
+  },
+  "1-c10ec0fd-17af-4dc9-95a1-29d6e09671ac": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-31T14:28:59.405355",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-31T14:35:23.567998"
+  },
+  "1-ce2892ac-9aa2-403e-a11c-7455aa81688b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-31T14:28:59.613884",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-31T14:35:27.496002"
+  },
+  "1-17fffcbf-8237-4991-ba3f-6e8cde94f73d": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-31T14:28:59.719670",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-31T14:35:20.297850"
+  },
+  "1-9ce0dff3-16f1-4b08-840f-20e64f38bbff": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-31T14:28:59.929089",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-31T14:35:25.545812"
+  },
+  "1-5228821a-108b-4cca-9482-b442be1ef84d": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2026-03-31T14:29:00.013098",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2026-03-31T14:35:30.687072"
+  },
+  "1-3eed7230-c699-496a-9747-49a70f121470": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-31T15:04:10.356225",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-0c3a6c88-ec49-4b68-98fa-f7e8e9cf295a": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-31T15:14:49.057377",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-e3d1cac8-4846-4849-a345-7d4563c08bd8": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-31T15:14:52.336996",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-b35a562a-7d8c-410f-9b5b-f095757f567f": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-31T15:14:57.353444",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-b4f0ba5d-55bf-4fe4-96e3-3506b7a36e6c": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-31T15:20:37.587200",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-66364ac8-196d-47b7-b6c2-4c7f0d622494": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-31T15:20:52.168194",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-f1582bb8-6ac4-40b9-a894-d4d42624283c": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2026-03-31T15:21:02.235229",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  }
+}

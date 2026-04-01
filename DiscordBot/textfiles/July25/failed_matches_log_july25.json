@@ -1,0 +1,413 @@
+{
+  "1-a379f7fe-7b9b-4efa-acb0-68b9ca070d0f": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-07-01T18:15:49.535874",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-1f169cab-70ef-4ff7-888a-afa2c2bda8b0": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-07-01T19:16:17.862165",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-17bfee61-d920-48f3-a5af-9be1e3375084": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-07-04T12:44:16.092014",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-e0076d80-e8b2-4365-89ee-088942b8a573": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-07-05T16:47:20.325632",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-801ec3db-ff8e-4a31-82e9-7eb5a64295ca": {
+    "error_type": "network_error",
+    "error_details": "Network error: Server disconnected",
+    "last_retry": "2025-07-06T02:49:38.995615",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-06T02:54:49.042757"
+  },
+  "1-56f1d7e7-ecc5-4ccd-9105-ae51472c5df6": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-08T10:31:24.861634",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-08T10:36:28.952963"
+  },
+  "1-0ea84b8a-1616-4b30-ada8-bfee9eb9c366": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-07-10T13:27:21.424734",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-3548c50d-6589-4a9b-a39d-ef9511469d3d": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-07-13T17:26:38.418329",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-40de5e05-cfa5-4425-beb9-a895e3f82ac4": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-07-13T23:59:43.178129",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-0cf48756-6aa1-4333-a8c4-e1e854906e33": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-16T18:40:53.022670",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-16T18:46:57.581862"
+  },
+  "1-efb275fe-1a37-4fe7-8a4d-affd43458293": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-16T18:40:53.031750",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-16T18:47:00.515327"
+  },
+  "1-52f289fc-914f-4215-9043-f3a62ee23d0c": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-16T18:40:53.038233",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-16T18:46:59.038145"
+  },
+  "1-6fcfd087-ca9e-4ace-b44d-50c4c47542eb": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-16T18:40:53.045479",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-16T18:46:58.100549"
+  },
+  "1-3bf36b06-30d2-4453-844c-022c5062647c": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-16T18:40:53.052796",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-16T18:47:00.003643"
+  },
+  "1-33e49c4a-0e88-48aa-b9b8-01f01703a3e7": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-16T18:41:27.938439",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-16T18:47:01.453623"
+  },
+  "1-dcd1ac91-0855-42e7-a10d-74333b1e57a2": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-16T18:41:27.948572",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-16T18:47:02.957739"
+  },
+  "1-35acb045-b6ce-43c2-982b-14a493223914": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-16T18:41:27.956328",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-16T18:47:02.400664"
+  },
+  "1-78691531-0e62-49a1-bc7d-92f6b18c2807": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-16T18:41:27.965007",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-16T18:47:03.889060"
+  },
+  "1-adc606d5-4d6e-485a-bdc0-7213651c0365": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-16T18:41:27.972820",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-16T18:47:04.811522"
+  },
+  "1-6b49987d-e842-45c9-880f-2def18652ec3": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-18T08:14:41.136507",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-18T08:19:48.227765"
+  },
+  "1-d1b67c46-1d5c-4ef0-8215-9039bbe05b4c": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-18T08:14:41.143196",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-18T08:19:46.052304"
+  },
+  "1-f325f671-5904-4ecc-bb41-5a6b42bbe404": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-18T08:14:41.153366",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-18T08:19:50.367145"
+  },
+  "1-59354222-a52c-4b3c-874b-0adb2cbc8a39": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-18T21:27:10.341253",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-18T21:32:53.898188"
+  },
+  "1-dba5b8e5-8cd3-4cea-9736-d0da4737296e": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-18T21:27:10.382752",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-18T21:32:57.295296"
+  },
+  "1-e2a48547-5661-4895-92b4-1baa48f0c895": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-18T21:27:10.389747",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-18T21:32:58.439410"
+  },
+  "1-6494355c-509a-4985-975f-580d5c96f51d": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-18T21:27:10.398093",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-18T21:32:55.106823"
+  },
+  "1-713201f7-343b-4c00-9799-4a5daadd4f08": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-18T21:27:10.406472",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-18T21:32:56.191188"
+  },
+  "1-09c51f79-188c-4d36-aec5-541acbb3bfa7": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-07-22T05:24:28.016180",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-49b3f8e1-70e9-4f7e-ab64-12e7d26fabeb": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-07-24T16:32:05.850475",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-b1aab17c-d094-4274-b18f-bbc3ec6a28f8": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 502, Body: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>cloudflare</center>\r\n</body>\r\n</html>\r\n",
+    "last_retry": "2025-07-24T20:46:22.867267",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-24T20:51:59.464408"
+  },
+  "1-1dfa86f3-1b49-4711-b5d4-74337e180cee": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-07-25T04:21:53.281142",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-332d4aa4-5bf2-4b5e-b8c7-105cdd3cbb70": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-26T16:49:24.423315",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-26T16:55:19.513225"
+  },
+  "1-3b05b4f0-ca4d-4327-a8cd-15110e36894f": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-26T16:49:24.437579",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-26T16:55:21.236805"
+  },
+  "1-8bd932ba-47e1-4357-8be7-f19df0071fa0": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-26T16:49:24.449138",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-26T16:55:25.082593"
+  },
+  "1-02c03026-9cfc-497c-ac16-afc9696c9cfe": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-26T16:49:24.460517",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-26T16:55:22.157954"
+  },
+  "1-3c1907a4-85d6-45f2-a4c4-8bba2fa0586d": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-26T16:49:24.471306",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-26T16:55:23.605696"
+  },
+  "1-132549c9-1434-408d-932f-13e3f56b3e28": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 502, Body: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>cloudflare</center>\r\n</body>\r\n</html>\r\n",
+    "last_retry": "2025-07-26T22:51:16.397804",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-26T22:56:47.309457"
+  },
+  "1-9c4a287d-c812-4b50-8e57-bad3298aafa8": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-07-28T07:26:53.901786",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-28T07:32:03.728288"
+  },
+  "1-68b534c8-4f98-4e3e-a6f8-0000faccaa43": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 500, Details: {\"errors\": [{\"message\": \"An unexpected error occurred. Please try again later.\", \"code\": \"err_g0\", \"http_status\": 500, \"parameters\": []}]}",
+    "last_retry": "2025-07-28T07:26:54.724961",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-28T07:32:04.578923"
+  },
+  "1-f715306d-f318-4479-bf4a-273b0ac9336b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 502, Body: <html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>cloudflare</center>\r\n</body>\r\n</html>\r\n",
+    "last_retry": "2025-07-28T17:02:54.491598",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-28T17:08:33.650375"
+  },
+  "1-3100c0dc-b683-4886-ad73-ea8f8d461df9": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-30T12:36:39.240056",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-30T12:42:23.022678"
+  },
+  "1-6114a341-18c5-4fd3-ac8d-a4f7852429ea": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-30T12:36:39.256302",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-30T12:42:26.549272"
+  },
+  "1-87995815-6484-4121-b7d2-2941182038de": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-30T12:36:39.270053",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-30T12:42:27.538751"
+  },
+  "1-ccdc7230-9551-4849-a52d-336c6d7c3fbd": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-30T12:36:39.284096",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-30T12:42:28.579939"
+  },
+  "1-642d47c6-a4c0-492c-a662-5c909bc93f1f": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-30T12:36:39.296470",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-30T12:42:24.804454"
+  },
+  "1-6b3e9af2-4c25-49c9-95ac-dd2d287e8eb1": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-30T12:36:59.687753",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-30T12:42:29.607164"
+  },
+  "1-d8f67545-21a3-4f9e-8eb6-29441695e76f": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-30T12:36:59.702831",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-30T12:42:33.272693"
+  },
+  "1-0a767775-c936-4fd9-9b9e-925a2e403960": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-30T12:36:59.717992",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-30T12:42:35.004963"
+  },
+  "1-7bbca526-e080-4bbd-a832-9d679607e6b3": {
+    "error_type": "network_error",
+    "error_details": "Network error: Cannot connect to host open.faceit.com:443 ssl:default [Temporary failure in name resolution]",
+    "last_retry": "2025-07-30T12:36:59.732993",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-30T12:42:31.528145"
+  },
+  "1-45db4c26-c598-45b3-a086-0eeb8d892caa": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-07-30T17:48:34.294024",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-1d0213e7-cebd-483b-84ae-98efdfa00733": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 502, Body: Cloudflare encountered an error processing this request: Bad Gateway",
+    "last_retry": "2025-07-31T12:49:28.582149",
+    "retry_count": 1,
+    "status": "resolved",
+    "resolved_at": "2025-07-31T12:54:55.258699"
+  },
+  "1-625f8db7-6114-4d31-be81-a8fba15d3b1b": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-07-31T16:07:45.541445",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  },
+  "1-c4a8eff1-8821-461b-b292-8f9260cb5206": {
+    "error_type": "api_error",
+    "error_details": "API error - Status: 404, Details: {\"errors\": [{\"message\": \"The resource was not found.\", \"code\": \"err_nf0\", \"http_status\": 404, \"parameters\": []}]}",
+    "last_retry": "2025-07-31T21:17:06.544029",
+    "retry_count": 5,
+    "status": "permanent_fail"
+  }
+}
