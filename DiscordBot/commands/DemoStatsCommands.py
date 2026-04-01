@@ -264,7 +264,14 @@ async def handle_message(bot, message):
                 for month in month_dirs:
                     month_dir = os.path.join(textfiles_dir, month)
                     month_lower = month.lower()
-                    month_abbr = month[:3]  # First 3 letters of month
+                    # Build abbreviation that includes the year tag (e.g. Apr26, Aug25)
+                    month_abbr = month[:3]
+                    for m in _MONTH_ORDER:
+                        if month_lower.startswith(m) and len(month_lower) == len(m) + 2:
+                            suffix = month_lower[len(m):]
+                            if suffix.isdigit():
+                                month_abbr = month[:3] + suffix
+                            break
 
                     # Count matches in each category for this month
                     ace_file = os.path.join(month_dir, f"ace_matchids_{month_lower}.txt")
@@ -330,7 +337,15 @@ async def handle_message(bot, message):
                     # Sort months chronologically, supports MonthYY format
                     for month in sorted(master_stats['by_month'].keys(), key=_month_sort_key):
                         month_stats = master_stats['by_month'][month]
-                        month_abbr = month[:3]  # First 3 letters of month
+                        # Build abbreviation that includes the year tag (e.g. Apr26, Aug25)
+                        month_abbr = month[:3]
+                        month_lower_tmp = month.lower()
+                        for m in _MONTH_ORDER:
+                            if month_lower_tmp.startswith(m) and len(month_lower_tmp) == len(m) + 2:
+                                suffix = month_lower_tmp[len(m):]
+                                if suffix.isdigit():
+                                    month_abbr = month[:3] + suffix
+                                break
                         
                         # Get collections by type (not demos)
                         ace_collections = month_stats['by_type'].get('ACE', {}).get('collections', 0)
