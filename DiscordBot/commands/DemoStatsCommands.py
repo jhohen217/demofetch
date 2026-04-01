@@ -257,10 +257,24 @@ async def handle_message(bot, message):
                     except:
                         return 0
                 
-                # Mobile-friendly table: Month | Ace | Quad | Undl | Cost | Size
+                # Column widths (sized for the largest real values seen in data)
+                # Month:6  Ace:6  Quad:6  Undl:7  Cost:8  Size:8
+                W = {'mo': 6, 'ace': 6, 'quad': 6, 'undl': 7, 'cost': 8, 'size': 8}
+
+                def row(mo, ace, quad, undl, cost, size):
+                    return (
+                        f"{mo.ljust(W['mo'])} | "
+                        f"{ace.ljust(W['ace'])} | "
+                        f"{quad.ljust(W['quad'])} | "
+                        f"{undl.ljust(W['undl'])} | "
+                        f"{cost.ljust(W['cost'])} | "
+                        f"{size}"
+                    )
+
+                # Mobile-friendly table: Month | Ace | Quad | Undl | Cost | Size(GB)
                 table_lines = []
-                table_lines.append("Month   | Ace   | Quad  | Undl  | Cost   | Size(GB)")
-                table_lines.append("--------|-------|-------|-------|--------|--------")
+                table_lines.append(row("Month", "Ace", "Quad", "Undl", "Cost", "Size(GB)"))
+                table_lines.append(row("-"*W['mo'], "-"*W['ace'], "-"*W['quad'], "-"*W['undl'], "-"*W['cost'], "-"*W['size']))
                 
                 for month in month_dirs:
                     month_dir = os.path.join(textfiles_dir, month)
@@ -284,7 +298,6 @@ async def handle_message(bot, message):
                     ace_count = count_lines(ace_file)
                     quad_count = count_lines(quad_file)
                     
-                    # Calculate total from ace and quad files if match_ids file doesn't exist or is empty
                     match_count = count_lines(match_file)
                     if match_count == 0:
                         total_count = ace_count + quad_count
@@ -292,24 +305,22 @@ async def handle_message(bot, message):
                         total_count = match_count
                     downloaded_count = count_lines(downloaded_file)
                     rejected_count = count_lines(rejected_file)
-                    # Ensure undownloaded is never negative
                     undownloaded = max(0, total_count - (downloaded_count + rejected_count))
                     if undownloaded == 0 and (downloaded_count > 0 or rejected_count > 0):
                         if total_count < downloaded_count + rejected_count:
                             total_count = downloaded_count + rejected_count
 
-                    # Calculate estimated size in GB (257MB per demo) based on ACE count
                     estimated_size_gb = ace_count * 257 / 1024
                     estimated_cost = estimated_size_gb * 0.03
 
-                    table_lines.append(
-                        f"{month_abbr.ljust(7)} | "
-                        f"{str(ace_count).ljust(5)} | "
-                        f"{str(quad_count).ljust(5)} | "
-                        f"{str(undownloaded).ljust(5)} | "
-                        f"${estimated_cost:.2f}".ljust(6) + " | "
+                    table_lines.append(row(
+                        month_abbr,
+                        str(ace_count),
+                        str(quad_count),
+                        str(undownloaded),
+                        f"${estimated_cost:.2f}",
                         f"{estimated_size_gb:.2f}"
-                    )
+                    ))
                 
                 # Wrap table in a code block for monospace alignment on mobile
                 status_parts.append("```")
