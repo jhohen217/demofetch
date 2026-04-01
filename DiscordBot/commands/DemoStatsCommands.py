@@ -372,7 +372,21 @@ async def handle_message(bot, message):
                         )
 
             status_msg = "\n".join(status_parts)
-            await bot.send_message(message.author, status_msg)
+            # Discord has a 2000 character limit per message — split if needed
+            chunk_size = 1900  # Leave some margin
+            if len(status_msg) <= chunk_size:
+                await bot.send_message(message.author, status_msg)
+            else:
+                lines = status_msg.split("\n")
+                chunk = ""
+                for line in lines:
+                    if len(chunk) + len(line) + 1 > chunk_size:
+                        await bot.send_message(message.author, chunk)
+                        chunk = line
+                    else:
+                        chunk = chunk + "\n" + line if chunk else line
+                if chunk:
+                    await bot.send_message(message.author, chunk)
         except Exception as e:
             error_msg = f"An error occurred: {str(e)}"
             await bot.send_message(message.author, error_msg)
