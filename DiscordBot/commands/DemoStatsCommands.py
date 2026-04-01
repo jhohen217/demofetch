@@ -269,8 +269,7 @@ async def handle_message(bot, message):
                         f"{size}"
                     )
 
-                table_lines = ["Per-Month Breakdown:"]
-                table_lines.append("```")
+                table_lines = ["Per-Month Breakdown:", ""]
                 table_lines.append(row("Month", "Ace", "Quad", "Undl", "Cost", "Size(GB)"))
                 table_lines.append(row("-"*W['mo'], "-"*W['ace'], "-"*W['quad'], "-"*W['undl'], "-"*W['cost'], "-"*W['size']))
 
@@ -314,7 +313,6 @@ async def handle_message(bot, message):
                         f"{estimated_size_gb:.2f}"
                     ))
 
-                table_lines.append("```")
                 table_msg = "\n".join(table_lines)
 
             # --- Send summary (plain text, split at 1900 chars if needed) ---
