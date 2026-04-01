@@ -125,6 +125,24 @@ def process_txt_file(filepath: Path, dry_run: bool) -> dict:
     return dict(year_entries)
 
 
+def sort_key_for_entry(line: str) -> tuple:
+    """
+    Return a sort key tuple for chronological ordering.
+    Handles MM-DD-YY_HHMM_... format -> (YY, MM, DD, HHMM).
+    Falls back to the raw line so unknown formats sort consistently.
+    """
+    m = re.match(r'(\d{2})-(\d{2})-(\d{2})_(\d{4})', line.strip())
+    if m:
+        mm, dd, yy, hhmm = m.group(1), m.group(2), m.group(3), m.group(4)
+        return (yy, mm, dd, hhmm)
+    # match_ids format: 1-uuid,YYYY-MM-DDTHH:MM:SS
+    m2 = re.search(r',(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})', line)
+    if m2:
+        yyyy, mo, day, hh, mi = m2.groups()
+        return (yyyy[2:], mo, day, hh + mi)
+    return (line,)
+
+
 def write_year_files(
     year_entries: dict,
     filename: str,
@@ -135,6 +153,7 @@ def write_year_files(
     """
     For each year found in year_entries, create  <Month><YY>/  and write
     <filename_without_ext><YY>.txt   (e.g. ace_matchids_march25.txt).
+    Entries are sorted chronologically before writing.
 
     Returns the set of year strings that were written.
     """
@@ -145,17 +164,20 @@ def write_year_files(
         if not entries:
             continue
 
+        # Sort entries chronologically
+        sorted_entries = sorted(entries, key=sort_key_for_entry)
+
         year_folder_name = f"{month_canonical}{year}"
         year_folder_path = textfiles_dir / year_folder_name
         new_filename = f"{base}{year}{ext}"
         output_path = year_folder_path / new_filename
 
-        print(f"    -> {year_folder_name}/{new_filename}  ({len(entries)} entries)")
+        print(f"    -> {year_folder_name}/{new_filename}  ({len(sorted_entries)} entries)")
 
         if not dry_run:
             year_folder_path.mkdir(parents=True, exist_ok=True)
             with open(output_path, 'w', encoding='utf-8') as fh:
-                fh.write('\n'.join(entries) + '\n')
+                fh.write('\n'.join(sorted_entries) + '\n')
 
         years_written.add(year)
 
