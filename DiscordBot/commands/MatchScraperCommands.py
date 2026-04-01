@@ -10,6 +10,7 @@ from datetime import datetime, timedelta
 from commands.scraper.commands import handle_message as scraper_handle_message
 from commands.scraper.commands import continuous_scraping
 from commands.filter.commands import handle_message as filter_handle_message
+import commands.scraper.commands as _scraper_cmds
 from core.AsyncDemoDownloader import stop_processes
 import subprocess
 
@@ -160,41 +161,58 @@ async def handle_message(bot, message):
             else:
                 status_parts.append("⚙️ Auto-start scraping is DISABLED in config")
             
-            # Check scraping status
-            if scraping_task and not scraping_task.done():
+            # Check scraping status — consider active if EITHER task source is running
+            # (this module's task set by 'start'/auto-start, OR scraper sub-module's
+            #  task set by 'force')
+            _local_scraping = scraping_task and not scraping_task.done()
+            _module_scraping = _scraper_cmds.scraping_task and not _scraper_cmds.scraping_task.done()
+            _scraping_active = _local_scraping or _module_scraping
+            # Pick the best task to inspect for timing info
+            _active_scrape_task = (scraping_task if _local_scraping else
+                                   _scraper_cmds.scraping_task if _module_scraping else None)
+
+            if _scraping_active:
                 status_parts.append("\n🟢 Match scraping is ACTIVE")
-                
-                # Get next scrape time
-                frame = scraping_task.get_coro().cr_frame
-                if frame and 'wait_time' in frame.f_locals:
-                    wait_time = frame.f_locals['wait_time']
-                    elapsed = frame.f_locals.get('_time', 0)  # Time elapsed in sleep
-                    remaining = max(0, wait_time - elapsed)
-                    next_scrape = datetime.now() + timedelta(seconds=remaining)
-                    status_parts.append(f"Next scrape at: {next_scrape.strftime('%H:%M:%S')}")
-                
+
+                # Get next scrape time from the active task's coroutine frame
+                if _active_scrape_task:
+                    try:
+                        frame = _active_scrape_task.get_coro().cr_frame
+                        if frame and 'wait_time' in frame.f_locals:
+                            wait_time = frame.f_locals['wait_time']
+                            elapsed = frame.f_locals.get('_time', 0)
+                            remaining = max(0, wait_time - elapsed)
+                            next_scrape = datetime.now() + timedelta(seconds=remaining)
+                            status_parts.append(f"Next scrape at: {next_scrape.strftime('%H:%M:%S')}")
+                    except Exception:
+                        pass
+
                 # Add information about last successful match
                 if last_new_match_time:
                     time_since_last_match = datetime.now() - last_new_match_time
                     hours = int(time_since_last_match.total_seconds() / 3600)
                     minutes = int((time_since_last_match.total_seconds() % 3600) / 60)
-                    
+
                     if hours > 0:
                         status_parts.append(f"Last new match: {hours}h {minutes}m ago ({last_new_match_time.strftime('%Y-%m-%d %H:%M:%S')})")
                     else:
                         status_parts.append(f"Last new match: {minutes}m ago ({last_new_match_time.strftime('%Y-%m-%d %H:%M:%S')})")
-                    
+
                     # Add warning indicator if approaching the 1-hour threshold
                     if time_since_last_match > timedelta(minutes=45):
                         status_parts.append("⚠️ No new matches in a while")
             else:
                 status_parts.append("🔴 Match scraping is INACTIVE")
-                
-            # Check hub scraping status - only show if match scraping is inactive
-            if scraping_task and not scraping_task.done():
-                # Hub scraping is part of the main match scraping process
+
+            # Check hub scraping status — consider active if EITHER task source is running
+            _hub_active = (
+                (hub_scraping_task and not hub_scraping_task.done()) or
+                (_scraper_cmds.hub_scraping_task and not _scraper_cmds.hub_scraping_task.done())
+            )
+            if _scraping_active:
+                # Hub scraping is integrated with the main match scraping process
                 status_parts.append("\n🟢 Hub match scraping is integrated with match scraping")
-            elif hub_scraping_task and not hub_scraping_task.done():
+            elif _hub_active:
                 status_parts.append("\n🟢 Hub match scraping is ACTIVE")
             else:
                 status_parts.append("\n🔴 Hub match scraping is INACTIVE")
@@ -235,7 +253,7 @@ async def handle_message(bot, message):
             
             # Handle specific service stops
             if service == "fetch":
-                # Stop scraping task if it exists
+                # Stop this module's scraping task
                 if scraping_task and not scraping_task.done():
                     scraping_task.cancel()
                     try:
@@ -243,14 +261,27 @@ async def handle_message(bot, message):
                     except asyncio.CancelledError:
                         pass
                     scraping_task = None
-                    # Update service status and bot presence
-                    bot.is_service_running = False
-                    await bot.update_status()
                     message_parts.append("Match scraping stopped")
-                else:
+
+                # Also stop the scraper sub-module's task (set by 'force')
+                if _scraper_cmds.scraping_task and not _scraper_cmds.scraping_task.done():
+                    _scraper_cmds.scraping_task.cancel()
+                    try:
+                        await _scraper_cmds.scraping_task
+                    except asyncio.CancelledError:
+                        pass
+                    _scraper_cmds.scraping_task = None
+                    if "Match scraping stopped" not in message_parts:
+                        message_parts.append("Match scraping stopped")
+
+                if not message_parts:
                     message_parts.append("Fetch service wasn't running")
-                    
-                # Also stop hub scraping if it exists
+
+                # Update service status and bot presence
+                bot.is_service_running = False
+                await bot.update_status()
+
+                # Also stop hub scraping tasks (both sources)
                 if hub_scraping_task and not hub_scraping_task.done():
                     hub_scraping_task.cancel()
                     try:
@@ -259,6 +290,16 @@ async def handle_message(bot, message):
                         pass
                     hub_scraping_task = None
                     message_parts.append("Hub match scraping stopped")
+
+                if _scraper_cmds.hub_scraping_task and not _scraper_cmds.hub_scraping_task.done():
+                    _scraper_cmds.hub_scraping_task.cancel()
+                    try:
+                        await _scraper_cmds.hub_scraping_task
+                    except asyncio.CancelledError:
+                        pass
+                    _scraper_cmds.hub_scraping_task = None
+                    if "Hub match scraping stopped" not in message_parts:
+                        message_parts.append("Hub match scraping stopped")
 
             elif service == "download":
                 result = stop_processes()
@@ -292,7 +333,7 @@ async def handle_message(bot, message):
 
             # Handle 'stop' with no service specified - stop everything
             elif service is None:
-                # Stop scraping task
+                # Stop this module's scraping task
                 if scraping_task and not scraping_task.done():
                     scraping_task.cancel()
                     try:
@@ -300,11 +341,24 @@ async def handle_message(bot, message):
                     except asyncio.CancelledError:
                         pass
                     scraping_task = None
-                    bot.is_service_running = False
-                    await bot.update_status()
                     message_parts.append("Match scraping stopped")
-                    
-                # Stop hub scraping task
+
+                # Also stop the scraper sub-module's task (set by 'force')
+                if _scraper_cmds.scraping_task and not _scraper_cmds.scraping_task.done():
+                    _scraper_cmds.scraping_task.cancel()
+                    try:
+                        await _scraper_cmds.scraping_task
+                    except asyncio.CancelledError:
+                        pass
+                    _scraper_cmds.scraping_task = None
+                    if "Match scraping stopped" not in message_parts:
+                        message_parts.append("Match scraping stopped")
+
+                # Update service running flag after stopping all scraping
+                bot.is_service_running = False
+                await bot.update_status()
+
+                # Stop hub scraping tasks (both sources)
                 if hub_scraping_task and not hub_scraping_task.done():
                     hub_scraping_task.cancel()
                     try:
@@ -313,6 +367,16 @@ async def handle_message(bot, message):
                         pass
                     hub_scraping_task = None
                     message_parts.append("Hub match scraping stopped")
+
+                if _scraper_cmds.hub_scraping_task and not _scraper_cmds.hub_scraping_task.done():
+                    _scraper_cmds.hub_scraping_task.cancel()
+                    try:
+                        await _scraper_cmds.hub_scraping_task
+                    except asyncio.CancelledError:
+                        pass
+                    _scraper_cmds.hub_scraping_task = None
+                    if "Hub match scraping stopped" not in message_parts:
+                        message_parts.append("Hub match scraping stopped")
 
                 # Stop filtering task
                 if filtering_task and not filtering_task.done():

@@ -43,8 +43,10 @@ async def handle_message(bot, message):
     
     if command == "force":
         logger.info("Force command received")
+        # Remember whether continuous scraping was already running before force
+        was_service_running = getattr(bot, 'is_service_running', False)
         try:
-            # Cancel any existing scraping task
+            # Cancel any existing one-shot scraping task (not continuous)
             if scraping_task and not scraping_task.done():
                 scraping_task.cancel()
                 try:
@@ -55,36 +57,52 @@ async def handle_message(bot, message):
 
             # Start a new scraping task immediately, bypassing the wait
             await bot.send_message(message.author, "Forcing immediate match scraping...")
-            
+
+            # Mark service as active during the force scrape
+            bot.is_service_running = True
+            await bot.update_status()
+
             # Start scraping
             scraping_task = asyncio.create_task(start_match_scraping(bot))
             result = await scraping_task
-            
+
             if result:
                 await bot.send_message(message.author, "Match scraping completed successfully.")
-                
+
                 # Start hub scraping
                 hub_wait_msg = "Waiting 60 seconds before starting hub scraping..."
                 await bot.send_message(message.author, hub_wait_msg)
                 await asyncio.sleep(60)
-                
+
                 hub_start_msg = "Starting hub match scraping for all configured hubs..."
                 await bot.send_message(message.author, hub_start_msg)
-                
+
                 hub_scraping_task = asyncio.create_task(process_all_hubs(bot))
                 hub_result = await hub_scraping_task
-                
+
                 if hub_result:
                     await bot.send_message(message.author, "Hub match scraping completed successfully.")
                 else:
                     await bot.send_message(message.author, "Hub match scraping encountered an error.")
             else:
                 await bot.send_message(message.author, "Match scraping encountered an error.")
-            
+
             return True
         except Exception as e:
             await bot.send_message(message.author, f"Error forcing scrape: {str(e)}")
             return True
+        finally:
+            # Reset service running flag only if continuous scraping was not already
+            # running before force was called (avoid clearing a legitimate start)
+            if not was_service_running:
+                import sys
+                _msc = sys.modules.get('commands.MatchScraperCommands')
+                continuous_still_running = (
+                    (_msc and _msc.scraping_task and not _msc.scraping_task.done())
+                )
+                if not continuous_still_running:
+                    bot.is_service_running = False
+                    await bot.update_status()
     
     elif command == "hub" and len(args) > 1:
         try:
@@ -144,7 +162,10 @@ async def handle_message(bot, message):
     
     elif command == "stop" and len(args) > 1 and args[1] == "scraper":
         try:
-            # Stop scraping task if it exists
+            import sys
+            stopped_any = False
+
+            # Stop this module's scraping task
             if scraping_task and not scraping_task.done():
                 scraping_task.cancel()
                 try:
@@ -152,14 +173,28 @@ async def handle_message(bot, message):
                 except asyncio.CancelledError:
                     pass
                 scraping_task = None
-                # Update service status and bot presence
+                stopped_any = True
+
+            # Also stop MatchScraperCommands.scraping_task if it's running
+            # (started via the 'start' command or auto-start)
+            _msc = sys.modules.get('commands.MatchScraperCommands')
+            if _msc and _msc.scraping_task and not _msc.scraping_task.done():
+                _msc.scraping_task.cancel()
+                try:
+                    await _msc.scraping_task
+                except asyncio.CancelledError:
+                    pass
+                _msc.scraping_task = None
+                stopped_any = True
+
+            if stopped_any:
                 bot.is_service_running = False
                 await bot.update_status()
                 await bot.send_message(message.author, "Match scraping stopped")
             else:
                 await bot.send_message(message.author, "Match scraping is not running")
-            
-            # Stop hub scraping task if it exists
+
+            # Stop hub scraping tasks (both sources)
             if hub_scraping_task and not hub_scraping_task.done():
                 hub_scraping_task.cancel()
                 try:
@@ -168,7 +203,16 @@ async def handle_message(bot, message):
                     pass
                 hub_scraping_task = None
                 await bot.send_message(message.author, "Hub match scraping stopped")
-            
+
+            if _msc and _msc.hub_scraping_task and not _msc.hub_scraping_task.done():
+                _msc.hub_scraping_task.cancel()
+                try:
+                    await _msc.hub_scraping_task
+                except asyncio.CancelledError:
+                    pass
+                _msc.hub_scraping_task = None
+                await bot.send_message(message.author, "Hub match scraping stopped")
+
             return True
         except Exception as e:
             await bot.send_message(message.author, f"Error: {str(e)}")
@@ -185,8 +229,8 @@ async def continuous_scraping(bot=None):
     """
     # Get configuration
     config = get_config()
-    fetch_delay_min = config.get('downloader', {}).get('fetch_delay', {}).get('min', DEFAULT_MIN_DELAY)
-    fetch_delay_max = config.get('downloader', {}).get('fetch_delay', {}).get('max', DEFAULT_MAX_DELAY)
+    fetch_delay_min = config.getint('Downloader', 'min_fetch_delay', fallback=DEFAULT_MIN_DELAY)
+    fetch_delay_max = config.getint('Downloader', 'max_fetch_delay', fallback=DEFAULT_MAX_DELAY)
     
     logger.info(f"continuous_scraping called with delay range {fetch_delay_min}-{fetch_delay_max} seconds")
     
