@@ -245,10 +245,9 @@ async def handle_message(bot, message):
                 for collection_type, type_stats in sorted(master_stats['by_type'].items()):
                     status_parts.append(f"{collection_type}: {type_stats['total_demos']} demos, {type_stats['total_collections']} collections")
 
-            # Add per-month breakdown in a more compact format
+            # --- Build the per-month table as a SEPARATE message ---
+            table_msg = None
             if month_dirs:
-                status_parts.append("\nPer-Month Breakdown:")
-                
                 # Function to count lines in a file
                 def count_lines(file_path):
                     try:
@@ -256,9 +255,8 @@ async def handle_message(bot, message):
                             return sum(1 for line in f if line.strip())
                     except:
                         return 0
-                
-                # Column widths (sized for the largest real values seen in data)
-                # Month:6  Ace:6  Quad:6  Undl:7  Cost:8  Size:8
+
+                # Column widths: mo:6  ace:6  quad:6  undl:7  cost:8  size:8
                 W = {'mo': 6, 'ace': 6, 'quad': 6, 'undl': 7, 'cost': 8, 'size': 8}
 
                 def row(mo, ace, quad, undl, cost, size):
@@ -271,15 +269,14 @@ async def handle_message(bot, message):
                         f"{size}"
                     )
 
-                # Mobile-friendly table: Month | Ace | Quad | Undl | Cost | Size(GB)
-                table_lines = []
+                table_lines = ["Per-Month Breakdown:"]
+                table_lines.append("```")
                 table_lines.append(row("Month", "Ace", "Quad", "Undl", "Cost", "Size(GB)"))
                 table_lines.append(row("-"*W['mo'], "-"*W['ace'], "-"*W['quad'], "-"*W['undl'], "-"*W['cost'], "-"*W['size']))
-                
+
                 for month in month_dirs:
                     month_dir = os.path.join(textfiles_dir, month)
                     month_lower = month.lower()
-                    # Build abbreviation that includes the year tag (e.g. Apr26, Aug25)
                     month_abbr = month[:3]
                     for m in _MONTH_ORDER:
                         if month_lower.startswith(m) and len(month_lower) == len(m) + 2:
@@ -288,7 +285,6 @@ async def handle_message(bot, message):
                                 month_abbr = month[:3] + suffix
                             break
 
-                    # Count matches in each category for this month
                     ace_file = os.path.join(month_dir, f"ace_matchids_{month_lower}.txt")
                     quad_file = os.path.join(month_dir, f"quad_matchids_{month_lower}.txt")
                     match_file = os.path.join(month_dir, f"match_ids_{month_lower}.txt")
@@ -297,12 +293,8 @@ async def handle_message(bot, message):
 
                     ace_count = count_lines(ace_file)
                     quad_count = count_lines(quad_file)
-                    
                     match_count = count_lines(match_file)
-                    if match_count == 0:
-                        total_count = ace_count + quad_count
-                    else:
-                        total_count = match_count
+                    total_count = match_count if match_count else ace_count + quad_count
                     downloaded_count = count_lines(downloaded_file)
                     rejected_count = count_lines(rejected_file)
                     undownloaded = max(0, total_count - (downloaded_count + rejected_count))
@@ -321,102 +313,30 @@ async def handle_message(bot, message):
                         f"${estimated_cost:.2f}",
                         f"{estimated_size_gb:.2f}"
                     ))
-                
-                # Wrap table in a code block for monospace alignment on mobile
-                status_parts.append("```")
-                status_parts.extend(table_lines)
-                status_parts.append("```")
-                
-                # Add parsing stats by month if available
-                if master_stats['by_month']:
-                    status_parts.append("\nParsed Collections by Month:")
-                    
-                    # Create a compact table header for parsed collections
-                    status_parts.append("\nMonth      | ACE    | QUAD   | TRIPLE | MULTI  | DOUBLE | SINGLE | Demos  | Collections")
-                    status_parts.append("-----------|--------|--------|--------|--------|--------|--------|--------|------------")
-                    
-                    # Sort months chronologically, supports MonthYY format
-                    for month in sorted(master_stats['by_month'].keys(), key=_month_sort_key):
-                        month_stats = master_stats['by_month'][month]
-                        # Build abbreviation that includes the year tag (e.g. Apr26, Aug25)
-                        month_abbr = month[:3]
-                        month_lower_tmp = month.lower()
-                        for m in _MONTH_ORDER:
-                            if month_lower_tmp.startswith(m) and len(month_lower_tmp) == len(m) + 2:
-                                suffix = month_lower_tmp[len(m):]
-                                if suffix.isdigit():
-                                    month_abbr = month[:3] + suffix
-                                break
-                        
-                        # Get collections by type (not demos)
-                        ace_collections = month_stats['by_type'].get('ACE', {}).get('collections', 0)
-                        quad_collections = month_stats['by_type'].get('QUAD', {}).get('collections', 0)
-                        triple_collections = month_stats['by_type'].get('TRIPLE', {}).get('collections', 0)
-                        single_collections = month_stats['by_type'].get('SINGLE', {}).get('collections', 0)
-                        double_collections = month_stats['by_type'].get('DOUBLE', {}).get('collections', 0)
-                        multi_collections = month_stats['by_type'].get('MULTI', {}).get('collections', 0)
-                        
-                        # Use value from master_stats for demos count
-                        demos_count = month_stats['total_demos']
-                        
-                        # Format as a table row
-                        status_parts.append(
-                            f"{month_abbr.ljust(10)} | "
-                            f"{str(ace_collections).ljust(6)} | "
-                            f"{str(quad_collections).ljust(6)} | "
-                            f"{str(triple_collections).ljust(6)} | "
-                            f"{str(multi_collections).ljust(6)} | "
-                            f"{str(double_collections).ljust(6)} | "
-                            f"{str(single_collections).ljust(6)} | "
-                            f"{str(demos_count).ljust(6)} | "
-                            f"{str(month_stats['total_collections'])}"
-                        )
 
-            status_msg = "\n".join(status_parts)
-            # Discord has a 2000 character limit per message.
-            # Split into chunks, keeping code blocks intact by closing/reopening
-            # the ``` fence at every chunk boundary.
-            chunk_size = 1900
-            lines = status_msg.split("\n")
-            messages_out = []
-            chunk = ""
-            in_code_block = False
+                table_lines.append("```")
+                table_msg = "\n".join(table_lines)
 
-            for line in lines:
-                is_fence = line.strip() == "```"
-
-                if is_fence:
-                    if not in_code_block:
-                        # Opening fence — flush chunk first if it would overflow
-                        in_code_block = True
-                        if chunk and len(chunk) + len(line) + 1 > chunk_size:
-                            messages_out.append(chunk)
-                            chunk = line
-                        else:
-                            chunk = chunk + "\n" + line if chunk else line
-                    else:
-                        # Closing fence — just append
-                        in_code_block = False
-                        chunk = chunk + "\n" + line if chunk else line
-                else:
+            # --- Send summary (plain text, split at 1900 chars if needed) ---
+            summary = "\n".join(status_parts)
+            if len(summary) <= 1900:
+                await bot.send_message(message.author, summary)
+            else:
+                lines = summary.split("\n")
+                chunk = ""
+                for line in lines:
                     candidate = chunk + "\n" + line if chunk else line
-                    if len(candidate) > chunk_size:
-                        # Need to split here
-                        if in_code_block:
-                            # Close the block in the current chunk, reopen in next
-                            messages_out.append(chunk + "\n```")
-                            chunk = "```\n" + line
-                        else:
-                            messages_out.append(chunk)
-                            chunk = line
+                    if len(candidate) > 1900:
+                        await bot.send_message(message.author, chunk)
+                        chunk = line
                     else:
                         chunk = candidate
+                if chunk:
+                    await bot.send_message(message.author, chunk)
 
-            if chunk:
-                messages_out.append(chunk)
-
-            for msg in messages_out:
-                await bot.send_message(message.author, msg)
+            # --- Send table as its own message (always a clean code block) ---
+            if table_msg:
+                await bot.send_message(message.author, table_msg)
         except Exception as e:
             error_msg = f"An error occurred: {str(e)}"
             await bot.send_message(message.author, error_msg)
