@@ -12,14 +12,15 @@ logger = logging.getLogger('discord_bot')
 # Load configuration from project root
 core_dir = os.path.dirname(os.path.abspath(__file__))  # core directory
 project_dir = os.path.dirname(core_dir)  # DiscordBot directory
-config_path = os.path.join(os.path.dirname(project_dir), 'config.json')
+config_path = os.path.join(os.path.dirname(project_dir), 'config.ini')
 
-with open(config_path, 'r') as f:
-    config = json.load(f)
+import configparser
+config = configparser.ConfigParser()
+config.read(config_path)
 
-API_KEY = config['faceit']['api_key']
-TEXTFILES_DIR = config['project']['textfiles_directory']
-SAVE_FOLDER = config.get('project', {}).get('public_demos_directory', os.path.join(project_dir, 'public_demos'))
+API_KEY = config.get('Keys', 'faceit_api_key')
+TEXTFILES_DIR = config.get('Paths', 'textfiles_directory')
+SAVE_FOLDER = config.get('Paths', 'public_demos_directory', fallback=os.path.join(project_dir, 'public_demos'))
 
 # Ensure save folder exists
 os.makedirs(SAVE_FOLDER, exist_ok=True)
@@ -74,6 +75,72 @@ def get_month_files(month: str):
         'quad': os.path.join(month_dir, f'quad_matchids_{month_lower}.txt'),
         'unapproved': os.path.join(month_dir, f'unapproved_matchids_{month_lower}.txt')
     }
+
+# Valid month names for lookup
+MONTH_NAMES = [
+    'january', 'february', 'march', 'april', 'may', 'june',
+    'july', 'august', 'september', 'october', 'november', 'december'
+]
+
+def resolve_month(month_input: str) -> Optional[str]:
+    """
+    Resolve a month input to the actual folder name (MonthYY format).
+
+    Supports:
+      - Plain month name (e.g., "february") → returns the most recent matching folder
+        (e.g., "February26" if that's the newest)
+      - MonthYY format (e.g., "february26") → validates folder exists and returns it
+        with correct capitalisation
+
+    Returns the resolved folder name (e.g., "February26"), or None if not found.
+    """
+    month_input = month_input.strip().lower()
+
+    # Determine if the input already includes a 2-digit year suffix
+    # e.g., "february26" → base="february", year="26"
+    base_month = None
+    year_suffix = None
+
+    for m in MONTH_NAMES:
+        if month_input == m:
+            base_month = m
+            year_suffix = None
+            break
+        if month_input.startswith(m) and len(month_input) == len(m) + 2:
+            suffix = month_input[len(m):]
+            if suffix.isdigit():
+                base_month = m
+                year_suffix = suffix
+                break
+
+    if base_month is None:
+        return None  # Not a recognised month
+
+    # Scan the textfiles directory for matching folders
+    if not os.path.exists(TEXTFILES_DIR):
+        return None
+
+    matching = []
+    for item in os.listdir(TEXTFILES_DIR):
+        if not os.path.isdir(os.path.join(TEXTFILES_DIR, item)):
+            continue
+        item_lower = item.lower()
+        # Match folders like "February26" (MonthYY)
+        for m in MONTH_NAMES:
+            if item_lower.startswith(m) and len(item_lower) == len(m) + 2:
+                suffix = item_lower[len(m):]
+                if suffix.isdigit() and item_lower.startswith(base_month):
+                    if year_suffix is None or suffix == year_suffix:
+                        matching.append((int(suffix), item))
+                    break
+
+    if not matching:
+        return None
+
+    # Sort by year descending; return the most recent
+    matching.sort(key=lambda x: x[0], reverse=True)
+    return matching[0][1]
+
 
 def prepare_auto_download_queue(month: str, limit: int = None):
     """
@@ -355,14 +422,18 @@ async def download_demo_async(match_id: str, month: str) -> str:
     DOWNLOAD_API_URL = 'https://open.faceit.com/download/v2/demos/download'
     # Get base_match_id 
     base_match_id = strip_match_id_prefix(match_id)
-    DEMO_URL = f'https://demos-us-east.backblaze.faceit-cdn.net/cs2/{base_match_id}-1-1.dem.gz'
+    
+    # Try both file extensions (.zst for newer CS2 demos, .gz for older ones)
+    url_formats = [
+        # CS2 format with .zst extension (newer)
+        f'https://demos-us-east.backblaze.faceit-cdn.net/cs2/{base_match_id}-1-1.dem.zst',
+        # CS2 format with .gz extension (older)  
+        f'https://demos-us-east.backblaze.faceit-cdn.net/cs2/{base_match_id}-1-1.dem.gz'
+    ]
+    
     headers = {
         'Authorization': f'Bearer {API_KEY}',
         'Content-Type': 'application/json'
-    }
-
-    payload = {
-        'resource_url': DEMO_URL
     }
 
     # Create monthly folder if it doesn't exist
@@ -371,69 +442,81 @@ async def download_demo_async(match_id: str, month: str) -> str:
 
     try:
         async with aiohttp.ClientSession() as session:
-            # Get signed URL from FACEIT API
-            async with session.post(DOWNLOAD_API_URL, headers=headers, json=payload) as response:
-                if response.status == 429:
-                    print("\nRate limited by FACEIT API")
-                    download_stats['failed'] += 1
-                    return "rate_limited"
+            
+            # Try each URL format until we find one that works
+            for i, demo_url in enumerate(url_formats, 1):
+                payload = {
+                    'resource_url': demo_url
+                }
                 
-                if response.status == 200:
-                    response_data = await response.json()
-                    signed_url = response_data.get('payload', {}).get('download_url', '')
-                    
-                    if not signed_url:
-                        print(f"[✗] Failed demo: {format_match_id(match_id)} - No signed URL")
+                # Get signed URL from FACEIT API
+                async with session.post(DOWNLOAD_API_URL, headers=headers, json=payload) as response:
+                    if response.status == 429:
+                        print("\nRate limited by FACEIT API")
                         download_stats['failed'] += 1
-                        return "no_url"
+                        return "rate_limited"
                     
-                    # Download the demo file
-                    async with session.get(signed_url) as demo_response:
-                        if demo_response.status == 200:
-                            save_path = os.path.join(destination_folder, f'{base_match_id}.dem.gz')
-                            
-                            # Download the file in chunks
-                            with open(save_path, 'wb') as demo_file:
-                                while True:
-                                    chunk = await demo_response.content.read(8192)
-                                    if not chunk:
-                                        break
-                                    demo_file.write(chunk)
-                            
-                            # Check file size (50,000 KB = 50MB)
-                            file_size = os.path.getsize(save_path) / 1024
-                            if file_size < 50000:
-                                os.remove(save_path)
-                                # Add to month-specific rejected.txt
-                                with open(rejected_file, 'a', encoding='utf-8') as f:
-                                    f.write(match_id + '\n')
-                                download_stats['rejected'] += 1
-                                return "small_file"
+                    if response.status == 200:
+                        response_data = await response.json()
+                        signed_url = response_data.get('payload', {}).get('download_url', '')
+                        
+                        if not signed_url:
+                            # Try next format if no signed URL
+                            continue
+                        
+                        # Download the demo file
+                        async with session.get(signed_url) as demo_response:
+                            if demo_response.status == 200:
+                                # Determine correct file extension based on the URL that worked
+                                file_ext = ".dem.zst" if ".zst" in demo_url else ".dem.gz"
+                                save_path = os.path.join(destination_folder, f'{base_match_id}{file_ext}')
+                                
+                                # Download the file in chunks
+                                with open(save_path, 'wb') as demo_file:
+                                    while True:
+                                        chunk = await demo_response.content.read(8192)
+                                        if not chunk:
+                                            break
+                                        demo_file.write(chunk)
+                                
+                                # Check file size (50,000 KB = 50MB)
+                                file_size = os.path.getsize(save_path) / 1024
+                                if file_size < 50000:
+                                    os.remove(save_path)
+                                    # Add to month-specific rejected.txt
+                                    with open(rejected_file, 'a', encoding='utf-8') as f:
+                                        f.write(match_id + '\n')
+                                    download_stats['rejected'] += 1
+                                    return "small_file"
 
-                            # Add match ID to month-specific downloaded.txt (without prefix)
-                            base_match_id = strip_match_id_prefix(match_id)
-                            with open(downloaded_file, 'a', encoding='utf-8') as f:
-                                f.write(base_match_id + '\n')
-                            print(f"[✓] Downloaded demo: {format_match_id(match_id)}")
-                            download_stats['successful'] += 1
-                            download_stats['last_match_id'] = match_id
-                            return "success"
-                        else:
-                            print(f"[✗] Failed demo: {format_match_id(match_id)} - HTTP {demo_response.status}")
-                            download_stats['failed'] += 1
-                            return "failed"
-                else:
-                    print(f"[✗] Failed demo: {format_match_id(match_id)} - API error {response.status}")
-                    
-                    # Add to rejected file
-                    with open(rejected_file, 'a', encoding='utf-8') as f:
-                        f.write(match_id + '\n')
-                    
-                    # Move to broken_matchids file
-                    await move_to_broken_matchids(match_id, month, f"API error {response.status}")
-                    
-                    download_stats['failed'] += 1
-                    return "failed"
+                                # Add match ID to month-specific downloaded.txt (without prefix)
+                                base_match_id_save = strip_match_id_prefix(match_id)
+                                with open(downloaded_file, 'a', encoding='utf-8') as f:
+                                    f.write(base_match_id_save + '\n')
+                                print(f"[✓] Downloaded demo: {format_match_id(match_id)} ({file_ext})")
+                                download_stats['successful'] += 1
+                                download_stats['last_match_id'] = match_id
+                                return "success"
+                            else:
+                                # Try next format if download fails
+                                continue
+                    else:
+                        # Try next format if API error
+                        continue
+            
+            # If we get here, all URL formats failed
+            print(f"[✗] Failed demo: {format_match_id(match_id)} - All formats failed")
+            
+            # Add to rejected file
+            with open(rejected_file, 'a', encoding='utf-8') as f:
+                f.write(match_id + '\n')
+            
+            # Move to broken_matchids file
+            await move_to_broken_matchids(match_id, month, "All formats failed")
+            
+            download_stats['failed'] += 1
+            return "failed"
+            
     except Exception as e:
         print(f"[✗] Failed demo: {format_match_id(match_id)} - {str(e)}")
         download_stats['failed'] += 1
@@ -578,8 +661,8 @@ async def scraper_loop():
     from .FaceitMatchScraper import start_match_scraping as start_match_scraping_core
     from .MatchScoreFilter import start_match_filtering
     
-    FETCH_DELAY_MIN = config.get('downloader', {}).get('fetch_delay', {}).get('min', 180)  # 3 minutes default
-    FETCH_DELAY_MAX = config.get('downloader', {}).get('fetch_delay', {}).get('max', 300)  # 5 minutes default
+    FETCH_DELAY_MIN = config.getint('Downloader', 'min_fetch_delay', fallback=180)
+    FETCH_DELAY_MAX = config.getint('Downloader', 'max_fetch_delay', fallback=300)
     
     while not stop_event.is_set():
         try:

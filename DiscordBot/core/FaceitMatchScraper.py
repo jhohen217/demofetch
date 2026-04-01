@@ -2,6 +2,7 @@ import json
 import os
 import asyncio
 import aiohttp
+import configparser
 from typing import List, Set, Optional, Tuple
 from datetime import datetime
 
@@ -12,17 +13,17 @@ class MatchScraper:
         # Load configuration from project root
         core_dir = os.path.dirname(os.path.abspath(__file__))  # core directory
         project_dir = os.path.dirname(core_dir)  # DiscordBot directory
-        config_path = os.path.join(os.path.dirname(project_dir), 'config.json')
+        config_path = os.path.join(os.path.dirname(project_dir), 'config.ini')
         
-        with open(config_path, 'r') as f:
-            self.config = json.load(f)
+        self.config = configparser.ConfigParser()
+        self.config.read(config_path)
 
         # Use configured directories
-        self.project_dir = self.config['project']['directory']
-        self.textfiles_dir = self.config['project']['textfiles_directory']
+        self.project_dir = self.config.get('Paths', 'project_directory')
+        self.textfiles_dir = self.config.get('Paths', 'textfiles_directory')
         
         # Get current month directory and name
-        current_month = datetime.now().strftime("%B")  # e.g., "February"
+        current_month = datetime.now().strftime("%B%y")  # e.g., "February26"
         self.month_dir = os.path.join(self.textfiles_dir, current_month)
         month_lower = current_month.lower()
         os.makedirs(self.month_dir, exist_ok=True)

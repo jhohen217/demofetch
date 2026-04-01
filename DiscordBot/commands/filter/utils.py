@@ -54,7 +54,7 @@ class MatchResult:
             str: Path to the target file
         """
         # Get current month directory and name
-        current_month = datetime.now().strftime("%B")  # e.g., "February"
+        current_month = datetime.now().strftime("%B%y")  # e.g., "February26"
         month_dir = os.path.join(self.textfiles_dir, current_month)
         month_lower = current_month.lower()
         

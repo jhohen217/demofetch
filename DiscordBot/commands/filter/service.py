@@ -4,7 +4,6 @@ Core service functionality for the filter module.
 
 import os
 import json
-import time
 import asyncio
 import aiohttp
 import logging
@@ -37,11 +36,11 @@ class MatchProcessor:
         self.config = get_config()
 
         # Use configured directories
-        self.project_dir = self.config['project']['directory']
-        self.textfiles_dir = self.config['project']['textfiles_directory']
+        self.project_dir = self.config.get('Paths', 'project_directory')
+        self.textfiles_dir = self.config.get('Paths', 'textfiles_directory')
         
         # Get current month if not specified
-        self.month = month or datetime.now().strftime("%B")  # e.g., "February"
+        self.month = month or datetime.now().strftime("%B%y")  # e.g., "February26"
         self.month_dir = os.path.join(self.textfiles_dir, self.month)
         self.month_lower = self.month.lower()
         
@@ -62,7 +61,7 @@ class MatchProcessor:
         # API configuration
         self.api_base_url = "https://open.faceit.com/data/v4/matches/{match_id}/stats"
         self.headers = {
-            "Authorization": f"Bearer {self.config['faceit']['api_key']}",
+            "Authorization": f"Bearer {self.config.get('Keys', 'faceit_api_key')}",
             "Accept": "application/json"
         }
 
@@ -157,7 +156,7 @@ class MatchProcessor:
             with open(self.filter_queue_file, "w") as f:
                 for match_id in unfiltered_matches:
                     f.write(f"{match_id}\n")
-                    f.flush()
+                f.flush()
 
             return True
         except Exception as e:
@@ -201,7 +200,7 @@ class MatchProcessor:
             with open(self.filter_queue_file, 'w') as f:
                 for match_id in unique_queue:
                     f.write(f"{match_id}\n")
-                    f.flush()
+                f.flush()
             
             print_highlighted(f"Filter queue cleanup complete. Removed {duplicates} duplicate entries.")
             return True

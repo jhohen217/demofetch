@@ -3,79 +3,87 @@ Configuration handling for the scraper module.
 """
 
 import os
-import json
-from typing import Dict, Any, List, Optional
+import configparser
+from typing import Dict, Any, List
 
 # Default scraping delay settings (in seconds)
 DEFAULT_MIN_DELAY = 180  # 3 minutes
 DEFAULT_MAX_DELAY = 300  # 5 minutes
 
-def get_config() -> Dict[str, Any]:
+def get_config() -> configparser.ConfigParser:
     """
-    Load configuration from the project's config.json file.
+    Load configuration from the project's config.ini file.
     
     Returns:
-        Dict[str, Any]: Configuration dictionary
+        configparser.ConfigParser: Configuration object
     """
     # Load configuration from project root
-    core_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # DiscordBot directory
-    config_path = os.path.join(os.path.dirname(core_dir), 'config.json')
+    core_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    config_path = os.path.join(os.path.dirname(core_dir), 'config.ini')
     
-    with open(config_path, 'r') as f:
-        config = json.load(f)
+    config = configparser.ConfigParser()
+    config.read(config_path)
     
     # Ensure fetch delay settings exist with reasonable defaults
-    if 'downloader' not in config:
-        config['downloader'] = {}
+    if not config.has_section('Downloader'):
+        config.add_section('Downloader')
     
-    if 'fetch_delay' not in config['downloader']:
-        config['downloader']['fetch_delay'] = {}
+    if not config.has_option('Downloader', 'min_fetch_delay'):
+        config.set('Downloader', 'min_fetch_delay', str(DEFAULT_MIN_DELAY))
     
-    # Set default values if not present
-    if 'min' not in config['downloader']['fetch_delay']:
-        config['downloader']['fetch_delay']['min'] = DEFAULT_MIN_DELAY
-    
-    if 'max' not in config['downloader']['fetch_delay']:
-        config['downloader']['fetch_delay']['max'] = DEFAULT_MAX_DELAY
+    if not config.has_option('Downloader', 'max_fetch_delay'):
+        config.set('Downloader', 'max_fetch_delay', str(DEFAULT_MAX_DELAY))
     
     # Ensure values are reasonable
-    min_delay = config['downloader']['fetch_delay']['min']
-    max_delay = config['downloader']['fetch_delay']['max']
+    min_delay = config.getint('Downloader', 'min_fetch_delay')
+    max_delay = config.getint('Downloader', 'max_fetch_delay')
     
     if min_delay < 60:  # Minimum 1 minute
         print(f"Warning: Minimum delay {min_delay}s is too low. Setting to {DEFAULT_MIN_DELAY}s.")
-        config['downloader']['fetch_delay']['min'] = DEFAULT_MIN_DELAY
+        config.set('Downloader', 'min_fetch_delay', str(DEFAULT_MIN_DELAY))
     
     if max_delay < min_delay:
         print(f"Warning: Maximum delay {max_delay}s is less than minimum delay {min_delay}s. Setting to {min_delay + 120}s.")
-        config['downloader']['fetch_delay']['max'] = min_delay + 120
+        config.set('Downloader', 'max_fetch_delay', str(min_delay + 120))
     
     return config
 
+# Valid lowercase month names
+_MONTH_NAMES = [
+    'january', 'february', 'march', 'april', 'may', 'june',
+    'july', 'august', 'september', 'october', 'november', 'december'
+]
+
 def get_available_months() -> List[str]:
     """
-    Get a list of available months based on the textfiles directory structure.
-    
+    Get a list of available month folders based on the textfiles directory structure.
+    Supports both legacy plain-name format (e.g. "February") and MonthYY format
+    (e.g. "February26").
+
     Returns:
-        List[str]: List of month names (e.g., ["January", "February"])
+        List[str]: List of folder names
     """
     config = get_config()
-    textfiles_dir = config.get('project', {}).get('textfiles_directory', '')
-    
+    textfiles_dir = config.get('Paths', 'textfiles_directory', fallback='')
+
     if not os.path.exists(textfiles_dir):
         return []
-    
-    # Get all directories in the textfiles directory
+
     months = []
     for item in os.listdir(textfiles_dir):
-        if os.path.isdir(os.path.join(textfiles_dir, item)):
-            # Check if it's a valid month name
-            if item.lower() in [
-                'january', 'february', 'march', 'april', 'may', 'june',
-                'july', 'august', 'september', 'october', 'november', 'december'
-            ]:
+        if not os.path.isdir(os.path.join(textfiles_dir, item)):
+            continue
+        item_lower = item.lower()
+        for m in _MONTH_NAMES:
+            if item_lower == m:
                 months.append(item)
-    
+                break
+            if item_lower.startswith(m) and len(item_lower) == len(m) + 2:
+                suffix = item_lower[len(m):]
+                if suffix.isdigit():
+                    months.append(item)
+                    break
+
     return months
 
 def get_month_files(month: str) -> Dict[str, str]:
@@ -89,7 +97,7 @@ def get_month_files(month: str) -> Dict[str, str]:
         Dict[str, str]: Dictionary of file paths
     """
     config = get_config()
-    textfiles_dir = config.get('project', {}).get('textfiles_directory', '')
+    textfiles_dir = config.get('Paths', 'textfiles_directory', fallback='')
     
     if not textfiles_dir:
         return {}
@@ -104,23 +112,23 @@ def get_month_files(month: str) -> Dict[str, str]:
         'hub_output_json': os.path.join(month_dir, f"hub_output_{month_lower}.json"),
     }
 
-def save_config(config: Dict[str, Any]) -> bool:
+def save_config(config: configparser.ConfigParser) -> bool:
     """
-    Save configuration to the project's config.json file.
+    Save configuration to the project's config.ini file.
     
     Args:
-        config: Configuration dictionary
+        config: Configuration object
         
     Returns:
         bool: True if successful, False otherwise
     """
     try:
         # Load configuration from project root
-        core_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # DiscordBot directory
-        config_path = os.path.join(os.path.dirname(core_dir), 'config.json')
+        core_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        config_path = os.path.join(os.path.dirname(core_dir), 'config.ini')
         
         with open(config_path, 'w') as f:
-            json.dump(config, f, indent=4)
+            config.write(f)
         
         return True
     except Exception as e:
@@ -151,8 +159,8 @@ def update_fetch_delay(min_delay: int, max_delay: int) -> bool:
             max_delay = min_delay + 120
         
         # Update config
-        config['downloader']['fetch_delay']['min'] = min_delay
-        config['downloader']['fetch_delay']['max'] = max_delay
+        config.set('Downloader', 'min_fetch_delay', str(min_delay))
+        config.set('Downloader', 'max_fetch_delay', str(max_delay))
         
         # Save config
         return save_config(config)

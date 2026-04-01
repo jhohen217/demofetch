@@ -37,11 +37,11 @@ class HubScraper:
         self.config = get_config()
         
         # Use configured directories
-        self.project_dir = self.config['project']['directory']
-        self.textfiles_dir = self.config['project']['textfiles_directory']
+        self.project_dir = self.config.get('Paths', 'project_directory')
+        self.textfiles_dir = self.config.get('Paths', 'textfiles_directory')
         
         # Get current month if not specified
-        self.month = month or datetime.now().strftime("%B")  # e.g., "February"
+        self.month = month or datetime.now().strftime("%B%y")  # e.g., "February26"
         self.month_dir = os.path.join(self.textfiles_dir, self.month)
         self.month_lower = self.month.lower()
         os.makedirs(self.month_dir, exist_ok=True)
@@ -69,7 +69,7 @@ class HubScraper:
         self.url = f"{self.base_url}/hubs/{self.hub_id}/matches"
         self.headers = {
             "accept": "application/json",
-            "Authorization": f"Bearer {self.config['faceit']['api_key']}"
+            "Authorization": f"Bearer {self.config.get('Keys', 'faceit_api_key')}"
         }
         self.params = {
             "offset": 0,
@@ -368,7 +368,15 @@ async def process_all_hubs(bot=None, month=None):
         config = get_config()
         
         # Get hub list from config
-        hubs = config.get('faceit', {}).get('hubs', [])
+        hubs = []
+        if config.has_section('Faceit'):
+            i = 0
+            while config.has_option('Faceit', f'hub_{i}_id'):
+                hubs.append({
+                    'id': config.get('Faceit', f'hub_{i}_id'),
+                    'name': config.get('Faceit', f'hub_{i}_name')
+                })
+                i += 1
         print(f"\n{'*'*50}")
         print(f"DEBUG: Found {len(hubs)} hubs in config")
         for i, hub in enumerate(hubs):

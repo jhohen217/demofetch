@@ -2,6 +2,7 @@ import os
 import sys
 import logging
 import asyncio
+from core.AsyncDemoDownloader import resolve_month, MONTH_NAMES
 
 # Set up logging
 logger = logging.getLogger('discord_bot')
@@ -36,24 +37,35 @@ async def handle_message(bot, message):
             if len(args) > 1:
                 # Check if the first argument is a valid type or month
                 valid_types = ['ace', 'quad', 'triple', 'multi', 'double', 'single', 'all']
-                valid_months = ['january', 'february', 'march', 'april', 'may', 'june', 
-                               'july', 'august', 'september', 'october', 'november', 'december', 'all']
-                
+
+                def _is_month_input(s):
+                    """Return True if s is a valid month input (plain name, MonthYY, or 'all')"""
+                    s_lower = s.lower()
+                    if s_lower == 'all':
+                        return True
+                    return resolve_month(s_lower) is not None
+
+                def _resolve_month_input(s):
+                    """Resolve month input to folder name, or None for 'all'"""
+                    if s.lower() == 'all':
+                        return None
+                    return resolve_month(s)
+
                 # Log the arguments for debugging
                 logger.info(f"Scan command arguments: {args}")
-                
+
                 if args[1].lower() in valid_types:
                     collection_type = args[1].upper() if args[1].lower() != 'all' else None
                     logger.info(f"Recognized type argument: {collection_type}")
-                    
+
                     # Check for month as second argument
-                    if len(args) > 2 and args[2].lower() in valid_months:
-                        month = args[2].capitalize() if args[2].lower() != 'all' else None
+                    if len(args) > 2 and _is_month_input(args[2]):
+                        month = _resolve_month_input(args[2])
                         logger.info(f"Recognized month argument: {month}")
-                elif args[1].lower() in valid_months:
-                    month = args[1].capitalize() if args[1].lower() != 'all' else None
+                elif _is_month_input(args[1]):
+                    month = _resolve_month_input(args[1])
                     logger.info(f"Recognized month argument: {month}")
-                    
+
                     # Check for type as second argument (unusual but supported)
                     if len(args) > 2 and args[2].lower() in valid_types:
                         collection_type = args[2].upper() if args[2].lower() != 'all' else None

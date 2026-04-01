@@ -3,6 +3,7 @@ import os
 import asyncio
 import aiohttp
 import logging
+import configparser
 from typing import List, Set, Optional, Tuple
 from datetime import datetime
 
@@ -16,17 +17,17 @@ class HubScraper:
         # Load configuration from project root
         core_dir = os.path.dirname(os.path.abspath(__file__))  # core directory
         project_dir = os.path.dirname(core_dir)  # DiscordBot directory
-        config_path = os.path.join(os.path.dirname(project_dir), 'config.json')
+        config_path = os.path.join(os.path.dirname(project_dir), 'config.ini')
         
-        with open(config_path, 'r') as f:
-            self.config = json.load(f)
+        self.config = configparser.ConfigParser()
+        self.config.read(config_path)
 
         # Use configured directories
-        self.project_dir = self.config['project']['directory']
-        self.textfiles_dir = self.config['project']['textfiles_directory']
+        self.project_dir = self.config.get('Paths', 'project_directory')
+        self.textfiles_dir = self.config.get('Paths', 'textfiles_directory')
         
         # Get current month directory and name
-        current_month = datetime.now().strftime("%B")  # e.g., "February"
+        current_month = datetime.now().strftime("%B%y")  # e.g., "February26"
         self.month_dir = os.path.join(self.textfiles_dir, current_month)
         month_lower = current_month.lower()
         os.makedirs(self.month_dir, exist_ok=True)
@@ -53,7 +54,7 @@ class HubScraper:
         self.url = f"{self.base_url}/hubs/{self.hub_id}/matches"
         self.headers = {
             "accept": "application/json",
-            "Authorization": f"Bearer {self.config['faceit']['api_key']}"
+            "Authorization": f"Bearer {self.config.get('Keys', 'faceit_api_key')}"
         }
         self.params = {
             "offset": 0,
@@ -318,7 +319,7 @@ class HubScraper:
                 unapproved_count = 0
                 
                 # Get current month name
-                current_month = datetime.now().strftime("%B")  # e.g., "February"
+                current_month = datetime.now().strftime("%B%y")  # e.g., "February26"
                 month_dir = os.path.join(self.textfiles_dir, current_month)
                 month_lower = current_month.lower()
                 
@@ -364,7 +365,7 @@ async def process_all_hubs(bot=None):
         # Load configuration
         core_dir = os.path.dirname(os.path.abspath(__file__))  # core directory
         project_dir = os.path.dirname(core_dir)  # DiscordBot directory
-        config_path = os.path.join(os.path.dirname(project_dir), 'config.json')
+        config_path = os.path.join(os.path.dirname(project_dir), 'config.ini')
         
         # Print debug information
         print(f"\n{'*'*50}")
@@ -372,11 +373,19 @@ async def process_all_hubs(bot=None):
         print(f"DEBUG: Config file exists: {os.path.exists(config_path)}")
         print(f"{'*'*50}\n")
         
-        with open(config_path, 'r') as f:
-            config = json.load(f)
+        config = configparser.ConfigParser()
+        config.read(config_path)
         
         # Get hub list from config
-        hubs = config.get('faceit', {}).get('hubs', [])
+        hubs = []
+        if config.has_section('Faceit'):
+            for i in range(10):  # Check for up to 10 hubs
+                hub_id_key = f'hub_{i}_id'
+                hub_name_key = f'hub_{i}_name'
+                if config.has_option('Faceit', hub_id_key) and config.has_option('Faceit', hub_name_key):
+                    hub_id = config.get('Faceit', hub_id_key)
+                    hub_name = config.get('Faceit', hub_name_key)
+                    hubs.append({'id': hub_id, 'name': hub_name})
         print(f"\n{'*'*50}")
         print(f"DEBUG: Found {len(hubs)} hubs in config")
         for i, hub in enumerate(hubs):

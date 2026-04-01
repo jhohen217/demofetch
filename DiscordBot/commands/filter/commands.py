@@ -9,6 +9,7 @@ from typing import Dict, List, Set, Tuple, Optional
 
 from commands.filter.service import start_match_filtering
 from commands.filter.config import get_config, get_available_months
+from core.AsyncDemoDownloader import resolve_month
 
 # Set up logging
 logger = logging.getLogger('discord_bot')
@@ -43,13 +44,9 @@ async def handle_message(bot, message):
             # Check if month parameter is provided
             month = None
             if len(args) > 1:
-                month = args[1].capitalize()
-                if month.lower() not in [
-                    'january', 'february', 'march', 'april', 'may', 'june',
-                    'july', 'august', 'september', 'october', 'november', 'december'
-                ]:
-                    await bot.send_message(message.author, f"Invalid month: {month}. Using current month.")
-                    month = None
+                month = resolve_month(args[1])
+                if month is None:
+                    await bot.send_message(message.author, f"Invalid month or no data found for '{args[1]}'. Using current month.")
             
             # Start filtering
             await bot.send_message(message.author, f"Starting match filtering for {month or 'current month'}...")
@@ -86,13 +83,9 @@ async def handle_message(bot, message):
             # Check if month parameter is provided
             month = None
             if len(args) > 2:
-                month = args[2].capitalize()
-                if month.lower() not in [
-                    'january', 'february', 'march', 'april', 'may', 'june',
-                    'july', 'august', 'september', 'october', 'november', 'december'
-                ]:
-                    await bot.send_message(message.author, f"Invalid month: {month}. Using current month.")
-                    month = None
+                month = resolve_month(args[2])
+                if month is None:
+                    await bot.send_message(message.author, f"Invalid month or no data found for '{args[2]}'. Using current month.")
             
             # Create and start the continuous filtering task
             await bot.send_message(message.author, f"Started continuous match filtering for {month or 'current month'}")

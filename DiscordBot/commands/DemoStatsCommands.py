@@ -2,17 +2,42 @@ import os
 import glob
 import json
 import logging
+import configparser
 
 logger = logging.getLogger('discord_bot')
 
+# Valid lowercase month names for sort key resolution
+_MONTH_ORDER = {
+    "january": 1, "february": 2, "march": 3, "april": 4,
+    "may": 5, "june": 6, "july": 7, "august": 8,
+    "september": 9, "october": 10, "november": 11, "december": 12
+}
+
+def _month_sort_key(folder_name: str):
+    """
+    Return a (year, month_number) sort key for a month folder.
+    Handles both legacy plain names (e.g. "February") and MonthYY format
+    (e.g. "February26").  Legacy folders sort before year-tagged ones.
+    """
+    name_lower = folder_name.lower()
+    for m, num in _MONTH_ORDER.items():
+        if name_lower == m:
+            return (0, num)  # Legacy plain name
+        if name_lower.startswith(m) and len(name_lower) == len(m) + 2:
+            suffix = name_lower[len(m):]
+            if suffix.isdigit():
+                return (int(suffix), num)
+    return (99, 13)  # Unknown, sort to end
+
 def _get_config():
-    """Get configuration from config.json"""
+    """Get configuration from config.ini"""
     try:
         core_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # DiscordBot directory
-        config_path = os.path.join(os.path.dirname(core_dir), 'config.json')
+        config_path = os.path.join(os.path.dirname(core_dir), 'config.ini')
         
-        with open(config_path, 'r') as f:
-            return json.load(f)
+        config = configparser.ConfigParser()
+        config.read(config_path)
+        return config
     except Exception as e:
         logger.error(f"Error loading config: {str(e)}")
         return {}
@@ -23,7 +48,7 @@ def _count_parsed_matches():
     
     try:
         config = _get_config()
-        textfiles_dir = config.get('project', {}).get('textfiles_directory', '')
+        textfiles_dir = config.get('Paths', 'textfiles_directory', fallback='')
         
         if not textfiles_dir or not os.path.exists(textfiles_dir):
             logger.error(f"Textfiles directory not found: {textfiles_dir}")
@@ -62,7 +87,7 @@ def _get_master_csv_stats():
     
     try:
         config = _get_config()
-        master_dir = config.get('project', {}).get('KillCollectionMasterPath', '')
+        master_dir = config.get('Paths', 'KillCollectionMasterPath', fallback='')
         
         if not master_dir or not os.path.exists(master_dir):
             logger.error(f"KillCollectionMasterPath not found: {master_dir}")
@@ -167,25 +192,18 @@ async def handle_message(bot, message):
 
             # Get textfiles directory from config
             core_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-            config_path = os.path.join(os.path.dirname(core_dir), 'config.json')
-            with open(config_path, 'r') as f:
-                config = json.load(f)
-                textfiles_dir = config['project']['textfiles_directory']
+            config_path = os.path.join(os.path.dirname(core_dir), 'config.ini')
+            config = configparser.ConfigParser()
+            config.read(config_path)
+            textfiles_dir = config.get('Paths', 'textfiles_directory')
 
             # Get list of month directories
             month_dirs = [d for d in os.listdir(textfiles_dir)
                         if os.path.isdir(os.path.join(textfiles_dir, d))
                         and d not in ['undated', 'MergeMe']]
             
-            # Define month order for chronological sorting
-            month_order = {
-                "January": 1, "February": 2, "March": 3, "April": 4,
-                "May": 5, "June": 6, "July": 7, "August": 8,
-                "September": 9, "October": 10, "November": 11, "December": 12
-            }
-            
-            # Sort months chronologically (oldest to newest)
-            month_dirs.sort(key=lambda x: month_order.get(x, 13))  # Unknown months at the end
+            # Sort months chronologically (oldest to newest), supports MonthYY format
+            month_dirs.sort(key=_month_sort_key)
 
             # Get version information from git
             try:
@@ -309,15 +327,8 @@ async def handle_message(bot, message):
                     status_parts.append("\nMonth      | ACE    | QUAD   | TRIPLE | MULTI  | DOUBLE | SINGLE | Demos  | Collections")
                     status_parts.append("-----------|--------|--------|--------|--------|--------|--------|--------|------------")
                     
-                    # Define month order for chronological sorting
-                    month_order = {
-                        "January": 1, "February": 2, "March": 3, "April": 4,
-                        "May": 5, "June": 6, "July": 7, "August": 8,
-                        "September": 9, "October": 10, "November": 11, "December": 12
-                    }
-                    
-                    # Sort months chronologically
-                    for month in sorted(master_stats['by_month'].keys(), key=lambda x: month_order.get(x, 13)):
+                    # Sort months chronologically, supports MonthYY format
+                    for month in sorted(master_stats['by_month'].keys(), key=_month_sort_key):
                         month_stats = master_stats['by_month'][month]
                         month_abbr = month[:3]  # First 3 letters of month
                         
@@ -329,27 +340,8 @@ async def handle_message(bot, message):
                         double_collections = month_stats['by_type'].get('DOUBLE', {}).get('collections', 0)
                         multi_collections = month_stats['by_type'].get('MULTI', {}).get('collections', 0)
                         
-                        # For December, count lines in parsed_december.txt for demos count
-                        if month == "December":
-                            # Get the path to the parsed_december.txt file
-                            month_dir = os.path.join(textfiles_dir, month)
-                            month_lower = month.lower()
-                            parsed_file = os.path.join(month_dir, f"parsed_{month_lower}.txt")
-                            
-                            # Count the lines in the file
-                            parsed_count = 0
-                            if os.path.exists(parsed_file):
-                                try:
-                                    with open(parsed_file, 'r') as f:
-                                        parsed_count = sum(1 for line in f if line.strip())
-                                except Exception as e:
-                                    logger.error(f"Error reading {parsed_file}: {str(e)}")
-                            
-                            # Use the parsed_count for the Demos field
-                            demos_count = parsed_count
-                        else:
-                            # For other months, use the value from master_stats
-                            demos_count = month_stats['total_demos']
+                        # Use value from master_stats for demos count
+                        demos_count = month_stats['total_demos']
                         
                         # Format as a table row
                         status_parts.append(

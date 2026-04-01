@@ -4,6 +4,7 @@ import time
 import asyncio
 import aiohttp
 import logging
+import configparser
 from typing import Optional, Set, List, Dict, Tuple
 from dataclasses import dataclass
 from concurrent.futures import ThreadPoolExecutor
@@ -43,7 +44,7 @@ class MatchResult:
     @property
     def target_file(self) -> str:
         # Get current month directory and name
-        current_month = datetime.now().strftime("%B")  # e.g., "February"
+        current_month = datetime.now().strftime("%B%y")  # e.g., "February26"
         month_dir = os.path.join(self.textfiles_dir, current_month)
         month_lower = current_month.lower()
         
@@ -61,18 +62,18 @@ class MatchProcessor:
         # Load configuration from project root
         core_dir = os.path.dirname(os.path.abspath(__file__))  # core directory
         project_dir = os.path.dirname(core_dir)  # DiscordBot directory
-        config_path = os.path.join(os.path.dirname(project_dir), 'config.json')
+        config_path = os.path.join(os.path.dirname(project_dir), 'config.ini')
         
-        with open(config_path, 'r') as f:
-            self.config = json.load(f)
+        self.config = configparser.ConfigParser()
+        self.config.read(config_path)
 
         # Use configured directories
-        self.project_dir = self.config['project']['directory']
-        self.api_key = self.config["faceit"]["api_key"]
-        self.textfiles_dir = self.config['project']['textfiles_directory']
+        self.project_dir = self.config.get('Paths', 'project_directory')
+        self.api_key = self.config.get('Keys', "faceit_api_key")
+        self.textfiles_dir = self.config.get('Paths', 'textfiles_directory')
         
         # Get current month directory and name
-        current_month = datetime.now().strftime("%B")  # e.g., "February"
+        current_month = datetime.now().strftime("%B%y")  # e.g., "February26"
         self.month_dir = os.path.join(self.textfiles_dir, current_month)
         month_lower = current_month.lower()
         

@@ -2,6 +2,7 @@ import asyncio
 import logging
 import os
 import time
+import configparser
 from datetime import datetime
 from core.FaceitUserFetcher import fetch_user_matches
 from core.UserDemoDownloader import download_user_demos
@@ -9,23 +10,19 @@ from core.AsyncDemoDownloader import (
     start_downloading_async,
     process_downloads_async,
     get_download_stats,
-    stop_event as download_stop_event
+    stop_event as download_stop_event,
+    resolve_month
 )
 from commands.sort_matchids import sort_all_matchid_files
 from commands.parser.service import parser_stats
 
 def validate_month(month: str) -> str:
     """
-    Validate and format month name.
-    Returns formatted month name or None if invalid.
+    Validate and resolve a month input to the actual folder name (MonthYY format).
+    Supports plain month names (resolves to most recent) or MonthYY format.
+    Returns resolved folder name (e.g. "February26") or None if invalid/not found.
     """
-    try:
-        # Convert to datetime to validate month name
-        month_num = datetime.strptime(month, "%B").month
-        # Convert back to month name to ensure consistent capitalization
-        return datetime(2000, month_num, 1).strftime("%B")
-    except ValueError:
-        return None
+    return resolve_month(month)
 
 logger = logging.getLogger('discord_bot')
 
@@ -42,23 +39,22 @@ async def handle_message(bot, message):
     command = args[0] if args else ""
 
     if command == 'sortids':
-        # Get month if provided
-        month = args[1].capitalize() if len(args) > 1 else None
+        # Get month if provided - resolve to actual folder name
+        month = resolve_month(args[1]) if len(args) > 1 else None
         
-        if month and not validate_month(month):
-            await bot.send_message(message.author, "Invalid month name. Please use full month name (e.g., February).")
+        if len(args) > 1 and not month:
+            await bot.send_message(message.author, "Invalid month name or no data found. Use full month name (e.g., february or february26).")
             return True
             
         # Load configuration from project root
         core_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # core directory
         project_dir = os.path.dirname(core_dir)  # DiscordBot directory
-        config_path = os.path.join(os.path.dirname(project_dir), 'config.json')
+        config_path = os.path.join(os.path.dirname(project_dir), 'config.ini')
         
-        import json
-        with open(config_path, 'r') as f:
-            config = json.load(f)
+        config = configparser.ConfigParser()
+        config.read(config_path)
             
-        textfiles_dir = config['project']['textfiles_directory']
+        textfiles_dir = config.get('Paths', 'textfiles_directory')
         
         # Sort matchid files
         results = sort_all_matchid_files(textfiles_dir, month)
@@ -89,10 +85,10 @@ async def handle_message(bot, message):
             await bot.send_message(message.author, "Invalid category. Please use 'ace' or 'quad'.")
             return True
             
-        # Validate month
-        formatted_month = validate_month(month.capitalize())
+        # Validate and resolve month to actual folder name (e.g. "February26")
+        formatted_month = resolve_month(month)
         if not formatted_month:
-            await bot.send_message(message.author, "Invalid month name. Please use full month name (e.g., February).")
+            await bot.send_message(message.author, "Invalid month name or no data found. Use full month name (e.g., february or february26).")
             return True
             
         # Validate number
@@ -196,11 +192,11 @@ async def handle_message(bot, message):
             return True
             
     elif command == 'fixids':
-        # Get month if provided
-        month = args[1].capitalize() if len(args) > 1 else None
+        # Get month if provided - resolve to actual folder name
+        month = resolve_month(args[1]) if len(args) > 1 else None
         
-        if month and not validate_month(month):
-            await bot.send_message(message.author, "Invalid month name. Please use full month name (e.g., February).")
+        if len(args) > 1 and not month:
+            await bot.send_message(message.author, "Invalid month name or no data found. Use full month name (e.g., february or february26).")
             return True
             
         try:
@@ -210,12 +206,12 @@ async def handle_message(bot, message):
             # Load configuration from project root
             core_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # core directory
             project_dir = os.path.dirname(core_dir)  # DiscordBot directory
-            config_path = os.path.join(os.path.dirname(project_dir), 'config.json')
+            config_path = os.path.join(os.path.dirname(project_dir), 'config.ini')
             
-            with open(config_path, 'r') as f:
-                config = json.load(f)
+            config = configparser.ConfigParser()
+            config.read(config_path)
                 
-            textfiles_dir = config['project']['textfiles_directory']
+            textfiles_dir = config.get('Paths', 'textfiles_directory')
             
             # Fix matchid files
             results = await fix_all_matchid_files(textfiles_dir, month)
@@ -381,7 +377,7 @@ async def continuous_download_loop(category: str, month: str, limit: int, bot, u
                 from commands.parser.utils import async_read_file_lines
                 
                 config = get_config()
-                textfiles_dir = config.get('project', {}).get('textfiles_directory', '')
+                textfiles_dir = config.get('Paths', 'textfiles_directory', fallback='')
                 if textfiles_dir:
                     month_dir = os.path.join(textfiles_dir, month)
                     month_lower = month.lower()

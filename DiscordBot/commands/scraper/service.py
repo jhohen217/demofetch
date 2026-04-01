@@ -35,11 +35,11 @@ class MatchScraper:
         self.config = get_config()
         
         # Use configured directories
-        self.project_dir = self.config['project']['directory']
-        self.textfiles_dir = self.config['project']['textfiles_directory']
+        self.project_dir = self.config.get('Paths', 'project_directory')
+        self.textfiles_dir = self.config.get('Paths', 'textfiles_directory')
         
         # Get current month if not specified
-        self.month = month or datetime.now().strftime("%B")  # e.g., "February"
+        self.month = month or datetime.now().strftime("%B%y")  # e.g., "February26"
         self.month_dir = os.path.join(self.textfiles_dir, self.month)
         self.month_lower = self.month.lower()
         os.makedirs(self.month_dir, exist_ok=True)
