@@ -7,6 +7,7 @@ from .RoundScoreProcessor import (
     get_category_counts
 )
 
+from .AsyncDemoDownloader import stop_processes
 from .DiscordBot import DemoBot
 from .FaceitMatchScraper import start_match_scraping
 from .MatchScoreFilter import start_match_filtering

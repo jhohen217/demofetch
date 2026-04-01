@@ -18,8 +18,10 @@ import configparser
 config = configparser.ConfigParser()
 config.read(config_path)
 
-API_KEY = config.get('Keys', 'faceit_api_key')
-TEXTFILES_DIR = config.get('Paths', 'textfiles_directory')
+# Use fallback='' so a missing/incomplete config.ini never crashes at import time.
+# Functions that actually use these values will validate them when called.
+API_KEY = config.get('Keys', 'faceit_api_key', fallback='')
+TEXTFILES_DIR = config.get('Paths', 'textfiles_directory', fallback='')
 SAVE_FOLDER = config.get('Paths', 'public_demos_directory', fallback=os.path.join(project_dir, 'public_demos'))
 
 # Ensure save folder exists
