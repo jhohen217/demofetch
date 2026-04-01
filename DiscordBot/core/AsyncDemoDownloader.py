@@ -63,6 +63,29 @@ def strip_match_id_prefix(match_id: str) -> str:
             return parts[2]  # Return the actual match ID part
     return match_id
 
+def _priority_sort_key(match_id: str):
+    """
+    Sort key for download queue ordering.
+
+    Priority (highest first):
+      1. Most aces  (AA field, descending)
+      2. Most quads (QQ field, descending) — quad-only demos naturally come last
+         because their AA == 00
+      3. Oldest date first (MM-DD-YY string, ascending)
+
+    Match ID format: MM-DD-YY_AAQQ_uuid
+    e.g. 03-15-26_0200_1-abc…  →  2 aces, 0 quads
+    """
+    parts = match_id.split('_')
+    if len(parts) >= 3:
+        count_str = parts[1]                          # "AAQQ"
+        ace  = int(count_str[:2]) if len(count_str) >= 2 else 0
+        quad = int(count_str[2:4]) if len(count_str) >= 4 else 0
+        date = parts[0]                               # "MM-DD-YY"
+        return (-ace, -quad, date)
+    return (0, 0, match_id)                           # fallback for malformed IDs
+
+
 def get_month_files(month: str):
     """Get file paths for a specific month"""
     month_dir = os.path.join(TEXTFILES_DIR, month)
@@ -209,11 +232,10 @@ def prepare_auto_download_queue(month: str, limit: int = None):
     stats['already_downloaded'] = len(downloaded_matches)
     stats['already_rejected'] = len(rejected_matches)
     
-    # Sort queue_matches alphabetically to ensure chronological order
-    # since match IDs start with date/time (e.g., 12-05-24_0101_...)
-    queue_matches.sort()
-    print("Sorted matches in chronological order")
-    
+    # Sort by priority: most aces first, then most quads, then oldest date
+    queue_matches.sort(key=_priority_sort_key)
+    print("Sorted matches by priority: most aces first, then quads, then chronological")
+
     stats['queued'] = len(queue_matches)
 
     print(f"\nQueue preparation stats:")
@@ -317,11 +339,10 @@ def prepare_download_queue(category: str = None, month: str = None, limit: int =
     stats['already_downloaded'] = len(downloaded_matches)
     stats['already_rejected'] = len(rejected_matches)
     
-    # Sort queue_matches alphabetically to ensure chronological order
-    # since match IDs start with date/time (e.g., 12-05-24_0101_...)
-    queue_matches.sort()
-    print("Sorted matches in chronological order")
-    
+    # Sort by priority: most aces first, then most quads, then oldest date
+    queue_matches.sort(key=_priority_sort_key)
+    print("Sorted matches by priority: most aces first, then quads, then chronological")
+
     # Apply limit if specified
     if limit and limit > 0:
         queue_matches = queue_matches[:limit]
