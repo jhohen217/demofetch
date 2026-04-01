@@ -5,6 +5,7 @@ import json
 import logging
 import nextcord
 from datetime import datetime, timedelta
+from typing import Optional
 
 # Import the new modules
 from commands.scraper.commands import handle_message as scraper_handle_message
@@ -32,11 +33,11 @@ async def start_date_fetching(bot=None):
 # Global variables
 
 # Global tasks
-scraping_task = None
-hub_scraping_task = None
-filtering_task = None
-parsing_task = None
-datefetch_task = None
+scraping_task: Optional[asyncio.Task] = None
+hub_scraping_task: Optional[asyncio.Task] = None
+filtering_task: Optional[asyncio.Task] = None
+parsing_task: Optional[asyncio.Task] = None
+datefetch_task: Optional[asyncio.Task] = None
 
 # Match monitoring variables
 last_new_match_time = None
@@ -123,7 +124,7 @@ async def handle_message(bot, message):
                 return True
                 
             # Get the task's wait time from the sleep call
-            frame = scraping_task.get_coro().cr_frame
+            frame = getattr(scraping_task.get_coro(), 'cr_frame', None)
             if frame and 'wait_time' in frame.f_locals:
                 wait_time = frame.f_locals['wait_time']
                 elapsed = frame.f_locals.get('_time', 0)  # Time elapsed in sleep
@@ -177,7 +178,7 @@ async def handle_message(bot, message):
                 # Get next scrape time from the active task's coroutine frame
                 if _active_scrape_task:
                     try:
-                        frame = _active_scrape_task.get_coro().cr_frame
+                        frame = getattr(_active_scrape_task.get_coro(), 'cr_frame', None)
                         if frame and 'wait_time' in frame.f_locals:
                             wait_time = frame.f_locals['wait_time']
                             elapsed = frame.f_locals.get('_time', 0)
@@ -264,10 +265,11 @@ async def handle_message(bot, message):
                     message_parts.append("Match scraping stopped")
 
                 # Also stop the scraper sub-module's task (set by 'force')
-                if _scraper_cmds.scraping_task and not _scraper_cmds.scraping_task.done():
-                    _scraper_cmds.scraping_task.cancel()
+                _sc_task = _scraper_cmds.scraping_task
+                if _sc_task and not _sc_task.done():
+                    _sc_task.cancel()
                     try:
-                        await _scraper_cmds.scraping_task
+                        await _sc_task
                     except asyncio.CancelledError:
                         pass
                     _scraper_cmds.scraping_task = None
@@ -291,10 +293,11 @@ async def handle_message(bot, message):
                     hub_scraping_task = None
                     message_parts.append("Hub match scraping stopped")
 
-                if _scraper_cmds.hub_scraping_task and not _scraper_cmds.hub_scraping_task.done():
-                    _scraper_cmds.hub_scraping_task.cancel()
+                _sc_hub_task = _scraper_cmds.hub_scraping_task
+                if _sc_hub_task and not _sc_hub_task.done():
+                    _sc_hub_task.cancel()
                     try:
-                        await _scraper_cmds.hub_scraping_task
+                        await _sc_hub_task
                     except asyncio.CancelledError:
                         pass
                     _scraper_cmds.hub_scraping_task = None
@@ -344,10 +347,11 @@ async def handle_message(bot, message):
                     message_parts.append("Match scraping stopped")
 
                 # Also stop the scraper sub-module's task (set by 'force')
-                if _scraper_cmds.scraping_task and not _scraper_cmds.scraping_task.done():
-                    _scraper_cmds.scraping_task.cancel()
+                _sc_task2 = _scraper_cmds.scraping_task
+                if _sc_task2 and not _sc_task2.done():
+                    _sc_task2.cancel()
                     try:
-                        await _scraper_cmds.scraping_task
+                        await _sc_task2
                     except asyncio.CancelledError:
                         pass
                     _scraper_cmds.scraping_task = None
@@ -368,10 +372,11 @@ async def handle_message(bot, message):
                     hub_scraping_task = None
                     message_parts.append("Hub match scraping stopped")
 
-                if _scraper_cmds.hub_scraping_task and not _scraper_cmds.hub_scraping_task.done():
-                    _scraper_cmds.hub_scraping_task.cancel()
+                _sc_hub_task2 = _scraper_cmds.hub_scraping_task
+                if _sc_hub_task2 and not _sc_hub_task2.done():
+                    _sc_hub_task2.cancel()
                     try:
-                        await _scraper_cmds.hub_scraping_task
+                        await _sc_hub_task2
                     except asyncio.CancelledError:
                         pass
                     _scraper_cmds.hub_scraping_task = None

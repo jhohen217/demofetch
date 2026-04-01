@@ -17,8 +17,8 @@ from commands.scraper.config import get_config, get_available_months
 logger = logging.getLogger('discord_bot')
 
 # Global tasks
-scraping_task = None
-hub_scraping_task = None
+scraping_task: Optional[asyncio.Task] = None
+hub_scraping_task: Optional[asyncio.Task] = None
 
 # Default minimum delay between scrapes (in seconds)
 DEFAULT_MIN_DELAY = 180  # 3 minutes
@@ -178,13 +178,14 @@ async def handle_message(bot, message):
             # Also stop MatchScraperCommands.scraping_task if it's running
             # (started via the 'start' command or auto-start)
             _msc = sys.modules.get('commands.MatchScraperCommands')
-            if _msc and _msc.scraping_task and not _msc.scraping_task.done():
-                _msc.scraping_task.cancel()
+            _msc_scrape = getattr(_msc, 'scraping_task', None) if _msc else None
+            if _msc_scrape and not _msc_scrape.done():
+                _msc_scrape.cancel()
                 try:
-                    await _msc.scraping_task
+                    await _msc_scrape
                 except asyncio.CancelledError:
                     pass
-                _msc.scraping_task = None
+                setattr(_msc, 'scraping_task', None)
                 stopped_any = True
 
             if stopped_any:
@@ -204,13 +205,14 @@ async def handle_message(bot, message):
                 hub_scraping_task = None
                 await bot.send_message(message.author, "Hub match scraping stopped")
 
-            if _msc and _msc.hub_scraping_task and not _msc.hub_scraping_task.done():
-                _msc.hub_scraping_task.cancel()
+            _msc_hub = getattr(_msc, 'hub_scraping_task', None) if _msc else None
+            if _msc_hub and not _msc_hub.done():
+                _msc_hub.cancel()
                 try:
-                    await _msc.hub_scraping_task
+                    await _msc_hub
                 except asyncio.CancelledError:
                     pass
-                _msc.hub_scraping_task = None
+                setattr(_msc, 'hub_scraping_task', None)
                 await bot.send_message(message.author, "Hub match scraping stopped")
 
             return True
