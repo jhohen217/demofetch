@@ -31,21 +31,21 @@ if [ -d "$INSTALL_DIR/.git" ]; then
     echo "Checking for updates from GitHub..."
     git fetch origin
     LOCAL=$(git rev-parse HEAD)
-    REMOTE=$(git rev-parse origin/master)
-    BASE=$(git merge-base HEAD origin/master)
+    REMOTE=$(git rev-parse origin/main)
+    BASE=$(git merge-base HEAD origin/main)
 
     if [ "$LOCAL" = "$REMOTE" ]; then
         echo "Local repository is up-to-date."
     elif [ "$LOCAL" = "$BASE" ]; then
         echo "Local repository is outdated. Pulling latest changes..."
-        git reset --hard origin/master
-        git pull origin master
+        git reset --hard origin/main
+        git pull origin main
         echo "Updating submodules..."
         git submodule update --init --recursive
     else
         echo "Local and remote branches have diverged. Forcing update..."
-        git reset --hard origin/master
-        git pull origin master --force
+        git reset --hard origin/main
+        git pull origin main --force
         echo "Updating submodules..."
         git submodule update --init --recursive
     fi

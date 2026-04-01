@@ -62,7 +62,8 @@ def main():
         sys.exit(1)
     finally:
         logging.info("Bot shutdown complete")
-    input("Press Enter to exit...\n")
+    # Note: No input() call here — allows clean exit when running as a service
+    # or on headless systems (e.g. Raspberry Pi via systemd/cron).
 
 if __name__ == "__main__":
     main()
